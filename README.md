@@ -5,40 +5,63 @@ Anti China Certifications.
 ### 版本
 Last updated on **2014-09-08**
 
-### 使用方法
-* Windows(System)
-    * Base 版本 **以管理员身份运行** AntiChinaCerts_Base.bat
-    * Extended 版本 **以管理员身份运行** AntiChinaCerts_Extended.bat
-* Windows(Firefox)
+### 方法
+* Windows
+    * 直接选择运行附带咋 Windows 目录里的批处理
+    * Base 版本 **以管理员身份运行** AntiChinaCerts_Base.bat 而 Extended 版本 **以管理员身份运行** AntiChinaCerts_Extended.bat
+	* Extended 版本扩展了 Base 版本，具体扩展的列表参见涉及的CA根证书的介绍
+* Linux
+    * 以 Debian 系列为例子，其它 Linux 发行版操作方法参见其官方说明
+	* 打开终端并执行 `sudo dpkg-reconfigure ca-certificates`
+	* 在列表中找到并选择需要禁用的证书，按空格键取消对该证书的信任
+	* 对所有需要禁用的证书执行完上步操作后回车确定
+* Mac
+    * `实用工具` - `钥匙串访问` - 在 `钥匙串` 中选择 `系统根证书`
+	* 点击进入需要禁用的证书，展开 `信任` 标签并在 `使用此证书时` 下拉菜单选择 `永不信任` 并关闭即可
+* Firefox
     * `工具` - `选项` - `高级` - `证书` - `查看证书`
-	* 点击需要禁用的证书，直接点击 `删除或不信任` 按钮即可
+	* 点击进入需要禁用的证书，直接点击 `删除或不信任` 按钮即可
 * Android
     * `设置` - `安全` - `受信任的凭据(显示受信任的CA证书)`
-	* 点击需要禁用的证书并下拉到最下面，点击 `禁用` 即可
+	* 点击进入需要禁用的证书并下拉到最下面，点击 `禁用` 按钮即可
+* iOS
+    * `设置` - `通用` - `描述文件`
+	* 点击进入需要禁用的证书并点击 `移除` 按钮即可
 
 ### 说明
-* Windows(System)
+* Windows
     * 本工具作用是先将列表中的CA根证书删掉，然后再将这些证书添加到CRL证书吊销列表中，CRL证书吊销列表中的证书才会被彻底禁用
     * Extended 版本为 Base 版本扩展，添加另外几个CA根证书
-    * 使用前可使用 Microsoft_Fixit_20135.diagcab(Win7以及之后) 或者 Microsoft_Fixit_51014.msi(Vista以及之前) 重置证书列表，**不过大多数情况下并不需要**
     * 使用前 **强烈建议以管理员身份运行自带的 RootSUPD** 更新系统的证书列表
-* Windows(Firefox)
+	* 大部分 Windows 的程序和浏览器 Chrome 以及 Opera 亦使用 Windows 系统
+* Linux
+    * 不同发行版系统本身的CA根证书列表可能有所不同，具体需要按实际情况操作
+* Mac
+    * 最新 OS X 10.9 版本自带有 CNNIC ROOT 和 China Internet Network Information Center EV Certificates Root 和 UCA Global Root 以及 UCA Root
+* Firefox
     * 最新 32 版本自带有 CNNIC ROOT 以及 China Internet Network Information Center EV Certificates Root
 * Android
-    * 最新 4.4.4 系统自带有 CNNIC ROOT 以及 China Internet Network Information Center EV Certificates Root
+    * 最新 4.4.4 版本自带有 CNNIC ROOT 以及 China Internet Network Information Center EV Certificates Root
+	* 非最新 4.4.4 版本之前的版本可能自带有 CNNIC ROOT
+* iOS
+    * 最新 7 版本以及 5 和 6 版本均自带有 CNNIC ROOT 和 China Internet Network Information Center EV Certificates Root 和 UCA Global Root 以及 UCA Root
 
 ### 注意
-* Windows(System)
-    * **将CA根证书直接删除没有任何作用，下次访问使用该证书的网站时系统又会重新自动联网添加**
-    * **由于每个用户使用独立的证书列表，所以需要所有用户都运行一次本工具才能彻底禁用**
-    * 运行时如果遇到 `Error: Can not find a certificate matching the hash value` 不需要在意，只要后面 `CertMgr Succeeded` 运行成功就行，如果提示错误请检查是否是以管理员权限运行或联系作者寻求帮助
-	* 运行完毕建议清空所有浏览器数据以及系统SSL缓存
-* Windows(Firefox)
+* Windows
+    * **将CA根证书直接删除没有任何作用，下次访问使用该证书的网站时系统又会重新自动联网添加。同时由于每个用户使用独立的证书列表，所以需要所有用户都运行一次本工具才能彻底禁用**
+    * 运行时如果遇到 `Error: Can not find a certificate matching the hash value` 不需要在意，只要后面 `CertMgr Succeeded` 运行成功就行，如果提示错误请检查是否是以管理员权限运行或联系作者寻求帮助。运行完毕建议清空所有浏览器数据以及系统SSL缓存以免出错
+	* 如果证书验证出现问题，可使用 Microsoft_Fixit_20135.diagcab(Win7以及之后) 或者 Microsoft_Fixit_51014.msi(Vista以及之前) 重置证书列表并重新安装证书更新，**不过大多数情况下并不需要**
+* Linux
+    * 在 /usr/share/ca-certificates 里也有一份各程序自己的CA根证书列表，大多数情况下直接删除可能并不能禁用证书
+    * Linux 发行版系统虽然提供了CA根证书调用的统一接口，但程序实际使用的CA根证书列表可能是程序本身另外保存的一份，所以实际程序使用的CA根证书列表可能与系统统一接口不相同，**强烈建议在系统统一接口禁用证书后再通过程序本身提供的证书管理器进行禁用**
+* Firefox
 	* 在 Firefox 里对自带根证书执行 `删除或不信任` 操作就相当于是禁用其所有目的，并不会将根证书本身删除
 * Android
-    * Android 上由于没有提供比较方便的方法编辑CRL列表，所以证书并不能被完全禁用，Apps可以通过忽略证书错误继续使用
-    * Android 系统没有自带的CA根证书默认为不信任状态，所以不需要手动添加到系统中
+    * Android 上由于没有提供比较方便的方法编辑CRL列表，所以证书并不能被完全禁用，Apps 可以通过忽略证书错误继续使用
+    *** Android 系统没有自带的CA根证书默认为不信任状态，所以不需要手动添加到系统中**
 	* 操作完毕建议清空所有浏览器数据和系统缓存，并重启网络连接
+* iOS
+    * 不同系统版本CA根证书列表所在设置位置可能有所不同，可能需要访问 Apple 官方网站获得帮助
 
 ### 涉及的CA根证书
 * Base 版本
@@ -79,7 +102,7 @@ Last updated on **2014-09-08**
     * UCA EV Root
         * SHA-1 指纹 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E
         * 所属机构为 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
-* 观察中（**并无被本工具禁用**）
+* 观察中（**未被禁用**）
     * SRCA
         * 本证书由其自行颁发，没有经过任何符合国际标准的国际事务所进行审计
 		* SHA-1 指纹 ‎AE3F2E66D48FC6BD1DF131E89D768D505DF14302
