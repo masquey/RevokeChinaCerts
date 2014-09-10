@@ -16,6 +16,10 @@ echo "Permission check." >> %SystemPath%\TestPermission.log
 if not exist %SystemPath%\TestPermission.log (echo Require Administrator Permission. && pause > nul && Exit)
 del /f /q %SystemPath%\TestPermission.log
 
+cd /d %~dp0
+:: Update certifications
+RootSUPD_201403_x86
+
 cls
 cd /d %~dp0\Certs
 
@@ -40,10 +44,10 @@ CertMgr_x86 -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s -r localMa
 @echo.
 
 :: Add certifications to CRL(Base)
-CertMgr_x86 -add -c FakeGitHubCom_2013_01.cer -s Disallowed
-CertMgr_x86 -add -c FakeGoogleCom_2014_07.cer -s Disallowed
-CertMgr_x86 -add -c CNNIC_ROOT.cer -s Disallowed
-CertMgr_x86 -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.cer -s Disallowed
+CertMgr_x86 -add -c FakeGitHubCom_2013_01.crt -s Disallowed
+CertMgr_x86 -add -c FakeGoogleCom_2014_07.crt -s Disallowed
+CertMgr_x86 -add -c CNNIC_ROOT.crt -s Disallowed
+CertMgr_x86 -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 goto Exit
 
 :X64
@@ -64,10 +68,10 @@ CertMgr -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s -r localMachin
 @echo.
 
 :: Add certifications to CRL(Base)
-CertMgr -add -c FakeGitHubCom_2013_01.cer -s Disallowed
-CertMgr -add -c FakeGoogleCom_2014_07.cer -s Disallowed
-CertMgr -add -c CNNIC_ROOT.cer -s Disallowed
-CertMgr -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.cer -s Disallowed
+CertMgr -add -c FakeGitHubCom_2013_01.crt -s Disallowed
+CertMgr -add -c FakeGoogleCom_2014_07.crt -s Disallowed
+CertMgr -add -c CNNIC_ROOT.crt -s Disallowed
+CertMgr -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 
 :Exit
 :: Print to screen.

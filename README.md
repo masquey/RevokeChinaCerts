@@ -3,11 +3,11 @@
 Anti China Certifications.
 
 ### 版本
-Last updated on **2014-09-08**
+Last updated on **2014-09-10**
 
 ### 方法
 * Windows
-    * 直接选择运行附带咋 Windows 目录里的批处理
+    * 直接选择运行在 Windows 目录里的批处理
     * Base 版本 **以管理员身份运行** AntiChinaCerts_Base.bat 而 Extended 版本 **以管理员身份运行** AntiChinaCerts_Extended.bat
 	* Extended 版本扩展了 Base 版本，具体扩展的列表参见涉及的CA根证书的介绍
 * Linux
@@ -25,8 +25,9 @@ Last updated on **2014-09-08**
     * `设置` - `安全` - `受信任的凭据(显示受信任的CA证书)`
 	* 点击进入需要禁用的证书并下拉到最下面，点击 `禁用` 按钮即可
 * iOS
-    * `设置` - `通用` - `描述文件`
-	* 点击进入需要禁用的证书并点击 `移除` 按钮即可
+    * 安装 Apple 官方的 iPhone Configuration Utility/iPCU 软件，并在当前系统上导入证书并安装 iPhone 配置实用工具
+	* 左侧面板点击 `配置描述文件` - `新建` 在 `通用` 里设置好名称和标识符创建描述文件 - 在 `凭证` 里点击 `配置` - 选择证书并设置为禁用
+    * 将设备连接到电脑 - 左侧面板点击 `设备` 下的对应设备 - 选择 `配置描述文件` 标签页 - 安装刚才新建的描述文件以安装描述文件到设备
 
 ### 说明
 * Windows
@@ -43,8 +44,6 @@ Last updated on **2014-09-08**
 * Android
     * 最新 4.4.4 版本自带有 CNNIC ROOT 以及 China Internet Network Information Center EV Certificates Root
 	* 非最新 4.4.4 版本之前的版本可能自带有 CNNIC ROOT
-* iOS
-    * 最新 7 版本以及 5 和 6 版本均自带有 CNNIC ROOT 和 China Internet Network Information Center EV Certificates Root 和 UCA Global Root 以及 UCA Root
 
 ### 注意
 * Windows
@@ -58,10 +57,8 @@ Last updated on **2014-09-08**
 	* 在 Firefox 里对自带根证书执行 `删除或不信任` 操作就相当于是禁用其所有目的，并不会将根证书本身删除
 * Android
     * Android 上由于没有提供比较方便的方法编辑CRL列表，所以证书并不能被完全禁用，Apps 可以通过忽略证书错误继续使用
-    *** Android 系统没有自带的CA根证书默认为不信任状态，所以不需要手动添加到系统中**
+    * **Android 系统没有自带的CA根证书默认为不信任状态，所以不需要手动添加到系统中**
 	* 操作完毕建议清空所有浏览器数据和系统缓存，并重启网络连接
-* iOS
-    * 不同系统版本CA根证书列表所在设置位置可能有所不同，可能需要访问 Apple 官方网站获得帮助
 
 ### 涉及的CA根证书
 * Base 版本
@@ -99,6 +96,7 @@ Last updated on **2014-09-08**
     * UCA Root
         * SHA-1 指纹 8250BED5A214433A66377CBC10EF83F669DA3A67
         * 所属机构为 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
+		* [测试网址](https://ibanks.bankofshanghai.com)
     * UCA EV Root
         * SHA-1 指纹 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E
         * 所属机构为 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
