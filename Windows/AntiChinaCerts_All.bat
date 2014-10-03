@@ -93,11 +93,11 @@ CertMgr_x86 -add -c UCA_EV_Root.crt -s Disallowed
 CertMgr_x86 -add -c ROOTCA.crt -s Disallowed
 CertMgr_x86 -add -c SRCA.crt -s Disallowed
 CertMgr_x86 -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
-CertMgr_x86 -add -c Certification_Authority_Of_WoSign(Chinese).crt -s Disallowed
+CertMgr_x86 -add -c Certification_Authority_Of_WoSign_Chinese.crt -s Disallowed
 CertMgr_x86 -add -c Class_1_Primary_CA -s Disallowed
-CertMgr_x86 -add -c China_Trust_Network_1.crt
-CertMgr_x86 -add -c China_Trust_Network_2.crt
-CertMgr_x86 -add -c China_Trust_Network_3.crt
+CertMgr_x86 -add -c China_Trust_Network_1.crt -s Disallowed
+CertMgr_x86 -add -c China_Trust_Network_2.crt -s Disallowed
+CertMgr_x86 -add -c China_Trust_Network_3.crt -s Disallowed
 
 goto Exit
 
@@ -178,11 +178,11 @@ CertMgr -add -c UCA_EV_Root.crt -s Disallowed
 CertMgr -add -c ROOTCA.crt -s Disallowed
 CertMgr -add -c SRCA.crt -s Disallowed
 CertMgr -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
-CertMgr -add -c Certification_Authority_Of_WoSign(Chinese).crt -s Disallowed
+CertMgr -add -c Certification_Authority_Of_WoSign_Chinese.crt -s Disallowed
 CertMgr -add -c Class_1_Primary_CA -s Disallowed
-CertMgr -add -c China_Trust_Network_1.crt
-CertMgr -add -c China_Trust_Network_2.crt
-CertMgr -add -c China_Trust_Network_3.crt
+CertMgr -add -c China_Trust_Network_1.crt -s Disallowed
+CertMgr -add -c China_Trust_Network_2.crt -s Disallowed
+CertMgr -add -c China_Trust_Network_3.crt -s Disallowed
 
 :Exit
 :: Print to screen.

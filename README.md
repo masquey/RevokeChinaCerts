@@ -7,7 +7,7 @@ Anti China Certifications.
 
 ### 方法
 * Windows
-    * 直接选择运行在 Windows 目录里的批处理，建议 **使用 Extended 版本**
+    * 直接选择运行在 Windows 目录里的批处理，**建议使用 Extended 版本**
     * Base 版本直接运行 AntiChinaCerts_Base.bat 而 Extended 版本直接运行 AntiChinaCerts_Extended.bat 也即 Extended 版本扩展了 Base 版本，而 AntiChinaCerts_All.bat 也即 All 版本则包含了所有列表中的证书。具体的根证书列表参见涉及的CA根证书的介绍
     * 操作完毕建议清空所有浏览器数据和系统缓存，并重启网络连接
 * Linux
@@ -22,7 +22,7 @@ Anti China Certifications.
     * 手动操作
         * `实用工具` - `钥匙串访问` - 在 `钥匙串` 中选择 `系统根证书`
         * 点击进入需要禁用的证书，展开 `信任` 标签并在 `使用此证书时` 下拉菜单选择 `永不信任` 并关闭即可
-        * 操作完毕建议清空所有浏览器数据和系统缓存，并重启网络连接
+    * 操作完毕建议清空所有浏览器数据和系统缓存，并重启网络连接
 * Firefox
     * `工具` - `选项` - `高级` - `证书` - `查看证书`
     * 点击进入需要禁用的证书，直接点击 `删除或不信任` 按钮即可
