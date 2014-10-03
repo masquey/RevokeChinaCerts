@@ -1,21 +1,10 @@
-:: AntiChinaCerts Extended batch
+:: AntiChinaCerts All batch
 :: Anti China Certifications.
 :: 
 :: Author: Chengr28
 :: 
 
 @echo off
-
-:: Permission check
-:: Administrator permissions are not necessary(2014-09-21)
-::if "%PROCESSOR_ARCHITECTURE%" == "AMD64" (set SystemPath = %SystemRoot%\SysWOW64) else (set SystemPath = %SystemRoot%\system32)
-::rd "%SystemPath%\Test_Permissions" > nul 2 > nul
-::md "%SystemPath%\Test_Permissions" 2 > nul || (echo Require Administrator Permission. && pause > nul && Exit)
-::rd "%SystemPath%\Test_Permissions" > nul 2 > nul
-::del /f /q %SystemPath%\TestPermission.log
-::echo "Permission check." >> %SystemPath%\TestPermission.log
-::if not exist %SystemPath%\TestPermission.log (echo Require Administrator Permission. && pause > nul && Exit)
-::del /f /q %SystemPath%\TestPermission.log
 
 cd /d %~dp0
 :: Update certifications
@@ -45,11 +34,6 @@ CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMa
 CertMgr_x86 -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s -r localMachine AuthRoot
 :: Delete certifications(Extended)
-::  Move to All version.
-::  ROOTCA
-CertMgr_x86 -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s Disallowed
-:: CertMgr_x86 -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine Root
-:: CertMgr_x86 -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine AuthRoot
 ::  CFCA GT CA
 CertMgr_x86 -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s -r localMachine AuthRoot
@@ -65,6 +49,31 @@ CertMgr_x86 -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s -r localMa
 ::  UCA EV Root
 CertMgr_x86 -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r localMachine AuthRoot
+:: Delete certifications(All)
+::  ROOTCA
+CertMgr_x86 -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine AuthRoot
+::  SRCA
+CertMgr_x86 -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r localMachine AuthRoot
+::  Certification_Authority_Of_WoSign
+CertMgr_x86 -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r localMachine AuthRoot
+::  Certification_Authority_Of_WoSign(Chinese)
+CertMgr_x86 -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r localMachine AuthRoot
+::  Class_1_Primary_CA
+CertMgr_x86 -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r localMachine AuthRoot
+::  China_Trust_Network_1
+CertMgr_x86 -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r localMachine AuthRoot
+::  China_Trust_Network_2
+CertMgr_x86 -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r localMachine AuthRoot
+::  China_Trust_Network_3
+CertMgr_x86 -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r localMachine AuthRoot
 
 @echo.
 
@@ -75,13 +84,21 @@ CertMgr_x86 -add -c FakeYahooCom_201409.crt -s Disallowed
 CertMgr_x86 -add -c CNNIC_ROOT.crt -s Disallowed
 CertMgr_x86 -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 :: Add certifications to CRL(Extended)
-::  Move to All version.
-::  CertMgr_x86 -add -c ROOTCA.crt -s Disallowed
 CertMgr_x86 -add -c CFCA_GT_CA.crt -s Disallowed
 CertMgr_x86 -add -c CFCA_EV_ROOT.crt -s Disallowed
 CertMgr_x86 -add -c UCA_Global_Root.crt -s Disallowed
 CertMgr_x86 -add -c UCA_Root.crt -s Disallowed
 CertMgr_x86 -add -c UCA_EV_Root.crt -s Disallowed
+:: Add certifications to CRL(All)
+CertMgr_x86 -add -c ROOTCA.crt -s Disallowed
+CertMgr_x86 -add -c SRCA.crt -s Disallowed
+CertMgr_x86 -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
+CertMgr_x86 -add -c Certification_Authority_Of_WoSign(Chinese).crt -s Disallowed
+CertMgr_x86 -add -c Class_1_Primary_CA -s Disallowed
+CertMgr_x86 -add -c China_Trust_Network_1.crt
+CertMgr_x86 -add -c China_Trust_Network_2.crt
+CertMgr_x86 -add -c China_Trust_Network_3.crt
+
 goto Exit
 
 :X64
@@ -102,11 +119,6 @@ CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachin
 CertMgr -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s -r localMachine Root
 CertMgr -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s -r localMachine AuthRoot
 :: Delete certifications(Extended)
-::  Move to All version.
-::  ROOTCA
-CertMgr -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s Disallowed
-:: CertMgr -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine Root
-:: CertMgr -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine AuthRoot
 ::  CFCA GT CA
 CertMgr -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s -r localMachine Root
 CertMgr -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s -r localMachine AuthRoot
@@ -122,6 +134,31 @@ CertMgr -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s -r localMachin
 ::  UCA EV Root
 CertMgr -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r localMachine Root
 CertMgr -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r localMachine AuthRoot
+:: Delete certifications(All)
+::  ROOTCA
+CertMgr -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine Root
+CertMgr -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine AuthRoot
+::  SRCA
+CertMgr -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r localMachine Root
+CertMgr -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r localMachine AuthRoot
+::  Certification_Authority_Of_WoSign
+CertMgr -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r localMachine Root
+CertMgr -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r localMachine AuthRoot
+::  Certification_Authority_Of_WoSign(Chinese)
+CertMgr -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r localMachine Root
+CertMgr -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r localMachine AuthRoot
+::  Class_1_Primary_CA
+CertMgr -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r localMachine Root
+CertMgr -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r localMachine AuthRoot
+::  China_Trust_Network_1
+CertMgr -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r localMachine Root
+CertMgr -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r localMachine AuthRoot
+::  China_Trust_Network_2
+CertMgr -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r localMachine Root
+CertMgr -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r localMachine AuthRoot
+::  China_Trust_Network_3
+CertMgr -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r localMachine Root
+CertMgr -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r localMachine AuthRoot
 
 @echo.
 
@@ -132,13 +169,20 @@ CertMgr -add -c FakeYahooCom_201409.crt -s Disallowed
 CertMgr -add -c CNNIC_ROOT.crt -s Disallowed
 CertMgr -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 :: Add certifications to CRL(Extended)
-::  Move to All version.
-::  CertMgr -add -c ROOTCA.crt -s Disallowed
 CertMgr -add -c CFCA_GT_CA.crt -s Disallowed
 CertMgr -add -c CFCA_EV_ROOT.crt -s Disallowed
 CertMgr -add -c UCA_Global_Root.crt -s Disallowed
 CertMgr -add -c UCA_Root.crt -s Disallowed
 CertMgr -add -c UCA_EV_Root.crt -s Disallowed
+:: Add certifications to CRL(All)
+CertMgr -add -c ROOTCA.crt -s Disallowed
+CertMgr -add -c SRCA.crt -s Disallowed
+CertMgr -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
+CertMgr -add -c Certification_Authority_Of_WoSign(Chinese).crt -s Disallowed
+CertMgr -add -c Class_1_Primary_CA -s Disallowed
+CertMgr -add -c China_Trust_Network_1.crt
+CertMgr -add -c China_Trust_Network_2.crt
+CertMgr -add -c China_Trust_Network_3.crt
 
 :Exit
 :: Print to screen.

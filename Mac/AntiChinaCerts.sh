@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-security trust-settings-import -d trust-settings.plist
+security trust-settings-import -d Trust_Settings.plist
