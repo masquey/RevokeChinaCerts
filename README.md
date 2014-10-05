@@ -3,12 +3,18 @@
 Anti China Certifications.
 
 ### 更新日期
-**2014-10-03**
+**2014-10-05**
+
+### Windows 批处理类型
+    * Base 为基础版本，删除信任并吊销了几个可疑的根或假证书，直接运行 AntiChinaCerts_Base.bat 即可
+    * Extended 为扩展版本，删除信任并吊销了所有可疑的根或假证书，直接运行 AntiChinaCerts_Extended.bat 即可，**建议使用这个版本**
+    * All 为完全版本，删除信任并吊销了所有可疑的证书，直接运行 AntiChinaCerts_All.bat 即可
+    * Restore 为恢复批处理，直接运行 AntiChinaCerts_Restor.bat 可恢复所有在上面几个版本中被加入吊销列表的证书的使用
+    * 具体的根和假证书列表参见下文涉及的CA根证书的介绍
 
 ### 方法
 * Windows
-    * 直接选择运行在 Windows 目录里的批处理，**建议使用 Extended 版本**
-    * Base 版本直接运行 AntiChinaCerts_Base.bat 而 Extended 版本直接运行 AntiChinaCerts_Extended.bat 也即 Extended 版本扩展了 Base 版本，而 AntiChinaCerts_All.bat 也即 All 版本则包含了所有列表中的证书。具体的根证书列表参见涉及的CA根证书的介绍
+    * 选择好不同的版本，直接运行位于 Windows 目录里的批处理
     * 操作完毕建议清空所有浏览器数据和系统缓存，并重启网络连接
 * Linux
     * 以 Debian 系列为例子，其它 Linux 发行版操作方法参见其官方说明
@@ -72,6 +78,12 @@ Anti China Certifications.
     * Fake Google.Com(2014-07-24)
         * SHA-1 指纹 ‎F6BEADB9BC02E0A152D71C318739CDECFC1C085D
         * 此伪造证书被用于 2014-09-01 大规模中间人攻击 Google 网站
+    * Fake Yahoo.Com(2014-09-23)
+        * SHA-1 指纹 ‎2290C311EA0F3F57E06DF45B698E18E828E59BC3
+        * 此伪造证书被用于 2014-09-30 大规模中间人攻击 Yahoo 网站
+	* Fake Hotmai.Com(2014-10-02)
+        * SHA-1 指纹 ‎30F3B3ADC6E570BDA606B9F96DE24190CE262C67
+        * 此伪造证书被用于 2014-10-02 大规模中间人攻击 Microsoft 网站
     * CNNIC ROOT
         * SHA-1 指纹 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F
         * 所属机构为 [China Internet Network Information Center/CNNIC/中国互联网络信息中心](http://www.cnnic.net.cn)

@@ -27,6 +27,9 @@ CertMgr_x86 -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s -r localMa
 ::  Fake Yahoo.Com(2014-09-30)
 CertMgr_x86 -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s -r localMachine AuthRoot
+::  Fake Hotmai.Com(2014-10-02)
+CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachine AuthRoot
 ::  CNNIC ROOT
 CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine AuthRoot
@@ -81,6 +84,7 @@ CertMgr_x86 -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r localMa
 CertMgr_x86 -add -c FakeGitHubCom_201301.crt -s Disallowed
 CertMgr_x86 -add -c FakeGoogleCom_201407.crt -s Disallowed
 CertMgr_x86 -add -c FakeYahooCom_201409.crt -s Disallowed
+CertMgr_x86 -add -c FakeHotmaiCom_201410.crt -s Disallowed
 CertMgr_x86 -add -c CNNIC_ROOT.crt -s Disallowed
 CertMgr_x86 -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 :: Add certifications to CRL(Extended)
@@ -94,7 +98,7 @@ CertMgr_x86 -add -c ROOTCA.crt -s Disallowed
 CertMgr_x86 -add -c SRCA.crt -s Disallowed
 CertMgr_x86 -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
 CertMgr_x86 -add -c Certification_Authority_Of_WoSign_Chinese.crt -s Disallowed
-CertMgr_x86 -add -c Class_1_Primary_CA -s Disallowed
+CertMgr_x86 -add -c Class_1_Primary_CA.crt -s Disallowed
 CertMgr_x86 -add -c China_Trust_Network_1.crt -s Disallowed
 CertMgr_x86 -add -c China_Trust_Network_2.crt -s Disallowed
 CertMgr_x86 -add -c China_Trust_Network_3.crt -s Disallowed
@@ -112,6 +116,9 @@ CertMgr -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s -r localMachin
 ::  Fake Yahoo.Com(2014-09-30)
 CertMgr -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s -r localMachine Root
 CertMgr -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s -r localMachine AuthRoot
+::  Fake Hotmai.Com(2014-10-02)
+CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachine Root
+CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachine AuthRoot
 ::  CNNIC ROOT
 CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine Root
 CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine AuthRoot
@@ -166,6 +173,7 @@ CertMgr -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r localMachin
 CertMgr -add -c FakeGitHubCom_201301.crt -s Disallowed
 CertMgr -add -c FakeGoogleCom_201407.crt -s Disallowed
 CertMgr -add -c FakeYahooCom_201409.crt -s Disallowed
+CertMgr -add -c FakeHotmaiCom_201410.crt -s Disallowed
 CertMgr -add -c CNNIC_ROOT.crt -s Disallowed
 CertMgr -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 :: Add certifications to CRL(Extended)
@@ -179,7 +187,7 @@ CertMgr -add -c ROOTCA.crt -s Disallowed
 CertMgr -add -c SRCA.crt -s Disallowed
 CertMgr -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
 CertMgr -add -c Certification_Authority_Of_WoSign_Chinese.crt -s Disallowed
-CertMgr -add -c Class_1_Primary_CA -s Disallowed
+CertMgr -add -c Class_1_Primary_CA.crt -s Disallowed
 CertMgr -add -c China_Trust_Network_1.crt -s Disallowed
 CertMgr -add -c China_Trust_Network_2.crt -s Disallowed
 CertMgr -add -c China_Trust_Network_3.crt -s Disallowed
