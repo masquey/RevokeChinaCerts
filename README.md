@@ -6,11 +6,11 @@ Anti China Certifications.
 **2014-10-05**
 
 ### Windows 批处理类型
-    * Base 为基础版本，删除信任并吊销了几个可疑的根或假证书，直接运行 AntiChinaCerts_Base.bat 即可
-    * Extended 为扩展版本，删除信任并吊销了所有可疑的根或假证书，直接运行 AntiChinaCerts_Extended.bat 即可，**建议使用这个版本**
-    * All 为完全版本，删除信任并吊销了所有可疑的证书，直接运行 AntiChinaCerts_All.bat 即可
-    * Restore 为恢复批处理，直接运行 AntiChinaCerts_Restor.bat 可恢复所有在上面几个版本中被加入吊销列表的证书的使用
-    * 具体的根和假证书列表参见下文涉及的CA根证书的介绍
+* **Base** 为基础版本，删除信任并吊销了几个可疑的根或假证书，直接运行 AntiChinaCerts_Base.bat 即可
+* **Extended** 为扩展版本，删除信任并吊销了所有可疑的根或假证书，直接运行 AntiChinaCerts_Extended.bat 即可，**建议使用这个版本**
+* **All** 为完全版本，删除信任并吊销了所有可疑的证书，直接运行 AntiChinaCerts_All.bat 即可
+* **Restore** 为恢复批处理，直接运行 AntiChinaCerts_Restore.bat 可恢复所有在上面几个版本中被加入吊销列表的证书的使用
+* 具体的根和假证书列表参见下文涉及的CA根证书的介绍
 
 ### 方法
 * Windows
@@ -36,11 +36,6 @@ Anti China Certifications.
 * Android
     * `设置` - `安全` - `受信任的凭据(显示受信任的CA证书)`
     * 点击进入需要禁用的证书并下拉到最下面，点击 `禁用` 按钮即可
-    * 操作完毕建议清空所有浏览器数据和系统缓存，并重启网络连接
-* iOS
-    * 安装 Apple 官方的 iPhone Configuration Utility/iPCU 软件，并在当前系统上导入证书并安装 iPhone 配置实用工具
-    * 左侧面板点击 `配置描述文件` - `新建` 在 `通用` 里设置好名称和标识符创建描述文件 - 在 `凭证` 里点击 `配置` - 选择证书并设置为禁用
-    * 将设备连接到电脑 - 左侧面板点击 `设备` 下的对应设备 - 选择 `配置描述文件` 标签页 - 安装刚才新建的描述文件以安装描述文件到设备
     * 操作完毕建议清空所有浏览器数据和系统缓存，并重启网络连接
 
 ### 说明
@@ -69,6 +64,8 @@ Anti China Certifications.
 * Android
     * Android 上由于没有提供比较方便的方法编辑CRL列表，故证书并不能被完全禁用，Apps 可以通过忽略证书错误继续使用
     * **Android 系统没有自带的CA根证书默认为不信任状态，不需要手动添加到系统中**
+* iOS
+    * iOS 没有任何官方提供的方法禁用自带的根证书，请放弃在 iOS 下禁用根证书的想法
 
 ### 涉及的CA根证书
 * Base 版本
