@@ -3,7 +3,7 @@
 Anti China Certifications.
 
 ### 更新日期
-**2014-10-05**
+**2014-10-10**
 
 ### Windows 批处理类型
 * **Base** 为基础版本，删除信任并吊销了几个可疑的根或假证书，直接运行 AntiChinaCerts_Base.bat 即可

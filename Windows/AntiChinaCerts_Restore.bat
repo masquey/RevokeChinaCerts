@@ -22,6 +22,8 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" (goto X86) else g
 CertMgr_x86 -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s Disallowed
 ::  Fake Google.Com(2014-07-24)
 CertMgr_x86 -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s Disallowed
+::  Fake Google.Com(2014-09-18)
+CertMgr_x86 -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s Disallowed
 ::  Fake Yahoo.Com(2014-09-30)
 CertMgr_x86 -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s Disallowed
 ::  Fake Hotmai.Com(2014-10-02)
@@ -67,6 +69,8 @@ goto Exit
 CertMgr -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s Disallowed
 ::  Fake Google.Com(2014-07-24)
 CertMgr -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s Disallowed
+::  Fake Google.Com(2014-09-18)
+CertMgr -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s Disallowed
 ::  Fake Yahoo.Com(2014-09-30)
 CertMgr -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s Disallowed
 ::  Fake Hotmai.Com(2014-10-02)
