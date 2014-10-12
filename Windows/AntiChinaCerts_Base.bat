@@ -35,7 +35,7 @@ CertMgr_x86 -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s -r localMa
 ::  Fake Google.Com(2014-07-24)
 CertMgr_x86 -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s -r localMachine AuthRoot
-::  Fake Google.Com(2014-09-18)
+::  Fake Google.Com(2014-09-18) [YFdyh000]
 CertMgr_x86 -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s -r localMachine AuthRoot
 ::  Fake Yahoo.Com(2014-09-30)
@@ -71,7 +71,7 @@ CertMgr -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s -r localMachin
 ::  Fake Google.Com(2014-07-24)
 CertMgr -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s -r localMachine Root
 CertMgr -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s -r localMachine AuthRoot
-::  Fake Google.Com(2014-09-18)
+::  Fake Google.Com(2014-09-18) [YFdyh000]
 CertMgr -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s -r localMachine Root
 CertMgr -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s -r localMachine AuthRoot
 ::  Fake Yahoo.Com(2014-09-30)

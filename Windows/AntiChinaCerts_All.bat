@@ -24,7 +24,7 @@ CertMgr_x86 -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s -r localMa
 ::  Fake Google.Com(2014-07-24)
 CertMgr_x86 -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s -r localMachine AuthRoot
-::  Fake Google.Com(2014-09-18)
+::  Fake Google.Com(2014-09-18) [YFdyh000]
 CertMgr_x86 -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s -r localMachine AuthRoot
 ::  Fake Yahoo.Com(2014-09-30)
@@ -40,9 +40,12 @@ CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMa
 CertMgr_x86 -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s -r localMachine AuthRoot
 :: Delete certifications(Extended)
-::  CFCA GT CA
+::  CFCA GT CA(2011-06-13)
 CertMgr_x86 -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s -r localMachine AuthRoot
+::  CFCA GT CA(2012-08-21) [YFdyh000]
+CertMgr_x86 -del -c -sha1 A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A -s -r localMachine AuthRoot
 ::  CFCA EV ROOT
 CertMgr_x86 -del -c -sha1 E2B8294B5584AB6B58C290466CAC3FB8398F8483 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 E2B8294B5584AB6B58C290466CAC3FB8398F8483 -s -r localMachine AuthRoot
@@ -92,7 +95,8 @@ CertMgr_x86 -add -c FakeHotmaiCom_201410.crt -s Disallowed
 CertMgr_x86 -add -c CNNIC_ROOT.crt -s Disallowed
 CertMgr_x86 -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 :: Add certifications to CRL(Extended)
-CertMgr_x86 -add -c CFCA_GT_CA.crt -s Disallowed
+CertMgr_x86 -add -c CFCA_GT_CA_201106.crt -s Disallowed
+CertMgr_x86 -add -c CFCA_GT_CA_201208.crt -s Disallowed
 CertMgr_x86 -add -c CFCA_EV_ROOT.crt -s Disallowed
 CertMgr_x86 -add -c UCA_Global_Root.crt -s Disallowed
 CertMgr_x86 -add -c UCA_Root.crt -s Disallowed
@@ -117,7 +121,7 @@ CertMgr -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s -r localMachin
 ::  Fake Google.Com(2014-07-24)
 CertMgr -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s -r localMachine Root
 CertMgr -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s -r localMachine AuthRoot
-::  Fake Google.Com(2014-09-18)
+::  Fake Google.Com(2014-09-18) [YFdyh000]
 CertMgr -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s -r localMachine Root
 CertMgr -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s -r localMachine AuthRoot
 ::  Fake Yahoo.Com(2014-09-30)
@@ -133,9 +137,12 @@ CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachin
 CertMgr -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s -r localMachine Root
 CertMgr -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s -r localMachine AuthRoot
 :: Delete certifications(Extended)
-::  CFCA GT CA
+::  CFCA GT CA(2011-06-13)
 CertMgr -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s -r localMachine Root
 CertMgr -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s -r localMachine AuthRoot
+::  CFCA GT CA(2012-08-21) [YFdyh000]
+CertMgr -del -c -sha1 A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A -s -r localMachine Root
+CertMgr -del -c -sha1 A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A -s -r localMachine AuthRoot
 ::  CFCA EV ROOT
 CertMgr -del -c -sha1 E2B8294B5584AB6B58C290466CAC3FB8398F8483 -s -r localMachine Root
 CertMgr -del -c -sha1 E2B8294B5584AB6B58C290466CAC3FB8398F8483 -s -r localMachine AuthRoot
@@ -185,7 +192,8 @@ CertMgr -add -c FakeHotmaiCom_201410.crt -s Disallowed
 CertMgr -add -c CNNIC_ROOT.crt -s Disallowed
 CertMgr -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 :: Add certifications to CRL(Extended)
-CertMgr -add -c CFCA_GT_CA.crt -s Disallowed
+CertMgr -add -c CFCA_GT_CA_201106.crt -s Disallowed
+CertMgr -add -c CFCA_GT_CA_201208.crt -s Disallowed
 CertMgr -add -c CFCA_EV_ROOT.crt -s Disallowed
 CertMgr -add -c UCA_Global_Root.crt -s Disallowed
 CertMgr -add -c UCA_Root.crt -s Disallowed

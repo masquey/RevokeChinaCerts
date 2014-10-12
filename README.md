@@ -3,7 +3,7 @@
 Anti China Certifications.
 
 ### 更新日期
-**2014-10-10**
+**2014-10-12**
 
 ### Windows 批处理类型
 * **Base** 为基础版本，删除信任并吊销了几个可疑的根或假证书，直接运行 AntiChinaCerts_Base.bat 即可
@@ -45,11 +45,11 @@ Anti China Certifications.
 * Linux
     * 不同发行版系统本身的CA根证书列表可能有所不同，具体需要按实际情况操作
 * Mac
-    * OS X 10.9 版本自带有 CNNIC ROOT 和 China Internet Network Information Center EV Certificates Root 和 UCA Global Root 以及 UCA Root
+    * OS X 10.9 版本时自带有 CNNIC ROOT 和 China Internet Network Information Center EV Certificates Root 和 UCA Global Root 以及 UCA Root
 * Firefox
-    * 32 版本自带有 CNNIC ROOT 以及 China Internet Network Information Center EV Certificates Root
+    * 32 版本时自带有 CNNIC ROOT 以及 China Internet Network Information Center EV Certificates Root
 * Android
-    * 4.4.4 版本自带有 CNNIC ROOT 以及 China Internet Network Information Center EV Certificates Root
+    * 4.4.4 版本时自带有 CNNIC ROOT 以及 China Internet Network Information Center EV Certificates Root
     * 4.4.4 版本之前的版本可能自带有 CNNIC ROOT
 
 ### 注意
@@ -75,10 +75,13 @@ Anti China Certifications.
     * Fake Google.Com(2014-07-24)
         * SHA-1 指纹 ‎F6BEADB9BC02E0A152D71C318739CDECFC1C085D
         * 此伪造证书被用于 2014-09-01 大规模中间人攻击 Google 网站
+    * Fake Google.Com(2014-09-18)
+        * SHA-1 指纹 316076F2866588DBB233C7F9EB68B58125150C21
+        * 此伪造证书被用于 2014-10 部分IPv6隧道服务器中间人攻击 Google 网站
     * Fake Yahoo.Com(2014-09-23)
         * SHA-1 指纹 ‎2290C311EA0F3F57E06DF45B698E18E828E59BC3
         * 此伪造证书被用于 2014-09-30 大规模中间人攻击 Yahoo 网站
-	* Fake Hotmai.Com(2014-10-02)
+    * Fake Hotmai.Com(2014-10-02)
         * SHA-1 指纹 ‎30F3B3ADC6E570BDA606B9F96DE24190CE262C67
         * 此伪造证书被用于 2014-10-02 大规模中间人攻击 Microsoft 网站
     * CNNIC ROOT
@@ -92,8 +95,13 @@ Anti China Certifications.
 * Extended 版本
     * CFCA GT CA
         * SHA-1 指纹 EABDA240440ABBD694930A01D09764C6C2D77966
+        * 颁发日期为 2011-06-13
         * 所属机构为 [China Financial Certification Authority/CFCA/中国金融认证中心](http://www.cfca.com.cn)
         * [测试网址](https://cstest.cfca.com.cn)
+    * CFCA GT CA
+        * SHA-1 指纹 A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A
+        * 颁发日期为 2012-08-21
+        * 所属机构为 [China Financial Certification Authority/CFCA/中国金融认证中心](http://www.cfca.com.cn)
     * CFCA EV ROOT
         * SHA-1 指纹 E2B8294B5584AB6B58C290466CAC3FB8398F8483
         * 所属机构为 [China Financial Certification Authority/CFCA/中国金融认证中心](http://www.cfca.com.cn)

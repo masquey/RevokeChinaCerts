@@ -22,7 +22,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" (goto X86) else g
 CertMgr_x86 -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s Disallowed
 ::  Fake Google.Com(2014-07-24)
 CertMgr_x86 -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s Disallowed
-::  Fake Google.Com(2014-09-18)
+::  Fake Google.Com(2014-09-18) [YFdyh000]
 CertMgr_x86 -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s Disallowed
 ::  Fake Yahoo.Com(2014-09-30)
 CertMgr_x86 -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s Disallowed
@@ -33,8 +33,10 @@ CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s Disallowed
 ::  China Internet Network Information Center EV Certificates Root
 CertMgr_x86 -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s Disallowed
 :: Delete certifications(Extended)
-::  CFCA GT CA
+::  CFCA GT CA(2011-06-13)
 CertMgr_x86 -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s Disallowed
+::  CFCA GT CA(2012-08-21) [YFdyh000]
+CertMgr_x86 -del -c -sha1 A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A -s Disallowed
 ::  CFCA EV ROOT
 CertMgr_x86 -del -c -sha1 E2B8294B5584AB6B58C290466CAC3FB8398F8483 -s Disallowed
 ::  UCA Global Root
@@ -69,7 +71,7 @@ goto Exit
 CertMgr -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s Disallowed
 ::  Fake Google.Com(2014-07-24)
 CertMgr -del -c -sha1 F6BEADB9BC02E0A152D71C318739CDECFC1C085D -s Disallowed
-::  Fake Google.Com(2014-09-18)
+::  Fake Google.Com(2014-09-18) [YFdyh000]
 CertMgr -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s Disallowed
 ::  Fake Yahoo.Com(2014-09-30)
 CertMgr -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s Disallowed
@@ -80,8 +82,10 @@ CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s Disallowed
 ::  China Internet Network Information Center EV Certificates Root
 CertMgr -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s Disallowed
 :: Delete certifications(Extended)
-::  CFCA GT CA
+::  CFCA GT CA(2011-06-13)
 CertMgr -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s Disallowed
+::  CFCA GT CA(2012-08-21) [YFdyh000]
+CertMgr -del -c -sha1 A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A -s Disallowed
 ::  CFCA EV ROOT
 CertMgr -del -c -sha1 E2B8294B5584AB6B58C290466CAC3FB8398F8483 -s Disallowed
 ::  UCA Global Root
