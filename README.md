@@ -3,14 +3,14 @@
 Anti China Certifications.
 
 ### 更新日期
-**2014-10-12**
+**2014-10-14**
 
 ### Windows 批处理类型
-* **Base** 为基础版本，删除信任并吊销了几个可疑的根或假证书，直接运行 AntiChinaCerts_Base.bat 即可
-* **Extended** 为扩展版本，删除信任并吊销了所有可疑的根或假证书，直接运行 AntiChinaCerts_Extended.bat 即可，**建议使用这个版本**
-* **All** 为完全版本，删除信任并吊销了所有可疑的证书，直接运行 AntiChinaCerts_All.bat 即可
-* **Restore** 为恢复批处理，直接运行 AntiChinaCerts_Restore.bat 可恢复所有在上面几个版本中被加入吊销列表的证书的使用
-* 具体的根和假证书列表参见下文涉及的CA根证书的介绍
+* **Base** 为基础版本，删除信任并吊销了几个可疑的根证书、中级证书或假证书，直接运行 AntiChinaCerts_Base.bat 即可
+* **Extended** 为扩展版本，删除信任并吊销了所有可疑的根证书、中级证书或假证书，直接运行 AntiChinaCerts_Extended.bat 即可，**建议使用此版本**
+* **All** 为完全版本，删除信任并吊销了所有可疑的来自中国大陆的证书，直接运行 AntiChinaCerts_All.bat 即可，**此版本用于测试不建议使用**
+* **Restore** 为恢复批处理，直接运行 AntiChinaCerts_Restore.bat 可恢复所有在上面几个版本中所有被加入吊销列表的证书的使用
+* 具体的根证书、中级证书或假证书列表参见下文涉及证书的介绍
 
 ### 方法
 * Windows
@@ -24,7 +24,7 @@ Anti China Certifications.
     * 操作完毕建议清空所有浏览器数据和系统缓存，并重启网络连接
 * Mac
     * 使用自动脚本
-        * 直接选择运行在 Mac 目录里的运行 `AntiChinaCerts.sh` 即可
+        * 使用 sudo 以 ROOT 权限运行位于 Mac 目录里的 `AntiChinaCerts.sh` 即可
     * 手动操作
         * `实用工具` - `钥匙串访问` - 在 `钥匙串` 中选择 `系统根证书`
         * 点击进入需要禁用的证书，展开 `信任` 标签并在 `使用此证书时` 下拉菜单选择 `永不信任` 并关闭即可
@@ -40,8 +40,8 @@ Anti China Certifications.
 
 ### 说明
 * Windows
-    * 本工具作用是先将列表中的CA根证书删掉，然后再将这些证书添加到CRL证书吊销列表中，CRL证书吊销列表中的证书才会被彻底禁用
-    * 大部分 Windows 的程序和浏览器 Chrome 以及 Opera 亦使用 Windows 系统
+    * 本工具作用是先将列表中的证书删掉，然后再将这些证书添加到CRL证书吊销列表中，CRL证书吊销列表中的证书才能被彻底禁用
+    * 大部分 Windows 的程序和浏览器 Chrome 以及 Opera 亦使用 Windows 系统提供的证书列表
 * Linux
     * 不同发行版系统本身的CA根证书列表可能有所不同，具体需要按实际情况操作
 * Mac
@@ -54,8 +54,8 @@ Anti China Certifications.
 
 ### 注意
 * Windows
-    * **将CA根证书直接删除没有任何作用，下次访问使用该证书的网站时系统又会重新自动联网添加。同时由于每个用户使用独立的证书列表，所以需要所有用户都运行一次本工具才能彻底禁用！**
-    * 运行时如果遇到 `Error: Can not find a certificate matching the hash value` 不需要在意，只要后面吊销证书时 `CertMgr Succeeded` 运行成功就行
+    * **直接将证书直接删除并没有任何作用，下次访问使用该证书的网站时又会重新自动联网添加。而由于每个用户使用独立的证书列表，需要所有用户都运行一次本工具才能彻底禁用证书的使用！**
+    * 运行时如果遇到 `Error: Can not find a certificate matching the hash value` 等不需要在意，只要后面吊销证书时 `CertMgr Succeeded` 运行成功就行
 * Linux
     * 在 /usr/share/ca-certificates 里也有一份各程序自己的CA根证书列表，大多数情况下直接删除可能并不能禁用证书
     * Linux 发行版系统虽然提供了CA根证书调用的统一接口，但程序实际使用的CA根证书列表可能是程序本身另外保存的一份，所以实际程序使用的CA根证书列表可能与系统统一接口不相同，**强烈建议在系统统一接口禁用证书后再通过程序本身提供的证书管理器进行禁用**
@@ -92,6 +92,10 @@ Anti China Certifications.
         * SHA-1 指纹 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E
         * 所属机构为 [China Internet Network Information Center/CNNIC/中国互联网络信息中心](http://www.cnnic.net.cn)
         * [测试网址](https://evdemo.cnnic.cn)
+    * CNNIC SSL
+        * SHA-1 指纹 6856BB1A6C4F76DACA362187CC2CCD484EDDC25D
+        * 由 Entrust.net Secure Server Certification Authority 签发的中级证书颁发机构
+        * 所属机构为 [China Internet Network Information Center/CNNIC/中国互联网络信息中心](http://www.cnnic.net.cn)
 * Extended 版本
     * CFCA GT CA
         * SHA-1 指纹 EABDA240440ABBD694930A01D09764C6C2D77966
@@ -137,6 +141,34 @@ Anti China Certifications.
     * Class 1 Primary CA/WoSign 1999
         * SHA-1 指纹 ‎6A174570A916FBE84453EED3D070A1D8DA442829
         * 沃通CA收购美国 WoSign 的旧证书，于1999年发布
+        * 所属机构为 [沃通CA](http://www.wosign.com)
+    * Certification Authority of WoSign
+        * SHA-1 指纹 868241C8B85AF79E2DAC79EDADB723E82A36AFC3
+        * 由 StartCom Certification Authority 签发的中级证书颁发机构
+        * 所属机构为 [沃通CA](http://www.wosign.com)
+    * WoSign Premium Server Authority
+        * SHA-1 指纹 E3D569137E603E7BACB6BCC66AE943850C8ADF38
+        * 由 AddTrust External CA Root/UTN-USERFirst-Hardware 签发的中级证书颁发机构
+        * 所属机构为 [沃通CA](http://www.wosign.com)
+    * WoSign Server Authority
+        * SHA-1 指纹 3E14B8BD6C568657D852D95D387249AE857B4A39
+        * 由 AddTrust External CA Root/UTN-USERFirst-Hardware 签发的中级证书颁发机构
+        * 所属机构为 [沃通CA](http://www.wosign.com)
+    * WoSign SGC Server Authority
+        * SHA-1 指纹 6D5A18050D56BFDE525CBE89E8C45DD1B53D12E9
+        * 由 UTN - DATACorp SGC 签发的中级证书颁发机构
+        * 所属机构为 [沃通CA](http://www.wosign.com)
+    * WoTrust Premium Server Authority
+        * SHA-1 指纹 381CBC5048AFD9A02D3E5882D5F22D962B1A5F72
+        * 由 AddTrust External CA Root/UTN-USERFirst-Hardware 签发的中级证书颁发机构
+        * 所属机构为 [沃通CA](http://www.wosign.com)
+    * WoTrust Server Authority
+        * SHA-1 指纹 337DF96418F08A9355870513AFCEBDC68BCED767
+        * 由 AddTrust External CA Root/UTN-USERFirst-Hardware 签发的中级证书颁发机构
+        * 所属机构为 [沃通CA](http://www.wosign.com)
+    * WoTrust SGC Server Authority
+        * SHA-1 指纹 46A762F3C3CF3732DE22A8BA1EBBA3BC048F9B8C
+        * 由 UTN - DATACorp SGC 签发的中级证书颁发机构
         * 所属机构为 [沃通CA](http://www.wosign.com)
     * China Trust Network(1)
         * SHA-1 指纹 C2CAEB0DC296FD50596BCA0F53C5364521167039
