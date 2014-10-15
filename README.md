@@ -3,14 +3,14 @@
 Anti China Certifications.
 
 ### 更新日期
-**2014-10-14**
+**2014-10-15**
 
 ### Windows 批处理类型
-* **Base** 为基础版本，删除信任并吊销了几个可疑的根证书、中级证书或假证书，直接运行 AntiChinaCerts_Base.bat 即可
-* **Extended** 为扩展版本，删除信任并吊销了所有可疑的根证书、中级证书或假证书，直接运行 AntiChinaCerts_Extended.bat 即可，**建议使用此版本**
-* **All** 为完全版本，删除信任并吊销了所有可疑的来自中国大陆的证书，直接运行 AntiChinaCerts_All.bat 即可，**此版本用于测试不建议使用**
-* **Restore** 为恢复批处理，直接运行 AntiChinaCerts_Restore.bat 可恢复所有在上面几个版本中所有被加入吊销列表的证书的使用
-* 具体的根证书、中级证书或假证书列表参见下文涉及证书的介绍
+* **Base** 为基础版本，删除信任并吊销了几个可疑的根证书、中级证书或假证书，直接运行 `AntiChinaCerts_Base.bat` 即可
+* **Extended** 为扩展版本，删除信任并吊销了所有可疑的根证书、中级证书或假证书，直接运行 `AntiChinaCerts_Extended.bat` 即可，**建议使用此版本**
+* **All** 为完全版本，删除信任并吊销了所有可疑的来自中国大陆的证书，直接运行 `AntiChinaCerts_All.bat` 即可，**此版本用于测试不建议使用**
+* **Restore** 为恢复批处理，直接运行 `AntiChinaCerts_Restore.bat` 可恢复所有在上面几个版本中所有被加入吊销列表的证书的使用
+* 具体的根证书、中级证书或假证书列表参见下文涉及的证书的介绍
 
 ### 方法
 * Windows
@@ -24,7 +24,7 @@ Anti China Certifications.
     * 操作完毕建议清空所有浏览器数据和系统缓存，并重启网络连接
 * Mac
     * 使用自动脚本
-        * 使用 sudo 以 ROOT 权限运行位于 Mac 目录里的 `AntiChinaCerts.sh` 即可
+        * 使用 `sudo` 以 ROOT 权限运行位于 Mac 目录里的 `AntiChinaCerts.sh` 即可
     * 手动操作
         * `实用工具` - `钥匙串访问` - 在 `钥匙串` 中选择 `系统根证书`
         * 点击进入需要禁用的证书，展开 `信任` 标签并在 `使用此证书时` 下拉菜单选择 `永不信任` 并关闭即可
@@ -67,7 +67,7 @@ Anti China Certifications.
 * iOS
     * iOS 没有任何官方提供的方法禁用自带的根证书，请放弃在 iOS 下禁用根证书的想法
 
-### 涉及的CA根证书
+### 涉及的证书
 * Base 版本
     * Fake GitHub.Com(2013-01-25)
         * SHA-1 指纹 ‎27A29C3A8B3261770E8B59448557DC9E9339E68C
@@ -77,13 +77,16 @@ Anti China Certifications.
         * 此伪造证书被用于 2014-09-01 大规模中间人攻击 Google 网站
     * Fake Google.Com(2014-09-18)
         * SHA-1 指纹 316076F2866588DBB233C7F9EB68B58125150C21
-        * 此伪造证书被用于 2014-10 部分IPv6隧道服务器中间人攻击 Google 网站
+        * 此伪造证书被用于 2014-10 部分 IPv6 隧道服务器中间人攻击 Google 网站
     * Fake Yahoo.Com(2014-09-23)
         * SHA-1 指纹 ‎2290C311EA0F3F57E06DF45B698E18E828E59BC3
         * 此伪造证书被用于 2014-09-30 大规模中间人攻击 Yahoo 网站
     * Fake Hotmai.Com(2014-10-02)
         * SHA-1 指纹 ‎30F3B3ADC6E570BDA606B9F96DE24190CE262C67
         * 此伪造证书被用于 2014-10-02 大规模中间人攻击 Microsoft 网站
+    * Fake Www.Facebook.Com(2014-10-08)
+        * SHA-1 指纹 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318
+        * 此伪造证书被用于 2014-10-08 部分教育网 IPv6 和隧道服务器中间人攻击 Facebook 网站
     * CNNIC ROOT
         * SHA-1 指纹 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F
         * 所属机构为 [China Internet Network Information Center/CNNIC/中国互联网络信息中心](http://www.cnnic.net.cn)
@@ -118,14 +121,18 @@ Anti China Certifications.
         * SHA-1 指纹 8250BED5A214433A66377CBC10EF83F669DA3A67
         * 所属机构为 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
         * [测试网址](https://ibanks.bankofshanghai.com)
-    * UCA EV Root
+    * UCA Extended Validation Root
         * SHA-1 指纹 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E
         * 所属机构为 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
+    * UCA Root
+        * SHA-1 指纹 3120F295417730075F8CD42D0CAE008EB5726EF8
+        * 在2001年1月1日颁发的 UCA Root 旧证书，已于2013年1月1日过期
+        * 所属机构为 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
+        * [测试网址](https://ibanks.bankofshanghai.com)
 * All 版本
     * ROOTCA
         * SHA-1 指纹 ‎DBB84423C928ABE889D0E368FC3191D151DDB1AB
         * 所属机构为 [Office of the State Commercial Cryptography Administration/OSCCA/国家商用密码管理办公室](http://www.oscca.gov.cn)
-        * 测试：打开 Certs 目录中 CFCA_CS_SM2_OCA11 证书，该证书由 ROOTCA 交叉签署认证
     * SRCA
         * SHA-1 指纹 ‎AE3F2E66D48FC6BD1DF131E89D768D505DF14302
         * 所属机构为 [Sinorail Certification Authority/SRCA/中铁数字证书认证中心](http://www.12306.cn)
@@ -140,7 +147,7 @@ Anti China Certifications.
         * 所属机构为 [沃通CA](http://www.wosign.com)
     * Class 1 Primary CA/WoSign 1999
         * SHA-1 指纹 ‎6A174570A916FBE84453EED3D070A1D8DA442829
-        * 沃通CA收购美国 WoSign 的旧证书，于1999年发布
+        * 在1999年7月8日颁发的美国 WoSign 公司的旧证书，于2013年5月17日被沃通CA收购，证书将于2020年7月7日过期
         * 所属机构为 [沃通CA](http://www.wosign.com)
     * Certification Authority of WoSign
         * SHA-1 指纹 868241C8B85AF79E2DAC79EDADB723E82A36AFC3

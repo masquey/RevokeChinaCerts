@@ -54,6 +54,11 @@ CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMa
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser AuthRoot
+::  Fake Www.Facebook.Com(2014-10-08)
+CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine AuthRoot
+CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser Root
+CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser AuthRoot
 ::  CNNIC ROOT
 CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine AuthRoot
@@ -88,16 +93,21 @@ CertMgr_x86 -del -c -sha1 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF -s -r localMa
 CertMgr_x86 -del -c -sha1 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF -s -r CurrentUser AuthRoot
-::  UCA Root
+::  UCA Root(2004-01-01)
 CertMgr_x86 -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s -r CurrentUser AuthRoot
-::  UCA EV Root
+::  UCA Extended Validation Root
 CertMgr_x86 -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r CurrentUser AuthRoot
+::  UCA Root(2001-01-01)
+CertMgr_x86 -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r localMachine AuthRoot
+CertMgr_x86 -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r CurrentUser Root
+CertMgr_x86 -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r CurrentUser AuthRoot
 :: Delete certifications(All)
 ::  ROOTCA
 CertMgr_x86 -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine Root
@@ -164,11 +174,12 @@ CertMgr_x86 -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r Current
 @echo.
 
 :: Add certifications to CRL(Base)
-CertMgr_x86 -add -c FakeGitHubCom_201301.crt -s Disallowed
-CertMgr_x86 -add -c FakeGoogleCom_201407.crt -s Disallowed
-CertMgr_x86 -add -c FakeGoogleCom_201409.crt -s Disallowed
-CertMgr_x86 -add -c FakeYahooCom_201409.crt -s Disallowed
-CertMgr_x86 -add -c FakeHotmaiCom_201410.crt -s Disallowed
+CertMgr_x86 -add -c Fake_GitHubCom_201301.crt -s Disallowed
+CertMgr_x86 -add -c Fake_GoogleCom_201407.crt -s Disallowed
+CertMgr_x86 -add -c Fake_GoogleCom_201409.crt -s Disallowed
+CertMgr_x86 -add -c Fake_YahooCom_201409.crt -s Disallowed
+CertMgr_x86 -add -c Fake_HotmaiCom_201410.crt -s Disallowed
+CertMgr_x86 -add -c Fake_WwwFacebookCom_201410.crt -s Disallowed
 CertMgr_x86 -add -c CNNIC_ROOT.crt -s Disallowed
 CertMgr_x86 -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 CertMgr_x86 -add -c CNNIC_SSL_Entrust.crt -s Disallowed
@@ -177,10 +188,11 @@ CertMgr_x86 -add -c CFCA_GT_CA_201106.crt -s Disallowed
 CertMgr_x86 -add -c CFCA_GT_CA_201208.crt -s Disallowed
 CertMgr_x86 -add -c CFCA_EV_ROOT.crt -s Disallowed
 CertMgr_x86 -add -c UCA_Global_Root.crt -s Disallowed
-CertMgr_x86 -add -c UCA_Root.crt -s Disallowed
-CertMgr_x86 -add -c UCA_EV_Root.crt -s Disallowed
+CertMgr_x86 -add -c UCA_Root_200401.crt -s Disallowed
+CertMgr_x86 -add -c UCA_Extended_Validation_Root.crt -s Disallowed
+CertMgr_x86 -add -c UCA_Root_200101.crt -s Disallowed
 :: Add certifications to CRL(All)
-CertMgr_x86 -add -c ROOTCA.crt -s Disallowed
+CertMgr_x86 -add -c ROOTCA_OSCCA.crt -s Disallowed
 CertMgr_x86 -add -c SRCA.crt -s Disallowed
 CertMgr_x86 -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
 CertMgr_x86 -add -c Certification_Authority_Of_WoSign_Chinese.crt -s Disallowed
@@ -225,6 +237,11 @@ CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachin
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser Root
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser AuthRoot
+::  Fake Www.Facebook.Com(2014-10-08)
+CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine Root
+CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine AuthRoot
+CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser Root
+CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser AuthRoot
 ::  CNNIC ROOT
 CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine Root
 CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine AuthRoot
@@ -259,16 +276,21 @@ CertMgr -del -c -sha1 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF -s -r localMachin
 CertMgr -del -c -sha1 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF -s -r CurrentUser Root
 CertMgr -del -c -sha1 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF -s -r CurrentUser AuthRoot
-::  UCA Root
+::  UCA Root(2004-01-01)
 CertMgr -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s -r localMachine Root
 CertMgr -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s -r CurrentUser Root
 CertMgr -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s -r CurrentUser AuthRoot
-::  UCA EV Root
+::  UCA Extended Validation Root
 CertMgr -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r localMachine Root
 CertMgr -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r CurrentUser Root
 CertMgr -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s -r CurrentUser AuthRoot
+::  UCA Root(2001-01-01)
+CertMgr -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r localMachine Root
+CertMgr -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r localMachine AuthRoot
+CertMgr -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r CurrentUser Root
+CertMgr -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r CurrentUser AuthRoot
 :: Delete certifications(All)
 ::  ROOTCA
 CertMgr -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine Root
@@ -335,11 +357,12 @@ CertMgr -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r CurrentUser
 @echo.
 
 :: Add certifications to CRL(Base)
-CertMgr -add -c FakeGitHubCom_201301.crt -s Disallowed
-CertMgr -add -c FakeGoogleCom_201407.crt -s Disallowed
-CertMgr -add -c FakeGoogleCom_201409.crt -s Disallowed
-CertMgr -add -c FakeYahooCom_201409.crt -s Disallowed
-CertMgr -add -c FakeHotmaiCom_201410.crt -s Disallowed
+CertMgr -add -c Fake_GitHubCom_201301.crt -s Disallowed
+CertMgr -add -c Fake_GoogleCom_201407.crt -s Disallowed
+CertMgr -add -c Fake_GoogleCom_201409.crt -s Disallowed
+CertMgr -add -c Fake_YahooCom_201409.crt -s Disallowed
+CertMgr -add -c Fake_HotmaiCom_201410.crt -s Disallowed
+CertMgr -add -c Fake_WwwFacebookCom_201410.crt -s Disallowed
 CertMgr -add -c CNNIC_ROOT.crt -s Disallowed
 CertMgr -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 CertMgr -add -c CNNIC_SSL_Entrust.crt -s Disallowed
@@ -348,10 +371,11 @@ CertMgr -add -c CFCA_GT_CA_201106.crt -s Disallowed
 CertMgr -add -c CFCA_GT_CA_201208.crt -s Disallowed
 CertMgr -add -c CFCA_EV_ROOT.crt -s Disallowed
 CertMgr -add -c UCA_Global_Root.crt -s Disallowed
-CertMgr -add -c UCA_Root.crt -s Disallowed
-CertMgr -add -c UCA_EV_Root.crt -s Disallowed
+CertMgr -add -c UCA_Root_200401.crt -s Disallowed
+CertMgr -add -c UCA_Extended_Validation_Root.crt -s Disallowed
+CertMgr -add -c UCA_Root_200101.crt -s Disallowed
 :: Add certifications to CRL(All)
-CertMgr -add -c ROOTCA.crt -s Disallowed
+CertMgr -add -c ROOTCA_OSCCA.crt -s Disallowed
 CertMgr -add -c SRCA.crt -s Disallowed
 CertMgr -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
 CertMgr -add -c Certification_Authority_Of_WoSign_Chinese.crt -s Disallowed
