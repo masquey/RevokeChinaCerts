@@ -54,7 +54,7 @@ CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMa
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser AuthRoot
-::  Fake Www.Facebook.Com(2014-10-08)
+::  Fake Www.Facebook.Com(2014-10-08) [Yiwen Zhang]
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser Root
@@ -115,7 +115,7 @@ CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachin
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser Root
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser AuthRoot
-::  Fake Www.Facebook.Com(2014-10-08)
+::  Fake Www.Facebook.Com(2014-10-08) [Yiwen Zhang]
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine Root
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser Root

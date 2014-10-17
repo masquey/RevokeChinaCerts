@@ -54,7 +54,7 @@ CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMa
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser AuthRoot
-::  Fake Www.Facebook.Com(2014-10-08)
+::  Fake Www.Facebook.Com(2014-10-08) [Yiwen Zhang]
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser Root
@@ -108,6 +108,11 @@ CertMgr_x86 -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r localMa
 CertMgr_x86 -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r CurrentUser AuthRoot
+::  GoAgent CA [lenovo-me]
+CertMgr_x86 -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r localMachine AuthRoot
+CertMgr_x86 -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r CurrentUser Root
+CertMgr_x86 -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r CurrentUser AuthRoot
 :: Delete certifications(All)
 ::  ROOTCA
 CertMgr_x86 -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine Root
@@ -191,6 +196,7 @@ CertMgr_x86 -add -c UCA_Global_Root.crt -s Disallowed
 CertMgr_x86 -add -c UCA_Root_200401.crt -s Disallowed
 CertMgr_x86 -add -c UCA_Extended_Validation_Root.crt -s Disallowed
 CertMgr_x86 -add -c UCA_Root_200101.crt -s Disallowed
+CertMgr_x86 -add -c GoAgent_CA.crt -s Disallowed
 :: Add certifications to CRL(All)
 CertMgr_x86 -add -c ROOTCA_OSCCA.crt -s Disallowed
 CertMgr_x86 -add -c SRCA.crt -s Disallowed
@@ -237,7 +243,7 @@ CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachin
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser Root
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s -r CurrentUser AuthRoot
-::  Fake Www.Facebook.Com(2014-10-08)
+::  Fake Www.Facebook.Com(2014-10-08) [Yiwen Zhang]
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine Root
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser Root
@@ -291,6 +297,11 @@ CertMgr -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r localMachin
 CertMgr -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r CurrentUser Root
 CertMgr -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s -r CurrentUser AuthRoot
+::  GoAgent CA [lenovo-me]
+CertMgr -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r localMachine Root
+CertMgr -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r localMachine AuthRoot
+CertMgr -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r CurrentUser Root
+CertMgr -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r CurrentUser AuthRoot
 :: Delete certifications(All)
 ::  ROOTCA
 CertMgr -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine Root
@@ -374,6 +385,7 @@ CertMgr -add -c UCA_Global_Root.crt -s Disallowed
 CertMgr -add -c UCA_Root_200401.crt -s Disallowed
 CertMgr -add -c UCA_Extended_Validation_Root.crt -s Disallowed
 CertMgr -add -c UCA_Root_200101.crt -s Disallowed
+CertMgr -add -c GoAgent_CA.crt -s Disallowed
 :: Add certifications to CRL(All)
 CertMgr -add -c ROOTCA_OSCCA.crt -s Disallowed
 CertMgr -add -c SRCA.crt -s Disallowed

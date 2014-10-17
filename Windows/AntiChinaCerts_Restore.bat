@@ -39,7 +39,7 @@ CertMgr_x86 -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s Disallowed
 CertMgr_x86 -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s Disallowed
 ::  Fake Hotmai.Com(2014-10-02)
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s Disallowed
-::  Fake Www.Facebook.Com(2014-10-08)
+::  Fake Www.Facebook.Com(2014-10-08) [Yiwen Zhang]
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s Disallowed
 ::  CNNIC ROOT
 CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s Disallowed
@@ -47,7 +47,7 @@ CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s Disallowed
 CertMgr_x86 -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s Disallowed
 ::  CNNIC SSL(Entrust)
 CertMgr_x86 -del -c -sha1 6856BB1A6C4F76DACA362187CC2CCD484EDDC25D -s Disallowed
-::  Fake Www.Facebook.Com(2014-10-08)
+::  Fake Www.Facebook.Com(2014-10-08) [Yiwen Zhang]
 :: Delete certifications(Extended)
 ::  CFCA GT CA(2011-06-13)
 CertMgr_x86 -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s Disallowed
@@ -63,6 +63,8 @@ CertMgr_x86 -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s Disallowed
 CertMgr_x86 -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s Disallowed
 ::  UCA Root(2001-01-01)
 CertMgr_x86 -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s Disallowed
+::  GoAgent CA [lenovo-me]
+CertMgr_x86 -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s Disallowed
 :: Delete certifications(All)
 ::  ROOTCA
 CertMgr_x86 -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s Disallowed
@@ -109,7 +111,7 @@ CertMgr -del -c -sha1 316076F2866588DBB233C7F9EB68B58125150C21 -s Disallowed
 CertMgr -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s Disallowed
 ::  Fake Hotmai.Com(2014-10-02)
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s Disallowed
-::  Fake Www.Facebook.Com(2014-10-08)
+::  Fake Www.Facebook.Com(2014-10-08) [Yiwen Zhang]
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s Disallowed
 ::  CNNIC ROOT
 CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s Disallowed
@@ -132,6 +134,8 @@ CertMgr -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s Disallowed
 CertMgr -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s Disallowed
 ::  UCA Root(2001-01-01)
 CertMgr -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s Disallowed
+::  GoAgent CA [lenovo-me]
+CertMgr -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s Disallowed
 :: Delete certifications(All)
 ::  ROOTCA
 CertMgr -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s Disallowed

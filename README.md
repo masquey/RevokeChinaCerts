@@ -3,7 +3,7 @@
 Anti China Certifications.
 
 ### 更新日期
-**2014-10-15**
+**2014-10-17**
 
 ### Windows 批处理类型
 * **Base** 为基础版本，删除信任并吊销了几个可疑的根证书、中级证书或假证书，直接运行 `AntiChinaCerts_Base.bat` 即可
@@ -11,6 +11,9 @@ Anti China Certifications.
 * **All** 为完全版本，删除信任并吊销了所有可疑的来自中国大陆的证书，直接运行 `AntiChinaCerts_All.bat` 即可，**此版本用于测试不建议使用**
 * **Restore** 为恢复批处理，直接运行 `AntiChinaCerts_Restore.bat` 可恢复所有在上面几个版本中所有被加入吊销列表的证书的使用
 * 具体的根证书、中级证书或假证书列表参见下文涉及的证书的介绍
+
+### 特别说明
+**Extended** 版和 **All** 版会自动吊销 GoAgent 自带的 `GoAgent CA` 证书，为免使用 GoAgent 时出现错误同时也为了系统加密连接的安全强烈建议更换其自带的 CA 根证书。**关闭所有 GoAgent 程序，进入其 `local` 目录删除 `CA.crt` 以及整个 `certs` 目录，然后清空所有浏览器数据重启 GoAgent 和浏览器即可。**
 
 ### 方法
 * Windows
@@ -89,100 +92,102 @@ Anti China Certifications.
         * 此伪造证书被用于 2014-10-08 部分教育网 IPv6 和隧道服务器中间人攻击 Facebook 网站
     * CNNIC ROOT
         * SHA-1 指纹 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F
-        * 所属机构为 [China Internet Network Information Center/CNNIC/中国互联网络信息中心](http://www.cnnic.net.cn)
+        * 所属 [China Internet Network Information Center/CNNIC/中国互联网络信息中心](http://www.cnnic.net.cn)
         * [测试网址](https://www.cnnic.net.cn)
     * China Internet Network Information Center EV Certificates Root
         * SHA-1 指纹 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E
-        * 所属机构为 [China Internet Network Information Center/CNNIC/中国互联网络信息中心](http://www.cnnic.net.cn)
+        * 所属 [China Internet Network Information Center/CNNIC/中国互联网络信息中心](http://www.cnnic.net.cn)
         * [测试网址](https://evdemo.cnnic.cn)
     * CNNIC SSL
         * SHA-1 指纹 6856BB1A6C4F76DACA362187CC2CCD484EDDC25D
         * 由 Entrust.net Secure Server Certification Authority 签发的中级证书颁发机构
-        * 所属机构为 [China Internet Network Information Center/CNNIC/中国互联网络信息中心](http://www.cnnic.net.cn)
+        * 所属 [China Internet Network Information Center/CNNIC/中国互联网络信息中心](http://www.cnnic.net.cn)
 * Extended 版本
     * CFCA GT CA
         * SHA-1 指纹 EABDA240440ABBD694930A01D09764C6C2D77966
         * 颁发日期为 2011-06-13
-        * 所属机构为 [China Financial Certification Authority/CFCA/中国金融认证中心](http://www.cfca.com.cn)
+        * 所属 [China Financial Certification Authority/CFCA/中国金融认证中心](http://www.cfca.com.cn)
         * [测试网址](https://cstest.cfca.com.cn)
     * CFCA GT CA
         * SHA-1 指纹 A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A
         * 颁发日期为 2012-08-21
-        * 所属机构为 [China Financial Certification Authority/CFCA/中国金融认证中心](http://www.cfca.com.cn)
+        * 所属 [China Financial Certification Authority/CFCA/中国金融认证中心](http://www.cfca.com.cn)
     * CFCA EV ROOT
         * SHA-1 指纹 E2B8294B5584AB6B58C290466CAC3FB8398F8483
-        * 所属机构为 [China Financial Certification Authority/CFCA/中国金融认证中心](http://www.cfca.com.cn)
+        * 所属 [China Financial Certification Authority/CFCA/中国金融认证中心](http://www.cfca.com.cn)
         * [测试网址](https://cs.cfca.com.cn)
     * UCA Global Root
         * SHA-1 指纹 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF
-        * 所属机构为 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
+        * 所属 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
         * [测试网址](https://www.sheca.com)
     * UCA Root
         * SHA-1 指纹 8250BED5A214433A66377CBC10EF83F669DA3A67
-        * 所属机构为 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
+        * 所属 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
         * [测试网址](https://ibanks.bankofshanghai.com)
     * UCA Extended Validation Root
         * SHA-1 指纹 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E
-        * 所属机构为 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
+        * 所属 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
     * UCA Root
         * SHA-1 指纹 3120F295417730075F8CD42D0CAE008EB5726EF8
         * 在2001年1月1日颁发的 UCA Root 旧证书，已于2013年1月1日过期
-        * 所属机构为 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
+        * 所属 [Shanghai Electronic Certificate Authority Center/SHECA/上海市数字证书认证中心](http://www.sheca.com)
         * [测试网址](https://ibanks.bankofshanghai.com)
+    * GoAgent CA
+        * SHA-1 指纹 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33
+        * 所属 [GoAgent](https://github.com/goagent/goagent) 项目于初版使用至今的默认 CA 根证书
 * All 版本
     * ROOTCA
         * SHA-1 指纹 ‎DBB84423C928ABE889D0E368FC3191D151DDB1AB
-        * 所属机构为 [Office of the State Commercial Cryptography Administration/OSCCA/国家商用密码管理办公室](http://www.oscca.gov.cn)
+        * 所属 [Office of the State Commercial Cryptography Administration/OSCCA/国家商用密码管理办公室](http://www.oscca.gov.cn)
     * SRCA
         * SHA-1 指纹 ‎AE3F2E66D48FC6BD1DF131E89D768D505DF14302
-        * 所属机构为 [Sinorail Certification Authority/SRCA/中铁数字证书认证中心](http://www.12306.cn)
+        * 所属 [Sinorail Certification Authority/SRCA/中铁数字证书认证中心](http://www.12306.cn)
         * [测试网址](https://kyfw.12306.cn)
     * Certification Authority of WoSign
         * SHA-1 指纹 B94294BF91EA8FB64BE61097C7FB001359B676CB
-        * 没有安装最新CA根证书列表时则由 StartCom Certification Authority 或 UTN - DATACorp SGC 交叉签署认证
-        * 所属机构为 [沃通CA](http://www.wosign.com)
+        * 所属 [沃通CA](http://www.wosign.com)
         * [测试网址](https://www.wosign.com)
     * CA 沃通根证书
         * SHA-1 指纹 1632478D89F9213A92008563F5A4A7D312408AD6
-        * 所属机构为 [沃通CA](http://www.wosign.com)
+        * 所属 [沃通CA](http://www.wosign.com)
     * Class 1 Primary CA/WoSign 1999
         * SHA-1 指纹 ‎6A174570A916FBE84453EED3D070A1D8DA442829
         * 在1999年7月8日颁发的美国 WoSign 公司的旧证书，于2013年5月17日被沃通CA收购，证书将于2020年7月7日过期
-        * 所属机构为 [沃通CA](http://www.wosign.com)
+        * 所属 [沃通CA](http://www.wosign.com)
     * Certification Authority of WoSign
         * SHA-1 指纹 868241C8B85AF79E2DAC79EDADB723E82A36AFC3
         * 由 StartCom Certification Authority 签发的中级证书颁发机构
-        * 所属机构为 [沃通CA](http://www.wosign.com)
+        * 所属 [沃通CA](http://www.wosign.com)
     * WoSign Premium Server Authority
         * SHA-1 指纹 E3D569137E603E7BACB6BCC66AE943850C8ADF38
         * 由 AddTrust External CA Root/UTN-USERFirst-Hardware 签发的中级证书颁发机构
-        * 所属机构为 [沃通CA](http://www.wosign.com)
+        * 所属 [沃通CA](http://www.wosign.com)
     * WoSign Server Authority
         * SHA-1 指纹 3E14B8BD6C568657D852D95D387249AE857B4A39
         * 由 AddTrust External CA Root/UTN-USERFirst-Hardware 签发的中级证书颁发机构
-        * 所属机构为 [沃通CA](http://www.wosign.com)
+        * 所属 [沃通CA](http://www.wosign.com)
     * WoSign SGC Server Authority
         * SHA-1 指纹 6D5A18050D56BFDE525CBE89E8C45DD1B53D12E9
         * 由 UTN - DATACorp SGC 签发的中级证书颁发机构
-        * 所属机构为 [沃通CA](http://www.wosign.com)
+        * 所属 [沃通CA](http://www.wosign.com)
     * WoTrust Premium Server Authority
         * SHA-1 指纹 381CBC5048AFD9A02D3E5882D5F22D962B1A5F72
         * 由 AddTrust External CA Root/UTN-USERFirst-Hardware 签发的中级证书颁发机构
-        * 所属机构为 [沃通CA](http://www.wosign.com)
+        * 所属 [沃通CA](http://www.wosign.com)
     * WoTrust Server Authority
         * SHA-1 指纹 337DF96418F08A9355870513AFCEBDC68BCED767
         * 由 AddTrust External CA Root/UTN-USERFirst-Hardware 签发的中级证书颁发机构
-        * 所属机构为 [沃通CA](http://www.wosign.com)
+        * 所属 [沃通CA](http://www.wosign.com)
     * WoTrust SGC Server Authority
         * SHA-1 指纹 46A762F3C3CF3732DE22A8BA1EBBA3BC048F9B8C
         * 由 UTN - DATACorp SGC 签发的中级证书颁发机构
-        * 所属机构为 [沃通CA](http://www.wosign.com)
+        * 所属 [沃通CA](http://www.wosign.com)
     * China Trust Network(1)
         * SHA-1 指纹 C2CAEB0DC296FD50596BCA0F53C5364521167039
-        * 所属机构为 [iTrusChina/天威诚信数字认证中心](http://www.itrus.com.cn)
+        * 所属 [iTrusChina/天威诚信数字认证中心](http://www.itrus.com.cn)
     * China Trust Network(2)
         * SHA-1 指纹 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA
-        * 所属机构为 [iTrusChina/天威诚信数字认证中心](http://www.itrus.com.cn)
+        * 所属 [iTrusChina/天威诚信数字认证中心](http://www.itrus.com.cn)
     * China Trust Network(3)
         * SHA-1 指纹 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3
-        * 所属机构为 [iTrusChina/天威诚信数字认证中心](http://www.itrus.com.cn)
+        * 所属 [iTrusChina/天威诚信数字认证中心](http://www.itrus.com.cn)
