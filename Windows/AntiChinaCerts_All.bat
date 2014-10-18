@@ -129,17 +129,17 @@ CertMgr_x86 -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r localMa
 CertMgr_x86 -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r CurrentUser AuthRoot
-::  Certification_Authority_Of_WoSign
+::  Certification Authority of WoSign
 CertMgr_x86 -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r CurrentUser AuthRoot
-::  Certification_Authority_Of_WoSign(Chinese)
+::  Certification Authority of WoSign(Chinese)
 CertMgr_x86 -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r CurrentUser AuthRoot
-::  Class_1_Primary_CA
+::  Class 1 Primary CA
 CertMgr_x86 -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r CurrentUser Root
@@ -147,6 +147,9 @@ CertMgr_x86 -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r Current
 ::  Certification Authority of WoSign(StartCom)
 CertMgr_x86 -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s -r localMachine CA
 CertMgr_x86 -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s -r CurrentUser CA
+::  Certification Authority of WoSign(USERTrust)
+CertMgr_x86 -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r localMachine CA
+CertMgr_x86 -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r CurrentUser CA
 ::  WoSign Premium Server Authority(USERTrust)
 CertMgr_x86 -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s -r localMachine CA
 CertMgr_x86 -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s -r CurrentUser CA
@@ -165,17 +168,17 @@ CertMgr_x86 -del -c -sha1 337DF96418F08A9355870513AFCEBDC68BCED767 -s -r Current
 ::  WoTrust SGC Server Authority(USERTrust)
 CertMgr_x86 -del -c -sha1 46A762F3C3CF3732DE22A8BA1EBBA3BC048F9B8C -s -r localMachine CA
 CertMgr_x86 -del -c -sha1 46A762F3C3CF3732DE22A8BA1EBBA3BC048F9B8C -s -r CurrentUser CA
-::  China_Trust_Network(1) [QuantumGhost]
+::  China Trust Network(1) [QuantumGhost]
 CertMgr_x86 -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r CurrentUser AuthRoot
-::  China_Trust_Network(2) [QuantumGhost]
+::  China Trust Network(2) [QuantumGhost]
 CertMgr_x86 -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r CurrentUser AuthRoot
-::  China_Trust_Network(3) [QuantumGhost]
+::  China Trust Network(3) [QuantumGhost]
 CertMgr_x86 -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r CurrentUser Root
@@ -254,6 +257,7 @@ CertMgr_x86 -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
 CertMgr_x86 -add -c Certification_Authority_Of_WoSign_Chinese.crt -s Disallowed
 CertMgr_x86 -add -c Class_1_Primary_CA.crt -s Disallowed
 CertMgr_x86 -add -c Certification_Authority_Of_WoSign_StartCom.crt -s Disallowed
+CertMgr_x86 -add -c Certification_Authority_Of_WoSign_USERTrust.crt -s Disallowed
 CertMgr_x86 -add -c WoSign_Premium_Server_Authority_USERTrust.crt -s Disallowed
 CertMgr_x86 -add -c WoSign_Server_Authority_USERTrust.crt -s Disallowed
 CertMgr_x86 -add -c WoSign_SGC_Server_Authority_USERTrust.crt -s Disallowed
@@ -378,17 +382,17 @@ CertMgr -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r localMachin
 CertMgr -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r CurrentUser Root
 CertMgr -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r CurrentUser AuthRoot
-::  Certification_Authority_Of_WoSign
+::  Certification Authority of WoSign
 CertMgr -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r localMachine Root
 CertMgr -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r CurrentUser Root
 CertMgr -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r CurrentUser AuthRoot
-::  Certification_Authority_Of_WoSign(Chinese)
+::  Certification Authority of WoSign(Chinese)
 CertMgr -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r localMachine Root
 CertMgr -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r CurrentUser Root
 CertMgr -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r CurrentUser AuthRoot
-::  Class_1_Primary_CA
+::  Class 1 Primary CA
 CertMgr -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r localMachine Root
 CertMgr -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r CurrentUser Root
@@ -396,6 +400,9 @@ CertMgr -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r CurrentUser
 ::  Certification Authority of WoSign(StartCom)
 CertMgr -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s -r localMachine CA
 CertMgr -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s -r CurrentUser CA
+::  Certification Authority of WoSign(USERTrust)
+CertMgr -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r localMachine CA
+CertMgr -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r CurrentUser CA
 ::  WoSign Premium Server Authority(USERTrust)
 CertMgr -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s -r localMachine CA
 CertMgr -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s -r CurrentUser CA
@@ -414,17 +421,17 @@ CertMgr -del -c -sha1 337DF96418F08A9355870513AFCEBDC68BCED767 -s -r CurrentUser
 ::  WoTrust SGC Server Authority(USERTrust)
 CertMgr -del -c -sha1 46A762F3C3CF3732DE22A8BA1EBBA3BC048F9B8C -s -r localMachine CA
 CertMgr -del -c -sha1 46A762F3C3CF3732DE22A8BA1EBBA3BC048F9B8C -s -r CurrentUser CA
-::  China_Trust_Network(1 [QuantumGhost]
+::  China Trust Network(1) [QuantumGhost]
 CertMgr -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r localMachine Root
 CertMgr -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r CurrentUser Root
 CertMgr -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r CurrentUser AuthRoot
-::  China_Trust_Network(2 [QuantumGhost]
+::  China Trust_Network(2) [QuantumGhost]
 CertMgr -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r localMachine Root
 CertMgr -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r CurrentUser Root
 CertMgr -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s -r CurrentUser AuthRoot
-::  China_Trust_Network(3 [QuantumGhost]
+::  China Trust Network(3) [QuantumGhost]
 CertMgr -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r localMachine Root
 CertMgr -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s -r CurrentUser Root
@@ -503,6 +510,7 @@ CertMgr -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
 CertMgr -add -c Certification_Authority_Of_WoSign_Chinese.crt -s Disallowed
 CertMgr -add -c Class_1_Primary_CA.crt -s Disallowed
 CertMgr -add -c Certification_Authority_Of_WoSign_StartCom.crt -s Disallowed
+CertMgr -add -c Certification_Authority_Of_WoSign_USERTrust.crt -s Disallowed
 CertMgr -add -c WoSign_Premium_Server_Authority_USERTrust.crt -s Disallowed
 CertMgr -add -c WoSign_Server_Authority_USERTrust.crt -s Disallowed
 CertMgr -add -c WoSign_SGC_Server_Authority_USERTrust.crt -s Disallowed

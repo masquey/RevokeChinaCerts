@@ -1,6 +1,6 @@
 ﻿AntiChinaCerts
 ==============
-Anti China Certifications.
+Anti China Certifications.<br />
 全自动可疑证书吊销工具
 
 ### 更新日期
@@ -163,6 +163,10 @@ Anti China Certifications.
         * SHA-1 指纹 868241C8B85AF79E2DAC79EDADB723E82A36AFC3
         * 由 StartCom Certification Authority 签发的中级证书颁发机构
         * 所属 [沃通CA](http://www.wosign.com)
+    * Certification Authority of WoSign
+        * SHA-1 指纹 56FAADDC596DCF78D585D83A35BC04B690D12736
+        * 由 UTN - DATACorp SGC 签发的中级证书颁发机构
+        * 所属 [沃通CA](http://www.wosign.com)
     * WoSign Premium Server Authority
         * SHA-1 指纹 E3D569137E603E7BACB6BCC66AE943850C8ADF38
         * 由 AddTrust External CA Root/UTN-USERFirst-Hardware 签发的中级证书颁发机构
@@ -211,22 +215,22 @@ Anti China Certifications.
         * 所属 [Government Root Certification Authority, GRCA](http://grca.nat.gov.tw/GRCAeng/htdocs/index.html)
     * TWCA Global Root CA
         * SHA-1 指纹 9CBB4853F6A4F6D352A4E83252556013F5ADAF65
-        * 所属 [TWCA - 臺灣網路認證](www.twca.com.tw/Portal/Portal.aspx)
+        * 所属 [TWCA - 臺灣網路認證](http://www.twca.com.tw/Portal/Portal.aspx)
     * TWCA Root Certification Authority(1)
         * SHA-1 指纹 CF9E876DD3EBFC422697A3B5A37AA076A9062348
-        * 所属 [TWCA - 臺灣網路認證](www.twca.com.tw/Portal/Portal.aspx)
+        * 所属 [TWCA - 臺灣網路認證](http://www.twca.com.tw/Portal/Portal.aspx)
     * TWCA Root Certification Authority(2)
         * SHA-1 指纹 DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F
-        * 所属 [TWCA - 臺灣網路認證](www.twca.com.tw/Portal/Portal.aspx)
+        * 所属 [TWCA - 臺灣網路認證](http://www.twca.com.tw/Portal/Portal.aspx)
     * TaiCA Secure CA
         * SHA-1 指纹 5B404B6DB43E1F71557F75552E7668289B1B6309
         * 由 GTE CyberTrust Global Root 签发的中级证书颁发机构
-        * 所属 [TWCA - 臺灣網路認證](www.twca.com.tw/Portal/Portal.aspx)
+        * 所属 [TWCA - 臺灣網路認證](http://www.twca.com.tw/Portal/Portal.aspx)
     * TWCA Secure CA
         * SHA-1 指纹 3F3E6C4B33802A2FEA46C5CACA14770A40018899
         * 由 Baltimore CyberTrust Root 签发的中级证书颁发机构
-        * 所属 [TWCA - 臺灣網路認證](www.twca.com.tw/Portal/Portal.aspx)
+        * 所属 [TWCA - 臺灣網路認證](http://www.twca.com.tw/Portal/Portal.aspx)
     * TWCA Secure Certification Authority
         * SHA-1 指纹 339D811FEC673E7F731307A34C7C7523ABBE7DFE
         * 由 AddTrust External CA Root 签发的中级证书颁发机构
-        * 所属 [TWCA - 臺灣網路認證](www.twca.com.tw/Portal/Portal.aspx)
+        * 所属 [TWCA - 臺灣網路認證](http://www.twca.com.tw/Portal/Portal.aspx)

@@ -80,6 +80,8 @@ CertMgr_x86 -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s Disallowed
 CertMgr_x86 -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s Disallowed
 ::  Certification Authority of WoSign(StartCom)
 CertMgr_x86 -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s Disallowed
+::  Certification Authority of WoSign(USERTrust)
+CertMgr_x86 -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s Disallowed
 ::  WoSign Premium Server Authority(USERTrust)
 CertMgr_x86 -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s Disallowed
 ::  WoSign Server Authority(USERTrust)
@@ -153,6 +155,8 @@ CertMgr -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s Disallowed
 CertMgr -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s Disallowed
 ::  Certification Authority of WoSign(StartCom)
 CertMgr -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s Disallowed
+::  Certification Authority of WoSign(USERTrust)
+CertMgr -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s Disallowed
 ::  WoSign Premium Server Authority(USERTrust)
 CertMgr -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s Disallowed
 ::  WoSign Server Authority(USERTrust)
