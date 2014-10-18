@@ -59,6 +59,11 @@ CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMa
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine AuthRoot
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser Root
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser AuthRoot
+::  Fake Www.Icound.Com(2014-10-04) [YFdyh000]
+CertMgr_x86 -del -c -sha1 F468B5F3FED807974476A22B32EA3137D924F7BA -s -r localMachine Root
+CertMgr_x86 -del -c -sha1 F468B5F3FED807974476A22B32EA3137D924F7BA -s -r localMachine AuthRoot
+CertMgr_x86 -del -c -sha1 F468B5F3FED807974476A22B32EA3137D924F7BA -s -r CurrentUser Root
+CertMgr_x86 -del -c -sha1 F468B5F3FED807974476A22B32EA3137D924F7BA -s -r CurrentUser AuthRoot
 ::  CNNIC ROOT
 CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine Root
 CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine AuthRoot
@@ -82,6 +87,7 @@ CertMgr_x86 -add -c Fake_GoogleCom_201409.crt -s Disallowed
 CertMgr_x86 -add -c Fake_YahooCom_201409.crt -s Disallowed
 CertMgr_x86 -add -c Fake_HotmaiCom_201410.crt -s Disallowed
 CertMgr_x86 -add -c Fake_WwwFacebookCom_201410.crt -s Disallowed
+CertMgr_x86 -add -c Fake_WwwIcloudCom_201410.crt -s Disallowed
 CertMgr_x86 -add -c CNNIC_ROOT.crt -s Disallowed
 CertMgr_x86 -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 CertMgr_x86 -add -c CNNIC_SSL_Entrust.crt -s Disallowed
@@ -120,6 +126,11 @@ CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachin
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r localMachine AuthRoot
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser Root
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s -r CurrentUser AuthRoot
+::  Fake Www.Icound.Com(2014-10-04) [YFdyh000]
+CertMgr -del -c -sha1 F468B5F3FED807974476A22B32EA3137D924F7BA -s -r localMachine Root
+CertMgr -del -c -sha1 F468B5F3FED807974476A22B32EA3137D924F7BA -s -r localMachine AuthRoot
+CertMgr -del -c -sha1 F468B5F3FED807974476A22B32EA3137D924F7BA -s -r CurrentUser Root
+CertMgr -del -c -sha1 F468B5F3FED807974476A22B32EA3137D924F7BA -s -r CurrentUser AuthRoot
 ::  CNNIC ROOT
 CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine Root
 CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s -r localMachine AuthRoot
@@ -143,6 +154,7 @@ CertMgr -add -c Fake_GoogleCom_201409.crt -s Disallowed
 CertMgr -add -c Fake_YahooCom_201409.crt -s Disallowed
 CertMgr -add -c Fake_HotmaiCom_201410.crt -s Disallowed
 CertMgr -add -c Fake_WwwFacebookCom_201410.crt -s Disallowed
+CertMgr -add -c Fake_WwwIcloudCom_201410.crt -s Disallowed
 CertMgr -add -c CNNIC_ROOT.crt -s Disallowed
 CertMgr -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 CertMgr -add -c CNNIC_ROOT.crt -s Disallowed

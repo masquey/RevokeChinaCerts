@@ -41,6 +41,8 @@ CertMgr_x86 -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s Disallowed
 CertMgr_x86 -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s Disallowed
 ::  Fake Www.Facebook.Com(2014-10-08) [Yiwen Zhang]
 CertMgr_x86 -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s Disallowed
+::  Fake Www.Icound.Com(2014-10-04) [YFdyh000]
+CertMgr_x86 -del -c -sha1 F468B5F3FED807974476A22B32EA3137D924F7BA -s Disallowed
 ::  CNNIC ROOT
 CertMgr_x86 -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s Disallowed
 ::  China Internet Network Information Center EV Certificates Root
@@ -61,7 +63,7 @@ CertMgr_x86 -del -c -sha1 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF -s Disallowed
 CertMgr_x86 -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s Disallowed
 ::  UCA Extended Validation Root
 CertMgr_x86 -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s Disallowed
-::  UCA Root(2001-01-01)
+::  UCA ROOT(2001-01-01)
 CertMgr_x86 -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s Disallowed
 ::  GoAgent CA [lenovo-me]
 CertMgr_x86 -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s Disallowed
@@ -113,6 +115,8 @@ CertMgr -del -c -sha1 2290C311EA0F3F57E06DF45B698E18E828E59BC3 -s Disallowed
 CertMgr -del -c -sha1 30F3B3ADC6E570BDA606B9F96DE24190CE262C67 -s Disallowed
 ::  Fake Www.Facebook.Com(2014-10-08) [Yiwen Zhang]
 CertMgr -del -c -sha1 DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318 -s Disallowed
+::  Fake Www.Icound.Com(2014-10-04) [YFdyh000]
+CertMgr -del -c -sha1 F468B5F3FED807974476A22B32EA3137D924F7BA -s Disallowed
 ::  CNNIC ROOT
 CertMgr -del -c -sha1 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F -s Disallowed
 ::  China Internet Network Information Center EV Certificates Root
@@ -132,7 +136,7 @@ CertMgr -del -c -sha1 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF -s Disallowed
 CertMgr -del -c -sha1 8250BED5A214433A66377CBC10EF83F669DA3A67 -s Disallowed
 ::  UCA Extended Validation Root
 CertMgr -del -c -sha1 B9C9F58B3BBEF575E2B58328770E7B0076C40B5E -s Disallowed
-::  UCA Root(2001-01-01)
+::  UCA ROOT(2001-01-01)
 CertMgr -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s Disallowed
 ::  GoAgent CA [lenovo-me]
 CertMgr -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s Disallowed
