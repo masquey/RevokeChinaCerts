@@ -1,7 +1,7 @@
 :: AntiChinaCerts Restore batch
 :: Anti China Certifications.
 :: 
-:: Author: Chengr28
+:: Author: JayXon, Chengr28
 :: 
 
 @echo off
@@ -24,9 +24,9 @@ RootSUPD_201403_x86
 ::cls
 cd /d %~dp0\Certs
 
-Set CertMgr=CertMgr
 :: Architecture check
-if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" Set CertMgr=%CertMgr%_x86
+set CertMgr=CertMgr
+if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%CertMgr%_x86
 
 :: Delete certifications(Base)
 ::  Fake GitHub.Com(2013-01-25)

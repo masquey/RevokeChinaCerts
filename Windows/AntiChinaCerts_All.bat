@@ -1,7 +1,7 @@
 :: AntiChinaCerts All batch
 :: Anti China Certifications.
 :: 
-:: Author: Chengr28
+:: Author: JayXon, Chengr28
 :: 
 
 @echo off
@@ -24,9 +24,9 @@ RootSUPD_201403_x86
 ::cls
 cd /d %~dp0\Certs
 
-Set CertMgr=CertMgr
 :: Architecture check
-if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" Set CertMgr=%CertMgr%_x86
+set CertMgr=CertMgr
+if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%CertMgr%_x86
 
 :: Delete certifications(Base)
 ::  Fake GitHub.Com(2013-01-25)
@@ -147,7 +147,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" Set CertMgr=%Cert
 ::  Certification Authority of WoSign(StartCom)
 %CertMgr% -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s -r localMachine CA
 %CertMgr% -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s -r CurrentUser CA
-::  Certification Authority of WoSign(USERTrust)
+::  Certification Authority of WoSign(USERTrust) [v998]
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r localMachine CA
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r CurrentUser CA
 ::  WoSign Premium Server Authority(USERTrust)
