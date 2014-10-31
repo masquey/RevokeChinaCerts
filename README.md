@@ -3,7 +3,7 @@
 Anti China Certifications.<br />
 全自动可疑证书吊销工具
 
-### 更新日期
+### Updated
 **2014-10-18**
 
 ### Windows 批处理类型
