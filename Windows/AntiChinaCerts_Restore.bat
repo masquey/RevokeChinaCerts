@@ -49,7 +49,8 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E -s Disallowed
 ::  CNNIC SSL(Entrust)
 %CertMgr% -del -c -sha1 6856BB1A6C4F76DACA362187CC2CCD484EDDC25D -s Disallowed
-::  Fake Www.Facebook.Com(2014-10-08) [Yiwen Zhang]
+::  Baidu WACC service [SCFWSE]
+%CertMgr% -del -c -sha1 561422647B89BE22F203EBCAEF52B5007227510A -s Disallowed
 :: Delete certifications(Extended)
 ::  CFCA GT CA(2011-06-13)
 %CertMgr% -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s Disallowed

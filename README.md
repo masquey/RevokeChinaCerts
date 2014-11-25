@@ -4,7 +4,7 @@ Anti China Certifications.<br />
 全自动可疑证书吊销工具/全自動可疑憑證撤銷工具<br />
 
 ### Updated
-**2014-10-31**
+**2014-11-25**
 
 ### Usage
 * [English version](https://github.com/chengr28/AntiChinaCerts/wiki/ReadMe)
