@@ -1,5 +1,5 @@
-:: AntiChinaCerts Base batch
-:: Anti China Certifications.
+:: RevokeChinaCerts Base batch
+:: Revoke China Certificates.
 :: 
 :: Author: JayXon, Chengr28
 :: 
@@ -18,7 +18,7 @@
 ::del /f /q %SystemPath%\TestPermission.log
 
 cd /d %~dp0
-:: Update certifications list of system.
+:: Update certificates list of system.
 RootSUPD_201403_x86
 
 ::cls
@@ -28,7 +28,7 @@ cd /d %~dp0\Certs
 set CertMgr=CertMgr
 if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%CertMgr%_x86
 
-:: Delete certifications(Base)
+:: Delete certificates(Base part)
 ::  Fake GitHub.Com(2013-01-25)
 %CertMgr% -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s -r localMachine Root
 %CertMgr% -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s -r localMachine AuthRoot
@@ -83,7 +83,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 
 @echo.
 
-:: Add certifications to CRL(Base)
+:: Add certificates to CRL(Base part)
 %CertMgr% -add -c Fake_GitHubCom_201301.crt -s Disallowed
 %CertMgr% -add -c Fake_GoogleCom_201407.crt -s Disallowed
 %CertMgr% -add -c Fake_GoogleCom_201409.crt -s Disallowed
@@ -94,7 +94,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -add -c CNNIC_ROOT.crt -s Disallowed
 %CertMgr% -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 %CertMgr% -add -c CNNIC_SSL_Entrust.crt -s Disallowed
-%CertMgr% -add -c Monitor_WaccBaiduCom.crt -s Disallowed
+%CertMgr% -add -c Suspicious_WaccBaiduCom.crt -s Disallowed
 
 :Exit
 :: Print to screen.

@@ -1,15 +1,15 @@
-﻿AntiChinaCerts
+﻿RevokeChinaCerts
 ==============
-Anti China Certifications.<br />
+Revoke China Certificates.<br />
 全自动可疑证书吊销工具/全自動可疑憑證撤銷工具<br />
 
 ### Updated
-**2014-11-25**
+**2014-11-28**
 
 ### Usage
-* [English version](https://github.com/chengr28/AntiChinaCerts/wiki/ReadMe)
-* [简体中文使用说明](https://github.com/chengr28/AntiChinaCerts/wiki/ReadMe(Chinese_Simplified))
-* [繁體中文使用說明](https://github.com/chengr28/AntiChinaCerts/wiki/ReadMe(Chinese_Traditional))
+* [English version](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe)
+* [简体中文使用说明](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe(Chinese_Simplified))
+* [繁體中文使用說明](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe(Chinese_Traditional))
 
 ### 特别说明/特別說明
 * **Extended** 版和 **All** 版会自动吊销 GoAgent 自带的 `GoAgent CA` 证书，为免使用 GoAgent 时出现错误同时也为了系统加密连接的安全强烈建议更换其自带的 CA 根证书。**关闭所有 GoAgent 程序，进入其 `local` 目录删除 `CA.crt` 以及整个 `certs` 目录，然后清空所有浏览器数据重启 GoAgent 和浏览器即可。**

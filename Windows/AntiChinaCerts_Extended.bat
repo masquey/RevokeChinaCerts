@@ -1,5 +1,5 @@
-:: AntiChinaCerts Extended batch
-:: Anti China Certifications.
+:: RevokeChinaCerts Extended batch
+:: Revoke China Certificates.
 :: 
 :: Author: JayXon, Chengr28
 :: 
@@ -18,7 +18,7 @@
 ::del /f /q %SystemPath%\TestPermission.log
 
 cd /d %~dp0
-:: Update certifications list of system.
+:: Update certificates list of system.
 RootSUPD_201403_x86
 
 ::cls
@@ -28,7 +28,7 @@ cd /d %~dp0\Certs
 set CertMgr=CertMgr
 if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%CertMgr%_x86
 
-:: Delete certifications(Base)
+:: Delete certificates(Base part)
 ::  Fake GitHub.Com(2013-01-25)
 %CertMgr% -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s -r localMachine Root
 %CertMgr% -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s -r localMachine AuthRoot
@@ -80,7 +80,8 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 ::  Baidu WACC service [SCFWSE]
 %CertMgr% -del -c -sha1 561422647B89BE22F203EBCAEF52B5007227510A -s -r localMachine CA
 %CertMgr% -del -c -sha1 561422647B89BE22F203EBCAEF52B5007227510A -s -r CurrentUser CA
-:: Delete certifications(Extended)
+
+:: Delete certificates(Extended part)
 ::  CFCA GT CA(2011-06-13)
 %CertMgr% -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s -r localMachine Root
 %CertMgr% -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s -r localMachine AuthRoot
@@ -121,10 +122,20 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s -r CurrentUser AuthRoot
+::  SZCA [yfdyh000]
+%CertMgr% -del -c -sha1 B0049D436F27237EE59C746A1EF3C96A8E1B54AC -s -r localMachine Root
+%CertMgr% -del -c -sha1 B0049D436F27237EE59C746A1EF3C96A8E1B54AC -s -r localMachine AuthRoot
+%CertMgr% -del -c -sha1 B0049D436F27237EE59C746A1EF3C96A8E1B54AC -s -r CurrentUser Root
+%CertMgr% -del -c -sha1 B0049D436F27237EE59C746A1EF3C96A8E1B54AC -s -r CurrentUser AuthRoot
+::  SZCA(2003-07-22) [yfdyh000]
+%CertMgr% -del -c -sha1 90D7A97592F0A3E2165DE5DA23B57701D74A298D -s -r localMachine Root
+%CertMgr% -del -c -sha1 90D7A97592F0A3E2165DE5DA23B57701D74A298D -s -r localMachine AuthRoot
+%CertMgr% -del -c -sha1 90D7A97592F0A3E2165DE5DA23B57701D74A298D -s -r CurrentUser Root
+%CertMgr% -del -c -sha1 90D7A97592F0A3E2165DE5DA23B57701D74A298D -s -r CurrentUser AuthRoot
 
 @echo.
 
-:: Add certifications to CRL(Base)
+:: Add certificates to CRL(Base part)
 %CertMgr% -add -c Fake_GitHubCom_201301.crt -s Disallowed
 %CertMgr% -add -c Fake_GoogleCom_201407.crt -s Disallowed
 %CertMgr% -add -c Fake_GoogleCom_201409.crt -s Disallowed
@@ -135,8 +146,8 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -add -c CNNIC_ROOT.crt -s Disallowed
 %CertMgr% -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 %CertMgr% -add -c CNNIC_SSL_Entrust.crt -s Disallowed
-%CertMgr% -add -c Monitor_WaccBaiduCom.crt -s Disallowed
-:: Add certifications to CRL(Extended)
+%CertMgr% -add -c Suspicious_WaccBaiduCom.crt -s Disallowed
+:: Add certificates to CRL(Extended part)
 ::  Move to All version.
 ::  %CertMgr% -add -c ROOTCA.crt -s Disallowed
 %CertMgr% -add -c CFCA_GT_CA_201106.crt -s Disallowed
@@ -146,7 +157,9 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -add -c UCA_Root_200401.crt -s Disallowed
 %CertMgr% -add -c UCA_Extended_Validation_Root.crt -s Disallowed
 %CertMgr% -add -c UCA_ROOT_200101.crt -s Disallowed
-%CertMgr% -add -c Monitor_GoAgent_CA.crt -s Disallowed
+%CertMgr% -add -c Suspicious_GoAgent_CA.crt -s Disallowed
+%CertMgr% -add -c SZCA.crt -s Disallowed
+%CertMgr% -add -c SZCA_200307.crt -s Disallowed
 
 :Exit
 :: Print to screen.

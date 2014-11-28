@@ -1,5 +1,5 @@
-:: AntiChinaCerts Restore batch
-:: Anti China Certifications.
+:: RevokeChinaCerts Restore batch
+:: Revoke China Certificates.
 :: 
 :: Author: JayXon, Chengr28
 :: 
@@ -18,7 +18,7 @@
 ::del /f /q %SystemPath%\TestPermission.log
 
 cd /d %~dp0
-:: Update certifications list of system.
+:: Update certificates list of system.
 RootSUPD_201403_x86
 
 ::cls
@@ -28,7 +28,7 @@ cd /d %~dp0\Certs
 set CertMgr=CertMgr
 if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%CertMgr%_x86
 
-:: Delete certifications(Base)
+:: Restore certificates(Base part)
 ::  Fake GitHub.Com(2013-01-25)
 %CertMgr% -del -c -sha1 27A29C3A8B3261770E8B59448557DC9E9339E68C -s Disallowed
 ::  Fake Google.Com(2014-07-24)
@@ -51,7 +51,8 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 6856BB1A6C4F76DACA362187CC2CCD484EDDC25D -s Disallowed
 ::  Baidu WACC service [SCFWSE]
 %CertMgr% -del -c -sha1 561422647B89BE22F203EBCAEF52B5007227510A -s Disallowed
-:: Delete certifications(Extended)
+
+:: Restore certificates(Extended part)
 ::  CFCA GT CA(2011-06-13)
 %CertMgr% -del -c -sha1 EABDA240440ABBD694930A01D09764C6C2D77966 -s Disallowed
 ::  CFCA GT CA(2012-08-21) [YFdyh000]
@@ -68,20 +69,25 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 3120F295417730075F8CD42D0CAE008EB5726EF8 -s Disallowed
 ::  GoAgent CA [lenovo-me]
 %CertMgr% -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s Disallowed
-:: Delete certifications(All)
+::  SZCA [yfdyh000]
+%CertMgr% -del -c -sha1 B0049D436F27237EE59C746A1EF3C96A8E1B54AC -s Disallowed
+::  SZCA(2003-07-22) [yfdyh000]
+%CertMgr% -del -c -sha1 90D7A97592F0A3E2165DE5DA23B57701D74A298D -s Disallowed
+
+:: Restore certificates(All part)
 ::  ROOTCA
 %CertMgr% -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s Disallowed
 ::  SRCA
 %CertMgr% -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s Disallowed
-::  Certification_Authority_Of_WoSign
+::  Certificate_Authority_Of_WoSign
 %CertMgr% -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s Disallowed
-::  Certification_Authority_Of_WoSign(Chinese)
+::  Certificate_Authority_Of_WoSign(Chinese)
 %CertMgr% -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s Disallowed
 ::  Class_1_Primary_CA
 %CertMgr% -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s Disallowed
-::  Certification Authority of WoSign(StartCom)
+::  Certificate Authority of WoSign(StartCom)
 %CertMgr% -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s Disallowed
-::  Certification Authority of WoSign(USERTrust)
+::  Certificate Authority of WoSign(USERTrust)
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s Disallowed
 ::  WoSign Premium Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s Disallowed
