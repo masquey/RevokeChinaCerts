@@ -1,5 +1,5 @@
-# AntiChinaCerts Mac shell
-# Anti China Certifications.
+# RevokeChinaCerts Mac shell
+# Revoke China Certificates.
 # 
 # Author: QuantumGhost
 # 

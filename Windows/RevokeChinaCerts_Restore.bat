@@ -87,7 +87,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s Disallowed
 ::  Certificate Authority of WoSign(StartCom)
 %CertMgr% -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s Disallowed
-::  Certificate Authority of WoSign(USERTrust)
+::  Certificate Authority of WoSign(USERTrust) [v998]
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s Disallowed
 ::  WoSign Premium Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s Disallowed
@@ -107,6 +107,30 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s Disallowed
 ::  China_Trust_Network_3 [QuantumGhost]
 %CertMgr% -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s Disallowed
+::  Hongkong Post Root CA
+%CertMgr% -del -c -sha1 E0925E18C7765E22DABD9427529DA6AF4E066428 -s Disallowed
+::  Hongkong Post Root CA 1 [v998]
+%CertMgr% -del -c -sha1 D6DAA8208D09D2154D24B52FCB346EB258B28A58 -s Disallowed
+::  Macao Post eSignTrust Root Certification Authority
+%CertMgr% -del -c -sha1 89C32E6B524E4D65388B9ECEDC637134ED4193A3 -s Disallowed
+::  Macao Post eSignTrust Root Certification Authority(G02)
+%CertMgr% -del -c -sha1 06143151E02B45DDBADD5D8E56530DAAE328CF90 -s Disallowed
+::  ePKI Root Certificate Authority
+%CertMgr% -del -c -sha1 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0 -s Disallowed
+::  Government Root Certificate Authority
+%CertMgr% -del -c -sha1 F48B11BFDEABBE94542071E641DE6BBE882B40B9 -s Disallowed
+::  TWCA Global Root CA
+%CertMgr% -del -c -sha1 9CBB4853F6A4F6D352A4E83252556013F5ADAF65 -s Disallowed
+::  TWCA Root Certificate Authority(1)
+%CertMgr% -del -c -sha1 CF9E876DD3EBFC422697A3B5A37AA076A9062348 -s Disallowed
+::  TWCA Root Certificate Authority(2)
+%CertMgr% -del -c -sha1 DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F -s Disallowed
+::  TaiCA Secure CA
+%CertMgr% -del -c -sha1 5B404B6DB43E1F71557F75552E7668289B1B6309 -s Disallowed
+::  TWCA Secure CA
+%CertMgr% -del -c -sha1 3F3E6C4B33802A2FEA46C5CACA14770A40018899 -s Disallowed
+::  TWCA Secure Certificate Authority
+%CertMgr% -del -c -sha1 339D811FEC673E7F731307A34C7C7523ABBE7DFE -s Disallowed
 
 :Exit
 :: Print to screen.

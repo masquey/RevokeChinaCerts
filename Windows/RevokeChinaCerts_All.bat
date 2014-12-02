@@ -208,6 +208,16 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 D6DAA8208D09D2154D24B52FCB346EB258B28A58 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 D6DAA8208D09D2154D24B52FCB346EB258B28A58 -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 D6DAA8208D09D2154D24B52FCB346EB258B28A58 -s -r CurrentUser AuthRoot
+::  Macao Post eSignTrust Root Certification Authority
+%CertMgr% -del -c -sha1 89C32E6B524E4D65388B9ECEDC637134ED4193A3 -s -r localMachine Root
+%CertMgr% -del -c -sha1 89C32E6B524E4D65388B9ECEDC637134ED4193A3 -s -r localMachine AuthRoot
+%CertMgr% -del -c -sha1 89C32E6B524E4D65388B9ECEDC637134ED4193A3 -s -r CurrentUser Root
+%CertMgr% -del -c -sha1 89C32E6B524E4D65388B9ECEDC637134ED4193A3 -s -r CurrentUser AuthRoot
+::  Macao Post eSignTrust Root Certification Authority(G02)
+%CertMgr% -del -c -sha1 06143151E02B45DDBADD5D8E56530DAAE328CF90 -s -r localMachine Root
+%CertMgr% -del -c -sha1 06143151E02B45DDBADD5D8E56530DAAE328CF90 -s -r localMachine AuthRoot
+%CertMgr% -del -c -sha1 06143151E02B45DDBADD5D8E56530DAAE328CF90 -s -r CurrentUser Root
+%CertMgr% -del -c -sha1 06143151E02B45DDBADD5D8E56530DAAE328CF90 -s -r CurrentUser AuthRoot
 ::  ePKI Root Certificate Authority
 %CertMgr% -del -c -sha1 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0 -s -r localMachine Root
 %CertMgr% -del -c -sha1 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0 -s -r localMachine AuthRoot
@@ -246,17 +256,17 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 @echo.
 
 :: Add certificates to CRL(Base part)
-%CertMgr% -add -c Fake_GitHubCom_201301.crt -s Disallowed
-%CertMgr% -add -c Fake_GoogleCom_201407.crt -s Disallowed
-%CertMgr% -add -c Fake_GoogleCom_201409.crt -s Disallowed
-%CertMgr% -add -c Fake_YahooCom_201409.crt -s Disallowed
-%CertMgr% -add -c Fake_HotmaiCom_201410.crt -s Disallowed
-%CertMgr% -add -c Fake_WwwFacebookCom_201410.crt -s Disallowed
-%CertMgr% -add -c Fake_WwwIcloudCom_201410.crt -s Disallowed
+%CertMgr% -add -c [Fake]GitHubCom_201301.crt -s Disallowed
+%CertMgr% -add -c [Fake]GoogleCom_201407.crt -s Disallowed
+%CertMgr% -add -c [Fake]GoogleCom_201409.crt -s Disallowed
+%CertMgr% -add -c [Fake]YahooCom_201409.crt -s Disallowed
+%CertMgr% -add -c [Fake]HotmaiCom_201410.crt -s Disallowed
+%CertMgr% -add -c [Fake]WwwFacebookCom_201410.crt -s Disallowed
+%CertMgr% -add -c [Fake]WwwIcloudCom_201410.crt -s Disallowed
 %CertMgr% -add -c CNNIC_ROOT.crt -s Disallowed
 %CertMgr% -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 %CertMgr% -add -c CNNIC_SSL_Entrust.crt -s Disallowed
-%CertMgr% -add -c Suspicious_WaccBaiduCom.crt -s Disallowed
+%CertMgr% -add -c [Suspicious]WaccBaiduCom.crt -s Disallowed
 :: Add certificates to CRL(Extended part)
 %CertMgr% -add -c CFCA_GT_CA_201106.crt -s Disallowed
 %CertMgr% -add -c CFCA_GT_CA_201208.crt -s Disallowed
@@ -265,7 +275,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -add -c UCA_Root_200401.crt -s Disallowed
 %CertMgr% -add -c UCA_Extended_Validation_Root.crt -s Disallowed
 %CertMgr% -add -c UCA_ROOT_200101.crt -s Disallowed
-%CertMgr% -add -c Suspicious_GoAgent_CA.crt -s Disallowed
+%CertMgr% -add -c [Suspicious]GoAgent_CA.crt -s Disallowed
 %CertMgr% -add -c SZCA.crt -s Disallowed
 %CertMgr% -add -c SZCA_200307.crt -s Disallowed
 :: Add certificates to CRL(All part)
@@ -287,6 +297,8 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -add -c China_Trust_Network_3.crt -s Disallowed
 %CertMgr% -add -c Hongkong_Post_Root_CA.crt -s Disallowed
 %CertMgr% -add -c Hongkong_Post_Root_CA_1.crt -s Disallowed
+%CertMgr% -add -c Macao_Post_eSignTrust_Root_Certification_Authority.crt -s Disallowed
+%CertMgr% -add -c Macao_Post_eSignTrust_Root_Certification_Authority_G02.crt -s Disallowed
 %CertMgr% -add -c ePKI_Root_Certificate_Authority.crt -s Disallowed
 %CertMgr% -add -c Government_Root_Certificate_Authority.crt -s Disallowed
 %CertMgr% -add -c TWCA_Global_Root_CA.crt -s Disallowed

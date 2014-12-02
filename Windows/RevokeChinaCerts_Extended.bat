@@ -136,17 +136,17 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 @echo.
 
 :: Add certificates to CRL(Base part)
-%CertMgr% -add -c Fake_GitHubCom_201301.crt -s Disallowed
-%CertMgr% -add -c Fake_GoogleCom_201407.crt -s Disallowed
-%CertMgr% -add -c Fake_GoogleCom_201409.crt -s Disallowed
-%CertMgr% -add -c Fake_YahooCom_201409.crt -s Disallowed
-%CertMgr% -add -c Fake_HotmaiCom_201410.crt -s Disallowed
-%CertMgr% -add -c Fake_WwwFacebookCom_201410.crt -s Disallowed
-%CertMgr% -add -c Fake_WwwIcloudCom_201410.crt -s Disallowed
+%CertMgr% -add -c [Fake]GitHubCom_201301.crt -s Disallowed
+%CertMgr% -add -c [Fake]GoogleCom_201407.crt -s Disallowed
+%CertMgr% -add -c [Fake]GoogleCom_201409.crt -s Disallowed
+%CertMgr% -add -c [Fake]YahooCom_201409.crt -s Disallowed
+%CertMgr% -add -c [Fake]HotmaiCom_201410.crt -s Disallowed
+%CertMgr% -add -c [Fake]WwwFacebookCom_201410.crt -s Disallowed
+%CertMgr% -add -c [Fake]WwwIcloudCom_201410.crt -s Disallowed
 %CertMgr% -add -c CNNIC_ROOT.crt -s Disallowed
 %CertMgr% -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
 %CertMgr% -add -c CNNIC_SSL_Entrust.crt -s Disallowed
-%CertMgr% -add -c Suspicious_WaccBaiduCom.crt -s Disallowed
+%CertMgr% -add -c [Suspicious]WaccBaiduCom.crt -s Disallowed
 :: Add certificates to CRL(Extended part)
 ::  Move to All version.
 ::  %CertMgr% -add -c ROOTCA.crt -s Disallowed
@@ -157,7 +157,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -add -c UCA_Root_200401.crt -s Disallowed
 %CertMgr% -add -c UCA_Extended_Validation_Root.crt -s Disallowed
 %CertMgr% -add -c UCA_ROOT_200101.crt -s Disallowed
-%CertMgr% -add -c Suspicious_GoAgent_CA.crt -s Disallowed
+%CertMgr% -add -c [Suspicious]GoAgent_CA.crt -s Disallowed
 %CertMgr% -add -c SZCA.crt -s Disallowed
 %CertMgr% -add -c SZCA_200307.crt -s Disallowed
 
