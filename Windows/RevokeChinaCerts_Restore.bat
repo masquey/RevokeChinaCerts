@@ -79,33 +79,45 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s Disallowed
 ::  SRCA
 %CertMgr% -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s Disallowed
-::  Certificate_Authority_Of_WoSign
+::  Certification Authority of WoSign
 %CertMgr% -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s Disallowed
-::  Certificate_Authority_Of_WoSign(Chinese)
+::  Certification Authority of WoSign(Chinese)
 %CertMgr% -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s Disallowed
-::  Class_1_Primary_CA
+::  Class 1 Primary CA
 %CertMgr% -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s Disallowed
-::  Certificate Authority of WoSign(StartCom)
+::  Certification Authority of WoSign(2009-08-08)
+%CertMgr% -del -c -sha1 33A4D8BC38608EF52EF0E28A35091E9250907FB9 -s Disallowed
+::  Certification Authority of WoSign(StartCom)
 %CertMgr% -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s Disallowed
-::  Certificate Authority of WoSign(USERTrust) [v998]
+::  Certification Authority of WoSign(Chinese/StartCom) [v998]
+%CertMgr% -del -c -sha1 D8EFF6C28BB508E4702565F42748454A872BD412 -s Disallowed
+::  Certification Authority of WoSign(USERTrust) [v998]
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s Disallowed
+::  Certification Authority of WoSign(WoSign 1999)
+%CertMgr% -del -c -sha1 9ADCA1BE88600F87ADBE9F806EF8772CF7E778DE -s Disallowed
+::  Certification Authority of WoSign(Chinese/WoSign 1999)
+%CertMgr% -del -c -sha1 B2FBDA222493A93C38F77C90D4BE6DA17F15F0B0 -s Disallowed
 ::  WoSign Premium Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s Disallowed
 ::  WoSign Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 3E14B8BD6C568657D852D95D387249AE857B4A39 -s Disallowed
 ::  WoSign SGC Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 6D5A18050D56BFDE525CBE89E8C45DD1B53D12E9 -s Disallowed
+::  WoSign Client Authority(USERTrust)
+%CertMgr% -del -c -sha1 FAD4319D4E173FF3853E51C98D21919BF3DA1A1E -s Disallowed
 ::  WoTrust Premium Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 381CBC5048AFD9A02D3E5882D5F22D962B1A5F72 -s Disallowed
 ::  WoTrust Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 337DF96418F08A9355870513AFCEBDC68BCED767 -s Disallowed
 ::  WoTrust SGC Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 46A762F3C3CF3732DE22A8BA1EBBA3BC048F9B8C -s Disallowed
-::  China_Trust_Network_1 [QuantumGhost]
+::  WoTrust Client Authority(USERTrust)
+%CertMgr% -del -c -sha1 38CFE78D9F1F0B0637AFCAAA3D5549D87C0AA1D0 -s Disallowed
+::  China Trust Network(1) [QuantumGhost]
 %CertMgr% -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s Disallowed
-::  China_Trust_Network_2 [QuantumGhost]
+::  China Trust Network(2) [QuantumGhost]
 %CertMgr% -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s Disallowed
-::  China_Trust_Network_3 [QuantumGhost]
+::  China Trust Network(3) [QuantumGhost]
 %CertMgr% -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s Disallowed
 ::  Hongkong Post Root CA
 %CertMgr% -del -c -sha1 E0925E18C7765E22DABD9427529DA6AF4E066428 -s Disallowed
@@ -115,21 +127,21 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 89C32E6B524E4D65388B9ECEDC637134ED4193A3 -s Disallowed
 ::  Macao Post eSignTrust Root Certification Authority(G02)
 %CertMgr% -del -c -sha1 06143151E02B45DDBADD5D8E56530DAAE328CF90 -s Disallowed
-::  ePKI Root Certificate Authority
+::  ePKI Root Certification Authority
 %CertMgr% -del -c -sha1 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0 -s Disallowed
-::  Government Root Certificate Authority
+::  Government Root Certification Authority
 %CertMgr% -del -c -sha1 F48B11BFDEABBE94542071E641DE6BBE882B40B9 -s Disallowed
 ::  TWCA Global Root CA
 %CertMgr% -del -c -sha1 9CBB4853F6A4F6D352A4E83252556013F5ADAF65 -s Disallowed
-::  TWCA Root Certificate Authority(1)
+::  TWCA Root Certification Authority(1)
 %CertMgr% -del -c -sha1 CF9E876DD3EBFC422697A3B5A37AA076A9062348 -s Disallowed
-::  TWCA Root Certificate Authority(2)
+::  TWCA Root Certification Authority(2)
 %CertMgr% -del -c -sha1 DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F -s Disallowed
 ::  TaiCA Secure CA
 %CertMgr% -del -c -sha1 5B404B6DB43E1F71557F75552E7668289B1B6309 -s Disallowed
 ::  TWCA Secure CA
 %CertMgr% -del -c -sha1 3F3E6C4B33802A2FEA46C5CACA14770A40018899 -s Disallowed
-::  TWCA Secure Certificate Authority
+::  TWCA Secure Certification Authority
 %CertMgr% -del -c -sha1 339D811FEC673E7F731307A34C7C7523ABBE7DFE -s Disallowed
 
 :Exit

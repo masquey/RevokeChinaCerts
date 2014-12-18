@@ -144,12 +144,12 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s -r CurrentUser AuthRoot
-::  Certificate Authority of WoSign
+::  Certification Authority of WoSign
 %CertMgr% -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r localMachine Root
 %CertMgr% -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 B94294BF91EA8FB64BE61097C7FB001359B676CB -s -r CurrentUser AuthRoot
-::  Certificate Authority of WoSign(Chinese)
+::  Certification Authority of WoSign(Chinese)
 %CertMgr% -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r localMachine Root
 %CertMgr% -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 1632478D89F9213A92008563F5A4A7D312408AD6 -s -r CurrentUser Root
@@ -159,12 +159,26 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s -r CurrentUser AuthRoot
-::  Certificate Authority of WoSign(StartCom)
+::  Certification Authority of WoSign(2009-08-08)
+%CertMgr% -del -c -sha1 33A4D8BC38608EF52EF0E28A35091E9250907FB9 -s -r localMachine Root
+%CertMgr% -del -c -sha1 33A4D8BC38608EF52EF0E28A35091E9250907FB9 -s -r localMachine AuthRoot
+%CertMgr% -del -c -sha1 33A4D8BC38608EF52EF0E28A35091E9250907FB9 -s -r CurrentUser Root
+%CertMgr% -del -c -sha1 33A4D8BC38608EF52EF0E28A35091E9250907FB9 -s -r CurrentUser AuthRoot
+::  Certification Authority of WoSign(StartCom)
 %CertMgr% -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s -r localMachine CA
 %CertMgr% -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s -r CurrentUser CA
-::  Certificate Authority of WoSign(USERTrust) [v998]
+::  Certification Authority of WoSign(Chinese/StartCom) [v998]
+%CertMgr% -del -c -sha1 D8EFF6C28BB508E4702565F42748454A872BD412 -s -r localMachine CA
+%CertMgr% -del -c -sha1 D8EFF6C28BB508E4702565F42748454A872BD412 -s -r CurrentUser CA
+::  Certification Authority of WoSign(USERTrust) [v998]
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r localMachine CA
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r CurrentUser CA
+::  Certification Authority of WoSign(WoSign 1999)
+%CertMgr% -del -c -sha1 9ADCA1BE88600F87ADBE9F806EF8772CF7E778DE -s -r localMachine CA
+%CertMgr% -del -c -sha1 9ADCA1BE88600F87ADBE9F806EF8772CF7E778DE -s -r CurrentUser CA
+::  Certification Authority of WoSign(Chinese/WoSign 1999)
+%CertMgr% -del -c -sha1 B2FBDA222493A93C38F77C90D4BE6DA17F15F0B0 -s -r localMachine CA
+%CertMgr% -del -c -sha1 B2FBDA222493A93C38F77C90D4BE6DA17F15F0B0 -s -r CurrentUser CA
 ::  WoSign Premium Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s -r localMachine CA
 %CertMgr% -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s -r CurrentUser CA
@@ -174,6 +188,9 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 ::  WoSign SGC Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 6D5A18050D56BFDE525CBE89E8C45DD1B53D12E9 -s -r localMachine CA
 %CertMgr% -del -c -sha1 6D5A18050D56BFDE525CBE89E8C45DD1B53D12E9 -s -r CurrentUser CA
+::  WoSign Client Authority(USERTrust)
+%CertMgr% -del -c -sha1 FAD4319D4E173FF3853E51C98D21919BF3DA1A1E -s -r localMachine CA
+%CertMgr% -del -c -sha1 FAD4319D4E173FF3853E51C98D21919BF3DA1A1E -s -r CurrentUser CA
 ::  WoTrust Premium Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 381CBC5048AFD9A02D3E5882D5F22D962B1A5F72 -s -r localMachine CA
 %CertMgr% -del -c -sha1 381CBC5048AFD9A02D3E5882D5F22D962B1A5F72 -s -r CurrentUser CA
@@ -183,6 +200,9 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 ::  WoTrust SGC Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 46A762F3C3CF3732DE22A8BA1EBBA3BC048F9B8C -s -r localMachine CA
 %CertMgr% -del -c -sha1 46A762F3C3CF3732DE22A8BA1EBBA3BC048F9B8C -s -r CurrentUser CA
+::  WoTrust Client Authority(USERTrust)
+%CertMgr% -del -c -sha1 38CFE78D9F1F0B0637AFCAAA3D5549D87C0AA1D0 -s -r localMachine CA
+%CertMgr% -del -c -sha1 38CFE78D9F1F0B0637AFCAAA3D5549D87C0AA1D0 -s -r CurrentUser CA
 ::  China Trust Network(1) [QuantumGhost]
 %CertMgr% -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r localMachine Root
 %CertMgr% -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s -r localMachine AuthRoot
@@ -218,12 +238,12 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 06143151E02B45DDBADD5D8E56530DAAE328CF90 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 06143151E02B45DDBADD5D8E56530DAAE328CF90 -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 06143151E02B45DDBADD5D8E56530DAAE328CF90 -s -r CurrentUser AuthRoot
-::  ePKI Root Certificate Authority
+::  ePKI Root Certification Authority
 %CertMgr% -del -c -sha1 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0 -s -r localMachine Root
 %CertMgr% -del -c -sha1 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0 -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0 -s -r CurrentUser AuthRoot
-::  Government Root Certificate Authority
+::  Government Root Certification Authority
 %CertMgr% -del -c -sha1 F48B11BFDEABBE94542071E641DE6BBE882B40B9 -s -r localMachine Root
 %CertMgr% -del -c -sha1 F48B11BFDEABBE94542071E641DE6BBE882B40B9 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 F48B11BFDEABBE94542071E641DE6BBE882B40B9 -s -r CurrentUser Root
@@ -233,12 +253,12 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 9CBB4853F6A4F6D352A4E83252556013F5ADAF65 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 9CBB4853F6A4F6D352A4E83252556013F5ADAF65 -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 9CBB4853F6A4F6D352A4E83252556013F5ADAF65 -s -r CurrentUser AuthRoot
-::  TWCA Root Certificate Authority(1)
+::  TWCA Root Certification Authority(1)
 %CertMgr% -del -c -sha1 CF9E876DD3EBFC422697A3B5A37AA076A9062348 -s -r localMachine Root
 %CertMgr% -del -c -sha1 CF9E876DD3EBFC422697A3B5A37AA076A9062348 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 CF9E876DD3EBFC422697A3B5A37AA076A9062348 -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 CF9E876DD3EBFC422697A3B5A37AA076A9062348 -s -r CurrentUser AuthRoot
-::  TWCA Root Certificate Authority(2)
+::  TWCA Root Certification Authority(2)
 %CertMgr% -del -c -sha1 DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F -s -r localMachine Root
 %CertMgr% -del -c -sha1 DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F -s -r CurrentUser Root
@@ -249,7 +269,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 ::  TWCA Secure CA
 %CertMgr% -del -c -sha1 3F3E6C4B33802A2FEA46C5CACA14770A40018899 -s -r localMachine CA
 %CertMgr% -del -c -sha1 3F3E6C4B33802A2FEA46C5CACA14770A40018899 -s -r CurrentUser CA
-::  TWCA Secure Certificate Authority
+::  TWCA Secure Certification Authority
 %CertMgr% -del -c -sha1 339D811FEC673E7F731307A34C7C7523ABBE7DFE -s -r localMachine CA
 %CertMgr% -del -c -sha1 339D811FEC673E7F731307A34C7C7523ABBE7DFE -s -r CurrentUser CA
 
@@ -281,17 +301,23 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 :: Add certificates to CRL(All part)
 %CertMgr% -add -c ROOTCA_OSCCA.crt -s Disallowed
 %CertMgr% -add -c SRCA.crt -s Disallowed
-%CertMgr% -add -c Certificate_Authority_Of_WoSign.crt -s Disallowed
-%CertMgr% -add -c Certificate_Authority_Of_WoSign_Chinese.crt -s Disallowed
+%CertMgr% -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
+%CertMgr% -add -c Certification_Authority_Of_WoSign_Chinese.crt -s Disallowed
 %CertMgr% -add -c Class_1_Primary_CA.crt -s Disallowed
-%CertMgr% -add -c Certificate_Authority_Of_WoSign_StartCom.crt -s Disallowed
-%CertMgr% -add -c Certificate_Authority_Of_WoSign_USERTrust.crt -s Disallowed
+%CertMgr% -add -c Certification_Authority_Of_WoSign_200908.crt -s Disallowed
+%CertMgr% -add -c Certification_Authority_Of_WoSign_StartCom.crt -s Disallowed
+%CertMgr% -add -c Certification_Authority_Of_WoSign_Chinese_StartCom.crt -s Disallowed
+%CertMgr% -add -c Certification_Authority_Of_WoSign_USERTrust.crt -s Disallowed
+%CertMgr% -add -c Certification_Authority_Of_WoSign_WoSign_1999.crt -s Disallowed
+%CertMgr% -add -c Certification_Authority_Of_WoSign_Chinese_WoSign_1999.crt -s Disallowed
 %CertMgr% -add -c WoSign_Premium_Server_Authority_USERTrust.crt -s Disallowed
 %CertMgr% -add -c WoSign_Server_Authority_USERTrust.crt -s Disallowed
 %CertMgr% -add -c WoSign_SGC_Server_Authority_USERTrust.crt -s Disallowed
+%CertMgr% -add -c WoSign_Client_Authority_USERTrust.crt -s Disallowed
 %CertMgr% -add -c WoTrust_Premium_Server_Authority_USERTrust.crt -s Disallowed
 %CertMgr% -add -c WoTrust_Server_Authority_USERTrust.crt -s Disallowed
 %CertMgr% -add -c WoTrust_SGC_Server_Authority_USERTrust.crt -s Disallowed
+%CertMgr% -add -c WoTrust_Client_Authority_USERTrust.crt -s Disallowed
 %CertMgr% -add -c China_Trust_Network_1.crt -s Disallowed
 %CertMgr% -add -c China_Trust_Network_2.crt -s Disallowed
 %CertMgr% -add -c China_Trust_Network_3.crt -s Disallowed
@@ -299,14 +325,14 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -add -c Hongkong_Post_Root_CA_1.crt -s Disallowed
 %CertMgr% -add -c Macao_Post_eSignTrust_Root_Certification_Authority.crt -s Disallowed
 %CertMgr% -add -c Macao_Post_eSignTrust_Root_Certification_Authority_G02.crt -s Disallowed
-%CertMgr% -add -c ePKI_Root_Certificate_Authority.crt -s Disallowed
-%CertMgr% -add -c Government_Root_Certificate_Authority.crt -s Disallowed
+%CertMgr% -add -c ePKI_Root_Certification_Authority.crt -s Disallowed
+%CertMgr% -add -c Government_Root_Certification_Authority.crt -s Disallowed
 %CertMgr% -add -c TWCA_Global_Root_CA.crt -s Disallowed
-%CertMgr% -add -c TWCA_Root_Certificate_Authority_1.crt -s Disallowed
-%CertMgr% -add -c TWCA_Root_Certificate_Authority_2.crt -s Disallowed
+%CertMgr% -add -c TWCA_Root_Certification_Authority_1.crt -s Disallowed
+%CertMgr% -add -c TWCA_Root_Certification_Authority_2.crt -s Disallowed
 %CertMgr% -add -c TaiCA_Secure_CA_GTE.crt -s Disallowed
 %CertMgr% -add -c TWCA_Secure_CA_Baltimore.crt -s Disallowed
-%CertMgr% -add -c TWCA_Secure_Certificate_Authority_USERTrust.crt -s Disallowed
+%CertMgr% -add -c TWCA_Secure_Certification_Authority_USERTrust.crt -s Disallowed
 
 :Exit
 :: Print to screen.
