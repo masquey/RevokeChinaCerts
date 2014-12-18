@@ -93,10 +93,6 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 D8EFF6C28BB508E4702565F42748454A872BD412 -s Disallowed
 ::  Certification Authority of WoSign(USERTrust) [v998]
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s Disallowed
-::  Certification Authority of WoSign(WoSign 1999)
-%CertMgr% -del -c -sha1 9ADCA1BE88600F87ADBE9F806EF8772CF7E778DE -s Disallowed
-::  Certification Authority of WoSign(Chinese/WoSign 1999)
-%CertMgr% -del -c -sha1 B2FBDA222493A93C38F77C90D4BE6DA17F15F0B0 -s Disallowed
 ::  WoSign Premium Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s Disallowed
 ::  WoSign Server Authority(USERTrust)

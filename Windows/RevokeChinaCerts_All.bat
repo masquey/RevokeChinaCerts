@@ -173,12 +173,6 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 ::  Certification Authority of WoSign(USERTrust) [v998]
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r localMachine CA
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r CurrentUser CA
-::  Certification Authority of WoSign(WoSign 1999)
-%CertMgr% -del -c -sha1 9ADCA1BE88600F87ADBE9F806EF8772CF7E778DE -s -r localMachine CA
-%CertMgr% -del -c -sha1 9ADCA1BE88600F87ADBE9F806EF8772CF7E778DE -s -r CurrentUser CA
-::  Certification Authority of WoSign(Chinese/WoSign 1999)
-%CertMgr% -del -c -sha1 B2FBDA222493A93C38F77C90D4BE6DA17F15F0B0 -s -r localMachine CA
-%CertMgr% -del -c -sha1 B2FBDA222493A93C38F77C90D4BE6DA17F15F0B0 -s -r CurrentUser CA
 ::  WoSign Premium Server Authority(USERTrust)
 %CertMgr% -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s -r localMachine CA
 %CertMgr% -del -c -sha1 E3D569137E603E7BACB6BCC66AE943850C8ADF38 -s -r CurrentUser CA
@@ -308,8 +302,6 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -add -c Certification_Authority_Of_WoSign_StartCom.crt -s Disallowed
 %CertMgr% -add -c Certification_Authority_Of_WoSign_Chinese_StartCom.crt -s Disallowed
 %CertMgr% -add -c Certification_Authority_Of_WoSign_USERTrust.crt -s Disallowed
-%CertMgr% -add -c Certification_Authority_Of_WoSign_WoSign_1999.crt -s Disallowed
-%CertMgr% -add -c Certification_Authority_Of_WoSign_Chinese_WoSign_1999.crt -s Disallowed
 %CertMgr% -add -c WoSign_Premium_Server_Authority_USERTrust.crt -s Disallowed
 %CertMgr% -add -c WoSign_Server_Authority_USERTrust.crt -s Disallowed
 %CertMgr% -add -c WoSign_SGC_Server_Authority_USERTrust.crt -s Disallowed
