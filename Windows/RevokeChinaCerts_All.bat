@@ -313,6 +313,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -add -c Certification_Authority_Of_WoSign_200908.crt -s Disallowed
 %CertMgr% -add -c Certification_Authority_Of_WoSign_StartCom_201103_1.crt -s Disallowed
 %CertMgr% -add -c Certification_Authority_Of_WoSign_StartCom_201103_2.crt -s Disallowed
+%CertMgr% -add -c Certification_Authority_Of_WoSign_StartCom_200609.crt -s Disallowed
 %CertMgr% -add -c Certification_Authority_Of_WoSign_Chinese_StartCom.crt -s Disallowed
 %CertMgr% -add -c Certification_Authority_Of_WoSign_USERTrust.crt -s Disallowed
 %CertMgr% -add -c WoSign_Premium_Server_Authority_USERTrust.crt -s Disallowed

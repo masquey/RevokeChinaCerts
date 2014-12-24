@@ -4,7 +4,7 @@ Revoke China Certificates.<br />
 全自动可疑证书吊销工具/全自動可疑憑證撤銷工具<br />
 
 ### Updated
-**2014-12-24**
+**2014-12-25**
 
 ### Usage
 * [English version](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe)
