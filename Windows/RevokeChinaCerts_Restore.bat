@@ -51,6 +51,8 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 6856BB1A6C4F76DACA362187CC2CCD484EDDC25D -s Disallowed
 ::  Baidu WACC service [SCFWSE]
 %CertMgr% -del -c -sha1 561422647B89BE22F203EBCAEF52B5007227510A -s Disallowed
+::  GiantRootCA
+%CertMgr% -del -c -sha1 7514436E903C901069980499CA70DE74FC06C83C -s Disallowed
 
 :: Restore certificates(Extended part)
 ::  CFCA GT CA(2011-06-13)
@@ -70,13 +72,13 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 ::  GoAgent CA [lenovo-me]
 %CertMgr% -del -c -sha1 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33 -s Disallowed
 ::  SZCA [yfdyh000]
-%CertMgr% -del -c -sha1 B0049D436F27237EE59C746A1EF3C96A8E1B54AC -s Disallowed
+::%CertMgr% -del -c -sha1 B0049D436F27237EE59C746A1EF3C96A8E1B54AC -s Disallowed
 ::  SZCA(2003-07-22) [yfdyh000]
-%CertMgr% -del -c -sha1 90D7A97592F0A3E2165DE5DA23B57701D74A298D -s Disallowed
+::%CertMgr% -del -c -sha1 90D7A97592F0A3E2165DE5DA23B57701D74A298D -s Disallowed
 
 :: Restore certificates(All part)
 ::  ROOTCA
-%CertMgr% -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s Disallowed
+::%CertMgr% -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s Disallowed
 ::  SRCA
 %CertMgr% -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s Disallowed
 ::  Certification Authority of WoSign
@@ -87,8 +89,12 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 %CertMgr% -del -c -sha1 6A174570A916FBE84453EED3D070A1D8DA442829 -s Disallowed
 ::  Certification Authority of WoSign(2009-08-08)
 %CertMgr% -del -c -sha1 33A4D8BC38608EF52EF0E28A35091E9250907FB9 -s Disallowed
-::  Certification Authority of WoSign(StartCom)
+::  Certification Authority of WoSign 1(StartCom/2011-03-01)
 %CertMgr% -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s Disallowed
+::  Certification Authority of WoSign 2(StartCom/2011-03-01)
+%CertMgr% -del -c -sha1 692790DA5189529CC5CE1E16E984277A03023E99 -s Disallowed
+::  Certification Authority of WoSign(StartCom/2006-09-18)
+%CertMgr% -del -c -sha1 804E5FB7DE84F5F5B28347233EAF07846B6070D3 -s Disallowed
 ::  Certification Authority of WoSign(Chinese/StartCom) [v998]
 %CertMgr% -del -c -sha1 D8EFF6C28BB508E4702565F42748454A872BD412 -s Disallowed
 ::  Certification Authority of WoSign(USERTrust) [v998]
@@ -110,11 +116,11 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 ::  WoTrust Client Authority(USERTrust)
 %CertMgr% -del -c -sha1 38CFE78D9F1F0B0637AFCAAA3D5549D87C0AA1D0 -s Disallowed
 ::  China Trust Network(1) [QuantumGhost]
-%CertMgr% -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s Disallowed
+::%CertMgr% -del -c -sha1 C2CAEB0DC296FD50596BCA0F53C5364521167039 -s Disallowed
 ::  China Trust Network(2) [QuantumGhost]
-%CertMgr% -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s Disallowed
+::%CertMgr% -del -c -sha1 B39B0B24B156D8B6123CAF7BA249DC81F27E39FA -s Disallowed
 ::  China Trust Network(3) [QuantumGhost]
-%CertMgr% -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s Disallowed
+::%CertMgr% -del -c -sha1 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3 -s Disallowed
 ::  Hongkong Post Root CA
 %CertMgr% -del -c -sha1 E0925E18C7765E22DABD9427529DA6AF4E066428 -s Disallowed
 ::  Hongkong Post Root CA 1 [v998]
