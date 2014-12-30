@@ -16,17 +16,14 @@
 ::echo "Permission check." >> %SystemPath%\TestPermission.log
 ::if not exist %SystemPath%\TestPermission.log (echo Require Administrator Permission. && pause > nul && Exit)
 ::del /f /q %SystemPath%\TestPermission.log
-
 cd /d %~dp0
-:: Update certificates list of system.
-RootSUPD_201403_x86
 
-::cls
-cd /d %~dp0\Certs
+:: Update certificates list of system.
+"%~dp0\Tools\RootSUPD_201403_x86"
 
 :: Architecture check
-set CertMgr=CertMgr
-if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%CertMgr%_x86
+set CertMgr="%~dp0\Tools\CertMgr"
+if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr="%~dp0\Tools\CertMgr_x86"
 
 :: Delete certificates(Base part)
 ::  Fake GitHub.Com(2013-01-25)
@@ -139,7 +136,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 ::%CertMgr% -del -c -sha1 90D7A97592F0A3E2165DE5DA23B57701D74A298D -s -r CurrentUser AuthRoot
 
 :: Delete certificates(All part)
-::  ROOTCA
+::  ROOTCA OSCCA
 ::%CertMgr% -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine Root
 ::%CertMgr% -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r localMachine AuthRoot
 ::%CertMgr% -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s -r CurrentUser Root
@@ -281,68 +278,69 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 @echo.
 
 :: Add certificates to CRL(Base part)
-%CertMgr% -add -c [Fake]GitHubCom_201301.crt -s Disallowed
-%CertMgr% -add -c [Fake]GoogleCom_201407.crt -s Disallowed
-%CertMgr% -add -c [Fake]GoogleCom_201409.crt -s Disallowed
-%CertMgr% -add -c [Fake]YahooCom_201409.crt -s Disallowed
-%CertMgr% -add -c [Fake]HotmaiCom_201410.crt -s Disallowed
-%CertMgr% -add -c [Fake]WwwFacebookCom_201410.crt -s Disallowed
-%CertMgr% -add -c [Fake]WwwIcloudCom_201410.crt -s Disallowed
-%CertMgr% -add -c CNNIC_ROOT.crt -s Disallowed
-%CertMgr% -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
-%CertMgr% -add -c CNNIC_SSL_Entrust.crt -s Disallowed
-%CertMgr% -add -c [Suspicious]WaccBaiduCom.crt -s Disallowed
-%CertMgr% -add -c GiantRootCA.crt -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]GitHubCom_201301.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]GoogleCom_201407.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]GoogleCom_201409.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]YahooCom_201409.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]HotmaiCom_201410.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]WwwFacebookCom_201410.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]WwwIcloudCom_201410.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\CNNIC_ROOT.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\China_Internet_Network_Information_Center_EV_Certificates_Root.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\CNNIC_SSL_Entrust.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Suspicious]WaccBaiduCom.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\GiantRootCA.crt" -s Disallowed
 :: Add certificates to CRL(Extended part)
-%CertMgr% -add -c CFCA_GT_CA_201106.crt -s Disallowed
-%CertMgr% -add -c CFCA_GT_CA_201208.crt -s Disallowed
-%CertMgr% -add -c CFCA_EV_ROOT.crt -s Disallowed
-%CertMgr% -add -c UCA_Global_Root.crt -s Disallowed
-%CertMgr% -add -c UCA_Root_200401.crt -s Disallowed
-%CertMgr% -add -c UCA_Extended_Validation_Root.crt -s Disallowed
-%CertMgr% -add -c UCA_ROOT_200101.crt -s Disallowed
-%CertMgr% -add -c [Suspicious]GoAgent_CA.crt -s Disallowed
-::%CertMgr% -add -c SZCA.crt -s Disallowed
-::%CertMgr% -add -c SZCA_200307.crt -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\CFCA_GT_CA_201106.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\CFCA_GT_CA_201208.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\CFCA_EV_ROOT.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\UCA_Global_Root.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\UCA_Root_200401.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\UCA_Extended_Validation_Root.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\UCA_ROOT_200101.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Suspicious]GoAgent_CA.crt" -s Disallowed
+::%CertMgr% -add -c "%~dp0\Certs\SZCA.crt" -s Disallowed
+::%CertMgr% -add -c "%~dp0\Certs\SZCA_200307.crt" -s Disallowed
 :: Add certificates to CRL(All part)
-::%CertMgr% -add -c ROOTCA_OSCCA.crt -s Disallowed
-%CertMgr% -add -c SRCA.crt -s Disallowed
-%CertMgr% -add -c Certification_Authority_Of_WoSign.crt -s Disallowed
-%CertMgr% -add -c Certification_Authority_Of_WoSign_Chinese.crt -s Disallowed
-%CertMgr% -add -c Class_1_Primary_CA.crt -s Disallowed
-%CertMgr% -add -c Certification_Authority_Of_WoSign_200908.crt -s Disallowed
-%CertMgr% -add -c Certification_Authority_Of_WoSign_StartCom_201103_1.crt -s Disallowed
-%CertMgr% -add -c Certification_Authority_Of_WoSign_StartCom_201103_2.crt -s Disallowed
-%CertMgr% -add -c Certification_Authority_Of_WoSign_StartCom_200609.crt -s Disallowed
-%CertMgr% -add -c Certification_Authority_Of_WoSign_Chinese_StartCom.crt -s Disallowed
-%CertMgr% -add -c Certification_Authority_Of_WoSign_USERTrust.crt -s Disallowed
-%CertMgr% -add -c WoSign_Premium_Server_Authority_USERTrust.crt -s Disallowed
-%CertMgr% -add -c WoSign_Server_Authority_USERTrust.crt -s Disallowed
-%CertMgr% -add -c WoSign_SGC_Server_Authority_USERTrust.crt -s Disallowed
-%CertMgr% -add -c WoSign_Client_Authority_USERTrust.crt -s Disallowed
-%CertMgr% -add -c WoTrust_Premium_Server_Authority_USERTrust.crt -s Disallowed
-%CertMgr% -add -c WoTrust_Server_Authority_USERTrust.crt -s Disallowed
-%CertMgr% -add -c WoTrust_SGC_Server_Authority_USERTrust.crt -s Disallowed
-%CertMgr% -add -c WoTrust_Client_Authority_USERTrust.crt -s Disallowed
-::%CertMgr% -add -c China_Trust_Network_1.crt -s Disallowed
-::%CertMgr% -add -c China_Trust_Network_2.crt -s Disallowed
-::%CertMgr% -add -c China_Trust_Network_3.crt -s Disallowed
-%CertMgr% -add -c Hongkong_Post_Root_CA.crt -s Disallowed
-%CertMgr% -add -c Hongkong_Post_Root_CA_1.crt -s Disallowed
-%CertMgr% -add -c Macao_Post_eSignTrust_Root_Certification_Authority.crt -s Disallowed
-%CertMgr% -add -c Macao_Post_eSignTrust_Root_Certification_Authority_G02.crt -s Disallowed
-%CertMgr% -add -c ePKI_Root_Certification_Authority.crt -s Disallowed
-%CertMgr% -add -c Government_Root_Certification_Authority.crt -s Disallowed
-%CertMgr% -add -c TWCA_Global_Root_CA.crt -s Disallowed
-%CertMgr% -add -c TWCA_Root_Certification_Authority_1.crt -s Disallowed
-%CertMgr% -add -c TWCA_Root_Certification_Authority_2.crt -s Disallowed
-%CertMgr% -add -c TaiCA_Secure_CA_GTE.crt -s Disallowed
-%CertMgr% -add -c TWCA_Secure_CA_Baltimore.crt -s Disallowed
-%CertMgr% -add -c TWCA_Secure_Certification_Authority_USERTrust.crt -s Disallowed
+::%CertMgr% -add -c "%~dp0\Certs\ROOTCA_OSCCA.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\SRCA.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Certification_Authority_Of_WoSign.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Certification_Authority_Of_WoSign_Chinese.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Class_1_Primary_CA.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Certification_Authority_Of_WoSign_200908.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Certification_Authority_Of_WoSign_StartCom_201103_1.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Certification_Authority_Of_WoSign_StartCom_201103_2.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Certification_Authority_Of_WoSign_StartCom_200609.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Certification_Authority_Of_WoSign_Chinese_StartCom.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Certification_Authority_Of_WoSign_USERTrust.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\WoSign_Premium_Server_Authority_USERTrust.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\WoSign_Server_Authority_USERTrust.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\WoSign_SGC_Server_Authority_USERTrust.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\WoSign_Client_Authority_USERTrust.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\WoTrust_Premium_Server_Authority_USERTrust.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\WoTrust_Server_Authority_USERTrust.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\WoTrust_SGC_Server_Authority_USERTrust.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\WoTrust_Client_Authority_USERTrust.crt" -s Disallowed
+::%CertMgr% -add -c "%~dp0\Certs\China_Trust_Network_1.crt" -s Disallowed
+::%CertMgr% -add -c "%~dp0\Certs\China_Trust_Network_2.crt" -s Disallowed
+::%CertMgr% -add -c "%~dp0\Certs\China_Trust_Network_3.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Hongkong_Post_Root_CA.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Hongkong_Post_Root_CA_1.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Macao_Post_eSignTrust_Root_Certification_Authority.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Macao_Post_eSignTrust_Root_Certification_Authority_G02.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\ePKI_Root_Certification_Authority.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Government_Root_Certification_Authority.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\TWCA_Global_Root_CA.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\TWCA_Root_Certification_Authority_1.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\TWCA_Root_Certification_Authority_2.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\TaiCA_Secure_CA_GTE.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\TWCA_Secure_CA_Baltimore.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\TWCA_Secure_Certification_Authority_USERTrust.crt" -s Disallowed
 
-:Exit
 :: Print to screen.
+::Exit
 @echo.
+@echo RevokeChinaCerts All version
 @echo Done. Please confirm the messages on screen.
 @echo.
 @pause

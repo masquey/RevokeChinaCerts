@@ -1,4 +1,4 @@
-# RevokeChinaCerts Mac shell
+# RevokeChinaCerts shell(Mac)
 # Revoke China Certificates.
 # 
 # Author: QuantumGhost

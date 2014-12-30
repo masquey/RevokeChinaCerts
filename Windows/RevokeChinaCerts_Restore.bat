@@ -6,27 +6,13 @@
 
 @echo off
 
-:: Permission check
-:: Administrator permissions are not necessary(2014-09-21)
-::if "%PROCESSOR_ARCHITECTURE%" == "AMD64" (set SystemPath = %SystemRoot%\SysWOW64) else (set SystemPath = %SystemRoot%\system32)
-::rd "%SystemPath%\Test_Permissions" > nul 2 > nul
-::md "%SystemPath%\Test_Permissions" 2 > nul || (echo Require Administrator Permission. && pause > nul && Exit)
-::rd "%SystemPath%\Test_Permissions" > nul 2 > nul
-::del /f /q %SystemPath%\TestPermission.log
-::echo "Permission check." >> %SystemPath%\TestPermission.log
-::if not exist %SystemPath%\TestPermission.log (echo Require Administrator Permission. && pause > nul && Exit)
-::del /f /q %SystemPath%\TestPermission.log
-
-cd /d %~dp0
 :: Update certificates list of system.
-RootSUPD_201403_x86
-
-::cls
-cd /d %~dp0\Certs
+cd /d %~dp0
+"%~dp0\Tools\RootSUPD_201403_x86"
 
 :: Architecture check
-set CertMgr=CertMgr
-if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%CertMgr%_x86
+set CertMgr="%~dp0\Tools\CertMgr"
+if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr="%~dp0\Tools\CertMgr_x86"
 
 :: Restore certificates(Base part)
 ::  Fake GitHub.Com(2013-01-25)
@@ -77,7 +63,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 ::%CertMgr% -del -c -sha1 90D7A97592F0A3E2165DE5DA23B57701D74A298D -s Disallowed
 
 :: Restore certificates(All part)
-::  ROOTCA
+::  ROOTCA OSCCA
 ::%CertMgr% -del -c -sha1 DBB84423C928ABE889D0E368FC3191D151DDB1AB -s Disallowed
 ::  SRCA
 %CertMgr% -del -c -sha1 AE3F2E66D48FC6BD1DF131E89D768D505DF14302 -s Disallowed
@@ -146,9 +132,10 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 ::  TWCA Secure Certification Authority
 %CertMgr% -del -c -sha1 339D811FEC673E7F731307A34C7C7523ABBE7DFE -s Disallowed
 
-:Exit
 :: Print to screen.
+::Exit
 @echo.
+@echo RevokeChinaCerts Restore version
 @echo Done. Please confirm the messages on screen.
 @echo.
 @pause

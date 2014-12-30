@@ -16,17 +16,14 @@
 ::echo "Permission check." >> %SystemPath%\TestPermission.log
 ::if not exist %SystemPath%\TestPermission.log (echo Require Administrator Permission. && pause > nul && Exit)
 ::del /f /q %SystemPath%\TestPermission.log
-
 cd /d %~dp0
-:: Update certificates list of system.
-RootSUPD_201403_x86
 
-::cls
-cd /d %~dp0\Certs
+:: Update certificates list of system.
+"%~dp0\Tools\RootSUPD_201403_x86"
 
 :: Architecture check
-set CertMgr=CertMgr
-if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%CertMgr%_x86
+set CertMgr="%~dp0\Tools\CertMgr"
+if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr="%~dp0\Tools\CertMgr_x86"
 
 :: Delete certificates(Base part)
 ::  Fake GitHub.Com(2013-01-25)
@@ -141,35 +138,36 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr=%Cert
 @echo.
 
 :: Add certificates to CRL(Base part)
-%CertMgr% -add -c [Fake]GitHubCom_201301.crt -s Disallowed
-%CertMgr% -add -c [Fake]GoogleCom_201407.crt -s Disallowed
-%CertMgr% -add -c [Fake]GoogleCom_201409.crt -s Disallowed
-%CertMgr% -add -c [Fake]YahooCom_201409.crt -s Disallowed
-%CertMgr% -add -c [Fake]HotmaiCom_201410.crt -s Disallowed
-%CertMgr% -add -c [Fake]WwwFacebookCom_201410.crt -s Disallowed
-%CertMgr% -add -c [Fake]WwwIcloudCom_201410.crt -s Disallowed
-%CertMgr% -add -c CNNIC_ROOT.crt -s Disallowed
-%CertMgr% -add -c China_Internet_Network_Information_Center_EV_Certificates_Root.crt -s Disallowed
-%CertMgr% -add -c CNNIC_SSL_Entrust.crt -s Disallowed
-%CertMgr% -add -c [Suspicious]WaccBaiduCom.crt -s Disallowed
-%CertMgr% -add -c GiantRootCA.crt -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]GitHubCom_201301.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]GoogleCom_201407.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]GoogleCom_201409.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]YahooCom_201409.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]HotmaiCom_201410.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]WwwFacebookCom_201410.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Fake]WwwIcloudCom_201410.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\CNNIC_ROOT.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\China_Internet_Network_Information_Center_EV_Certificates_Root.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\CNNIC_SSL_Entrust.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Suspicious]WaccBaiduCom.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\GiantRootCA.crt" -s Disallowed
 :: Add certificates to CRL(Extended part)
 ::  Move to All version.
-::  %CertMgr% -add -c ROOTCA.crt -s Disallowed
-%CertMgr% -add -c CFCA_GT_CA_201106.crt -s Disallowed
-%CertMgr% -add -c CFCA_GT_CA_201208.crt -s Disallowed
-%CertMgr% -add -c CFCA_EV_ROOT.crt -s Disallowed
-%CertMgr% -add -c UCA_Global_Root.crt -s Disallowed
-%CertMgr% -add -c UCA_Root_200401.crt -s Disallowed
-%CertMgr% -add -c UCA_Extended_Validation_Root.crt -s Disallowed
-%CertMgr% -add -c UCA_ROOT_200101.crt -s Disallowed
-%CertMgr% -add -c [Suspicious]GoAgent_CA.crt -s Disallowed
-::%CertMgr% -add -c SZCA.crt -s Disallowed
-::%CertMgr% -add -c SZCA_200307.crt -s Disallowed
+::  %CertMgr% -add -c ROOTCA.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\CFCA_GT_CA_201106.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\CFCA_GT_CA_201208.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\CFCA_EV_ROOT.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\UCA_Global_Root.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\UCA_Root_200401.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\UCA_Extended_Validation_Root.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\UCA_ROOT_200101.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\[Suspicious]GoAgent_CA.crt" -s Disallowed
+::%CertMgr% -add -c "%~dp0\Certs\SZCA.crt" -s Disallowed
+::%CertMgr% -add -c "%~dp0\Certs\SZCA_200307.crt" -s Disallowed
 
-:Exit
 :: Print to screen.
+::Exit
 @echo.
+@echo RevokeChinaCerts Extended version
 @echo Done. Please confirm the messages on screen.
 @echo.
 @pause

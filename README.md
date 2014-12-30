@@ -4,14 +4,37 @@ Revoke China Certificates.<br />
 全自动可疑证书吊销工具/全自動可疑憑證撤銷工具<br />
 
 ### Updated
-**2014-12-25**
+**2014-12-30**
 
-### Usage
-* [English version](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe)
-* [简体中文使用说明](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe(Chinese_Simplified))
-* [繁體中文使用說明](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe(Chinese_Traditional))
+### Type
+* Online Certificates/在线证书/在線證書
+    * These certificates are used in TLS connection for confirming servers.
+    * 服务器认证部分，用于屏蔽 TLS 加密连接时所使用的证书
+    * 伺服器認證部分，用於遮罩 TLS 加密連接時所使用的證書
+* CodeSigning Certificates/代码证书/代碼證書
+    * These certificates are used in code signing for confirming software publishers.
+    * 代码签名部分，用于屏蔽某软件发行商发行软件的运行
+    * 代碼簽名部分，用於遮罩某軟體發行商發行軟體的運行
+* Organization Certificates/组织证书/組織證書
+    * These certificates are used in software installing for confirming their organizations.
+    * 组织认证部分，用于屏蔽部分组织和企业的证书
+    * 組織認證部分，用於遮罩部分組織和企業的證書
 
-### Special/特别说明/特別說明
-* **Extended** and **All** version will revoke `GoAgent CA` using in GoAgent. Please delete `CA.crt` and `certs` folder which in GoAgent program folder(if it exists). Finally, clear all browser(s) data and restart GoAgent.
-* **Extended** 版和 **All** 版会自动吊销 GoAgent 自带的 `GoAgent CA` 证书，为免使用 GoAgent 时出现错误同时也为了系统加密连接的安全强烈建议更换其自带的 CA 根证书。**关闭所有 GoAgent 程序，进入其 `local` 目录删除 `CA.crt` 以及整个 `certs` 目录，然后清空所有浏览器数据重启 GoAgent 和浏览器即可。**
-* **Extended** 版和 **All** 版會自動吊銷 GoAgent 自帶的 `GoAgent CA` 證書，為免使用 GoAgent 時出現錯誤同時也為了系統加密連接的安全強烈建議更換其自帶的 CA 根憑證。**關閉所有 GoAgent 程式，進入其 `local` 目錄刪除 `CA.crt` 以及整個 `certs` 目錄，然後清空所有瀏覽器資料重啟 GoAgent 和瀏覽器即可。**
+### Usage(Online Certificates)
+* [English](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe)
+* [简体中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe(Chinese_Simplified))
+* [繁體中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe(Chinese_Traditional))
+
+### Usage(CodeSigning Certificates)
+* [English](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning)
+* [简体中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning(Chinese_Simplified))
+* [繁體中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning(Chinese_Traditional))
+
+### Usage(Organization Certificates)
+* [English](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Organization)
+* [简体中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Organization(Chinese_Simplified))
+* [繁體中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Organization(Chinese_Traditional))
+
+### Thanks
+* [拉黑证书 让你的电脑再也装不上某些软件 附证书大全](http://blog.eqoe.cn/posts/ban-digital-cert.html)
+* [Anti-China-Anit-virus](https://github.com/SCFWSE-Ye/Anti-China-Anit-virus)
