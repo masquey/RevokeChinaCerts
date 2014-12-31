@@ -1,5 +1,6 @@
 ## 使用方法 ##
 SoftCertPolicyAppender.exe <证书路径>
+
 SoftCertPolicyAppender.exe <证书路径> <证书路径2> ...
 
 ## 备注 ##
