@@ -9,15 +9,15 @@ namespace SoftCertPolicyAppender
 {
     public class CertPolicyAppender
     {
-        private X509Certificate2 _cert;
-
         public void Load(string certFile)
         {
             var cert = new X509Certificate2();
             cert.Import(certFile);
-            _cert = cert;
+            Certificate = cert;
 
         }
+
+        public X509Certificate2 Certificate { get; private set; }
 
         /// <summary>
         /// 构造写写入注册表的证书数据
@@ -25,7 +25,7 @@ namespace SoftCertPolicyAppender
         /// <returns></returns>
         private byte[] CalcRegCertData()
         {
-            var cert = _cert;
+            var cert = Certificate;
             var thumbprintData = cert.Thumbprint.HexString2Bytes().ToArray();
 
             var rtn = new List<byte>();
@@ -58,7 +58,7 @@ namespace SoftCertPolicyAppender
         /// <returns></returns>
         public void WriteRegisty()
         {
-            var cer = _cert;
+            var cer = Certificate;
             const string keyPath = @"Software\Microsoft\Windows\CurrentVersion\Group Policy Objects";
             var rk = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Default);
             var srk = rk.OpenSubKey(keyPath);
@@ -86,12 +86,45 @@ namespace SoftCertPolicyAppender
 
 
         /// <summary>
+        /// 写入注册表项
+        /// </summary>
+        /// <returns></returns>
+        public void RemoveRegisty()
+        {
+            var cer = Certificate;
+            const string keyPath = @"Software\Microsoft\Windows\CurrentVersion\Group Policy Objects";
+            var rk = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Default);
+            var srk = rk.OpenSubKey(keyPath);
+            if (srk == null)
+            {
+                throw new ApplicationException("无法打开注册表项:" + keyPath);
+            }
+            var certKeys = srk.GetSubKeyNames()
+                .Where(x => x.EndsWith("Machine"))
+                .Select(
+                    x =>
+                        string.Format(
+                            "{0}\\{1}\\Software\\Policies\\Microsoft\\SystemCertificates\\Disallowed\\Certificates\\{2}",
+                            keyPath, x, cer.Thumbprint))
+                //.Where(x => rk.OpenSubKey(x) == null)
+                .ToList();
+
+            foreach (var certKey in certKeys)
+            {
+                rk.DeleteSubKey(certKey);
+            }
+
+        }
+
+
+
+        /// <summary>
         /// 添加证书组策略
         /// </summary>
         /// <remarks>引用组件来自:https://bitbucket.org/MartinEden/local-policy/overview </remarks>
         public void AddCertPolicy()
         {
-            var cert = _cert;
+            var cert = Certificate;
 
             var gpo = new ComputerGroupPolicyObject();
             var keyPath = string.Format("Software\\Policies\\Microsoft\\SystemCertificates\\Disallowed\\Certificates\\{0}", cert.Thumbprint);
@@ -101,6 +134,21 @@ namespace SoftCertPolicyAppender
                 {
                     cerKey.SetValue("Blob", CalcRegCertData(), RegistryValueKind.Binary);
                 }
+            }
+            gpo.Save();
+
+        }
+
+
+        public void RemoveCertPolicy()
+        {
+            var cert = Certificate;
+
+            var gpo = new ComputerGroupPolicyObject();
+            var keyPath = string.Format("Software\\Policies\\Microsoft\\SystemCertificates\\Disallowed\\Certificates\\{0}", cert.Thumbprint);
+            using (var machine = gpo.GetRootRegistryKey(GroupPolicySection.Machine))
+            {
+                machine.DeleteSubKey(keyPath);
             }
             gpo.Save();
 
