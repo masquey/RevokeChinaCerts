@@ -162,7 +162,7 @@ namespace SoftCertPolicyAppender
             {
                 using (var cerKey = machine.CreateSubKey(keyPath))
                 {
-                    cerKey.SetValue("AuthenticodeEnable", enable?1:0, RegistryValueKind.DWord);
+                    cerKey.SetValue("AuthenticodeEnabled", enable ? 1 : 0, RegistryValueKind.DWord);
                 }
             }
             gpo.Save();
@@ -189,7 +189,7 @@ namespace SoftCertPolicyAppender
 
             foreach (var key in certKeys.Select(rk.CreateSubKey))
             {
-                key.SetValue("AuthenticodeEnable", enable?1:0, RegistryValueKind.DWord);
+                key.SetValue("AuthenticodeEnabled", enable ? 1 : 0, RegistryValueKind.DWord);
             }
         }
     }
