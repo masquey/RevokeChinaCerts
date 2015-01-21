@@ -60,60 +60,56 @@ namespace SoftCertPolicyAppender
         {
             var cer = Certificate;
             const string keyPath = @"Software\Microsoft\Windows\CurrentVersion\Group Policy Objects";
-            var rk = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Default);
-            var srk = rk.OpenSubKey(keyPath);
-            if (srk == null)
+            using(var rk = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Default))
             {
-                throw new ApplicationException("无法打开注册表项:" + keyPath);
-            }
-            var certKeys = srk.GetSubKeyNames()
-                .Where(x => x.EndsWith("Machine"))
-                .Select(
-                    x =>
-                        string.Format(
-                            "{0}\\{1}\\Software\\Policies\\Microsoft\\SystemCertificates\\Disallowed\\Certificates\\{2}",
-                            keyPath, x, cer.Thumbprint))
-                //.Where(x => rk.OpenSubKey(x) == null)
-                .ToList();
+                List<string> certKeys;
+                using (var srk = rk.OpenSubKey(keyPath))
+                {
+                    if (srk == null)
+                    {
+                        throw new ApplicationException("无法打开注册表项:" + keyPath);
+                    }
+                    certKeys = srk.GetSubKeyNames().Where(x => x.EndsWith("Machine")).Select(x => string.Format("{0}\\{1}\\Software\\Policies\\Microsoft\\SystemCertificates\\Disallowed\\Certificates\\{2}", keyPath, x, cer.Thumbprint))
+                        //.Where(x => rk.OpenSubKey(x) == null)
+                        .ToList();
+                }
 
-            foreach (var key in certKeys.Select(rk.CreateSubKey))
-            {
-                key.SetValue("Blob", CalcRegCertData(), RegistryValueKind.Binary);
+                foreach (var key in certKeys)
+                {
+                    using (var skey=rk.CreateSubKey(key))
+                    {
+                        if (skey != null) skey.SetValue("Blob", CalcRegCertData(), RegistryValueKind.Binary);
+                    }                  
+                }
             }
-
 
         }
 
 
-        /// <summary>
-        /// 写入注册表项
-        /// </summary>
-        /// <returns></returns>
+
         public void RemoveRegisty()
         {
             var cer = Certificate;
             const string keyPath = @"Software\Microsoft\Windows\CurrentVersion\Group Policy Objects";
-            var rk = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Default);
-            var srk = rk.OpenSubKey(keyPath);
-            if (srk == null)
+            using (var rk = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Default))
             {
-                throw new ApplicationException("无法打开注册表项:" + keyPath);
-            }
-            var certKeys = srk.GetSubKeyNames()
-                .Where(x => x.EndsWith("Machine"))
-                .Select(
-                    x =>
-                        string.Format(
-                            "{0}\\{1}\\Software\\Policies\\Microsoft\\SystemCertificates\\Disallowed\\Certificates\\{2}",
-                            keyPath, x, cer.Thumbprint))
-                //.Where(x => rk.OpenSubKey(x) == null)
-                .ToList();
+                List<string> certKeys;
+                using (var srk = rk.OpenSubKey(keyPath))
+                {
+                    if (srk == null)
+                    {
+                        throw new ApplicationException("无法打开注册表项:" + keyPath);
+                    }
+                    certKeys = srk.GetSubKeyNames().Where(x => x.EndsWith("Machine")).Select(x => string.Format("{0}\\{1}\\Software\\Policies\\Microsoft\\SystemCertificates\\Disallowed\\Certificates\\{2}", keyPath, x, cer.Thumbprint))
+                        //.Where(x => rk.OpenSubKey(x) == null)
+                        .ToList();
+                }
 
-            foreach (var certKey in certKeys)
-            {
-                rk.DeleteSubKey(certKey,false);
+                foreach (var certKey in certKeys)
+                {
+                    rk.DeleteSubKey(certKey,false);
+                }
             }
-
         }
 
 
@@ -132,7 +128,7 @@ namespace SoftCertPolicyAppender
             {
                 using (var cerKey = machine.CreateSubKey(keyPath))
                 {
-                    cerKey.SetValue("Blob", CalcRegCertData(), RegistryValueKind.Binary);
+                    if (cerKey != null) cerKey.SetValue("Blob", CalcRegCertData(), RegistryValueKind.Binary);
                 }
             }
             gpo.Save();
@@ -157,7 +153,7 @@ namespace SoftCertPolicyAppender
         public void SetForcePolicyStat(bool enable)
         {
             var gpo = new ComputerGroupPolicyObject();
-            var keyPath = "Software\\Policies\\Microsoft\\Windows\\Safer\\CodeIdentifiers";
+            const string keyPath = "Software\\Policies\\Microsoft\\Windows\\Safer\\CodeIdentifiers";
             using (var machine = gpo.GetRootRegistryKey(GroupPolicySection.Machine))
             {
                 using (var cerKey = machine.CreateSubKey(keyPath))
@@ -171,25 +167,27 @@ namespace SoftCertPolicyAppender
         public void SetForceRegistryPolicyStat(bool enable)
         {
             const string keyPath = @"Software\Microsoft\Windows\CurrentVersion\Group Policy Objects";
-            var rk = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Default);
-            var srk = rk.OpenSubKey(keyPath);
-            if (srk == null)
+            using (var rk = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Default))
             {
-                throw new ApplicationException("无法打开注册表项:" + keyPath);
-            }
-            var certKeys = srk.GetSubKeyNames()
-                .Where(x => x.EndsWith("Machine"))
-                .Select(
-                    x =>
-                    string.Format(
-                        "{0}\\{1}\\Software\\Policies\\Microsoft\\Windows\\Safer\\CodeIdentifiers",
-                        keyPath, x))
-                //.Where(x => rk.OpenSubKey(x) == null)
-                .ToList();
+                List<string> certKeys;
+                using (var srk = rk.OpenSubKey(keyPath))
+                {
+                    if (srk == null)
+                    {
+                        throw new ApplicationException("无法打开注册表项:" + keyPath);
+                    }
+                    certKeys = srk.GetSubKeyNames().Where(x => x.EndsWith("Machine")).Select(x => string.Format("{0}\\{1}\\Software\\Policies\\Microsoft\\Windows\\Safer\\CodeIdentifiers", keyPath, x))
+                        //.Where(x => rk.OpenSubKey(x) == null)
+                        .ToList();
+                }
 
-            foreach (var key in certKeys.Select(rk.CreateSubKey))
-            {
-                key.SetValue("AuthenticodeEnabled", enable ? 1 : 0, RegistryValueKind.DWord);
+                foreach (var key in certKeys)
+                {
+                    using (var skey = rk.CreateSubKey(key))
+                    {
+                        if (skey != null) skey.SetValue("AuthenticodeEnabled", enable ? 1 : 0, RegistryValueKind.DWord);
+                    }
+                }
             }
         }
     }
