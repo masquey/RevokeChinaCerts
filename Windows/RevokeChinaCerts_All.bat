@@ -76,6 +76,16 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr="%~dp
 %CertMgr% -del -c -sha1 7514436E903C901069980499CA70DE74FC06C83C -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 7514436E903C901069980499CA70DE74FC06C83C -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 7514436E903C901069980499CA70DE74FC06C83C -s -r CurrentUser AuthRoot
+::  JGZXCA
+%CertMgr% -del -c -sha1 7A4AA61E2A88704115E47748D8647DAEE6837559 -s -r localMachine Root
+%CertMgr% -del -c -sha1 7A4AA61E2A88704115E47748D8647DAEE6837559 -s -r localMachine AuthRoot
+%CertMgr% -del -c -sha1 7A4AA61E2A88704115E47748D8647DAEE6837559 -s -r CurrentUser Root
+%CertMgr% -del -c -sha1 7A4AA61E2A88704115E47748D8647DAEE6837559 -s -r CurrentUser AuthRoot
+::  Superfish, Inc. [Septembers/v998]
+%CertMgr% -del -c -sha1 C864484869D41D2B0D32319C5A62F9315AAF2CBD -s -r localMachine Root
+%CertMgr% -del -c -sha1 C864484869D41D2B0D32319C5A62F9315AAF2CBD -s -r localMachine AuthRoot
+%CertMgr% -del -c -sha1 C864484869D41D2B0D32319C5A62F9315AAF2CBD -s -r CurrentUser Root
+%CertMgr% -del -c -sha1 C864484869D41D2B0D32319C5A62F9315AAF2CBD -s -r CurrentUser AuthRoot
 
 :: Delete certificates(Extended part)
 ::  CFCA GT CA(2011-06-13)
@@ -285,7 +295,11 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr="%~dp
 %CertMgr% -add -c "%~dp0\Certs\CNNIC_SSL_Entrust.crt" -s Disallowed
 %CertMgr% -add -c "%~dp0\Certs\[Suspicious]WaccBaiduCom.crt" -s Disallowed
 %CertMgr% -add -c "%~dp0\Certs\GiantRootCA.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\JGZXCA.crt" -s Disallowed
+%CertMgr% -add -c "%~dp0\Certs\Superfish_Inc.crt" -s Disallowed
+
 :: Add certificates to CRL(Extended part)
+::%CertMgr% -add -c ROOTCA.crt" -s Disallowed
 %CertMgr% -add -c "%~dp0\Certs\CFCA_GT_CA_201106.crt" -s Disallowed
 %CertMgr% -add -c "%~dp0\Certs\CFCA_GT_CA_201208.crt" -s Disallowed
 %CertMgr% -add -c "%~dp0\Certs\CFCA_EV_ROOT.crt" -s Disallowed
@@ -296,6 +310,7 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr="%~dp
 %CertMgr% -add -c "%~dp0\Certs\[Suspicious]GoAgent_CA.crt" -s Disallowed
 ::%CertMgr% -add -c "%~dp0\Certs\SZCA.crt" -s Disallowed
 ::%CertMgr% -add -c "%~dp0\Certs\SZCA_200307.crt" -s Disallowed
+
 :: Add certificates to CRL(All part)
 ::%CertMgr% -add -c "%~dp0\Certs\ROOTCA_OSCCA.crt" -s Disallowed
 %CertMgr% -add -c "%~dp0\Certs\SRCA.crt" -s Disallowed
@@ -333,7 +348,6 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr="%~dp
 %CertMgr% -add -c "%~dp0\Certs\TWCA_Secure_Certification_Authority_USERTrust.crt" -s Disallowed
 
 :: Print to screen.
-::Exit
 @echo.
 @echo RevokeChinaCerts All version
 @echo Done. Please confirm the messages on screen.

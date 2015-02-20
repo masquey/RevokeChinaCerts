@@ -4,7 +4,7 @@ Revoke China Certificates.<br />
 全自动可疑证书吊销工具/全自動可疑憑證撤銷工具<br />
 
 ### Updated
-**2015-01-18**
+**2015-02-20**
 
 ### Type
 * Online Certificates/在线证书/在線證書
@@ -37,4 +37,7 @@ Revoke China Certificates.<br />
 
 ### Thanks
 * [拉黑证书 让你的电脑再也装不上某些软件 附证书大全](http://blog.eqoe.cn/posts/ban-digital-cert.html)
-* [Anti-China-Anit-virus](https://github.com/SCFWSE-Ye/Anti-China-Anit-virus)
+* [BlockChinaSoftware](https://github.com/SCFWSE/BlockChinaSoftware)
+* [UTLS-Blocker](https://github.com/SCFWSE/UTLS-Blocker)
+* [Local-Policy](https://bitbucket.org/MartinEden/local-policy/overview)
+* [SoftCertPolicyAppender](https://github.com/lhyqy5/RevokeChinaCerts/tree/master/Windows/SoftCertPolicyAppender)

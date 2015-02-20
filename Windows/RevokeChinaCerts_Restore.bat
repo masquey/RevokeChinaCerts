@@ -41,6 +41,10 @@ if "%PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432%" == "x86" set CertMgr="%~dp
 %CertMgr% -del -c -sha1 561422647B89BE22F203EBCAEF52B5007227510A -s Disallowed
 ::  GiantRootCA
 %CertMgr% -del -c -sha1 7514436E903C901069980499CA70DE74FC06C83C -s Disallowed
+::  JGZXCA
+%CertMgr% -del -c -sha1 7A4AA61E2A88704115E47748D8647DAEE6837559 -s Disallowed
+::  Superfish, Inc. [Septembers/v998]
+%CertMgr% -del -c -sha1 C864484869D41D2B0D32319C5A62F9315AAF2CBD -s Disallowed
 
 :: Restore certificates(Extended part)
 ::  CFCA GT CA(2011-06-13)
