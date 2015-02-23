@@ -12,6 +12,10 @@ elif [ ${1:-extended} = 'extended' ];then
     echo "Generating EXTENDED CRL set"
     CA_CERTS=`ls ../Windows/Certs/CNNIC_*.crt ../Windows/Certs/China_Internet_Network_Information_Center_EV_Certificates_Root.crt ../Windows/Certs/[Suspicious]WaccBaiduCom.crt ../Windows/Certs/GiantRootCA.crt ../Windows/Certs/CFCA_*.crt  ../Windows/Certs/UCA_*.crt  ../Windows/Certs/[Suspicious]GoAgent_CA.crt`
     EE_CERTS=`ls ../Windows/Certs/\[Fake\]*.crt`
+elif [ ${1:-extended} = 'restore' ];then
+    echo "Generating RESTORE CRL set"
+    CA_CERTS=''
+    EE_CERTS=''
 else
     echo "Generating Basic CRL set"
     CA_CERTS=`ls ../Windows/Certs/CNNIC_*.crt ../Windows/Certs/China_Internet_Network_Information_Center_EV_Certificates_Root.crt ../Windows/Certs/[Suspicious]WaccBaiduCom.crt ../Windows/Certs/GiantRootCA.crt`

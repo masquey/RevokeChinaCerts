@@ -1,7 +1,1 @@
-run_program("/sbin/mount", "/dev/block/mmcblk0p2", "/system");
-run_program("/sbin/mount", "/dev/block/mtdblock5", "/data");
-package_extract_dir("system", "/system");
-package_extract_dir("data", "/data");
-run_program("/sbin/unmount", "/dev/block/mtdblock5", "/data");
-run_program("/sbin/unmount", "/dev/block/mmcblk0p2", "/system");
-ui_print("Enjoy!");
+# this is a dummy file, the magic is in update-binary, which is a shell script

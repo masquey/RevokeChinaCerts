@@ -17,7 +17,8 @@ to generate the configuration files you need.
         cd RevokeChinaCerts/Android
         ./generate.sh extended
 
-By substituting `extended` with `base` or `all` you can get corresponding configuration files.
+By substituting `extended` with `restore`, `base` or `all` you can get
+corresponding configuration files.
 
 ### If you have root
 
