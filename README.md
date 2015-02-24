@@ -4,7 +4,7 @@ Revoke China Certificates.<br />
 全自动可疑证书吊销工具/全自動可疑憑證撤銷工具<br />
 
 ### Updated
-**2015-02-20**
+**2015-02-24**
 
 ### Type
 * Online Certificates/在线证书/在線證書
@@ -35,9 +35,13 @@ Revoke China Certificates.<br />
 * [简体中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Organization(Chinese_Simplified))
 * [繁體中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Organization(Chinese_Traditional))
 
+### Contributors
+* [Script to automatically disable for Mac OS X](https://github.com/QuantumGhost/RevokeChinaCerts/tree/master/Mac)
+* [SoftCertPolicyAppender](https://github.com/lhyqy5/RevokeChinaCerts/tree/master/Windows/SoftCertPolicyAppender)
+* [Android version of automated tools](https://github.com/phoeagon/RevokeChinaCerts/tree/master/Android)
+
 ### Thanks
-* [拉黑证书 让你的电脑再也装不上某些软件 附证书大全](http://blog.eqoe.cn/posts/ban-digital-cert.html)
 * [BlockChinaSoftware](https://github.com/SCFWSE/BlockChinaSoftware)
 * [UTLS-Blocker](https://github.com/SCFWSE/UTLS-Blocker)
+* [拉黑证书 让你的电脑再也装不上某些软件 附证书大全](http://blog.eqoe.cn/posts/ban-digital-cert.html)
 * [Local-Policy](https://bitbucket.org/MartinEden/local-policy/overview)
-* [SoftCertPolicyAppender](https://github.com/lhyqy5/RevokeChinaCerts/tree/master/Windows/SoftCertPolicyAppender)

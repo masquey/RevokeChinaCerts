@@ -14,15 +14,16 @@ namespace SoftCertPolicyAppender
 
             if (args.Contains("-h") || args.Contains("--help")||args.Length==0)
             {
-                const string usage = @"Usage:SoftwareRestrictionPolicyController.exe [OPTOION]... [CERTFILE]...
-config software restriction policy by cli
+                const string usage = @"Usage: SoftwareRestrictionPolicyController.exe [Option]... [CertFile]...
+Config software restriction policy by cli.
 
-OPTIONs
-  --set-force      set force certificate policy
-  --unset-force    unset force certificate policy
-  -r               remove certificate rule by CERTFILEs not add
-CERTFILEs
-  certificate file path that will add certificate rule
+Options:
+    --set-force      set force certificate policy.
+    --unset-force    unset force certificate policy.
+    -r               remove certificate rule by CERTFILEs not add.
+
+CertFiles:
+    Certificate file path that will add certificate rule.
 ";
                 Console.Write(usage);
                 return;
