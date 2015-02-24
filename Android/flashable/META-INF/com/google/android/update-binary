@@ -1,0 +1,44 @@
+#!/sbin/sh
+
+OUTFD=$2
+ZIP=$3
+
+ui_print() {
+	echo -n -e "ui_print $1\n" > /proc/self/fd/$OUTFD
+	echo -n -e "ui_print\n" > /proc/self/fd/$OUTFD
+}
+
+
+ui_print "*********************"
+ui_print "RevokeChinaCerts"
+ui_print "*********************"
+
+ui_print "- Mounting /system, /data and rootfs"
+mount /system
+mount /data
+mount -o rw,remount /system
+mount -o rw,remount /system /system
+mount -o rw,remount /data
+mount -o rw,remount /data /data
+mount -o rw,remount /
+mount -o rw,remount / /
+
+
+ui_print "- Extracting files"
+cd /tmp
+mkdir revoke
+cd revoke
+unzip -o "$ZIP"
+
+FILESPATH=/tmp/revoke
+
+ui_print "- Installing files"
+cp $FILESPATH/data/misc/keychain/serial_blacklist.txt /data/misc/keychain/serial_blacklist.txt
+cp $FILESPATH/data/misc/keychain/pubkey_blacklist.txt /data/misc/keychain/pubkey_blacklist.txt
+
+ui_print "- Unmounting /system and /data"
+umount /system
+umount /data
+
+ui_print "- Done !"
+exit 0
