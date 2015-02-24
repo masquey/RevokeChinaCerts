@@ -8,7 +8,37 @@ Android 4.1+ device.
 
 This utility blacklists CA and EE certificates.
 
-## Usage
+## Usage -- Use prebuilt configurations (Recommended)
+
+### With root access
+
+Assuming you have root access on your phone, `cd` into the folder whose
+name corresponds to the config you want (RESTORE, ALL, EXTENDED or BASE).
+
+        git clone [REPO_ADDRESS]
+        cd Android/prebuilt/[type]
+        ./rooted.sh
+
+If you are on windows and do not have BASH, use:
+
+        git clone [REPO_ADDRESS]
+        cd Android/prebuilt/[type]
+        adb push pubkey_blacklist.txt /sdcard/pubkey_blacklist.txt
+        adb push serial_blacklist.txt /sdcard/serial_blacklist.txt
+
+        adb shell su -c "cp /sdcard/pubkey_blacklist.txt /data/misc/keychain/pubkey_blacklist.txt"
+        adb shell su -c "cp /sdcard/serial_blacklist.txt /data/misc/keychain/serial_blacklist.txt"
+
+### Without root access
+
+        git clone [REPO_ADDRESS]
+        cd Android/prebuilt/[type]
+        adb push flashable.zip /sdcard/update.zip
+        # Reboot phone to recovery
+        adb reboot recovery
+        # Now flash the zip file using your custom recovery
+
+## Usage -- Building from source
 
 First, use `git` to clone the whole repo. `cd` to this dir. Use `generate.sh`
 to generate the configuration files you need.
