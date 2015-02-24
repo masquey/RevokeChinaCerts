@@ -224,6 +224,7 @@ goto EXIT
 
 
 :: Restore certificates
+:CASE_3
 ::  ABC
 %CertMgr% -del -c -sha1 78D0CDF5752D1E5B58A674644CFE3499BF02F9EF -s Disallowed
 ::  ABC TEST CA
