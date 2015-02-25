@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
@@ -56,21 +57,45 @@ CertFiles:
                     Console.Write("{0}.", i + 1);
                     Console.ResetColor();
 
-                    switch (flag)
+                    bool retry;
+                    do
                     {
-                        case 0:
-                            SoftwareRestrictionPolicyController.AddCertRule(cert);
-                            Console.Write("Add cert policy for ");
-                            break;
-                        case 1:
-                            SoftwareRestrictionPolicyController.RemoveCertRule(cert);
-                            Console.Write("Remove cert policy for ");
-                            break;
-                    }
+                        retry = false;
+                        try
+                        {
+                            switch (flag)
+                            {
+                                case 0:
+                                    SoftwareRestrictionPolicyController.AddCertRule(cert);
+                                    Console.Write("Add cert policy for ");
+                                    break;
+                                case 1:
+                                    SoftwareRestrictionPolicyController.RemoveCertRule(cert);
+                                    Console.Write("Remove cert policy for ");
+                                    break;
+                            }
 
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.WriteLine("{0}({1})", cert.Subject, cert.Thumbprint);
-                    Console.ResetColor();
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.WriteLine("{0}({1})", cert.Subject, cert.Thumbprint);
+                            Console.ResetColor();
+                        }
+                        catch (FileLoadException ex)
+                        {
+                            Console.Write(ex.Message+" Please select retry ,ignore or abort?[R|i|a]:");
+                            var select=  (Console.ReadLine()??"").ToLower();
+                            switch (select)
+                            {
+                                case "i":
+                                    break;
+                                case "a":
+                                    return;
+                                default:
+                                    retry = true;
+                                    break;
+                            }
+                   
+                        }
+                    } while (retry);
                 }
                 catch (Exception e)
                 {
