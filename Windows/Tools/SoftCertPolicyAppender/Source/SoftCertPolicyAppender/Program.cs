@@ -85,19 +85,14 @@ CertFiles:
                             var select=  (Console.ReadLine()??"").ToLower();
                             switch (select)
                             {
-                                case "I":
-                                    break;
                                 case "i":
                                     break;
-                                case "A":
-                                    return;
                                 case "a":
                                     return;
                                 default:
                                     retry = true;
                                     break;
                             }
-                   
                         }
                     } while (retry);
                 }
