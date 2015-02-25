@@ -69,12 +69,18 @@ goto %UserChoice%
 ::  Certification Authority of WoSign 2(StartCom/2011-03-01)
 %CertMgr% -del -c -sha1 692790DA5189529CC5CE1E16E984277A03023E99 -s -r localMachine CA
 %CertMgr% -del -c -sha1 692790DA5189529CC5CE1E16E984277A03023E99 -s -r CurrentUser CA
-::  Certification Authority of WoSign(StartCom/2006-09-18)
+::  Certification Authority of WoSign 1(StartCom/2006-09-18)
 %CertMgr% -del -c -sha1 804E5FB7DE84F5F5B28347233EAF07846B6070D3 -s -r localMachine CA
 %CertMgr% -del -c -sha1 804E5FB7DE84F5F5B28347233EAF07846B6070D3 -s -r CurrentUser CA
-::  Certification Authority of WoSign(Chinese/StartCom) [v998]
+::  Certification Authority of WoSign 2(StartCom/2006-09-18) [v998]
+%CertMgr% -del -c -sha1 B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6 -s -r localMachine CA
+%CertMgr% -del -c -sha1 B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6 -s -r localMachine CA
+::  Certification Authority of WoSign 1(Chinese/StartCom) [v998]
 %CertMgr% -del -c -sha1 D8EFF6C28BB508E4702565F42748454A872BD412 -s -r localMachine CA
 %CertMgr% -del -c -sha1 D8EFF6C28BB508E4702565F42748454A872BD412 -s -r CurrentUser CA
+::  Certification Authority of WoSign 2(Chinese/StartCom) [v998]
+%CertMgr% -del -c -sha1 CE335662F0EA6764B95C7F50A995A514ACE8C815 -s -r localMachine CA
+%CertMgr% -del -c -sha1 CE335662F0EA6764B95C7F50A995A514ACE8C815 -s -r CurrentUser CA
 ::  Certification Authority of WoSign(USERTrust) [v998]
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r localMachine CA
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s -r CurrentUser CA
@@ -166,8 +172,10 @@ goto %UserChoice%
 %CertMgr% -add -c "%Folder%\CA_WoSign_ECC_Root.crt" -s Disallowed
 %CertMgr% -add -c "%Folder%\Certification_Authority_Of_WoSign_StartCom_201103_1.crt" -s Disallowed
 %CertMgr% -add -c "%Folder%\Certification_Authority_Of_WoSign_StartCom_201103_2.crt" -s Disallowed
-%CertMgr% -add -c "%Folder%\Certification_Authority_Of_WoSign_StartCom_200609.crt" -s Disallowed
-%CertMgr% -add -c "%Folder%\Certification_Authority_Of_WoSign_Chinese_StartCom.crt" -s Disallowed
+%CertMgr% -add -c "%Folder%\Certification_Authority_Of_WoSign_StartCom_200609_1.crt" -s Disallowed
+%CertMgr% -add -c "%Folder%\Certification_Authority_Of_WoSign_StartCom_200609_2.crt" -s Disallowed
+%CertMgr% -add -c "%Folder%\Certification_Authority_Of_WoSign_Chinese_StartCom_1.crt" -s Disallowed
+%CertMgr% -add -c "%Folder%\Certification_Authority_Of_WoSign_Chinese_StartCom_2.crt" -s Disallowed
 %CertMgr% -add -c "%Folder%\Certification_Authority_Of_WoSign_USERTrust.crt" -s Disallowed
 %CertMgr% -add -c "%Folder%\WoSign_Premium_Server_Authority_USERTrust.crt" -s Disallowed
 %CertMgr% -add -c "%Folder%\WoSign_Server_Authority_USERTrust.crt" -s Disallowed
@@ -407,10 +415,14 @@ goto EXIT
 %CertMgr% -del -c -sha1 868241C8B85AF79E2DAC79EDADB723E82A36AFC3 -s Disallowed
 ::  Certification Authority of WoSign 2(StartCom/2011-03-01)
 %CertMgr% -del -c -sha1 692790DA5189529CC5CE1E16E984277A03023E99 -s Disallowed
-::  Certification Authority of WoSign(StartCom/2006-09-18)
+::  Certification Authority of WoSign 1(StartCom/2006-09-18)
 %CertMgr% -del -c -sha1 804E5FB7DE84F5F5B28347233EAF07846B6070D3 -s Disallowed
-::  Certification Authority of WoSign(Chinese/StartCom) [v998]
+::  Certification Authority of WoSign 2(StartCom/2006-09-18) [v998]
+%CertMgr% -del -c -sha1 B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6 -s Disallowed
+::  Certification Authority of WoSign 1(Chinese/StartCom) [v998]
 %CertMgr% -del -c -sha1 D8EFF6C28BB508E4702565F42748454A872BD412 -s Disallowed
+::  Certification Authority of WoSign 2(Chinese/StartCom) [v998]
+%CertMgr% -del -c -sha1 CE335662F0EA6764B95C7F50A995A514ACE8C815 -s Disallowed
 ::  Certification Authority of WoSign(USERTrust) [v998]
 %CertMgr% -del -c -sha1 56FAADDC596DCF78D585D83A35BC04B690D12736 -s Disallowed
 ::  WoSign Premium Server Authority(USERTrust)
