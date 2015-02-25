@@ -57,9 +57,10 @@ CertFiles:
                     Console.Write("{0}.", i + 1);
                     Console.ResetColor();
 
-                    var retry = false;
+                    bool retry;
                     do
                     {
+                        retry = false;
                         try
                         {
                             switch (flag)
