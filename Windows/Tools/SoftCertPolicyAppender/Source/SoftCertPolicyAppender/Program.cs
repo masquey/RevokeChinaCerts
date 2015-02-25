@@ -12,7 +12,7 @@ namespace SoftCertPolicyAppender
             var flag = 0;
             var cers = args.Where(x => x.EndsWith(".cer") || x.EndsWith(".crt") || x.EndsWith(".pem")).ToArray();
 
-            if (args.Contains("-h") || args.Contains("--help")||args.Length==0)
+            if (args.Contains("-h") || args.Contains("--help") || args.Length==0)
             {
                 const string usage = @"Usage: SoftwareRestrictionPolicyController.exe [Option]... [CertFile]...
 Config software restriction policy by cli.
