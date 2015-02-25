@@ -81,12 +81,16 @@ CertFiles:
                         }
                         catch (FileLoadException ex)
                         {
-                            Console.Write(ex.Message+" Please select retry ,ignore or abort?[R|i|a]:");
+                            Console.Write(ex.Message+" Please select Retry, Ignore or Abort(R|I|A):");
                             var select=  (Console.ReadLine()??"").ToLower();
                             switch (select)
                             {
+                                case "I":
+                                    break;
                                 case "i":
                                     break;
+                                case "A":
+                                    return;
                                 case "a":
                                     return;
                                 default:

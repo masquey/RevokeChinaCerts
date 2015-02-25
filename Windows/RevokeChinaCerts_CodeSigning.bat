@@ -13,7 +13,7 @@ set CertMgr="%cd%\Tools\CertMgr"
 if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 set CertMgr="%cd%\Tools\CertMgr_x86"
 set Folder=%cd%\Certs\CodeSigning
 set /a SetForce = 0
-set SetForceAppender="%cd%\Tools\SoftCertPolicyAppender\SoftCertPolicyAppender"
+set SetForceAppender="%cd%\Tools\SoftCertPolicyAppender\Binary\SoftCertPolicyAppender"
 @echo RevokeChinaCerts CodeSigning batch
 @echo.
 @echo Do you want to set force cetificates policy? [Y/N]
