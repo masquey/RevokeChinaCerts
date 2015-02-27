@@ -13,7 +13,7 @@ set CertMgr="%cd%\Tools\CertMgr"
 if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 set CertMgr="%cd%\Tools\CertMgr_x86"
 set Folder=%cd%\Certs\Organization
 set /a SetForce = 0
-set SetForceAppender="%cd%\Tools\SoftCertPolicyAppender\SoftCertPolicyAppender"
+set SetForceAppender="%cd%\Tools\SoftCertPolicyAppender\Binary\SoftCertPolicyAppender"
 @echo RevokeChinaCerts Organization batch
 @echo.
 @echo Do you want to set force cetificates policy? [Y/N]
@@ -33,6 +33,7 @@ goto %UserChoice%
 
 :: All version
 :CASE_1
+if %SetForce% EQU 0 (
 ::  ABC
 %CertMgr% -add -c "%Folder%\ABC.crt" -s Disallowed
 ::  ABC TEST CA
@@ -93,137 +94,108 @@ goto %UserChoice%
 %CertMgr% -add -c "%Folder%\SZCA_200307.crt" -s Disallowed
 ::  TenpayCom Root CA
 %CertMgr% -add -c "%Folder%\TenpayCom_Root_CA.crt" -s Disallowed
+) else (
 :: Set force
-@echo.
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\ABC.crt" "%Folder%\ABC_TEST_CA.crt" "%Folder%\ABC2048.crt" "%Folder%\AlibabaCom_Corporation_Root_CA.crt" "%Folder%\ALIPAY_ROOT.crt" "%Folder%\Alipay_Trust_NetWork.crt" "%Folder%\BOCOMCA.crt" "%Folder%\CCB_CA_ROOT_199906.crt" "%Folder%\CCB_CA_ROOT_200906.crt" "%Folder%\CFCA.crt" "%Folder%\CFCA_CS_CA.crt" "%Folder%\CFCA_CS_TEST_CA.crt" "%Folder%\CFCA_Operation_CA3.crt" "%Folder%\CFCA_RCA.crt" "%Folder%\CFCA_Root_CA.crt" "%Folder%\CFCA_RSA_RCA.crt" "%Folder%\China_Trust_Network_1.crt" "%Folder%\China_Trust_Network_2.crt" "%Folder%\China_Trust_Network_3.crt" "%Folder%\ICBC.crt" "%Folder%\ICBC_Root_CA.crt" "%Folder%\IcbcCA.crt" "%Folder%\iTruschina_CN_Root_CA_1.crt" "%Folder%\iTruschina_CN_Root_CA_2.crt" "%Folder%\iTruschina_CN_Root_CA_3.crt" "%Folder%\Personal_ICBC_CA.crt" "%Folder%\ROOTCA_OSCCA.crt" "%Folder%\SZCA.crt" "%Folder%\SZCA_200307.crt" "%Folder%\TenpayCom_Root_CA.crt")
+%SetForceAppender% --set-force "%Folder%\ABC.crt" "%Folder%\ABC_TEST_CA.crt" "%Folder%\ABC2048.crt" "%Folder%\AlibabaCom_Corporation_Root_CA.crt" "%Folder%\ALIPAY_ROOT.crt" "%Folder%\Alipay_Trust_NetWork.crt" "%Folder%\BOCOMCA.crt" "%Folder%\CCB_CA_ROOT_199906.crt" "%Folder%\CCB_CA_ROOT_200906.crt" "%Folder%\CFCA.crt" "%Folder%\CFCA_CS_CA.crt" "%Folder%\CFCA_CS_TEST_CA.crt" "%Folder%\CFCA_Operation_CA3.crt" "%Folder%\CFCA_RCA.crt" "%Folder%\CFCA_Root_CA.crt" "%Folder%\CFCA_RSA_RCA.crt" "%Folder%\China_Trust_Network_1.crt" "%Folder%\China_Trust_Network_2.crt" "%Folder%\China_Trust_Network_3.crt" "%Folder%\ICBC.crt" "%Folder%\ICBC_Root_CA.crt" "%Folder%\IcbcCA.crt" "%Folder%\iTruschina_CN_Root_CA_1.crt" "%Folder%\iTruschina_CN_Root_CA_2.crt" "%Folder%\iTruschina_CN_Root_CA_3.crt" "%Folder%\Personal_ICBC_CA.crt" "%Folder%\ROOTCA_OSCCA.crt" "%Folder%\SZCA.crt" "%Folder%\SZCA_200307.crt" "%Folder%\TenpayCom_Root_CA.crt")
 goto EXIT
 
 
 :: Choice version
 :CASE_2
 set /p UserChoice="Revoke ABC? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\ABC.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\ABC.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\ABC.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\ABC.crt"))
 @echo.
 set /p UserChoice="Revoke ABC TEST CA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\ABC_TEST_CA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force %Folder%\ABC_TEST_CA.crt""))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\ABC_TEST_CA.crt" -s Disallowed) else (%SetForceAppender% --set-force %Folder%\ABC_TEST_CA.crt""))
 @echo.
 set /p UserChoice="Revoke ABC2048? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\ABC2048.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force %Folder%\ABC2048.crt""))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\ABC2048.crt" -s Disallowed) else (%SetForceAppender% --set-force %Folder%\ABC2048.crt""))
 @echo.
 set /p UserChoice="Revoke Alibaba.com Corporation Root CA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\AlibabaCom_Corporation_Root_CA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\AlibabaCom_Corporation_Root_CA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\AlibabaCom_Corporation_Root_CA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\AlibabaCom_Corporation_Root_CA.crt"))
 @echo.
 set /p UserChoice="Revoke ALIPAY_ROOT? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\ALIPAY_ROOT.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\ALIPAY_ROOT.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\ALIPAY_ROOT.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\ALIPAY_ROOT.crt"))
 @echo.
 set /p UserChoice="Revoke Alipay Trust NetWork? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\Alipay_Trust_NetWork.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\Alipay_Trust_NetWork.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\Alipay_Trust_NetWork.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\Alipay_Trust_NetWork.crt"))
 @echo.
 set /p UserChoice="Revoke BOCOMCA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\BOCOMCA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\BOCOMCA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\BOCOMCA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\BOCOMCA.crt"))
 @echo.
 set /p UserChoice="Revoke CCB CA ROOT(1999-06-29)? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\CCB_CA_ROOT_199906.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\CCB_CA_ROOT_199906.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\CCB_CA_ROOT_199906.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\CCB_CA_ROOT_199906.crt"))
 @echo.
 set /p UserChoice="Revoke CCB CA ROOT(2009-06-01)? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\CCB_CA_ROOT_200906.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\CCB_CA_ROOT_200906.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\CCB_CA_ROOT_200906.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\CCB_CA_ROOT_200906.crt"))
 @echo.
 set /p UserChoice="Revoke CFCA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\CFCA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\CFCA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\CFCA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\CFCA.crt"))
 @echo.
 set /p UserChoice="Revoke CFCA CS CA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\CFCA_CS_CA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\CFCA_CS_CA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\CFCA_CS_CA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\CFCA_CS_CA.crt"))
 @echo.
 set /p UserChoice="Revoke CFCA CS TEST CA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\CFCA_CS_TEST_CA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\CFCA_CS_TEST_CA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\CFCA_CS_TEST_CA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\CFCA_CS_TEST_CA.crt"))
 @echo.
 set /p UserChoice="Revoke CFCA Operation CA3? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\CFCA_Operation_CA3.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\CFCA_Operation_CA3.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\CFCA_Operation_CA3.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\CFCA_Operation_CA3.crt"))
 @echo.
 set /p UserChoice="Revoke CFCA RCA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\CFCA_RCA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\CFCA_RCA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\CFCA_RCA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\CFCA_RCA.crt"))
 @echo.
 set /p UserChoice="Revoke CFCA Root CA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\CFCA_Root_CA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\CFCA_Root_CA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\CFCA_Root_CA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\CFCA_Root_CA.crt"))
 @echo.
 set /p UserChoice="Revoke CFCA RSA RCA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\CFCA_RSA_RCA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\CFCA_RSA_RCA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\CFCA_RSA_RCA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\CFCA_RSA_RCA.crt"))
 @echo.
 set /p UserChoice="Revoke China Trust Network(1)? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\China_Trust_Network_1.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\China_Trust_Network_1.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\China_Trust_Network_1.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\China_Trust_Network_1.crt"))
 @echo.
 set /p UserChoice="Revoke China Trust Network(2)? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\China_Trust_Network_2.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\China_Trust_Network_2.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\China_Trust_Network_2.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\China_Trust_Network_2.crt"))
 @echo.
 set /p UserChoice="Revoke China Trust Network(3)? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\China_Trust_Network_3.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\China_Trust_Network_3.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\China_Trust_Network_3.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\China_Trust_Network_3.crt"))
 @echo.
 set /p UserChoice="Revoke ICBC? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\ICBC.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\ICBC.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\ICBC.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\ICBC.crt"))
 @echo.
 set /p UserChoice="Revoke ICBC Root CA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\ICBC_Root_CA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\ICBC_Root_CA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\ICBC_Root_CA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\ICBC_Root_CA.crt"))
 @echo.
 set /p UserChoice="Revoke IcbcCA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\IcbcCA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\IcbcCA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\IcbcCA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\IcbcCA.crt"))
 @echo.
 set /p UserChoice="Revoke iTruschina CN Root CA(1)? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\iTruschina_CN_Root_CA_1.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\iTruschina_CN_Root_CA_1.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\iTruschina_CN_Root_CA_1.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\iTruschina_CN_Root_CA_1.crt"))
 @echo.
 set /p UserChoice="Revoke iTruschina CN Root CA(2)? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\iTruschina_CN_Root_CA_2.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\iTruschina_CN_Root_CA_2.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\iTruschina_CN_Root_CA_2.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\iTruschina_CN_Root_CA_2.crt"))
 @echo.
 set /p UserChoice="Revoke iTruschina CN Root CA(3)? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\iTruschina_CN_Root_CA_3.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\iTruschina_CN_Root_CA_3.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\iTruschina_CN_Root_CA_3.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\iTruschina_CN_Root_CA_3.crt"))
 @echo.
 set /p UserChoice="Revoke Personal ICBC CA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\Personal_ICBC_CA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\Personal_ICBC_CA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\Personal_ICBC_CA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\Personal_ICBC_CA.crt"))
 @echo.
 set /p UserChoice="Revoke ROOTCA OSCCA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\ROOTCA_OSCCA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\ROOTCA_OSCCA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\ROOTCA_OSCCA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\ROOTCA_OSCCA.crt"))
 @echo.
 set /p UserChoice="Revoke SZCA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\SZCA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\SZCA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\SZCA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\SZCA.crt"))
 @echo.
 set /p UserChoice="Revoke SZCA(20030722)? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\SZCA_200307.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\SZCA_200307.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\SZCA_200307.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\SZCA_200307.crt"))
 @echo.
 set /p UserChoice="Revoke TenpayCom Root CA? [Y/N]"
-if /i %UserChoice% EQU Y (%CertMgr% -add -c "%Folder%\TenpayCom_Root_CA.crt" -s Disallowed
-if %SetForce% EQU 1 (%SetForceAppender% --set-force "%Folder%\TenpayCom_Root_CA.crt"))
+if /i %UserChoice% EQU Y (if %SetForce% EQU 0 (%CertMgr% -add -c "%Folder%\TenpayCom_Root_CA.crt" -s Disallowed) else (%SetForceAppender% --set-force "%Folder%\TenpayCom_Root_CA.crt"))
 goto EXIT
 
 
 :: Restore certificates
+:CASE_3
 ::  ABC
 %CertMgr% -del -c -sha1 78D0CDF5752D1E5B58A674644CFE3499BF02F9EF -s Disallowed
 ::  ABC TEST CA
