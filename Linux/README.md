@@ -34,6 +34,22 @@ than per Linux user for Chrome), you need to do this for every profile under `~/
             ./revoke-china-certs.sh extended $HOME/.mozilla/firefox/$profile
         done
 
+## Certificate Pinning Test
+
+Certificate pinning test is implemented in `certificate_pinning_test.py`.
+Use it as:
+
+    ./certificate_pinning_test.py
+
+This should reveal any HTTPS Man-In-The-Middle devices that may eavesdrop
+your connection (with Google), including but not limited to a transparent
+proxy.
+
+The pinning test uses signatures extracted from Android.
+
+(This is experimental. If you do encounter an error, please file an issue
+with the certificate you get.)
+
 ## Notes
 
 Deselecting a CA by `dpkg-reconfigure ca-certificates` does NOT affect any NSS-based applications.
