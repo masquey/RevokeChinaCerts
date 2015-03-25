@@ -4,7 +4,7 @@ Revoke China Certificates.<br />
 全自动可疑证书吊销工具/全自動可疑憑證撤銷工具<br />
 
 ### Updated
-**2015-02-25**
+**2015-03-25**
 
 ### Type
 * Online Certificates/在线证书/在線證書
@@ -44,3 +44,6 @@ Revoke China Certificates.<br />
 * [UTLS-Blocker](https://github.com/SCFWSE/UTLS-Blocker)
 * [拉黑证书 让你的电脑再也装不上某些软件 附证书大全](http://blog.eqoe.cn/posts/ban-digital-cert.html)
 * [Local-Policy](https://bitbucket.org/MartinEden/local-policy/overview)
+
+### License
+GNU General Public License/GNU GPL v2
