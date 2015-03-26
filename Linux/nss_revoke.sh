@@ -12,7 +12,7 @@ while read CERT;do
     certutil -d sql:${DBPATH} -D -n "${CERT}"
 done
 
-echo "Revoking CAs in $DBPATH/cert9.db"
+echo "Revoking CAs in $DBPATH/cert{8,9}.db"
 
 for CERT in $CERTS;do
     # p,p,p: prohibit all use
