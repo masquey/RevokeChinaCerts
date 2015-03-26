@@ -20,7 +20,8 @@ First you need to have packages installed to provide `certutil`. On Ubuntu it wo
 
         sudo apt-get install libnss3-tools
 
-Then, use the `revoke-china-certs.sh` to do the revocation. For Chrome it would be:
+Then, use the `revoke-china-certs.sh` to do the revocation.
+For most NSS-based applications including Chrome, it would be:
 
         ./revoke-china-certs.sh extended $HOME/.pki/nssdb
 
@@ -50,6 +51,19 @@ The pinning test uses signatures extracted from Android.
 (This is experimental. If you do encounter an error, please file an issue
 with the certificate you get.)
 
+## Applications use `~/.pki/nssdb`
+
+Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
+
+- Curl
+- Google Chrome
+- Chromium
+- Evolution
+- GNUnet
+- Wine
+
 ## Notes
 
 Deselecting a CA by `dpkg-reconfigure ca-certificates` does NOT affect any NSS-based applications.
+
+
