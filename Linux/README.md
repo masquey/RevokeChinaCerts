@@ -69,6 +69,14 @@ Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
 
 ## Notes
 
-Deselecting a CA by `dpkg-reconfigure ca-certificates` does NOT affect any NSS-based applications.
+- Deselecting a CA by `dpkg-reconfigure ca-certificates` does NOT affect any NSS-based applications.
+- There is a global database at `/etc/pki/nssdb`. On Debian/Ubuntu, this
+  global database is installed by `libnss3-nssdb`. And it actually links to
+  `/var/lib/nssdb/`, which is an empty database. And since most NSS based applications only read it, so it's safe to assume that it is empty. On Arch
+  it is not created by default, too. On Fedora `/etc/pki/nssdb` exists but is
+  also not enabled by default. Though OpenSuse will install certificates into
+  `/etc/pki/nssdb` provided that `mozilla-nss-sysinit` is installed. Thus if
+  you worry about it, you can check its emptiness with `certutil -d sql:${DBPATH} -L`
+  yourself. And revoke certificates in it via `revoke-china-certs.sh` if necessary.
 
 
