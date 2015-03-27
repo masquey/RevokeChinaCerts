@@ -62,6 +62,11 @@ Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
 - GNUnet
 - Wine
 
+### Exceptions
+
+- Firefox/Iceweasel `~/.mozilla/firefox/*.default/`
+- Thunderbird/Icedove `~/.thunderbird/*.default` 
+
 ## Notes
 
 Deselecting a CA by `dpkg-reconfigure ca-certificates` does NOT affect any NSS-based applications.
