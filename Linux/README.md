@@ -3,8 +3,8 @@ Revoke-China-Certs on Linux
 
 ## Intro
 
-This tool revokes certain CA certificates for NSS-based applications on Linux,
-(most notably, Firefox & Chrome).
+This tool revokes certain CA certificates for OpenSSL and NSS-based applications
+on Linux (most notably, Firefox & Chrome).
 
 On Linux there are multiple libraries for SSL/TLS and each may have its own
 certificate store. The `/etc/ca-certificates.conf` configures the trusted
@@ -14,7 +14,9 @@ CA without fiddling with the Root CA.
 
 **This tool is experimental. DO MAKE BACKUPS before you do anything!**
 
-## Usage
+## Revoke CA certificates for NSS.
+
+### Usage
 
 First you need to have packages installed to provide `certutil`. On Ubuntu it would be:
 
@@ -35,7 +37,7 @@ than per Linux user for Chrome), you need to do this for every profile under `~/
             ./revoke-china-certs.sh extended $HOME/.mozilla/firefox/$profile
         done
 
-## Certificate Pinning Test
+### Certificate Pinning Test
 
 Certificate pinning test is implemented in `certificate_pinning_test.py`.
 Use it as:
@@ -51,7 +53,7 @@ The pinning test uses signatures extracted from Android.
 (This is experimental. If you do encounter an error, please file an issue
 with the certificate you get.)
 
-## Applications use `~/.pki/nssdb`
+### Applications use `~/.pki/nssdb`
 
 Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
 
@@ -62,12 +64,12 @@ Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
 - GNUnet
 - Wine
 
-### Exceptions
+#### Exceptions
 
 - Firefox/Iceweasel `~/.mozilla/firefox/*.default/`
 - Thunderbird/Icedove `~/.thunderbird/*.default` 
 
-## Notes
+### Notes
 
 - Deselecting a CA by `dpkg-reconfigure ca-certificates` does NOT affect any NSS-based applications.
 - There is a global database at `/etc/pki/nssdb`. On Debian/Ubuntu, this
@@ -78,6 +80,28 @@ Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
   `/etc/pki/nssdb` provided that `mozilla-nss-sysinit` is installed. Thus if
   you worry about it, you can check its emptiness with `certutil -d sql:${DBPATH} -L`
   yourself. And revoke certificates in it via `revoke-china-certs.sh` if necessary.
+
+
+## Revoke CA certificates for OpenSSL.
+
+### Usage
+
+    sudo ./cac_revoke.sh extended
+
+The above command will revoke trust of CAs within the *extended* set.
+Change `extended` to `all` or `base` to revoke other sets of certs.
+Change `extended` to `restore` to restore the revocation.
+
+### Test
+
+Make sure `wget` is available on your `$PATH`.
+
+    ./validator.sh
+
+## References
+
+[A note about SSL/TLS trusted certificate stores, and platforms (OpenSSL and GnuTLS)](https://www.happyassassin.net/2015/01/12/a-note-about-ssltls-trusted-certificate-stores-and-platforms/)
+
 
 ## License
 
