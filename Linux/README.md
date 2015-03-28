@@ -7,7 +7,7 @@ This tool revokes certain CA certificates for NSS-based applications on Linux,
 (most notably, Firefox & Chrome).
 
 On Linux there are multiple libraries for SSL/TLS and each may have its own
-certificate store. The `/etc/ca-certificate.conf` configures the trusted
+certificate store. The `/etc/ca-certificates.conf` configures the trusted
 Root CAs for OpenSSL (which `wget` uses by default). Another widely used
 library is NSS by Mozilla, which supports blacklisting a specific intermediate
 CA without fiddling with the Root CA.
