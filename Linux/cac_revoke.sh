@@ -25,6 +25,9 @@ readonly Tw_grca='mozilla/Taiwan_GRCA.crt'
 readonly Twca='mozilla/TWCA_Root_Certification_Authority.crt'
 readonly Twca_global='mozilla/TWCA_Global_Root_CA.crt'
 
+readonly local_cert='/usr/local/share/ca-certificates'
+readonly hooks='/etc/ca-certificates/update.d'
+
 update_certs() {
   if [ "$debug" ]; then
     echo 'echo (fake) update-ca-certificates'
@@ -41,6 +44,44 @@ update_certs() {
     # With the option `--fresh`, the CA certificate will not be linked.
         update-ca-certificates --fresh
   fi
+
+  if [ -n "$(ls $hooks)" ]; then
+    echo "Warn! We have found hooks in $hooks"
+    echo "We recommend that you manually check them."
+    echo
+  fi
+}
+
+checksum_audit() {
+  if [ -n "$(ls $local_cert)" ]; then
+    local local_certsum_sorted="$(mktemp)"
+    sha1 $(find $local_cert -type f -or -type l) | sort > $local_certsum_sorted
+    if [ -n "$(join -j 2 $local_certsum_sorted certsum_$1_sorted.txt)" ]; then
+      echo "Files under $local_cert will be implicitly trusted."
+      echo "We have found questionable certificates there."
+      echo "We recommend that you manually check which program installed them."
+      echo
+    fi
+  fi
+  local pemsum_sorted="$(mktemp)"
+  sha1 /etc/ssl/certs/*.pem | sort > $pemsum_sorted
+  if [ -n "$(join -j 2 $pemsum_sorted certsum_$1_sorted.txt)" ]; then
+    echo 'Warn! Questionable certificates still exist on your system.'
+    echo
+    echo 'Please report a bug at:'
+    echo 'https://github.com/chengr28/RevokeChinaCerts/issues'
+    echo
+    echo 'Please attach the following output:'
+    echo
+    join -j 2 $pemsum_sorted certsum_$1_sorted.txt
+    echo
+  fi
+}
+
+sha1() {
+  for cert in "$@"; do
+    echo $(openssl x509 -sha1 -in $cert -noout -fingerprint) $cert
+  done
 }
 
 revoke_base() {
@@ -48,11 +89,14 @@ revoke_base() {
   comment $Cnnic_ev
 
   update_certs
+  checksum_audit 'base'
 }
 
 revoke_extended() {
   # Same as base.
   revoke_base
+
+  checksum_audit 'extended'
 }
 
 revoke_all() {
@@ -65,6 +109,8 @@ revoke_all() {
   comment $Tw_grca
   comment $Twca
   comment $Twca_global
+
+  checksum_audit 'all'
 }
 
 restore() {
