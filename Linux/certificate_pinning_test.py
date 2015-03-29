@@ -1,4 +1,4 @@
-#!/usr/local/env python
+#/usr/bin/env python
 import ssl
 import M2Crypto
 import hashlib
