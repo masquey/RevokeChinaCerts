@@ -4,6 +4,8 @@ Android Certificates Blacklisting
 This tool generates flashable zip to use with custom recovery on an 
 Android 4.1+ device.
 
+A Chinese version at (https://github.com/chengr28/RevokeChinaCerts/blob/master/Android/README_zhCN.md).
+
 ## Introduction
 
 This utility blacklists CA and EE certificates.
