@@ -29,7 +29,17 @@ update_certs() {
   if [ "$debug" ]; then
     echo 'echo (fake) update-ca-certificates'
   else
-    update-ca-certificates
+    # In /etc/ca-certificates.conf, each line gives a pathname of a CA
+    # certificate under /usr/share/ca-certificates  that should be trusted.
+    # Lines that begin with "!" are deselected, causing the  deactivation
+    # of the CA certificate. If a CA certificate under /usr/share/ca-certificates
+    # does not have a corresponding line in /etc/ca-certificates.conf,
+    # then the CA certificate will be linked into /etc/ssl/certs/name.pem,
+    # but will not be include in `/etc/ssl/certs/ca-certificates.crt`.
+    # Thus an OpenSSL based application will still use it (unless this
+    # application only checks for `/etc/ssl/certs/ca-certificates.crt`).
+    # With the option `--fresh`, the CA certificate will not be linked.
+        update-ca-certificates --fresh
   fi
 }
 
