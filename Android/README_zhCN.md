@@ -38,3 +38,7 @@ Android证书屏蔽
         # 请使用recovery刷入zip包
 
 更具体的使用方法，详见README.md
+
+## 授权
+
+本工具在Apache License下授权。

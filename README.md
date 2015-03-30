@@ -47,4 +47,6 @@ Revoke China Certificates.<br />
 * [Local-Policy](https://bitbucket.org/MartinEden/local-policy/overview)
 
 ### License
-GNU General Public License/GNU GPL v2
+Windows: GNU General Public License/GNU GPL v2
+Linux & Android: Apache License
+Mac: BSD

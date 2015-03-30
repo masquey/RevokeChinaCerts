@@ -79,4 +79,6 @@ Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
   you worry about it, you can check its emptiness with `certutil -d sql:${DBPATH} -L`
   yourself. And revoke certificates in it via `revoke-china-certs.sh` if necessary.
 
+## License
 
+This Linux utility is distributed under the Apache License.

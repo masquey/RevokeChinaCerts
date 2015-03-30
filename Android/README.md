@@ -108,3 +108,7 @@ For more detailed description on certificate blacklisting on Android, see
 [here](http://nelenkov.blogspot.hk/2012/07/certificate-blacklisting-in-jelly-bean.html). And
 [here](http://nelenkov.blogspot.hk/2012/12/certificate-pinning-in-android-42.html) for
 certificate pinning.
+
+## License
+
+This tool is distributed under the Apache License.
