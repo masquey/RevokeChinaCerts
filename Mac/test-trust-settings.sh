@@ -1,10 +1,6 @@
 #!/bin/bash
-#
-# Author: @ntkme
-#
 
-pushd "$(dirname "$0")" >/dev/null
+SOURCE_DIR=$(dirname "$0")
 
-test/test-url-list.sh test/test-url-list.txt
+cat "$SOURCE_DIR/test/test-url-list.txt" | xargs "$SOURCE_DIR/test/test-url.sh"
 
-popd >/dev/null

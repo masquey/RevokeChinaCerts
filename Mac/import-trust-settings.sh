@@ -1,15 +1,18 @@
 #!/bin/bash
-#
-# Author: @ntkme
-#
 
-pushd "$(dirname "$0")" >/dev/null
+SOURCE_DIR=$(dirname "$0")
 
-PATH=$PATH:$PWD/bin
+import-trust-settings () {
+  TrustSettings=${1:-"$SOURCE_DIR/TrustSettings.plist"}
+  TrustSettingsExported=$(mktemp -t TrustSettingsExported.plist.XXXXXX)
+  TrustSettingsMerged=$(mktemp -t TrustSettingsMerged.plist.XXXXXX)
 
-security trust-settings-export -d TrustSettingsExported.plist 2>/dev/null
-security-trust-settings-merge TrustSettingsExported.plist TrustSettings.plist TrustSettings.plist
-/bin/rm TrustSettingsExported.plist 2>/dev/null
-/usr/bin/sudo -p "Please enter %u's password:" security trust-settings-import -d TrustSettings.plist
+  security trust-settings-export -d "$TrustSettingsExported" 2>/dev/null
+  "$SOURCE_DIR/libexec/security-trust-settings-merge" "$TrustSettingsExported" "$TrustSettings" "$TrustSettingsMerged"
+  /bin/rm "$TrustSettingsExported"
+  /usr/bin/sudo -p "Please enter %u's password:" security trust-settings-import -d "$TrustSettingsMerged"
+  /bin/rm "$TrustSettingsMerged"
+}
 
-popd >/dev/null
+import-trust-settings "$@"
+
