@@ -24,7 +24,9 @@ readonly Epki='mozilla/ePKI_Root_Certification_Authority.crt'
 readonly Tw_grca='mozilla/Taiwan_GRCA.crt'
 readonly Twca='mozilla/TWCA_Root_Certification_Authority.crt'
 readonly Twca_global='mozilla/TWCA_Global_Root_CA.crt'
+readonly blacklisted_certs='../Windows/Certs/Online'
 
+readonly blacklist_dir='/etc/ca-certificates/trust-source/blacklist' # arch
 readonly local_cert='/usr/local/share/ca-certificates'
 readonly hooks='/etc/ca-certificates/update.d'
 
@@ -82,6 +84,31 @@ sha1() {
   for cert in "$@"; do
     echo $(openssl x509 -sha1 -in $cert -noout -fingerprint) $cert
   done
+}
+
+generate_cert_filenames() {
+  cat certsum_$1.txt | cut -f 3 -d ' '
+}
+
+copy_blacklisted_certs() {
+  for cert in $(generate_cert_filenames $1); do
+    cp $blacklisted_certs/$certs $blacklist_dir
+  done
+}
+
+revoke_arch() {
+  copy_blacklisted_certs $1
+  trust extract-compat
+}
+
+restore_arch() {
+  for cert in $(generate_cert_filenames $1); do
+    path="$blacklist_dir/$certs"
+    if [ -f "$path" ]; then
+      rm "$path"
+    fi
+  done
+  trust extract-compat
 }
 
 revoke_base() {
@@ -143,13 +170,24 @@ main() {
     fi
   fi
 
-  case $1 in
-    base) revoke_base;;
-    extended) revoke_extended;;
-    all) revoke_all;;
-    restore) restore;;
-    *) help; exit 1;;
-  esac
+  # From 2014-12-11, Arch uses a different mechanism.
+  if [ -f '/etc/arch-release' ]; then
+    case $1 in
+      base) revoke_arch base;;
+      extended) revoke_arch extended;;
+      all) revoke_arch all;;
+      restore) restore_arch;;
+      *) help; exit 1;;
+    esac
+  else
+    case $1 in
+      base) revoke_base;;
+      extended) revoke_extended;;
+      all) revoke_all;;
+      restore) restore;;
+      *) help; exit 1;;
+    esac
+  fi
 }
 
 
