@@ -7,8 +7,14 @@ PASSING=0
 FAILING=0
 SKIPPING=0
 
+trap 'kill 0' SIGINT SIGTERM
+
 for url in $(cat "${1:-$(dirname "$0")/test-url-list.txt}"); do
-  "$(dirname "$0")/test-url.sh" "$url"
+  "$(dirname "$0")/test-url.sh" "$url" &
+done
+
+for job in $(jobs -p); do
+  wait "$job"
   case "$?" in
     0)
       PASSING=$(( $PASSING + 1 ))
