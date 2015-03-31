@@ -42,7 +42,14 @@ wget () {
 }
 
 test-url () {
-  TESTDRIVER=${TESTDRIVER:-$(test -n "$(which curl 2>/dev/null)" && echo curl || echo wget)}
+  case "$(uname)" in
+    Darwin)
+      TESTDRIVER=${TESTDRIVER:-curl}
+      ;;
+    *)
+      TESTDRIVER=${TESTDRIVER:-wget}
+      ;;
+  esac
 
   PASSING=0
   FAILING=0
