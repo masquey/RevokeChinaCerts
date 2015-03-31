@@ -1,8 +1,7 @@
-# Revoke-China-Certs on OS X
+# Revoke China Certs on OS X
 
-## Introduction
+Mark certifications from China as **not trusted** on OS X.
 
-This tool marks all Chinese online certifications as not trusted for OS X.
 
 ## Usage
 
@@ -14,11 +13,12 @@ This tool marks all Chinese online certifications as not trusted for OS X.
 
 This will merge new trust settings into existing settings.
 
-If you'd like to ignore all existing settings, simply run:
+If you'd like to overwrite all existing settings, simply run:
 
 ``` sh
 sudo security trust-settings-import -d TrustSettings.plist
 ```
+
 
 ### Test Trust Setting
 
@@ -26,13 +26,15 @@ sudo security trust-settings-import -d TrustSettings.plist
 ./test-trust-settings.sh
 ```
 
-This will run all tests using urls found in [test/test-url-list.txt](test/test-url-list.txt).
+This will test all urls found in [test/test-url-list.txt](test/test-url-list.txt). It will use `curl` by default.
 
-To run the test manually against a single url, use the following command:
+To run the test with `wget`, you can set `$TESTDRIVER` environment variable.
 
 ``` sh
-./test/test-url.sh https://example.com/
+TESTDRIVER=wget ./test-trust-settings.sh
 ```
+
+Beware that `wget` must be built with Apple's SSL library to take effect of trust settings.
 
 
 ### Rebuild Trust Settings
@@ -44,6 +46,16 @@ To run the test manually against a single url, use the following command:
 This will rebuild trust settings using all online certs found in Windows version.
 
 To build a blacklist with your own choice of certifications, edit `$ISSUERS` and `$CERTIFICATIONS` in [build-trust-settings.sh](build-trust-settings.sh).
+
+
+### Reset Trust Settings
+
+``` sh
+./libexec/security-trust-settings-merge SystemDefault.plist
+sudo security trust-settings-import -d SystemDefault.plist
+```
+
+This will restore your trust settings to system default.
 
 
 
