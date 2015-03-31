@@ -2,52 +2,43 @@
 # This script accesses the test sites described in README.
 # This file should be updated according to README file.
 
+SOURCE_DIR=$(dirname "$0")
+
 base() {
     # use cnnic.cn so that it matches the address in the cert
     # served, rather than cnnic.net.cn as presented in README
-    wget -O /dev/null https://www.cnnic.cn/ 2>/dev/null && \
-    wget -O /dev/null https://evdemo.cnnic.cn/ 2>/dev/null && \
-    wget -O /dev/null https://wacc.n.shifen.com/ 2>/dev/null && \
-    wget -O /dev/null https://mail.ztgame.com/ 2>/dev/null && \
-    wget -O /dev/null https://211.146.10.133/ 2>/dev/null
-    RESULT=$?
-    if [ $RESULT -eq 0 ];then
-        echo "Failed test sites for BASE incremental-set"
-    else
-        echo "Passed test sites for BASE incremental-set"
-    fi
+    "$SOURCE_DIR/../Mac/test/test-url.sh" \
+      https://www.cnnic.cn/ \
+      https://evdemo.cnnic.cn/ \
+      https://wacc.n.shifen.com/ \
+      https://mail.ztgame.com/ \
+      https://211.146.10.133/
 }
 
 extended() {
-    wget -O /dev/null https://cstest.cfca.com.cn/ 2>/dev/null && \
-    wget -O /dev/null https://cs.cfca.com.cn/ 2>/dev/null && \
-    wget -O /dev/null https://www.sheca.com/ 2>/dev/null && \
-    wget -O /dev/null https://ibanks.bankofshanghai.com/ 2>/dev/null
-    RESULT=$?
-    if [ $RESULT -eq 0 ];then
-        echo "Failed test sites for EXTENDED incremental-set"
-    else
-        echo "Passed test sites for EXTENDED incremental-set"
-    fi
+    "$SOURCE_DIR/../Mac/test/test-url.sh" \
+      https://cstest.cfca.com.cn/ \
+      https://cs.cfca.com.cn/ \
+      https://www.sheca.com/ \
+      https://ibanks.bankofshanghai.com/
 }
 
 all() {
-    wget -O /dev/null https://www.wosign.com/ 2>/dev/null
-    RESULT=$?
-    if [ $RESULT -eq 0 ];then
-        echo "Failed test sites for ALL incremental-set"
-    else
-        echo "Passed test sites for ALL incremental-set"
-    fi
+    "$SOURCE_DIR/../Mac/test/test-url.sh" \
+      https://www.wosign.com/
 }
 
 echo "---------------------"
-echo "Beginning tests."
-echo "There are 3 tests (BASE/EXTENDED/ALL), each of which would print a"\
-    " 'Passed test' if passes"
+echo "Beginning base tests."
 echo "---------------------"
 base
+echo "-------------------------"
+echo "Beginning extended tests."
+echo "-------------------------"
 extended
+echo "--------------------"
+echo "Beginning all tests."
+echo "--------------------"
 all
-echo "---------------------"
+echo "-------------------"
 echo "All tests executed."
