@@ -24,3 +24,4 @@ fi
 
 CERTS=`echo $CA_CERTS $EE_CERTS`
 ./nss_revoke.sh ${2:-~/.pki/nssdb} "${CERTS}"
+./cac_revoke.sh ${1:-extended}
