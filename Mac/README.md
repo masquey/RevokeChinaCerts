@@ -40,12 +40,24 @@ Beware that `wget` must be built with Apple's SSL library to take effect of trus
 ### Rebuild Trust Settings
 
 ``` sh
-./build-trust-settings.sh
+MODE=essential ./build-trust-settings.sh
 ```
 
-This will rebuild trust settings using all online certs found in Windows version.
+This will rebuild trust settings using certificates in [Severity.High.md](../Shared/Certificates/Severity.High.md).
 
-To build a blacklist with your own choice of certifications, edit `$ISSUERS` and `$CERTIFICATIONS` in [build-trust-settings.sh](build-trust-settings.sh).
+```
+MODE=recommend ./build-trust-settings.sh
+```
+
+This will rebuild trust settings using certificates in [Severity.High.md](../Shared/Certificates/Severity.High.md) and [Severity.Medium.md](../Shared/Certificates/Severity.Medium.md). *Default*.
+
+```
+MODE=strict ./build-trust-settings.sh
+```
+
+This will rebuild trust settings using certificates in [Severity.High.md](../Shared/Certificates/Severity.High.md), [Severity.Medium.md](../Shared/Certificates/Severity.Medium.md) and [Severity.Low.md](../Shared/Certificates/Severity.Low.md).
+
+> See [Certificates/README.md](../Shared/Certificates/README.md) for more details.
 
 
 ### Reset Trust Settings
