@@ -12,7 +12,7 @@ certificates () {
         if [ "$1" = "--SHA1" ]; then
           echo "$certificate"
         else
-          echo "$SOURCE_DIR/${certificate}.pem"
+          echo "$SOURCE_DIR/${certificate}.crt"
         fi
       done
     done
