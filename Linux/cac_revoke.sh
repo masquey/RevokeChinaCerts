@@ -92,7 +92,7 @@ generate_cert_filenames() {
 
 copy_blacklisted_certs() {
   for cert in $(generate_cert_filenames $1); do
-    cp $blacklisted_certs/$certs $blacklist_dir
+    cp $blacklisted_certs/$cert $blacklist_dir
   done
 }
 
