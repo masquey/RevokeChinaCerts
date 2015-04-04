@@ -29,5 +29,4 @@ Each certificate is named with its SHA1 fingerprint, in `.crt` format.
 1. Put a `.crt` version of the certificate in this folder, which must be in base64 encoded PEM format.
 2. Run `./rehash.sh` to rename the newly added `.crt` to its SHA1 fingerprint.
 3. Define its severity by put its SHA1 fingerprint into one of the severity list.
-2. Run `./rehash.sh` to regenerate the hunman readable certificates details.
-
+4. Run `./update.sh` to run all update hooks.
