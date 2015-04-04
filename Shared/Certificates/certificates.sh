@@ -1,6 +1,9 @@
 #!/bin/sh
 
 SOURCE_DIR=$(dirname "$0")
+# Default to all if not specified
+TYPE=${TYPE:-'SSL Intermediate.CA Root.CA'}
+SEVERITY=${SEVERITY:-'High Medium Low'}
 
 certificates () {
   for severity_level in $SEVERITY; do
