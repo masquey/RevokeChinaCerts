@@ -5,7 +5,7 @@ Certificates
 
 Certificates categorized in three severity level.
 
-Each certificate is named with its SHA1 fingerprint, in `.pem` format.
+Each certificate is named with its SHA1 fingerprint, in `.crt` format.
 
 ### Definition of Severity Level
 
