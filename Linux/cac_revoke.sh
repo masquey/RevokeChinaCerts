@@ -24,7 +24,7 @@ readonly Epki='mozilla/ePKI_Root_Certification_Authority.crt'
 readonly Tw_grca='mozilla/Taiwan_GRCA.crt'
 readonly Twca='mozilla/TWCA_Root_Certification_Authority.crt'
 readonly Twca_global='mozilla/TWCA_Global_Root_CA.crt'
-readonly blacklisted_certs='../Windows/Certs/Online'
+readonly blacklisted_certs='../'
 
 readonly blacklist_dir='/etc/ca-certificates/trust-source/blacklist' # arch
 readonly local_cert='/usr/local/share/ca-certificates'

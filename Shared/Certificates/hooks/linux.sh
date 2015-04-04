@@ -9,7 +9,7 @@ function _generate {
 	rm "$2" "$3"
 	SEVERITY="$1" TYPE="Root.CA Intermediate.CA SSL" "$CERTIFICATES" \
 	| while read cert; do
-		paste <(openssl x509 -sha1 -fingerprint -noout -in $cert) <(echo $cert) >> $2
+		paste <(openssl x509 -sha1 -fingerprint -noout -in $cert) <(git ls-tree --full-name --name-only HEAD $cert) >> $2
 	done
 	sort "$2" > "$3"
 }
