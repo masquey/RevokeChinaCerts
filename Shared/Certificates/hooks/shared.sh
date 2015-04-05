@@ -11,7 +11,7 @@ for severity in High Medium Low; do
       echo "${crt}.crt"
       echo "--------------------------------------------"
       echo
-      openssl x509 -in "$CERTIFICATES_DIR/${crt}.crt" -noout -text -nameopt oneline,utf8,-esc_msb -certopt no_header,no_validity,no_sigdump,ext_error | sed -e '/Modulus/,/Exponent/d'
+      openssl x509 -in "$CERTIFICATES_DIR/${crt}.crt" -noout -text -nameopt oneline,utf8,-esc_msb -certopt no_header,no_sigdump,ext_error | sed -e '/Modulus/,/Exponent/d'
       echo
       echo
       echo

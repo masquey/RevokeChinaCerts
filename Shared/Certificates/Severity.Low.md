@@ -8,6 +8,9 @@ AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
             6f:26:6b:e7:f8:ca:1f:a4
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = Sinorail Certification Authority, CN = SRCA
+        Validity
+            Not Before: May 25 06:56:00 2009 GMT
+            Not After : May 20 06:56:00 2029 GMT
         Subject: C = CN, O = Sinorail Certification Authority, CN = SRCA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -36,6 +39,9 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
             5e:68:d6:11:71:94:63:50:56:00:68:f3:3e:c9:c5:91
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign
+        Validity
+            Not Before: Aug  8 01:00:01 2009 GMT
+            Not After : Aug  8 01:00:01 2039 GMT
         Subject: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -58,6 +64,9 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
             50:70:6b:cd:d8:13:fc:1b:4e:3b:33:72:d2:11:48:8d
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = CN, O = WoSign CA Limited, CN = CA 沃通根证书
+        Validity
+            Not Before: Aug  8 01:00:01 2009 GMT
+            Not After : Aug  8 01:00:01 2039 GMT
         Subject: C = CN, O = WoSign CA Limited, CN = CA 沃通根证书
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -80,6 +89,9 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
             86:fe:1d:5f:c3:81:f8:47:d7:33:2c:73:94:75:7b:37
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = FR, O = Certplus, CN = Class 1 Primary CA
+        Validity
+            Not Before: Jul  7 17:01:00 1999 GMT
+            Not After : Jul  6 23:59:59 2020 GMT
         Subject: C = FR, O = Certplus, CN = Class 1 Primary CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -106,6 +118,9 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
         Serial Number: 429783165 (0x199df87d)
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = WoSign eCommerce Services Limited, CN = Certification Authority of WoSign
+        Validity
+            Not Before: Aug  8 01:00:01 2009 GMT
+            Not After : Aug  8 01:00:01 2039 GMT
         Subject: C = CN, O = WoSign eCommerce Services Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -128,6 +143,9 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
             6b:25:da:8a:88:9d:7c:bc:0f:05:b3:b1:7a:61:45:44
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign G2
+        Validity
+            Not Before: Nov  8 00:58:58 2014 GMT
+            Not After : Nov  8 00:58:58 2044 GMT
         Subject: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign G2
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -150,6 +168,9 @@ D27AD2BEED94C0A13CC72521EA5D71BE8119F32B.crt
             68:4a:58:70:80:6b:f0:8f:02:fa:f6:de:e8:b0:90:90
         Signature Algorithm: ecdsa-with-SHA384
         Issuer: C = CN, O = WoSign CA Limited, CN = CA WoSign ECC Root
+        Validity
+            Not Before: Nov  8 00:58:58 2014 GMT
+            Not After : Nov  8 00:58:58 2044 GMT
         Subject: C = CN, O = WoSign CA Limited, CN = CA WoSign ECC Root
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
@@ -180,6 +201,9 @@ E0925E18C7765E22DABD9427529DA6AF4E066428.crt
         Serial Number: 1 (0x1)
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = HK, O = Hongkong Post, CN = Hongkong Post Root CA
+        Validity
+            Not Before: Jan 16 07:42:00 2000 GMT
+            Not After : Jan 16 23:59:00 2010 GMT
         Subject: C = HK, O = Hongkong Post, CN = Hongkong Post Root CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -199,6 +223,9 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
         Serial Number: 1000 (0x3e8)
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = HK, O = Hongkong Post, CN = Hongkong Post Root CA 1
+        Validity
+            Not Before: May 15 05:13:14 2003 GMT
+            Not After : May 15 04:52:29 2023 GMT
         Subject: C = HK, O = Hongkong Post, CN = Hongkong Post Root CA 1
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -219,6 +246,9 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
             43:11:5a:96:1f:65:5a:d6:f0:33:12:fd:ed:d0:b9:75
         Signature Algorithm: md5WithRSAEncryption
         Issuer: C = MO, O = Macao Post, CN = Macao Post eSignTrust Root Certification Authority
+        Validity
+            Not Before: Jan 30 00:00:00 2003 GMT
+            Not After : Jan 29 23:59:59 2013 GMT
         Subject: C = MO, O = Macao Post, CN = Macao Post eSignTrust Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -239,6 +269,9 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
             52:ac:be:07:11:49:97:bb:1f:bf:87:1b:25:17:bf:a4
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = MO, O = Macao Post, CN = Macao Post eSignTrust Root Certification Authority (G02)
+        Validity
+            Not Before: Jan  6 00:00:00 2010 GMT
+            Not After : Jan  5 23:59:59 2020 GMT
         Subject: C = MO, O = Macao Post, CN = Macao Post eSignTrust Root Certification Authority (G02)
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -261,6 +294,9 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
             15:c8:bd:65:47:5c:af:b8:97:00:5e:e4:06:d2:bc:9d
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = TW, O = "Chunghwa Telecom Co., Ltd.", OU = ePKI Root Certification Authority
+        Validity
+            Not Before: Dec 20 02:31:27 2004 GMT
+            Not After : Dec 20 02:31:27 2034 GMT
         Subject: C = TW, O = "Chunghwa Telecom Co., Ltd.", OU = ePKI Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -283,6 +319,9 @@ F48B11BFDEABBE94542071E641DE6BBE882B40B9.crt
             1f:9d:59:5a:d7:2f:c2:06:44:a5:80:08:69:e3:5e:f6
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = TW, O = Government Root Certification Authority
+        Validity
+            Not Before: Dec  5 13:23:33 2002 GMT
+            Not After : Dec  5 13:23:33 2032 GMT
         Subject: C = TW, O = Government Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -304,6 +343,9 @@ F48B11BFDEABBE94542071E641DE6BBE882B40B9.crt
         Serial Number: 3262 (0xcbe)
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Global Root CA
+        Validity
+            Not Before: Jun 27 06:28:33 2012 GMT
+            Not After : Dec 31 15:59:59 2030 GMT
         Subject: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Global Root CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -323,6 +365,9 @@ CF9E876DD3EBFC422697A3B5A37AA076A9062348.crt
         Serial Number: 1 (0x1)
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Root Certification Authority
+        Validity
+            Not Before: Aug 28 07:24:33 2008 GMT
+            Not After : Dec 31 15:59:59 2030 GMT
         Subject: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -344,6 +389,9 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
         Serial Number: 1 (0x1)
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Root Certification Authority
+        Validity
+            Not Before: Aug 28 07:47:13 2008 GMT
+            Not After : Dec 31 15:59:59 2030 GMT
         Subject: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -368,6 +416,9 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
         Serial Number: 61 (0x3d)
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
+        Validity
+            Not Before: Mar  1 01:00:01 2011 GMT
+            Not After : Mar  1 01:00:01 2016 GMT
         Subject: C = CN, O = WoSign eCommerce Services Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -399,6 +450,9 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
         Serial Number: 57 (0x39)
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
+        Validity
+            Not Before: Mar  1 01:00:00 2011 GMT
+            Not After : Mar  1 01:00:00 2016 GMT
         Subject: C = CN, O = WoSign eCommerce Services Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -431,6 +485,9 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
             1d:06:19:4e:5a:f8:a1:7f:34:33:23:fe:1c:83:6a:4a
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
+        Validity
+            Not Before: Sep 17 22:46:36 2006 GMT
+            Not After : Dec 31 23:59:59 2019 GMT
         Subject: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -463,6 +520,9 @@ B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6.crt
             19:c2:85:30:e9:3b:36
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
+        Validity
+            Not Before: Sep 17 22:46:36 2006 GMT
+            Not After : Dec 31 23:59:59 2019 GMT
         Subject: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -495,6 +555,9 @@ D8EFF6C28BB508E4702565F42748454A872BD412.crt
             44:d1:3b:8d:d0:f1:88:50:8d:9f:73:24:d9:0a:9f:34
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
+        Validity
+            Not Before: Sep 17 22:46:36 2006 GMT
+            Not After : Dec 31 23:59:59 2019 GMT
         Subject: C = CN, O = WoSign CA Limited, CN = CA 沃通根证书
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -527,6 +590,9 @@ CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
             1f:ce:a7:f6:a9:7f:e9
         Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
+        Validity
+            Not Before: Sep 17 22:46:36 2006 GMT
+            Not After : Dec 31 23:59:59 2019 GMT
         Subject: C = CN, O = WoSign CA Limited, CN = CA 沃通根证书
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -559,6 +625,9 @@ CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
             13:0d:5e:7b:d2:6a:ed:0f:c3:8a:0d:c0:08:5e:15:e9
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN - DATACorp SGC
+        Validity
+            Not Before: Jun 24 18:57:21 1999 GMT
+            Not After : Jun 24 19:06:30 2019 GMT
         Subject: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -595,6 +664,9 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
             64:d1:b8:fd:4f:36:56:c2:8d:c5:36:b5:d5:ae:a2:e4
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Hardware
+        Validity
+            Not Before: Apr 25 00:00:00 2007 GMT
+            Not After : Jul  9 18:19:22 2019 GMT
         Subject: C = US, O = "WoSign, Inc.", CN = WoSign Premium Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -628,6 +700,9 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
             2d:c7:62:b1:43:5e:0e:74:3a:16:1f:f8:35:9c:e5:70
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Hardware
+        Validity
+            Not Before: Apr 25 00:00:00 2007 GMT
+            Not After : Jul  9 18:19:22 2019 GMT
         Subject: C = US, O = "WoSign, Inc.", CN = WoSign Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -661,6 +736,9 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
             54:03:01:93:bf:4d:55:bf:8b:f9:04:a7:c5:ac:72:ae
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN - DATACorp SGC
+        Validity
+            Not Before: Apr 25 00:00:00 2007 GMT
+            Not After : Jun 24 19:06:30 2019 GMT
         Subject: C = US, O = "WoSign, Inc.", CN = WoSign SGC Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -694,6 +772,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
             54:87:e3:c8:86:16:e0:ec:0c:bc:d0:52:06:6f:fe:07
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Client Authentication and Email
+        Validity
+            Not Before: Apr 25 00:00:00 2007 GMT
+            Not After : Jul  9 17:36:58 2019 GMT
         Subject: C = US, O = "WoSign, Inc.", CN = WoSign Client Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -727,6 +808,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
             3c:2b:37:51:28:98:14:cd:eb:27:f4:07:cc:4b:8d:58
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Hardware
+        Validity
+            Not Before: Oct  3 00:00:00 2006 GMT
+            Not After : Jul  9 18:19:22 2019 GMT
         Subject: C = US, O = "Wotone Communications, Inc.", CN = WoTrust Premium Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -760,6 +844,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
             24:6b:3a:54:91:31:d5:b6:88:5c:97:58:1f:ea:c2:71
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Hardware
+        Validity
+            Not Before: Oct  3 00:00:00 2006 GMT
+            Not After : Jul  9 18:19:22 2019 GMT
         Subject: C = US, O = "Wotone Communications, Inc.", CN = WoTrust Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -793,6 +880,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
             1f:23:60:a6:12:02:0d:dd:a1:00:a2:e0:2e:7b:d0:b6
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN - DATACorp SGC
+        Validity
+            Not Before: Oct  3 00:00:00 2006 GMT
+            Not After : Jun 24 19:06:30 2019 GMT
         Subject: C = US, O = "Wotone Communications, Inc.", CN = WoTrust SGC Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -826,6 +916,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
             75:c9:5a:ee:30:57:5e:a9:30:f0:95:36:10:43:46:66
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Client Authentication and Email
+        Validity
+            Not Before: Aug 30 00:00:00 2006 GMT
+            Not After : Jul  9 17:36:58 2019 GMT
         Subject: C = US, O = "Wotone Communications, Inc.", CN = WoTrust Client Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -858,6 +951,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Serial Number: 120016505 (0x7274e79)
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, O = GTE Corporation, OU = "GTE CyberTrust Solutions, Inc.", CN = GTE CyberTrust Global Root
+        Validity
+            Not Before: Oct  7 16:59:34 2009 GMT
+            Not After : Sep 30 16:58:57 2016 GMT
         Subject: C = TW, O = TAIWAN-CA.COM Inc., OU = SSL Certification Service Provider, CN = TaiCA Secure CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -890,6 +986,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Serial Number: 120014007 (0x72744b7)
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = IE, O = Baltimore, OU = CyberTrust, CN = Baltimore CyberTrust Root
+        Validity
+            Not Before: Dec  8 17:46:00 2010 GMT
+            Not After : Sep 30 16:45:17 2016 GMT
         Subject: C = TW, O = TAIWAN-CA INC., OU = SSL Certification Service Provider, CN = TWCA Secure CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
@@ -922,6 +1021,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
             74:c1:87:53:f7:ee:b4:ea:23:8d:84:16:b5:ac:76:46
         Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = SE, O = AddTrust AB, OU = AddTrust External TTP Network, CN = AddTrust External CA Root
+        Validity
+            Not Before: Jul 11 00:00:00 2012 GMT
+            Not After : May 30 10:48:38 2020 GMT
         Subject: C = TW, O = TAIWAN-CA INC., OU = SSL Security Services, CN = TWCA Secure Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
