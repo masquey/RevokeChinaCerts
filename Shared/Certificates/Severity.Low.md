@@ -6,7 +6,6 @@ AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
         Version: 3 (0x2)
         Serial Number:
             6f:26:6b:e7:f8:ca:1f:a4
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = Sinorail Certification Authority, CN = SRCA
         Validity
             Not Before: May 25 06:56:00 2009 GMT
@@ -37,7 +36,6 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
         Version: 3 (0x2)
         Serial Number:
             5e:68:d6:11:71:94:63:50:56:00:68:f3:3e:c9:c5:91
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign
         Validity
             Not Before: Aug  8 01:00:01 2009 GMT
@@ -62,7 +60,6 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
         Version: 3 (0x2)
         Serial Number:
             50:70:6b:cd:d8:13:fc:1b:4e:3b:33:72:d2:11:48:8d
-        Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = CN, O = WoSign CA Limited, CN = CA 沃通根证书
         Validity
             Not Before: Aug  8 01:00:01 2009 GMT
@@ -87,7 +84,6 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
         Version: 3 (0x2)
         Serial Number:
             86:fe:1d:5f:c3:81:f8:47:d7:33:2c:73:94:75:7b:37
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = FR, O = Certplus, CN = Class 1 Primary CA
         Validity
             Not Before: Jul  7 17:01:00 1999 GMT
@@ -116,7 +112,6 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
 
         Version: 3 (0x2)
         Serial Number: 429783165 (0x199df87d)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = WoSign eCommerce Services Limited, CN = Certification Authority of WoSign
         Validity
             Not Before: Aug  8 01:00:01 2009 GMT
@@ -141,7 +136,6 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
         Version: 3 (0x2)
         Serial Number:
             6b:25:da:8a:88:9d:7c:bc:0f:05:b3:b1:7a:61:45:44
-        Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign G2
         Validity
             Not Before: Nov  8 00:58:58 2014 GMT
@@ -166,7 +160,6 @@ D27AD2BEED94C0A13CC72521EA5D71BE8119F32B.crt
         Version: 3 (0x2)
         Serial Number:
             68:4a:58:70:80:6b:f0:8f:02:fa:f6:de:e8:b0:90:90
-        Signature Algorithm: ecdsa-with-SHA384
         Issuer: C = CN, O = WoSign CA Limited, CN = CA WoSign ECC Root
         Validity
             Not Before: Nov  8 00:58:58 2014 GMT
@@ -199,7 +192,6 @@ E0925E18C7765E22DABD9427529DA6AF4E066428.crt
 
         Version: 3 (0x2)
         Serial Number: 1 (0x1)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = HK, O = Hongkong Post, CN = Hongkong Post Root CA
         Validity
             Not Before: Jan 16 07:42:00 2000 GMT
@@ -221,7 +213,6 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
 
         Version: 3 (0x2)
         Serial Number: 1000 (0x3e8)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = HK, O = Hongkong Post, CN = Hongkong Post Root CA 1
         Validity
             Not Before: May 15 05:13:14 2003 GMT
@@ -244,7 +235,6 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
         Version: 3 (0x2)
         Serial Number:
             43:11:5a:96:1f:65:5a:d6:f0:33:12:fd:ed:d0:b9:75
-        Signature Algorithm: md5WithRSAEncryption
         Issuer: C = MO, O = Macao Post, CN = Macao Post eSignTrust Root Certification Authority
         Validity
             Not Before: Jan 30 00:00:00 2003 GMT
@@ -267,7 +257,6 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
         Version: 3 (0x2)
         Serial Number:
             52:ac:be:07:11:49:97:bb:1f:bf:87:1b:25:17:bf:a4
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = MO, O = Macao Post, CN = Macao Post eSignTrust Root Certification Authority (G02)
         Validity
             Not Before: Jan  6 00:00:00 2010 GMT
@@ -292,7 +281,6 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
         Version: 3 (0x2)
         Serial Number:
             15:c8:bd:65:47:5c:af:b8:97:00:5e:e4:06:d2:bc:9d
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = TW, O = "Chunghwa Telecom Co., Ltd.", OU = ePKI Root Certification Authority
         Validity
             Not Before: Dec 20 02:31:27 2004 GMT
@@ -317,7 +305,6 @@ F48B11BFDEABBE94542071E641DE6BBE882B40B9.crt
         Version: 3 (0x2)
         Serial Number:
             1f:9d:59:5a:d7:2f:c2:06:44:a5:80:08:69:e3:5e:f6
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = TW, O = Government Root Certification Authority
         Validity
             Not Before: Dec  5 13:23:33 2002 GMT
@@ -341,7 +328,6 @@ F48B11BFDEABBE94542071E641DE6BBE882B40B9.crt
 
         Version: 3 (0x2)
         Serial Number: 3262 (0xcbe)
-        Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Global Root CA
         Validity
             Not Before: Jun 27 06:28:33 2012 GMT
@@ -363,7 +349,6 @@ CF9E876DD3EBFC422697A3B5A37AA076A9062348.crt
 
         Version: 3 (0x2)
         Serial Number: 1 (0x1)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Root Certification Authority
         Validity
             Not Before: Aug 28 07:24:33 2008 GMT
@@ -387,7 +372,6 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
 
         Version: 3 (0x2)
         Serial Number: 1 (0x1)
-        Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Root Certification Authority
         Validity
             Not Before: Aug 28 07:47:13 2008 GMT
@@ -414,7 +398,6 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
 
         Version: 3 (0x2)
         Serial Number: 61 (0x3d)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
         Validity
             Not Before: Mar  1 01:00:01 2011 GMT
@@ -448,7 +431,6 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
 
         Version: 3 (0x2)
         Serial Number: 57 (0x39)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
         Validity
             Not Before: Mar  1 01:00:00 2011 GMT
@@ -483,7 +465,6 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
         Version: 3 (0x2)
         Serial Number:
             1d:06:19:4e:5a:f8:a1:7f:34:33:23:fe:1c:83:6a:4a
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
         Validity
             Not Before: Sep 17 22:46:36 2006 GMT
@@ -518,7 +499,6 @@ B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6.crt
         Version: 3 (0x2)
         Serial Number:
             19:c2:85:30:e9:3b:36
-        Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
         Validity
             Not Before: Sep 17 22:46:36 2006 GMT
@@ -553,7 +533,6 @@ D8EFF6C28BB508E4702565F42748454A872BD412.crt
         Version: 3 (0x2)
         Serial Number:
             44:d1:3b:8d:d0:f1:88:50:8d:9f:73:24:d9:0a:9f:34
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
         Validity
             Not Before: Sep 17 22:46:36 2006 GMT
@@ -588,7 +567,6 @@ CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
         Version: 3 (0x2)
         Serial Number:
             1f:ce:a7:f6:a9:7f:e9
-        Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
         Validity
             Not Before: Sep 17 22:46:36 2006 GMT
@@ -623,7 +601,6 @@ CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
         Version: 3 (0x2)
         Serial Number:
             13:0d:5e:7b:d2:6a:ed:0f:c3:8a:0d:c0:08:5e:15:e9
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN - DATACorp SGC
         Validity
             Not Before: Jun 24 18:57:21 1999 GMT
@@ -662,7 +639,6 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
         Version: 3 (0x2)
         Serial Number:
             64:d1:b8:fd:4f:36:56:c2:8d:c5:36:b5:d5:ae:a2:e4
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Hardware
         Validity
             Not Before: Apr 25 00:00:00 2007 GMT
@@ -698,7 +674,6 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
         Version: 3 (0x2)
         Serial Number:
             2d:c7:62:b1:43:5e:0e:74:3a:16:1f:f8:35:9c:e5:70
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Hardware
         Validity
             Not Before: Apr 25 00:00:00 2007 GMT
@@ -734,7 +709,6 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
         Version: 3 (0x2)
         Serial Number:
             54:03:01:93:bf:4d:55:bf:8b:f9:04:a7:c5:ac:72:ae
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN - DATACorp SGC
         Validity
             Not Before: Apr 25 00:00:00 2007 GMT
@@ -770,7 +744,6 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Version: 3 (0x2)
         Serial Number:
             54:87:e3:c8:86:16:e0:ec:0c:bc:d0:52:06:6f:fe:07
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Client Authentication and Email
         Validity
             Not Before: Apr 25 00:00:00 2007 GMT
@@ -806,7 +779,6 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Version: 3 (0x2)
         Serial Number:
             3c:2b:37:51:28:98:14:cd:eb:27:f4:07:cc:4b:8d:58
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Hardware
         Validity
             Not Before: Oct  3 00:00:00 2006 GMT
@@ -842,7 +814,6 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Version: 3 (0x2)
         Serial Number:
             24:6b:3a:54:91:31:d5:b6:88:5c:97:58:1f:ea:c2:71
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Hardware
         Validity
             Not Before: Oct  3 00:00:00 2006 GMT
@@ -878,7 +849,6 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Version: 3 (0x2)
         Serial Number:
             1f:23:60:a6:12:02:0d:dd:a1:00:a2:e0:2e:7b:d0:b6
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN - DATACorp SGC
         Validity
             Not Before: Oct  3 00:00:00 2006 GMT
@@ -914,7 +884,6 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Version: 3 (0x2)
         Serial Number:
             75:c9:5a:ee:30:57:5e:a9:30:f0:95:36:10:43:46:66
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Client Authentication and Email
         Validity
             Not Before: Aug 30 00:00:00 2006 GMT
@@ -949,7 +918,6 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
 
         Version: 3 (0x2)
         Serial Number: 120016505 (0x7274e79)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = US, O = GTE Corporation, OU = "GTE CyberTrust Solutions, Inc.", CN = GTE CyberTrust Global Root
         Validity
             Not Before: Oct  7 16:59:34 2009 GMT
@@ -984,7 +952,6 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
 
         Version: 3 (0x2)
         Serial Number: 120014007 (0x72744b7)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = IE, O = Baltimore, OU = CyberTrust, CN = Baltimore CyberTrust Root
         Validity
             Not Before: Dec  8 17:46:00 2010 GMT
@@ -1019,7 +986,6 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Version: 3 (0x2)
         Serial Number:
             74:c1:87:53:f7:ee:b4:ea:23:8d:84:16:b5:ac:76:46
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = SE, O = AddTrust AB, OU = AddTrust External TTP Network, CN = AddTrust External CA Root
         Validity
             Not Before: Jul 11 00:00:00 2012 GMT

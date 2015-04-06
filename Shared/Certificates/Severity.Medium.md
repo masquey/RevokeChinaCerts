@@ -5,7 +5,6 @@ EABDA240440ABBD694930A01D09764C6C2D77966.crt
 
         Version: 3 (0x2)
         Serial Number: 429472831 (0x19993c3f)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = CFCA GT CA
         Validity
             Not Before: Jun 13 08:15:09 2011 GMT
@@ -32,7 +31,6 @@ A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A.crt
 
         Version: 3 (0x2)
         Serial Number: 514564003 (0x1eab9fa3)
-        Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = CN, O = China Financial Certification Authority, CN = CFCA GT CA
         Validity
             Not Before: Aug 21 07:28:33 2012 GMT
@@ -59,7 +57,6 @@ E2B8294B5584AB6B58C290466CAC3FB8398F8483.crt
 
         Version: 3 (0x2)
         Serial Number: 407555286 (0x184accd6)
-        Signature Algorithm: sha256WithRSAEncryption
         Issuer: C = CN, O = China Financial Certification Authority, CN = CFCA EV ROOT
         Validity
             Not Before: Aug  8 03:07:01 2012 GMT
@@ -86,7 +83,6 @@ E2B8294B5584AB6B58C290466CAC3FB8398F8483.crt
 
         Version: 3 (0x2)
         Serial Number: 8 (0x8)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = UniTrust, CN = UCA Global Root
         Validity
             Not Before: Jan  1 00:00:00 2008 GMT
@@ -112,7 +108,6 @@ E2B8294B5584AB6B58C290466CAC3FB8398F8483.crt
 
         Version: 3 (0x2)
         Serial Number: 9 (0x9)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = UniTrust, CN = UCA Root
         Validity
             Not Before: Jan  1 00:00:00 2004 GMT
@@ -138,7 +133,6 @@ C59DD79CC42245AC7216FDC18524F7D1E4CF1E92.crt
 
         Version: 3 (0x2)
         Serial Number: 113 (0x71)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = UniTrust, CN = UCA Extended Validation Root
         Validity
             Not Before: May 19 00:00:00 2012 GMT
@@ -163,7 +157,6 @@ B9C9F58B3BBEF575E2B58328770E7B0076C40B5E.crt
         Version: 3 (0x2)
         Serial Number:
             79:d2:64:10:e2:3f:bd:25:8f:6e:a2:b1:18:53:db:30
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: C = CN, O = UniTrust, CN = UCA Extended Validation Root
         Validity
             Not Before: Mar 28 00:00:00 2013 GMT
@@ -187,7 +180,6 @@ B9C9F58B3BBEF575E2B58328770E7B0076C40B5E.crt
 
         Version: 1 (0x0)
         Serial Number: 16777250 (0x1000022)
-        Signature Algorithm: sha1WithRSA
         Issuer: O = UnitedCA, CN = UCA ROOT
         Validity
             Not Before: Jan  1 00:00:00 2001 GMT
@@ -204,7 +196,6 @@ AB702CDF18EBE8B438C52869CD4A5DEF48B40E33.crt
 
         Version: 1 (0x0)
         Serial Number: 0 (0x0)
-        Signature Algorithm: sha1WithRSAEncryption
         Issuer: OU = GoAgent Root, O = GoAgent, CN = GoAgent CA, ST = Internet, C = CN, L = Cernet
         Validity
             Not Before: Apr 20 17:37:35 2011 GMT
