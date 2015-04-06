@@ -13,7 +13,7 @@ set CertMgr="%cd%\Tools\CertMgr.exe"
 if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
 	set CertMgr="%cd%\Tools\CertMgr_x86.exe"
 )
-set Folder="%cd%\Certs\Organization
+set Folder="%cd%\Certificates\Organization
 set /a SetForce = 0
 set SetForceAppender="%cd%\Tools\SoftCertPolicyAppender\Binary\SoftCertPolicyAppender.exe"
 echo RevokeChinaCerts Organization batch
