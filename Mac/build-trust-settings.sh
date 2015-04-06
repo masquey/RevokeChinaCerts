@@ -1,21 +1,26 @@
 #!/bin/bash
 
 SOURCE_DIR=$(dirname "$0")
-
-ISSUERS="China CNNIC UniTrust Hongkong Chunghwa TAIWAN"
-CERTIFICATIONS=$(ls "$SOURCE_DIR"/../Windows/Certs/Online/*.crt)
+CERTIFICATES="$SOURCE_DIR/../Shared/Certificates/certificates.sh"
 
 build-trust-settings () {
-  FINGERPRINTS=$(for crt in $CERTIFICATIONS; do openssl x509 -in "$crt" -noout -sha1 -fingerprint | sed -e 's/^.*=//g'; done)
+  case $MODE in
+    essential)
+      FINGERPRINTS=$(SEVERITY="High" TYPE="Root.CA Intermediate.CA SSL" "$CERTIFICATES" --SHA1)
+      ;;
+    strict)
+      FINGERPRINTS=$(SEVERITY="High Medium Low" TYPE="Root.CA Intermediate.CA SSL" "$CERTIFICATES" --SHA1)
+      ;;
+    *)
+      FINGERPRINTS=$(SEVERITY="High Medium" TYPE="Root.CA Intermediate.CA SSL" "$CERTIFICATES" --SHA1)
+  esac
 
   TrustSettings=${1:-TrustSettings.plist}
-  TrustSettingsByIssuers=$(mktemp -t TrustSettingsByIssuers.plist.XXXXXX)
   TrustSettingsByFingerprints=$(mktemp -t TrustSettingsByFingerprints.plist.XXXXXX)
 
   "$SOURCE_DIR/libexec/security-trust-settings-blacklist" $FINGERPRINTS "$TrustSettingsByFingerprints"
-  "$SOURCE_DIR/libexec/security-trust-settings-blacklist-issuer" $ISSUERS "$TrustSettingsByIssuers"
   "$SOURCE_DIR/libexec/security-trust-settings-merge" "$TrustSettingsByFingerprints" "$TrustSettingsByIssuers" "$TrustSettings"
-  /bin/rm "$TrustSettingsByIssuers" "$TrustSettingsByFingerprints"
+  /bin/rm "$TrustSettingsByFingerprints"
 }
 
 build-trust-settings "$@"
