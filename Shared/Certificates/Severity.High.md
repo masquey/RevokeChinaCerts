@@ -12,7 +12,7 @@
         Subject: C = CN, O = CNNIC, CN = CNNIC ROOT
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             Netscape Cert Type: 
                 SSL CA, S/MIME CA, Object Signing CA
@@ -40,7 +40,7 @@
         Subject: C = CN, O = China Internet Network Information Center, CN = China Internet Network Information Center EV Certificates Root
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:7C:72:4B:39:C7:C0:DB:62:A5:4F:9B:AA:18:34:92:A2:CA:83:82:59
@@ -67,7 +67,7 @@
         Subject: DC = com, DC = ztgame, CN = GiantRootCA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             1.3.6.1.4.1.311.20.2: 
                 <Not Supported>
@@ -78,8 +78,10 @@
             X509v3 Subject Key Identifier: 
                 1B:CD:FE:7C:5A:08:32:B4:4F:7E:53:3B:8F:92:78:81:C7:93:2D:C1
             X509v3 CRL Distribution Points: 
-                URI:ldap:///CN=GiantRootCA,CN=otherserver,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ztgame,DC=com?certificateRevocationList?base?objectClass=cRLDistributionPoint
-                URI:http://otherserver.ztgame.com/CertEnroll/GiantRootCA.crl
+
+                Full Name:
+                  URI:ldap:///CN=GiantRootCA,CN=otherserver,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ztgame,DC=com?certificateRevocationList?base?objectClass=cRLDistributionPoint
+                  URI:http://otherserver.ztgame.com/CertEnroll/GiantRootCA.crl
 
             1.3.6.1.4.1.311.21.1: 
                 <Not Supported>
@@ -90,8 +92,7 @@
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number:
-            29:13:56:95:ce:dd:e6:d6
+        Serial Number: 2959804581533312726 (0x29135695cedde6d6)
         Issuer: C = CN, O = SARFT, OU = JGZX, CN = JGZXCA
         Validity
             Not Before: Jun 19 09:50:17 2013 GMT
@@ -99,7 +100,7 @@
         Subject: C = CN, O = SARFT, OU = JGZX, CN = JGZXCA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:31:C2:53:F4:81:CE:2C:11:46:9D:72:C8:C3:A8:EC:A9:86:C1:5D:AD
@@ -117,8 +118,7 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number:
-            d2:fc:13:87:a9:44:dc:e7
+        Serial Number: 15203047915477327079 (0xd2fc1387a944dce7)
         Issuer: O = "Superfish, Inc.", L = SF, ST = CA, C = US, CN = "Superfish, Inc."
         Validity
             Not Before: May 12 16:25:26 2014 GMT
@@ -126,7 +126,7 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
         Subject: O = "Superfish, Inc.", L = SF, ST = CA, C = US, CN = "Superfish, Inc."
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: 
                 CA:TRUE
@@ -155,7 +155,7 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
         Subject: C = CN, O = CNNIC SSL, CN = CNNIC SSL
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -165,7 +165,9 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
                 OCSP - URI:http://ocsp.entrust.net
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.entrust.net/server1.crl
+
+                Full Name:
+                  URI:http://crl.entrust.net/server1.crl
 
             X509v3 Certificate Policies: 
                 Policy: X509v3 Any Policy
@@ -186,8 +188,7 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
 --------------------------------------------
 
         Version: 1 (0x0)
-        Serial Number:
-            94:55:da:35:5e:22:9e:22
+        Serial Number: 10688689213381189154 (0x9455da355e229e22)
         Issuer: C = CN, ST = Shanghai, L = Shanghai, O = "Baidu, inc.", OU = SW, CN = SW CA
         Validity
             Not Before: Apr 22 09:55:27 2014 GMT
@@ -195,7 +196,7 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
         Subject: C = CN, ST = Beijing, L = Beijing, O = "Baidu, Inc.", OU = SW, CN = *.wacc.baidu.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
 
 
 
@@ -214,7 +215,7 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
         Subject: C = US, ST = Some-State, O = github.com, OU = github.com, CN = github.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: 
                 CA:FALSE
@@ -240,7 +241,7 @@ F6BEADB9BC02E0A152D71C318739CDECFC1C085D.crt
         Subject: C = cn, CN = google.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:FALSE
@@ -268,7 +269,7 @@ F6BEADB9BC02E0A152D71C318739CDECFC1C085D.crt
         Subject: CN = google.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
 
 
 
@@ -284,7 +285,7 @@ F6BEADB9BC02E0A152D71C318739CDECFC1C085D.crt
         Subject: C = cn, O = yahoo.com, CN = yahoo.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:FALSE
@@ -311,7 +312,7 @@ F6BEADB9BC02E0A152D71C318739CDECFC1C085D.crt
         Subject: C = cn, O = hotmail.com, CN = hotmai.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:FALSE
@@ -339,7 +340,7 @@ DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318.crt
         Subject: CN = www.facebook.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
 
 
 
@@ -355,7 +356,7 @@ F468B5F3FED807974476A22B32EA3137D924F7BA.crt
         Subject: C = cn, O = www.icloud.com, CN = www.icloud.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:FALSE
@@ -383,7 +384,7 @@ F468B5F3FED807974476A22B32EA3137D924F7BA.crt
         Subject: CN = *.hotmail.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
 
 
 

@@ -12,7 +12,7 @@ EABDA240440ABBD694930A01D09764C6C2D77966.crt
         Subject: C = CN, O = CFCA GT CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:8C:76:50:CE:25:D3:79:2B:3C:F4:6D:9D:9A:E1:9E:05:4F:E8:3D:25
@@ -38,7 +38,7 @@ A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A.crt
         Subject: C = CN, O = China Financial Certification Authority, CN = CFCA GT CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:8C:76:50:CE:25:D3:79:2B:3C:F4:6D:9D:9A:E1:9E:05:4F:E8:3D:25
@@ -64,7 +64,7 @@ E2B8294B5584AB6B58C290466CAC3FB8398F8483.crt
         Subject: C = CN, O = China Financial Certification Authority, CN = CFCA EV ROOT
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:E3:FE:2D:FD:28:D0:0B:B5:BA:B6:A2:C4:BF:06:AA:05:8C:93:FB:2F
@@ -90,7 +90,7 @@ E2B8294B5584AB6B58C290466CAC3FB8398F8483.crt
         Subject: C = CN, O = UniTrust, CN = UCA Global Root
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Key Usage: 
                 Certificate Sign, CRL Sign
@@ -115,7 +115,7 @@ E2B8294B5584AB6B58C290466CAC3FB8398F8483.crt
         Subject: C = CN, O = UniTrust, CN = UCA Root
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Key Usage: 
                 Certificate Sign, CRL Sign
@@ -140,7 +140,7 @@ C59DD79CC42245AC7216FDC18524F7D1E4CF1E92.crt
         Subject: C = CN, O = UniTrust, CN = UCA Extended Validation Root
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 D9:74:3A:E4:30:3D:0D:F7:12:DC:7E:5A:05:9F:1E:34:9A:F7:E1:14
@@ -164,7 +164,7 @@ B9C9F58B3BBEF575E2B58328770E7B0076C40B5E.crt
         Subject: C = CN, O = UniTrust, CN = UCA Extended Validation Root
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 D9:74:3A:E4:30:3D:0D:F7:12:DC:7E:5A:05:9F:1E:34:9A:F7:E1:14
@@ -187,7 +187,7 @@ B9C9F58B3BBEF575E2B58328770E7B0076C40B5E.crt
         Subject: O = UnitedCA, CN = UCA ROOT
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
 
 
 
@@ -203,7 +203,7 @@ AB702CDF18EBE8B438C52869CD4A5DEF48B40E33.crt
         Subject: OU = GoAgent Root, O = GoAgent, CN = GoAgent CA, ST = Internet, C = CN, L = Cernet
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
 
 
 

@@ -4,8 +4,7 @@ AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number:
-            6f:26:6b:e7:f8:ca:1f:a4
+        Serial Number: 8009207631380619172 (0x6f266be7f8ca1fa4)
         Issuer: C = CN, O = Sinorail Certification Authority, CN = SRCA
         Validity
             Not Before: May 25 06:56:00 2009 GMT
@@ -13,7 +12,7 @@ AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
         Subject: C = CN, O = Sinorail Certification Authority, CN = SRCA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:79:5E:B6:77:B7:E2:52:83:43:ED:C7:51:88:4C:63:85:2C:00:43:58
@@ -21,7 +20,9 @@ AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
             X509v3 Basic Constraints: 
                 CA:TRUE
             X509v3 CRL Distribution Points: 
-                URI:http://192.168.9.149/crl1.crl
+
+                Full Name:
+                  URI:http://192.168.9.149/crl1.crl
 
             X509v3 Key Usage: 
                 Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment, Key Agreement, Certificate Sign, CRL Sign
@@ -43,7 +44,7 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
         Subject: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -67,7 +68,7 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
         Subject: C = CN, O = WoSign CA Limited, CN = CA 沃通根证书
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -91,7 +92,7 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
         Subject: C = FR, O = Certplus, CN = Class 1 Primary CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: 
                 CA:TRUE, pathlen:10
@@ -102,7 +103,9 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
             Netscape Cert Type: 
                 SSL CA, S/MIME CA
             X509v3 CRL Distribution Points: 
-                URI:http://www.certplus.com/CRL/class1.crl
+
+                Full Name:
+                  URI:http://www.certplus.com/CRL/class1.crl
 
 
 
@@ -119,7 +122,7 @@ B94294BF91EA8FB64BE61097C7FB001359B676CB.crt
         Subject: C = CN, O = WoSign eCommerce Services Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE
@@ -143,7 +146,7 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
         Subject: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign G2
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -167,7 +170,7 @@ D27AD2BEED94C0A13CC72521EA5D71BE8119F32B.crt
         Subject: C = CN, O = WoSign CA Limited, CN = CA WoSign ECC Root
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
-            EC Public Key:
+                Public-Key: (384 bit)
                 pub: 
                     04:e1:fd:8e:b8:43:24:ab:96:7b:85:c2:ba:0b:ad:
                     8d:e0:3a:e3:24:b9:d2:b1:be:88:3a:ca:bf:4a:b8:
@@ -199,7 +202,7 @@ E0925E18C7765E22DABD9427529DA6AF4E066428.crt
         Subject: C = HK, O = Hongkong Post, CN = Hongkong Post Root CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:3
@@ -220,7 +223,7 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
         Subject: C = HK, O = Hongkong Post, CN = Hongkong Post Root CA 1
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:3
@@ -242,7 +245,7 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
         Subject: C = MO, O = Macao Post, CN = Macao Post eSignTrust Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: 
                 CA:TRUE
@@ -264,7 +267,7 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
         Subject: C = MO, O = Macao Post, CN = Macao Post eSignTrust Root Certification Authority (G02)
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE
@@ -288,7 +291,7 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
         Subject: C = TW, O = "Chunghwa Telecom Co., Ltd.", OU = ePKI Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 1E:0C:F7:B6:67:F2:E1:92:26:09:45:C0:55:39:2E:77:3F:42:4A:A2
@@ -312,7 +315,7 @@ F48B11BFDEABBE94542071E641DE6BBE882B40B9.crt
         Subject: C = TW, O = Government Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 CC:CC:EF:CC:29:60:A4:3B:B1:92:B6:3C:FA:32:62:8F:AC:25:15:3B
@@ -335,7 +338,7 @@ F48B11BFDEABBE94542071E641DE6BBE882B40B9.crt
         Subject: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Global Root CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -356,7 +359,7 @@ CF9E876DD3EBFC422697A3B5A37AA076A9062348.crt
         Subject: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -379,7 +382,7 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
         Subject: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -405,7 +408,7 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
         Subject: C = CN, O = WoSign eCommerce Services Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:2
@@ -421,7 +424,9 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
                 CA Issuers - URI:http://aia.startssl.com/certs/ca.crt
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.startssl.com/sfsca.crl
+
+                Full Name:
+                  URI:http://crl.startssl.com/sfsca.crl
 
 
 
@@ -438,7 +443,7 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
         Subject: C = CN, O = WoSign eCommerce Services Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:2
@@ -454,7 +459,9 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
                 CA Issuers - URI:http://aia.startssl.com/certs/ca.crt
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.startssl.com/sfsca.crl
+
+                Full Name:
+                  URI:http://crl.startssl.com/sfsca.crl
 
 
 
@@ -472,7 +479,7 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
         Subject: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:2
@@ -488,7 +495,9 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
                 CA Issuers - URI:http://aia.startssl.com/certs/ca.crt
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.startssl.com/sfsca.crl
+
+                Full Name:
+                  URI:http://crl.startssl.com/sfsca.crl
 
 
 
@@ -497,8 +506,7 @@ B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number:
-            19:c2:85:30:e9:3b:36
+        Serial Number: 7250751724796726 (0x19c28530e93b36)
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
         Validity
             Not Before: Sep 17 22:46:36 2006 GMT
@@ -506,7 +514,7 @@ B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6.crt
         Subject: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:2
@@ -522,7 +530,9 @@ B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6.crt
                 CA Issuers - URI:http://aia.startssl.com/certs/ca.crt
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.startssl.com/sfsca.crl
+
+                Full Name:
+                  URI:http://crl.startssl.com/sfsca.crl
 
 
 
@@ -540,7 +550,7 @@ D8EFF6C28BB508E4702565F42748454A872BD412.crt
         Subject: C = CN, O = WoSign CA Limited, CN = CA 沃通根证书
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:2
@@ -556,7 +566,9 @@ D8EFF6C28BB508E4702565F42748454A872BD412.crt
                 CA Issuers - URI:http://aia.startssl.com/certs/ca.crt
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.startssl.com/sfsca.crl
+
+                Full Name:
+                  URI:http://crl.startssl.com/sfsca.crl
 
 
 
@@ -565,8 +577,7 @@ CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number:
-            1f:ce:a7:f6:a9:7f:e9
+        Serial Number: 8952945071194089 (0x1fcea7f6a97fe9)
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
         Validity
             Not Before: Sep 17 22:46:36 2006 GMT
@@ -574,7 +585,7 @@ CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
         Subject: C = CN, O = WoSign CA Limited, CN = CA 沃通根证书
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:2
@@ -590,7 +601,9 @@ CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
                 CA Issuers - URI:http://aia.startssl.com/certs/ca.crt
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.startssl.com/sfsca.crl
+
+                Full Name:
+                  URI:http://crl.startssl.com/sfsca.crl
 
 
 
@@ -608,7 +621,7 @@ CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
         Subject: C = CN, O = WoSign CA Limited, CN = Certification Authority of WoSign
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (4096 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:53:32:D1:B3:CF:7F:FA:E0:F1:A0:5D:85:4E:92:D2:9E:45:1D:B4:4F
@@ -625,7 +638,9 @@ CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
                 Policy: X509v3 Any Policy
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.trust-provider.com/UTN-DATACorpSGC.crl
+
+                Full Name:
+                  URI:http://crl.trust-provider.com/UTN-DATACorpSGC.crl
 
             Authority Information Access: 
                 OCSP - URI:http://ocsp.trust-provider.com
@@ -646,7 +661,7 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
         Subject: C = US, O = "WoSign, Inc.", CN = WoSign Premium Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:A1:72:5F:26:1B:28:98:43:95:5D:07:37:D5:85:96:9D:4B:D2:C3:45
@@ -663,7 +678,9 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
                 Policy: 1.3.6.1.4.1.6449.1.2.2.22
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
+
+                Full Name:
+                  URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
 
 
 
@@ -681,7 +698,7 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
         Subject: C = US, O = "WoSign, Inc.", CN = WoSign Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:A1:72:5F:26:1B:28:98:43:95:5D:07:37:D5:85:96:9D:4B:D2:C3:45
@@ -698,7 +715,9 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
                 Policy: 1.3.6.1.4.1.6449.1.2.2.22
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
+
+                Full Name:
+                  URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
 
 
 
@@ -716,7 +735,7 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
         Subject: C = US, O = "WoSign, Inc.", CN = WoSign SGC Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:53:32:D1:B3:CF:7F:FA:E0:F1:A0:5D:85:4E:92:D2:9E:45:1D:B4:4F
@@ -733,7 +752,9 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
                 Policy: 1.3.6.1.4.1.6449.1.2.2.22
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.usertrust.com/UTN-DATACorpSGC.crl
+
+                Full Name:
+                  URI:http://crl.usertrust.com/UTN-DATACorpSGC.crl
 
 
 
@@ -751,7 +772,7 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Subject: C = US, O = "WoSign, Inc.", CN = WoSign Client Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:89:82:67:7D:C4:9D:26:70:00:4B:B4:50:48:7C:DE:3D:AE:04:6E:7D
@@ -768,7 +789,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
                 Policy: 1.3.6.1.4.1.6449.1.2.2.22
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.usertrust.com/UTN-USERFirst-ClientAuthenticationandEmail.crl
+
+                Full Name:
+                  URI:http://crl.usertrust.com/UTN-USERFirst-ClientAuthenticationandEmail.crl
 
 
 
@@ -786,7 +809,7 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Subject: C = US, O = "Wotone Communications, Inc.", CN = WoTrust Premium Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:A1:72:5F:26:1B:28:98:43:95:5D:07:37:D5:85:96:9D:4B:D2:C3:45
@@ -803,7 +826,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
                 Policy: 1.3.6.1.4.1.6449.1.2.2.15
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
+
+                Full Name:
+                  URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
 
 
 
@@ -821,7 +846,7 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Subject: C = US, O = "Wotone Communications, Inc.", CN = WoTrust Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:A1:72:5F:26:1B:28:98:43:95:5D:07:37:D5:85:96:9D:4B:D2:C3:45
@@ -838,7 +863,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
                 Policy: 1.3.6.1.4.1.6449.1.2.2.15
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
+
+                Full Name:
+                  URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
 
 
 
@@ -856,7 +883,7 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Subject: C = US, O = "Wotone Communications, Inc.", CN = WoTrust SGC Server Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:53:32:D1:B3:CF:7F:FA:E0:F1:A0:5D:85:4E:92:D2:9E:45:1D:B4:4F
@@ -873,7 +900,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
                 Policy: 1.3.6.1.4.1.6449.1.2.2.15
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.usertrust.com/UTN-DATACorpSGC.crl
+
+                Full Name:
+                  URI:http://crl.usertrust.com/UTN-DATACorpSGC.crl
 
 
 
@@ -891,7 +920,7 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Subject: C = US, O = "Wotone Communications, Inc.", CN = WoTrust Client Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:89:82:67:7D:C4:9D:26:70:00:4B:B4:50:48:7C:DE:3D:AE:04:6E:7D
@@ -908,7 +937,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
                 Policy: 1.3.6.1.4.1.6449.1.2.2.15
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.usertrust.com/UTN-USERFirst-ClientAuthenticationandEmail.crl
+
+                Full Name:
+                  URI:http://crl.usertrust.com/UTN-USERFirst-ClientAuthenticationandEmail.crl
 
 
 
@@ -925,7 +956,7 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Subject: C = TW, O = TAIWAN-CA.COM Inc., OU = SSL Certification Service Provider, CN = TaiCA Secure CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (1024 bit)
+                Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:0
@@ -940,7 +971,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
                 serial:01:A5
 
             X509v3 CRL Distribution Points: 
-                URI:http://www.public-trust.com/cgi-bin/CRL/2018/cdp.crl
+
+                Full Name:
+                  URI:http://www.public-trust.com/cgi-bin/CRL/2018/cdp.crl
 
             X509v3 Subject Key Identifier: 
                 D4:85:27:D2:27:A4:BE:AB:5E:2F:41:1B:EA:52:24:39:99:4E:46:2E
@@ -959,7 +992,7 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Subject: C = TW, O = TAIWAN-CA INC., OU = SSL Certification Service Provider, CN = TWCA Secure CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:0
@@ -973,7 +1006,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
                 keyid:E5:9D:59:30:82:47:58:CC:AC:FA:08:54:36:86:7B:3A:B5:04:4D:F0
 
             X509v3 CRL Distribution Points: 
-                URI:http://cdp1.public-trust.com/CRL/Omniroot2025.crl
+
+                Full Name:
+                  URI:http://cdp1.public-trust.com/CRL/Omniroot2025.crl
 
             X509v3 Subject Key Identifier: 
                 0A:69:4D:3B:5C:3C:E7:1D:61:12:54:3E:CB:58:D9:58:D0:79:F9:74
@@ -993,7 +1028,7 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
         Subject: C = TW, O = TAIWAN-CA INC., OU = SSL Security Services, CN = TWCA Secure Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-            RSA Public Key: (2048 bit)
+                Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:AD:BD:98:7A:34:B4:26:F7:FA:C4:26:54:EF:03:BD:E0:24:CB:54:1A
@@ -1010,7 +1045,9 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
                 Policy: 2.16.158.3.1.8.5
 
             X509v3 CRL Distribution Points: 
-                URI:http://crl.usertrust.com/AddTrustExternalCARoot.crl
+
+                Full Name:
+                  URI:http://crl.usertrust.com/AddTrustExternalCARoot.crl
 
             Authority Information Access: 
                 CA Issuers - URI:http://crt.usertrust.com/AddTrustExternalCARoot.p7c
