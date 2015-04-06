@@ -18,15 +18,15 @@ set /a SetForce = 0
 set SetForceAppender="%cd%\Tools\SoftCertPolicyAppender\Binary\SoftCertPolicyAppender.exe"
 echo RevokeChinaCerts CodeSigning batch
 echo.
-echo Do you want to set force cetificates policy? [Y/N]
+echo Do you want to set force certificates policy? [Y/N]
 echo Setting force require:
 echo   Administrative Privileges
 echo   Microsoft .NET Framework 4.0+
 set /p UserChoice="Choose: "
 if /i %UserChoice% EQU Y (set /a SetForce=1)
 echo.
-echo 1: Revoke CodeSigning cetificates
-echo 2: Revoke CodeSigning cetificates(Choice version)
+echo 1: Revoke CodeSigning certificates
+echo 2: Revoke CodeSigning certificates(Choice version)
 echo 3: Restore all CodeSigning revoking
 echo.
 set /p UserChoice="Choose: "
