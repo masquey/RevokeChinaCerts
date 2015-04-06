@@ -23,9 +23,9 @@ fi
 
 echo "Generating Configurations"
 # Generate a blacklist of CA cert public keys
-PUBKEYS=`"$SOURCE_DIR/ca-blacklist.sh" ${CA_CERTS} | sort | tr '\n' ','`
+PUBKEYS=`"$SOURCE_DIR/ca-blacklist.sh" ${CA_CERTS} | sort | uniq | tr '\n' ','`
 # Generate a blacklist of EE cert serial numbers
-SERIALS=`"$SOURCE_DIR/ee-blacklist.sh" ${EE_CERTS} | sort | tr '\n' ','`
+SERIALS=`"$SOURCE_DIR/ee-blacklist.sh" ${EE_CERTS} | sort | uniq | tr '\n' ','`
 
 echo "Writing Configurations"
 echo $PUBKEYS > pubkey_blacklist.txt
