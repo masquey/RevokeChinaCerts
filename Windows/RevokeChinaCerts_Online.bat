@@ -28,7 +28,6 @@ cls
 goto %UserChoice%
 
 
-
 :REVOKE_ROOT_CA
 %CertMgr% -del -c -sha1 %1 -s -r localMachine Root
 %CertMgr% -del -c -sha1 %1 -s -r localMachine AuthRoot
@@ -52,7 +51,6 @@ goto :EOF
 goto :EOF
 
 
-
 :: All version
 :CASE_3
 for /F "tokens=*" %%i in (%Certificates%\Severity.Low.Root.CA.txt) do call :REVOKE_ROOT_CA %%i
@@ -67,9 +65,9 @@ for /F "tokens=*" %%i in (%Certificates%\Severity.Medium.SSL.txt) do call :REVOK
 
 :: Base version
 :CASE_1
-for /F "tokens=*" %%i in (%Certificates%\Severity.High.Root.CA.txt) do call :RESTORE %%i
-for /F "tokens=*" %%i in (%Certificates%\Severity.High.Intermediate.CA.txt) do call :RESTORE %%i
-for /F "tokens=*" %%i in (%Certificates%\Severity.High.SSL.txt) do call :RESTORE %%i
+for /F "tokens=*" %%i in (%Certificates%\Severity.High.Root.CA.txt) do call :REVOKE_ROOT_CA %%i
+for /F "tokens=*" %%i in (%Certificates%\Severity.High.Intermediate.CA.txt) do call :REVOKE_INTERMEDIATE_CA %%i
+for /F "tokens=*" %%i in (%Certificates%\Severity.High.SSL.txt) do call :REVOKE_SSL %%i
 goto EXIT
 
 :: Restore certificates
@@ -83,7 +81,6 @@ for /F "tokens=*" %%i in (%Certificates%\Severity.Medium.SSL.txt) do call :RESTO
 for /F "tokens=*" %%i in (%Certificates%\Severity.Low.Root.CA.txt) do call :RESTORE %%i
 for /F "tokens=*" %%i in (%Certificates%\Severity.Low.Intermediate.CA.txt) do call :RESTORE %%i
 for /F "tokens=*" %%i in (%Certificates%\Severity.Low.SSL.txt) do call :RESTORE %%i
-
 
 
 :: Print to screen.
