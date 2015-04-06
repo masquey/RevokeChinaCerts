@@ -1,7 +1,7 @@
 :: RevokeChinaCerts Online batch
 :: Revoke China Certificates.
 :: 
-:: Author: JayXon, Chengr28
+:: Author: JayXon, Hugo Chan, ntkme, Chengr28
 :: 
 
 @echo off

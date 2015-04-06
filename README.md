@@ -3,9 +3,6 @@
 Revoke China Certificates.<br />
 全自动可疑证书吊销工具/全自動可疑憑證撤銷工具<br />
 
-### Certificates updated
-2015-03-31
-
 ### Usage
 **不同平台用法参见以下链接/不同平臺用法參見以下連結：**
 * [Windows](https://github.com/chengr28/RevokeChinaCerts/tree/master/Windows)

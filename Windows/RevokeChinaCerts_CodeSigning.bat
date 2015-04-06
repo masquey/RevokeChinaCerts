@@ -1,7 +1,7 @@
 :: RevokeChinaCerts CodeSigning batch
 :: Revoke China Certificates.
 :: 
-:: Author: Chengr28
+:: Author: Hugo Chan, Chengr28
 :: 
 
 @echo off
