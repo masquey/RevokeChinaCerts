@@ -7,13 +7,14 @@
 @echo off
 
 
-:: Locate folder, architecture check, choice and update certificates
+:: Locate folder and architecture check
 cd /d "%~dp0"
-set CertMgr="%~dp0\Tools\CertMgr.exe"
-if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
-	set CertMgr="%~dp0\Tools\CertMgr_x86.exe"
-)
-set Certificates="%~dp0\..\Shared\Certificates
+set CertMgr="%~dp0Tools\CertMgr.exe"
+if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (set CertMgr="%~dp0Tools\CertMgr_x86.exe")
+set Certificates="%~dp0..\Shared\Certificates
+
+
+:: Choice and update system certificates
 echo RevokeChinaCerts Online batch
 echo.
 echo 1: Base version
@@ -22,7 +23,7 @@ echo 3: All version
 echo 4: Restore all Online revoking
 echo.
 set /p UserChoice="Choose: "
-if %UserChoice% GTR 0 (if %UserChoice% LEQ 4 ("%~dp0\Tools\RootSUPD_201403_x86.exe"))
+if %UserChoice% GTR 0 (if %UserChoice% LEQ 4 ("%~dp0Tools\RootSUPD_201403_x86.exe"))
 set UserChoice=CASE_%UserChoice%
 cls
 goto %UserChoice%
@@ -71,7 +72,7 @@ for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.Intermediate.CA.
 for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.SSL.txt") do call :REVOKE_SSL %%i
 goto EXIT
 
-:: Restore certificates
+:: Restore version
 :CASE_4
 for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.Root.CA.txt") do call :RESTORE %%i
 for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.Intermediate.CA.txt") do call :RESTORE %%i
@@ -84,10 +85,10 @@ for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.Intermediate.CA.t
 for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.SSL.txt") do call :RESTORE %%i
 
 
-:: Print to screen
+:: Exit
 :EXIT
 echo.
 echo RevokeChinaCerts Online batch
 echo Done, please confirm the messages on screen.
 echo.
-@pause
+pause

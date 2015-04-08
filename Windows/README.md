@@ -21,12 +21,9 @@
 * [繁體中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Online(Chinese_Traditional))
 
 ### Usage(CodeSigning/Organization)
-* [English(CodeSigning)](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning)
-* [English(Organization)](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Organization)
-* [简体中文(CodeSigning)](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning(Chinese_Simplified))
-* [简体中文(Organization)](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Organization(Chinese_Simplified))
-* [繁體中文(CodeSigning)](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning(Chinese_Traditional))
-* [繁體中文(Organization)](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Organization(Chinese_Traditional))
+* [English](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning_Organization)
+* [简体中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning_Organization(Chinese_Simplified))
+* [繁體中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning_Organization(Chinese_Traditional))
 
 ### License
 GNU General Public License/GNU GPL v2
