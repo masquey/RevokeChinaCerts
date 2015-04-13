@@ -18,7 +18,7 @@ Each certificate is named with its SHA1 fingerprint, in `.crt` format.
 - Low
   - All other certificates from the Greater China
 
-### Hunman Readable Certificates Details
+### Human Readable Certificates Details
 
 - [Severity.High.md](Severity.High.md)
 - [Severity.Medium.md](Severity.Medium.md)
