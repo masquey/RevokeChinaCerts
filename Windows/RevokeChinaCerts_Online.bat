@@ -7,8 +7,8 @@
 @echo off
 
 
-:: Locate folder and architecture check
-cd /d "%~dp0"
+:: Locate directory and architecture check
+cd /D "%~dp0"
 set CertMgr="%~dp0Tools\CertMgr.exe"
 if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (set CertMgr="%~dp0Tools\CertMgr_x86.exe")
 set Certificates="%~dp0..\Shared\Certificates
@@ -22,7 +22,7 @@ echo 2: Extended version
 echo 3: All version
 echo 4: Restore all Online revoking
 echo.
-set /p UserChoice="Choose: "
+set /P UserChoice="Choose: "
 if %UserChoice% GTR 0 (if %UserChoice% LEQ 4 ("%~dp0Tools\RootSUPD_201403_x86.exe"))
 set UserChoice=CASE_%UserChoice%
 cls

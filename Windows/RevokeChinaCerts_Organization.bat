@@ -7,12 +7,12 @@
 @echo off
 
 
-:: Locate folder and architecture check
-cd /d "%~dp0"
+:: Locate directory and architecture check
+cd /D "%~dp0"
 set CertMgr="%~dp0Tools\CertMgr.exe"
 if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (set CertMgr="%~dp0Tools\CertMgr_x86.exe")
 set Certificates="%~dp0Certificates\Organization
-set /a SetForce = 0
+set /A SetForce = 0
 set SetForceAppender="%~dp0Tools\SoftCertPolicyAppender\Binary\SoftCertPolicyAppender.exe"
 
 
@@ -23,14 +23,14 @@ echo Do you want to set force certificates policy? [Y/N]
 echo Setting force require:
 echo   Administrative Privileges
 echo   Microsoft .NET Framework 4.0+
-set /p UserChoice="Choose: "
-if /i %UserChoice% EQU Y (set /a SetForce=1)
+set /P UserChoice="Choose: "
+if /I %UserChoice% EQU Y (set /A SetForce=1)
 echo.
 echo 1: Revoke Organization certificates
 echo 2: Revoke Organization certificates(Choice version)
 echo 3: Restore all Organization revoking
 echo.
-set /p UserChoice="Choose: "
+set /P UserChoice="Choose: "
 set UserChoice=CASE_%UserChoice%
 cls
 goto %UserChoice%
@@ -42,7 +42,7 @@ goto %UserChoice%
 goto :EOF
 
 :REVOKE_CHOICE
-if /i %1 EQU Y (
+if /I %1 EQU Y (
 	if %SetForce% EQU 0 (
 		%CertMgr% -add -c %Certificates%\%2.crt" -s Disallowed
 	) else (
@@ -68,166 +68,166 @@ goto EXIT
 
 :: Choice version
 :CASE_2
-set /p UserChoice="Revoke ABC? [Y/N]"
+set /P UserChoice="Revoke ABC? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 78D0CDF5752D1E5B58A674644CFE3499BF02F9EF
 echo.
-set /p UserChoice="Revoke ABC TEST CA? [Y/N]"
+set /P UserChoice="Revoke ABC TEST CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% F18C39F8B5A3E9BADC811BBA7690E8D0143BD851
 echo.
-set /p UserChoice="Revoke ABC2048? [Y/N]"
+set /P UserChoice="Revoke ABC2048? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 6FAE9AD81467C5FCB93574670F52C8EF538F8B6D
 echo.
-set /p UserChoice="Revoke Alibaba.com Corporation Root CA? [Y/N]"
+set /P UserChoice="Revoke Alibaba.com Corporation Root CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% A7217F919843199C958C128449DD52D2723B0A8A
 echo.
-set /p UserChoice="Revoke ALIPAY_ROOT? [Y/N]"
+set /P UserChoice="Revoke ALIPAY_ROOT? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 59864294A96B3E5C37C058E9D1FBDE5FF0C2E4EE
 echo.
-set /p UserChoice="Revoke Alipay Trust NetWork? [Y/N]"
+set /P UserChoice="Revoke Alipay Trust NetWork? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 89A2FB0E332BA7275FE712FEC669D746125B1F32
 echo.
-set /p UserChoice="Revoke AnXin CA Root? [Y/N]"
+set /P UserChoice="Revoke AnXin CA Root? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 1D4A2E58C68F3F2D2659BC3BAB05CFA81F87B1E8
 echo.
-set /p UserChoice="Revoke BeiJing ROOT CA? [Y/N]"
+set /P UserChoice="Revoke BeiJing ROOT CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% EC98F4A5096282FB192FFB168A574236C5A7DC6C
 echo.
-set /p UserChoice="Revoke BOCOMCA? [Y/N]"
+set /P UserChoice="Revoke BOCOMCA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 4571466B830EAC5FCDC22103B9733C1A15CE78AC
 echo.
-set /p UserChoice="Revoke CCB CA ROOT(1999-06-29)? [Y/N]"
+set /P UserChoice="Revoke CCB CA ROOT(1999-06-29)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 3018E5D74DF29E3590F5BB8DF01AA7FC116BB4DE
 echo.
-set /p UserChoice="Revoke CCB CA ROOT(2009-06-01)? [Y/N]"
+set /P UserChoice="Revoke CCB CA ROOT(2009-06-01)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 8582B4AF7491B3D16636EEB32D44993D7DEE6C40
 echo.
-set /p UserChoice="Revoke CFCA? [Y/N]"
+set /P UserChoice="Revoke CFCA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% A9743B713E4109381622D3689AB5D9E1DC51B164
 echo.
-set /p UserChoice="Revoke CFCA CS CA? [Y/N]"
+set /P UserChoice="Revoke CFCA CS CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% D3FBFAA8A67FC9A2EADBF86AEB5D07A9D6AF322E
 echo.
-set /p UserChoice="Revoke CFCA CS TEST CA? [Y/N]"
+set /P UserChoice="Revoke CFCA CS TEST CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% B5DCF1C58E86DBED2EA2D217A5C28D11FD9254F0
 echo.
-set /p UserChoice="Revoke CFCA Operation CA3? [Y/N]"
+set /P UserChoice="Revoke CFCA Operation CA3? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 5A3A3EA74AE5D29F25A670024949869D1222E42A
 echo.
-set /p UserChoice="Revoke CFCA RCA? [Y/N]"
+set /P UserChoice="Revoke CFCA RCA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% AE73DFF81CF24E50DD52CA1496E7EF94876061CB
 echo.
-set /p UserChoice="Revoke CFCA Root CA? [Y/N]"
+set /P UserChoice="Revoke CFCA Root CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 31BD6AEF73031C5A49338E7A06040DD815EF7512
 echo.
-set /p UserChoice="Revoke CFCA RSA RCA? [Y/N]"
+set /P UserChoice="Revoke CFCA RSA RCA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 57C5CEBB53FBF181E0B13977AF864F1C13F11AA9
 echo.
-set /p UserChoice="Revoke China Trust Network(1)? [Y/N]"
+set /P UserChoice="Revoke China Trust Network(1)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% C2CAEB0DC296FD50596BCA0F53C5364521167039
 echo.
-set /p UserChoice="Revoke China Trust Network(2)? [Y/N]"
+set /P UserChoice="Revoke China Trust Network(2)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% B39B0B24B156D8B6123CAF7BA249DC81F27E39FA
 echo.
-set /p UserChoice="Revoke China Trust Network(3)? [Y/N]"
+set /P UserChoice="Revoke China Trust Network(3)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 7C88AE178AE6AB8E69C30AF586D84EF29B6E6AE3
 echo.
-set /p UserChoice="Revoke CWCA(2007-12-24)? [Y/N]"
+set /P UserChoice="Revoke CWCA(2007-12-24)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 029A0990DC0B34838A6AAC9662A9A5E23DD7B554
 echo.
-set /p UserChoice="Revoke CWCA(2013-01-18)? [Y/N]"
+set /P UserChoice="Revoke CWCA(2013-01-18)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 5A48E00BE8C9F33BDCAE3F61700675B4A3A3B6F3
 echo.
-set /p UserChoice="Revoke DongFang eTrust CA? [Y/N]"
+set /P UserChoice="Revoke DongFang eTrust CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 7AC8AD57C068F0D58442477EB5B0DE10AF09DFDA
 echo.
-set /p UserChoice="Revoke eID MICRoot? [Y/N]"
+set /P UserChoice="Revoke eID MICRoot? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 6F5C880129BED8B05B14C391364FE5298E2ED5FA
 echo.
-set /p UserChoice="Revoke FJCA? [Y/N]"
+set /P UserChoice="Revoke FJCA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% DD9DE879188E29AE9C6CEF546D6191B89A6B4F09
 echo.
-set /p UserChoice="Revoke GFA CA CERTIFICATE? [Y/N]"
+set /P UserChoice="Revoke GFA CA CERTIFICATE? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% A4BF39D18409E9F27B8833543E56B9434A603CFF
 echo.
-set /p UserChoice="Revoke Guangxi ROOT CA? [Y/N]"
+set /P UserChoice="Revoke Guangxi ROOT CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% B3FAACDA0FFE817C3FC25B8D35FEC05A92314BDC
 echo.
-set /p UserChoice="Revoke HBCA? [Y/N]"
+set /P UserChoice="Revoke HBCA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% E67291FCE01AB748D5E473F5CA1C3915A7EC5C8E
 echo.
-set /p UserChoice="Revoke HNCA(2003-12-01)? [Y/N]"
+set /P UserChoice="Revoke HNCA(2003-12-01)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 3FF4124C794A11A26B49A14D005FD6D2BA5878F8
 echo.
-set /p UserChoice="Revoke HNCA(2013-08-21)? [Y/N]"
+set /P UserChoice="Revoke HNCA(2013-08-21)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% DAB0CA93310A2507A7407F4879BA56D105AAD3C2
 echo.
-set /p UserChoice="Revoke ICBC? [Y/N]"
+set /P UserChoice="Revoke ICBC? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% E3F9043072BABF5E9C631960B34CCCF9FFC8BA41
 echo.
-set /p UserChoice="Revoke ICBC Root CA? [Y/N]"
+set /P UserChoice="Revoke ICBC Root CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 5A960203C10CFA8D42DD115B61154F98E2F617F7
 echo.
-set /p UserChoice="Revoke IcbcCA? [Y/N]"
+set /P UserChoice="Revoke IcbcCA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% A02A23D13576ECA35498DC69166A20651E203E31
 echo.
-set /p UserChoice="Revoke Personal ICBC CA? [Y/N]"
+set /P UserChoice="Revoke Personal ICBC CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 2ABC81B0D7D052F887965562BB10AA66A80F7674
 echo.
-set /p UserChoice="Revoke iTruschina CN Root CA(1)? [Y/N]"
+set /P UserChoice="Revoke iTruschina CN Root CA(1)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 240A61A2577970625B9F0B81283C4AA4037217B1
 echo.
-set /p UserChoice="Revoke iTruschina CN Root CA(2)? [Y/N]"
+set /P UserChoice="Revoke iTruschina CN Root CA(2)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 46F168AF009C28C18F452EB85F5E8747892B3C8B
 echo.
-set /p UserChoice="Revoke iTruschina CN Root CA(3)? [Y/N]"
+set /P UserChoice="Revoke iTruschina CN Root CA(3)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 654E9FADD2032AE1B87D6263AF04FD7FEE38D57C
 echo.
-set /p UserChoice="Revoke JSCA_ROOT(1)? [Y/N]"
+set /P UserChoice="Revoke JSCA_ROOT(1)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% AA90ABA1EFA49F42772C7722F5A73A1C3936B811
 echo.
-set /p UserChoice="Revoke JSCA_ROOT(2)? [Y/N]"
+set /P UserChoice="Revoke JSCA_ROOT(2)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 4389F7886936C6B6D5532562CBB5DA5B4DD2296B
 echo.
-set /p UserChoice="Revoke JXCA? [Y/N]"
+set /P UserChoice="Revoke JXCA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 7A538FBBDE8EFDC125700718CC9B4A4BD9BA17E8
 echo.
-set /p UserChoice="Revoke NETCA Root ClassA? [Y/N]"
+set /P UserChoice="Revoke NETCA Root ClassA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 2F6D7583B2CFD0F87698FB392C8B481058A280FB
 echo.
-set /p UserChoice="Revoke Peihua-CA? [Y/N]"
+set /P UserChoice="Revoke Peihua-CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 82C5EAF859B5857D5DECD1BE6491E34E582D5BD8
 echo.
-set /p UserChoice="Revoke ROOTCA OSCCA? [Y/N]"
+set /P UserChoice="Revoke ROOTCA OSCCA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% DBB84423C928ABE889D0E368FC3191D151DDB1AB
 echo.
-set /p UserChoice="Revoke ROOT CERTIFICATE FOR GFA TRUST NETWORK(2007-01-11)? [Y/N]"
+set /P UserChoice="Revoke ROOT CERTIFICATE FOR GFA TRUST NETWORK(2007-01-11)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% C49ED789F979213F0096060DF131B04EAADAC921
 echo.
-set /p UserChoice="Revoke ROOT CERTIFICATE FOR GFA TRUST NETWORK(2015-05-07)? [Y/N]"
+set /P UserChoice="Revoke ROOT CERTIFICATE FOR GFA TRUST NETWORK(2015-05-07)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% C2859A597104BFC25B52EC15899A1999738AE13F
 echo.
-set /p UserChoice="Revoke ShanXi Digital Certificate Authority? [Y/N]"
+set /P UserChoice="Revoke ShanXi Digital Certificate Authority? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 10CF1AAD52AE48E1249F9718C3DCF8FB27B12BF6
 echo.
-set /p UserChoice="Revoke SZCA(2003-07-22)? [Y/N]"
+set /P UserChoice="Revoke SZCA(2003-07-22)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 90D7A97592F0A3E2165DE5DA23B57701D74A298D
 echo.
-set /p UserChoice="Revoke SZCA(2013-04-16)? [Y/N]"
+set /P UserChoice="Revoke SZCA(2013-04-16)? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% B0049D436F27237EE59C746A1EF3C96A8E1B54AC
 echo.
-set /p UserChoice="Revoke TenpayCom Root CA? [Y/N]"
+set /P UserChoice="Revoke TenpayCom Root CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 56502166C0DE2488950491C90C7560E0E7AA7378
 echo.
-set /p UserChoice="Revoke TianJinROOT? [Y/N]"
+set /P UserChoice="Revoke TianJinROOT? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 53826F5DEF4E3AD9FD73DCF1D04E110D6DF7FDD6
 echo.
-set /p UserChoice="Revoke UTrust Root CA? [Y/N]"
+set /P UserChoice="Revoke UTrust Root CA? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 5070A0E2FA1DB04C2ED63461ECE36307AB3A863B
 echo.
-set /p UserChoice="Revoke XjcaRoot? [Y/N]"
+set /P UserChoice="Revoke XjcaRoot? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% 52A213B3CA8A5A5664D1BB9CF7A6A546C4E55973
 echo.
-set /p UserChoice="Revoke ZJRoot? [Y/N]"
+set /P UserChoice="Revoke ZJRoot? [Y/N]"
 call :REVOKE_CHOICE %UserChoice% D65F531088EF11DD9BFA2BE437C906D44F9E9659
 goto EXIT
 
