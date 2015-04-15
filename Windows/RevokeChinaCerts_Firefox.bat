@@ -14,19 +14,34 @@ set Certificates="%~dp0..\Shared\Certificates
 
 
 :: Check Firefox profiles
+set Portable=0
 echo RevokeChinaCerts Online(Firefox) batch
 echo.
 cd /D "%APPDATA%\Mozilla\Firefox\Profiles"
 if ERRORLEVEL 1 (
+	set Portable=1
 	echo.
-	echo Cannot load any Firefox profiles, please check your configuration.
+	echo Cannot load any installed Firefox profiles!
+	echo * Enter portable profile path, like "C:\Firefox\Data\profile" without quotes.
+	echo * The profile directory must include cert8.db database file.
 	echo.
-	pause
-	exit
+	set /P PortablePath="Profile path: "
+)
+if not %Portable% EQU 0 (
+	cd /D %PortablePath%
+	if ERRORLEVEL 1 (
+		echo.
+		echo Cannot load any Firefox profiles, please check your configuration.
+		echo.
+		pause
+		exit
+	)
 )
 
 
 :: Choice and scan all Firefox profile directories
+echo Make sure that Firefox is not running!
+echo.
 echo 1: Base version
 echo 2: Extended version
 echo 3: All version
@@ -34,23 +49,38 @@ echo 4: Restore all Online revoking
 echo.
 set /P UserChoice="Choose: "
 set UserChoice=CASE_%UserChoice%
-dir /A:D-S /B > "%~dp0ProfileList.txt"
+if %Portable% EQU 0 (
+	dir /A:D-S /B > "%~dp0ProfileList.txt"
+)
 cls
 goto %UserChoice%
 
 
 :: Process
 :REVOKE_SCAN
-for /F "usebackq tokens=*" %%i in ("%~dp0ProfileList.txt") do call :REVOKE %%i %%1
+if %Portable% EQU 0 (
+	for /F "usebackq tokens=*" %%i in ("%~dp0ProfileList.txt") do call :REVOKE %%i %%1
+) else (
+	call :REVOKE %1
+)
 goto :EOF
 
 :REVOKE
-cd /D "%APPDATA%\Mozilla\Firefox\Profiles\%~1"
-%Certutil% -d . -A -i %Certificates%\%2.crt" -n %2 -t "p,p,p"
+if %Portable% EQU 0 (
+	cd /D "%APPDATA%\Mozilla\Firefox\Profiles\%~1"
+	%Certutil% -d . -A -i %Certificates%\%2.crt" -n %2 -t "p,p,p"
+) else (
+	cd /D "%PortablePath%"
+	%Certutil% -d . -A -i %Certificates%\%1.crt" -n %1 -t "p,p,p"
+)
 goto :EOF
 
 :RESTORE
-del "%APPDATA%\Mozilla\Firefox\Profiles\%1\cert8.db"
+if %Portable% EQU 0 (
+	del /F "%APPDATA%\Mozilla\Firefox\Profiles\%1\cert8.db"
+) else (
+	del /F "%PortablePath%\cert8.db"
+)
 goto :EOF
 
 
@@ -75,12 +105,18 @@ goto EXIT
 
 :: Restore version
 :CASE_4
-for /F "usebackq tokens=*" %%i in ("%~dp0ProfileList.txt") do call :RESTORE %%i
+if %Portable% EQU 0 (
+	for /F "usebackq tokens=*" %%i in ("%~dp0ProfileList.txt") do call :RESTORE %%i
+) else (
+	call :RESTORE
+)
 
 
 :: Exit
 :EXIT
-del "%~dp0ProfileList.txt"
+if %Portable% EQU 0 (
+	del /F "%~dp0ProfileList.txt"
+)
 echo.
 echo RevokeChinaCerts Online(Firefox) batch
 echo Done, please confirm the messages on screen.
