@@ -14,18 +14,34 @@ set Certificates="%~dp0..\Shared\Certificates
 
 
 :: Check Firefox profiles
-set Portable=0
+set Portable=1
 echo RevokeChinaCerts Online(Firefox) batch
 echo.
-cd /D "%APPDATA%\Mozilla\Firefox\Profiles"
-if ERRORLEVEL 1 (
-	set Portable=1
-	echo.
-	echo Cannot load any installed Firefox profiles!
-	echo * Enter portable profile path, like "C:\Firefox\Data\profile" without quotes.
-	echo * The profile directory must include cert8.db database file.
-	echo.
+echo Revoke certificates in installed Firefox profile? [Y/N]
+echo When you choose N:
+echo * Certificates in portable Firefox profile will be revoked.
+echo * Enter portable profile path, like "C:\Firefox\Data\profile" without quotes.
+echo * The profile directory must include cert8.db database file.
+echo.
+set /P UserChoice="Choose: "
+if /I %UserChoice% EQU Y (set Portable=0)
+echo.
+
+:: Check installed Firefox profile
+if %Portable% EQU 0 (
+	cd /D "%APPDATA%\Mozilla\Firefox\Profiles"
+	if ERRORLEVEL 1 (
+		echo.
+		echo Cannot load any installed Firefox profiles!
+		echo * Enter portable profile path, like "C:\Firefox\Data\profile" without quotes.
+		echo * The profile directory must include cert8.db database file.
+		echo.
+		set Portable=1
+	)
+)
+if not %Portable% EQU 0 (
 	set /P PortablePath="Profile path: "
+	echo.
 )
 if not %Portable% EQU 0 (
 	cd /D %PortablePath%
@@ -40,12 +56,14 @@ if not %Portable% EQU 0 (
 
 
 :: Choice and scan all Firefox profile directories
-echo Make sure that Firefox is not running!
+cls
+echo RevokeChinaCerts Online(Firefox) batch
 echo.
 echo 1: Base version
 echo 2: Extended version
 echo 3: All version
 echo 4: Restore all Online revoking
+echo * Make sure that Firefox is not running!
 echo.
 set /P UserChoice="Choose: "
 set UserChoice=CASE_%UserChoice%

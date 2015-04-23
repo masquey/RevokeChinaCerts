@@ -19,8 +19,8 @@ Revoke China Certificates.<br />
 ### Thanks
 * [BlockChinaSoftware on Windows - SCFWSE](https://github.com/SCFWSE/BlockChinaSoftware)
 * [UTLS-Blocker on Windows - SCFWSE](https://github.com/SCFWSE/UTLS-Blocker)
-* [拉黑证书 让你的电脑再也装不上某些软件 附证书大全](http://blog.eqoe.cn/posts/ban-digital-cert.html)
-* [Local-Policy](https://bitbucket.org/MartinEden/local-policy/overview)
+* [拉黑证书 让你的电脑再也装不上某些软件 附证书大全 on Windows](http://blog.eqoe.cn/posts/ban-digital-cert.html)
+* [Local-Policy on Windows](https://bitbucket.org/MartinEden/local-policy/overview)
 * [Script to automatically disable on Mac - QuantumGhost](https://github.com/QuantumGhost/RevokeChinaCerts/tree/master/Mac)
 
 ### License
