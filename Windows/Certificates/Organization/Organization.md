@@ -1391,3 +1391,23 @@ D65F531088EF11DD9BFA2BE437C906D44F9E9659.crt
 
             Authority Information Access: 
                 CA Issuers - URI:http://www.zjca.com.cn/crldown/ZJRoot.cer
+
+
+
+
+6A9989CDCAB2B13D9849EF71A9089DE5F56512F9.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 4611994555993030851 (0x4001189d000000c3)
+        Issuer: C = CN, ST = Guangdong, L = Guangzhou, O = GDCA Certificate Authority, OU = Root CA, CN = GDCA Root CA
+        Validity
+            Not Before: Jan 11 09:34:22 2004 GMT
+            Not After : Dec 10 16:00:00 2024 GMT
+        Subject: C = CN, ST = Guangdong, L = Guangzhou, O = GDCA Certificate Authority, OU = Root CA, CN = GDCA Root CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE

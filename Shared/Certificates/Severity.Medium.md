@@ -207,6 +207,56 @@ AB702CDF18EBE8B438C52869CD4A5DEF48B40E33.crt
 
 
 
+742CA08594ABA62CE76E94386EA75A98712F02EA.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            07:00:00:20:13:09:11:01:00:16:29:65:49:98:29
+        Issuer: C = CN, O = "GUANG DONG CERTIFICATE AUTHORITY CO.,LTD.", CN = GDCA TrustAUTH R2 ROOT
+        Validity
+            Not Before: Sep 10 16:00:00 2013 GMT
+            Not After : Dec 30 16:00:00 2036 GMT
+        Subject: C = CN, O = "GUANG DONG CERTIFICATE AUTHORITY CO.,LTD.", CN = GDCA TrustAUTH R2 ROOT
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:B6:08:EF:C3:90:C7:04:5E:09:E7:E5:62:CE:17:14:72:DE:2A:65:51
+
+            X509v3 Subject Key Identifier: 
+                B6:08:EF:C3:90:C7:04:5E:09:E7:E5:62:CE:17:14:72:DE:2A:65:51
+            X509v3 Basic Constraints: 
+                CA:TRUE
+            X509v3 Key Usage: 
+                Certificate Sign, CRL Sign
+
+
+
+0F36385B811A25C39B314E83CAE9346670CC74B4.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 9009899650740120186 (0x7d0997fef047ea7a)
+        Issuer: C = CN, O = "GUANG DONG CERTIFICATE AUTHORITY CO.,LTD.", CN = GDCA TrustAUTH R5 ROOT
+        Validity
+            Not Before: Nov 26 05:13:15 2014 GMT
+            Not After : Dec 31 15:59:59 2040 GMT
+        Subject: C = CN, O = "GUANG DONG CERTIFICATE AUTHORITY CO.,LTD.", CN = GDCA TrustAUTH R5 ROOT
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                E2:C9:40:9F:4D:CE:E8:9A:A1:7C:CF:0E:3F:65:C5:29:88:6A:19:51
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+
+
+
 
 # Intermediate CA Certificates
 
