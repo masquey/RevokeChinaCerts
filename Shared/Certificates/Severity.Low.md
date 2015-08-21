@@ -4,7 +4,8 @@ AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number: 8009207631380619172 (0x6f266be7f8ca1fa4)
+        Serial Number:
+            6f:26:6b:e7:f8:ca:1f:a4
         Issuer: C = CN, O = Sinorail Certification Authority, CN = SRCA
         Validity
             Not Before: May 25 06:56:00 2009 GMT
@@ -506,7 +507,8 @@ B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number: 7250751724796726 (0x19c28530e93b36)
+        Serial Number:
+            19:c2:85:30:e9:3b:36
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
         Validity
             Not Before: Sep 17 22:46:36 2006 GMT
@@ -577,7 +579,8 @@ CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number: 8952945071194089 (0x1fcea7f6a97fe9)
+        Serial Number:
+            1f:ce:a7:f6:a9:7f:e9
         Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
         Validity
             Not Before: Sep 17 22:46:36 2006 GMT
