@@ -238,7 +238,8 @@ AB702CDF18EBE8B438C52869CD4A5DEF48B40E33.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number: 9009899650740120186 (0x7d0997fef047ea7a)
+        Serial Number:
+            7d:09:97:fe:f0:47:ea:7a
         Issuer: C = CN, O = "GUANG DONG CERTIFICATE AUTHORITY CO.,LTD.", CN = GDCA TrustAUTH R5 ROOT
         Validity
             Not Before: Nov 26 05:13:15 2014 GMT
