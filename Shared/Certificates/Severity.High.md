@@ -92,8 +92,7 @@
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number:
-            29:13:56:95:ce:dd:e6:d6
+        Serial Number: 2959804581533312726 (0x29135695cedde6d6)
         Issuer: C = CN, O = SARFT, OU = JGZX, CN = JGZXCA
         Validity
             Not Before: Jun 19 09:50:17 2013 GMT
@@ -119,8 +118,7 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number:
-            d2:fc:13:87:a9:44:dc:e7
+        Serial Number: 15203047915477327079 (0xd2fc1387a944dce7)
         Issuer: O = "Superfish, Inc.", L = SF, ST = CA, C = US, CN = "Superfish, Inc."
         Validity
             Not Before: May 12 16:25:26 2014 GMT
@@ -228,8 +226,7 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
 --------------------------------------------
 
         Version: 1 (0x0)
-        Serial Number:
-            94:55:da:35:5e:22:9e:22
+        Serial Number: 10688689213381189154 (0x9455da355e229e22)
         Issuer: C = CN, ST = Shanghai, L = Shanghai, O = "Baidu, inc.", OU = SW, CN = SW CA
         Validity
             Not Before: Apr 22 09:55:27 2014 GMT
