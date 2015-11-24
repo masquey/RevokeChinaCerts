@@ -180,6 +180,7 @@ D27AD2BEED94C0A13CC72521EA5D71BE8119F32B.crt
                     ce:03:b5:91:7f:aa:94:d0:d1:8a:48:cc:82:05:26:
                     a1:d5:51:12:d6:7b:36
                 ASN1 OID: secp384r1
+                NIST CURVE: P-384
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign

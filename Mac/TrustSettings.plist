@@ -10,7 +10,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -28,7 +28,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -46,7 +46,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -64,7 +64,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -82,7 +82,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -100,7 +100,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -118,7 +118,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -136,7 +136,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -154,7 +154,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -172,7 +172,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -190,7 +190,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -208,7 +208,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -226,7 +226,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -244,7 +244,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -262,7 +262,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -280,7 +280,25 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>98A04E4163357790C4A79E6D713FF0AF51FE6927</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -298,7 +316,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -316,7 +334,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -334,7 +352,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -352,7 +370,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -370,7 +388,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -388,7 +406,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -406,7 +424,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -424,7 +442,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -442,7 +460,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -460,7 +478,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -478,7 +496,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2015-08-21T19:29:53Z</date>
+			<date>2015-11-24T03:44:11Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>

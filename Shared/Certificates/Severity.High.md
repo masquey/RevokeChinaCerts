@@ -140,6 +140,26 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
 
 
 
+98A04E4163357790C4A79E6D713FF0AF51FE6927.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            6b:c5:7b:95:18:93:aa:97:4b:62:4a:c0:88:fc:3b:b6
+        Issuer: CN = eDellRoot
+        Validity
+            Not Before: Apr  7 10:23:27 2015 GMT
+            Not After : Dec 31 23:59:59 2039 GMT
+        Subject: CN = eDellRoot
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            2.5.29.1: 
+                <Not Supported>
+
+
+
 
 # Intermediate CA Certificates
 
