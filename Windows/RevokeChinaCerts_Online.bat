@@ -14,7 +14,7 @@ if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (set CertMgr="%~dp0T
 set Certificates="%~dp0..\Shared\Certificates
 
 
-:: Choice and update system certificates
+:: Choice
 echo RevokeChinaCerts Online batch
 echo.
 echo 1: Base version
@@ -23,7 +23,6 @@ echo 3: All version
 echo 4: Restore all Online revoking
 echo.
 set /P UserChoice="Choose: "
-if %UserChoice% GTR 0 (if %UserChoice% LEQ 4 ("%~dp0Tools\RootSUPD_201403_x86.exe"))
 set UserChoice=CASE_%UserChoice%
 cls
 goto %UserChoice%

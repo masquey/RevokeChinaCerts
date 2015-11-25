@@ -14,7 +14,7 @@ Revoke China Certificates.<br />
 * [SoftCertPolicyAppender on Windows - lhyqy5](https://github.com/lhyqy5/RevokeChinaCerts/tree/master/Windows/SoftCertPolicyAppender)
 * [Automation tools on Linux - phoeagon](https://github.com/phoeagon/RevokeChinaCerts/tree/master/Linux)
 * [Android Certificates Blacklisting - phoeagon](https://github.com/phoeagon/RevokeChinaCerts/tree/master/Android)
-* [Security-trust-settings-tools on Mac - なつき](https://github.com/ntkme/security-trust-settings-tools)
+* [Security-trust-settings-tools on Mac - ntkme](https://github.com/ntkme/security-trust-settings-tools)
 
 ### Thanks
 * [BlockChinaSoftware on Windows - SCFWSE](https://github.com/SCFWSE/BlockChinaSoftware)
