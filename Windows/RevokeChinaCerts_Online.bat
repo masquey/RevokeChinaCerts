@@ -34,13 +34,13 @@ goto %UserChoice%
 %CertMgr% -del -c -sha1 %1 -s -r localMachine AuthRoot
 %CertMgr% -del -c -sha1 %1 -s -r CurrentUser Root
 %CertMgr% -del -c -sha1 %1 -s -r CurrentUser AuthRoot
-%CertMgr% -add -c %Certificates%\%1.crt" -s Disallowed
+%CertMgr% -add -c %Certificates%\%1.crt" -s -r localMachine Disallowed
 goto :EOF
 
 :REVOKE_INTERMEDIATE_CA
 %CertMgr% -del -c -sha1 %1 -s -r localMachine CA
 %CertMgr% -del -c -sha1 %1 -s -r CurrentUser CA
-%CertMgr% -add -c %Certificates%\%1.crt" -s Disallowed
+%CertMgr% -add -c %Certificates%\%1.crt" -s -r localMachine Disallowed
 goto :EOF
 
 :REVOKE_SSL
@@ -48,7 +48,7 @@ call :REVOKE_ROOT_CA %1
 goto :EOF
 
 :RESTORE
-%CertMgr% -del -c -sha1 %1 -s Disallowed
+%CertMgr% -del -c -sha1 %1 -s -r localMachine Disallowed
 goto :EOF
 
 

@@ -33,13 +33,13 @@ goto %UserChoice%
 
 :: Update CRL
 :CASE_1
-%CertMgr% -add -all -c "%~dp0Certificates\Other\Disallowed.sst" -s Disallowed
+%CertMgr% -add -all -c "%~dp0Certificates\Other\Disallowed.sst" -s -r localMachine Disallowed
 goto EXIT
 
 
 :: Update CTL(SST)
 :CASE_2
-%CertMgr% -add -all -c "%~dp0Certificates\Other\AuthRoot.sst" -s AuthRoot
+%CertMgr% -add -all -c "%~dp0Certificates\Other\AuthRoot.sst" -s -r localMachine AuthRoot
 goto EXIT
 
 

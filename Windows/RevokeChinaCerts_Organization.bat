@@ -38,13 +38,13 @@ goto %UserChoice%
 
 :: Call functions
 :REVOKE
-%CertMgr% -add -c %Certificates%\%1.crt" -s Disallowed
+%CertMgr% -add -c %Certificates%\%1.crt" -s -r localMachine Disallowed
 goto :EOF
 
 :REVOKE_CHOICE
 if /I %1 EQU Y (
 	if %SetForce% EQU 0 (
-		%CertMgr% -add -c %Certificates%\%2.crt" -s Disallowed
+		%CertMgr% -add -c %Certificates%\%2.crt" -s -r localMachine Disallowed
 	) else (
 		%SetForceAppender% --set-force %Certificates%\%2.crt"
 	)
@@ -52,7 +52,7 @@ if /I %1 EQU Y (
 goto :EOF
 
 :RESTORE
-%CertMgr% -del -c -sha1 %1 -s Disallowed
+%CertMgr% -del -c -sha1 %1 -s -r localMachine Disallowed
 goto :EOF
 
 
