@@ -19,9 +19,10 @@ echo.
 echo 1: Update CRL/Certificate Revocation List
 echo 2: Update CTL/Certificate Trust List(SST)
 echo 3: Update CTL/Certificate Trust List(RootSUPD)
+echo 4: Reset all CRL/Certificate Revocation List
 echo.
-echo To reset all certificate lists, do not choose any options.
-echo Exit batch and use Microsoft Fixit tools which in Tools\Fixit folder:
+echo To reset all CTL/Certificate Trust List, do not choose any options.
+echo Exit batch and use Microsoft Fixit tools in Tools\Fixit folder:
 echo * Microsoft_Fixit_20135.diagcab - Windows Vista and later
 echo * Microsoft_Fixit_51014.msi - Windows XP/2003 and older
 echo.
@@ -46,6 +47,12 @@ goto EXIT
 :: Update CTL(RootSUPD)
 :CASE_3
 "%~dp0Tools\Fixit\RootSUPD.exe"
+
+
+:: Reset CRL
+:CASE_4
+%CertMgr% -del -all -s -r currentUser Disallowed
+%CertMgr% -del -all -s -r localMachine Disallowed
 
 
 :: Exit

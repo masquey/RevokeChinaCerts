@@ -52,6 +52,7 @@ if /I %1 EQU Y (
 goto :EOF
 
 :RESTORE
+%CertMgr% -del -c -sha1 %1 -s -r currentUser Disallowed
 %CertMgr% -del -c -sha1 %1 -s -r localMachine Disallowed
 goto :EOF
 
