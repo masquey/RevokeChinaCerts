@@ -160,6 +160,28 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
 
 
 
+02C2D931062D7B1DC2A5C7F5F0685064081FB221.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+             (Negative)5b:b3:c7:b8:07:11:8e:7f:bc:b2:4e:7f:46:58:16:9e
+        Issuer: OU = DSDTestProvider, O = DSDTestProvider, CN = DSDTestProvider
+        Validity
+            Not Before: May 27 13:36:18 2015 GMT
+            Not After : Dec 31 23:59:59 2039 GMT
+        Subject: OU = DSDTestProvider, O = DSDTestProvider, CN = DSDTestProvider
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            2.5.29.1: 
+                <Not Supported>
+
+
+
 
 # Intermediate CA Certificates
 
