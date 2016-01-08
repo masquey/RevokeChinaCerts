@@ -4,7 +4,20 @@
 :: Author: Chengr28
 :: 
 
+
 @echo off
+
+
+:: Check administrative permission.
+net session >NUL 2>NUL
+if ERRORLEVEL 1 (
+	color 4F
+	echo Please run as Administrator.
+	echo.
+	pause & break
+	echo.
+	cls
+)
 
 
 :: Locate directory and architecture check
@@ -21,7 +34,7 @@ echo 2: Update CTL/Certificate Trust List(SST)
 echo 3: Update CTL/Certificate Trust List(RootSUPD)
 echo 4: Reset all CRL/Certificate Revocation List
 echo.
-echo To reset all CTL/Certificate Trust List, do not choose any options.
+echo To reset all CTL/Certificate Trust List, do NOT choose any options.
 echo Exit batch and use Microsoft Fixit tools in Tools\Fixit folder:
 echo * Microsoft_Fixit_20135.diagcab - Windows Vista and later
 echo * Microsoft_Fixit_51014.msi - Windows XP/2003 and older

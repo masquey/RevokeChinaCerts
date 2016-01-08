@@ -4,7 +4,20 @@
 :: Author: JayXon, Hugo Chan, ntkme, Chengr28
 :: 
 
+
 @echo off
+
+
+:: Check administrative permission.
+net session >NUL 2>NUL
+if ERRORLEVEL 1 (
+	color 4F
+	echo Please run as Administrator.
+	echo.
+	pause & break
+	echo.
+	cls
+)
 
 
 :: Locate directory and architecture check
