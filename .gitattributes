@@ -1,1 +1,8 @@
-﻿Windows/* eol=crlf
+﻿Windows/RevokeChinaCerts_CodeSigning.bat eol=crlf
+Windows/RevokeChinaCerts_Firefox.bat eol=crlf
+Windows/RevokeChinaCerts_Online.bat eol=crlf
+Windows/RevokeChinaCerts_Organization.bat eol=crlf
+Windows/RevokeChinaCerts_Update.bat eol=crlf
+Windows/Certificates/* eol=crlf
+Windows/Tools/SoftCertPolicyAppender/Source/SoftCertPolicyAppender/* eol=crlf
+Windows/Tools/SoftCertPolicyAppender/Source/SoftCertPolicyAppender.sln eol=crlf
