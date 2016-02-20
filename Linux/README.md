@@ -20,12 +20,16 @@ CA without fiddling with the Root CA.
 
 First you need to have packages installed to provide `certutil`. On Ubuntu it would be:
 
-        sudo apt-get install libnss3-tools
+``` sh
+sudo apt-get install libnss3-tools
+```
 
 Then, use the `revoke-china-certs.sh` to do the revocation.
 For most NSS-based applications including Chrome, it would be:
 
-        ./revoke-china-certs.sh extended $HOME/.pki/nssdb
+``` sh
+./revoke-china-certs.sh extended $HOME/.pki/nssdb
+```
 
 to revoke trust of CAs within the *extended* set. Change `extended` to `all` or `base`
 or `restore` to revoke other sets of certs.
@@ -33,16 +37,20 @@ or `restore` to revoke other sets of certs.
 Since Firefox maintains different certificate store for different browser profile (rather
 than per Linux user for Chrome), you need to do this for every profile under `~/.mozilla/firefox`.
 
-        for profile in `ls ~/.mozilla/firefox/*.default`;do
-            ./revoke-china-certs.sh extended $HOME/.mozilla/firefox/$profile
-        done
+``` sh
+for profile in `ls -d ~/.mozilla/firefox/*.default`; do
+  ./revoke-china-certs.sh extended "$profile"
+done
+```
 
 ### Certificate Pinning Test
 
 Certificate pinning test is implemented in `certificate_pinning_test.py`.
 Use it as:
 
-    ./certificate_pinning_test.py
+``` sh
+./certificate_pinning_test.py
+```
 
 This should reveal any HTTPS Man-In-The-Middle devices that may eavesdrop
 your connection (with Google), including but not limited to a transparent
@@ -86,7 +94,9 @@ Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
 
 ### Usage
 
-    sudo ./cac_revoke.sh extended
+``` sh
+sudo ./cac_revoke.sh extended
+```
 
 The above command will revoke trust of CAs within the *extended* set.
 Change `extended` to `all` or `base` to revoke other sets of certs.
@@ -96,7 +106,9 @@ Change `extended` to `restore` to restore the revocation.
 
 Make sure `wget` is available on your `$PATH`.
 
-    ./validator.sh
+``` sh
+./validator.sh
+```
 
 ## References
 
