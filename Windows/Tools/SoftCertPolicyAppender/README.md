@@ -1,4 +1,7 @@
-﻿## 使用方法
+﻿RevokeChinaCerts on Windows
+==============
+
+## 使用方法
 SoftCertPolicyAppender.exe <参数> <证书路径>
 SoftCertPolicyAppender.exe <参数> <证书路径> <证书路径2> ...
 

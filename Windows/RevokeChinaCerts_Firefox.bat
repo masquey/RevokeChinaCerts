@@ -74,7 +74,7 @@ cls
 goto %UserChoice%
 
 
-:: Process
+:: Support functions
 :REVOKE_SCAN
 if %Portable% EQU 0 (
 	for /F "usebackq tokens=*" %%i in ("%~dp0ProfileList.txt") do call :REVOKE %%i %%1

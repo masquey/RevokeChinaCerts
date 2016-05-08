@@ -41,7 +41,7 @@ cls
 goto %UserChoice%
 
 
-:: Process
+:: Support functions
 :REVOKE_ROOT_CA
 %CertMgr% -del -c -sha1 %1 -s -r localMachine Root
 %CertMgr% -del -c -sha1 %1 -s -r localMachine AuthRoot
