@@ -31,7 +31,7 @@ echo RevokeChinaCerts Update batch
 echo.
 echo 1: Update CRL/Certificate Revocation List
 echo 2: Update CTL/Certificate Trust List(SST)
-echo 3: Update CTL/Certificate Trust List(RootSUPD)
+echo 3: Update CTL/Certificate Trust List(RootSUPD, end of support)
 echo 4: Reset all CRL/Certificate Revocation List
 echo.
 echo To reset all CTL/Certificate Trust List, do NOT choose any options.

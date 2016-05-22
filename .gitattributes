@@ -1,8 +1,24 @@
-﻿Windows/RevokeChinaCerts_CodeSigning.bat eol=crlf
-Windows/RevokeChinaCerts_Firefox.bat eol=crlf
-Windows/RevokeChinaCerts_Online.bat eol=crlf
-Windows/RevokeChinaCerts_Organization.bat eol=crlf
-Windows/RevokeChinaCerts_Update.bat eol=crlf
-Windows/Certificates/* eol=crlf
-Windows/Tools/SoftCertPolicyAppender/Source/SoftCertPolicyAppender/* eol=crlf
-Windows/Tools/SoftCertPolicyAppender/Source/SoftCertPolicyAppender.sln eol=crlf
+# Newline format in Windows(CR-LF)
+*.bat text eol=crlf
+*.csproj text eol=crlf
+*.sln text eol=crlf
+Windows/* eol=crlf
+
+# Newline format in Android/Linux/Mac(LF)
+*.plist text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+Android/* eol=lf
+Linux/* eol=lf
+Mac/* eol=lf
+
+# Binary files
+*.diagcab binary
+*.dll binary
+*.exe binary
+*.msi binary
+*.sst binary
+*.zip binary
+Mac/libexec/* binary
+Windows/Tools/Certutil/* binary
+Windows/Tools/Fixit/* binary
