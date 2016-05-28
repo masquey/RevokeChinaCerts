@@ -1,30 +1,24 @@
 # Root CA Certificates
 
-8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F.crt
+02C2D931062D7B1DC2A5C7F5F0685064081FB221.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number: 1228079105 (0x49330001)
-        Issuer: C = CN, O = CNNIC, CN = CNNIC ROOT
+        Serial Number:
+             (Negative)5b:b3:c7:b8:07:11:8e:7f:bc:b2:4e:7f:46:58:16:9e
+        Issuer: OU = DSDTestProvider, O = DSDTestProvider, CN = DSDTestProvider
         Validity
-            Not Before: Apr 16 07:09:14 2007 GMT
-            Not After : Apr 16 07:09:14 2027 GMT
-        Subject: C = CN, O = CNNIC, CN = CNNIC ROOT
+            Not Before: May 27 13:36:18 2015 GMT
+            Not After : Dec 31 23:59:59 2039 GMT
+        Subject: OU = DSDTestProvider, O = DSDTestProvider, CN = DSDTestProvider
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                Public-Key: (4096 bit)
         X509v3 extensions:
-            Netscape Cert Type: 
-                SSL CA, S/MIME CA, Object Signing CA
-            X509v3 Authority Key Identifier: 
-                keyid:65:F2:31:AD:2A:F7:F7:DD:52:96:0A:C7:02:C1:0E:EF:A6:D5:3B:11
-
             X509v3 Basic Constraints: critical
                 CA:TRUE
-            X509v3 Key Usage: 
-                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment, Key Agreement, Certificate Sign, CRL Sign
-            X509v3 Subject Key Identifier: 
-                65:F2:31:AD:2A:F7:F7:DD:52:96:0A:C7:02:C1:0E:EF:A6:D5:3B:11
+            2.5.29.1: 
+                <Not Supported>
 
 
 
@@ -114,6 +108,54 @@
 
 
 
+8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 1228079105 (0x49330001)
+        Issuer: C = CN, O = CNNIC, CN = CNNIC ROOT
+        Validity
+            Not Before: Apr 16 07:09:14 2007 GMT
+            Not After : Apr 16 07:09:14 2027 GMT
+        Subject: C = CN, O = CNNIC, CN = CNNIC ROOT
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            Netscape Cert Type: 
+                SSL CA, S/MIME CA, Object Signing CA
+            X509v3 Authority Key Identifier: 
+                keyid:65:F2:31:AD:2A:F7:F7:DD:52:96:0A:C7:02:C1:0E:EF:A6:D5:3B:11
+
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: 
+                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment, Key Agreement, Certificate Sign, CRL Sign
+            X509v3 Subject Key Identifier: 
+                65:F2:31:AD:2A:F7:F7:DD:52:96:0A:C7:02:C1:0E:EF:A6:D5:3B:11
+
+
+
+98A04E4163357790C4A79E6D713FF0AF51FE6927.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            6b:c5:7b:95:18:93:aa:97:4b:62:4a:c0:88:fc:3b:b6
+        Issuer: CN = eDellRoot
+        Validity
+            Not Before: Apr  7 10:23:27 2015 GMT
+            Not After : Dec 31 23:59:59 2039 GMT
+        Subject: CN = eDellRoot
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            2.5.29.1: 
+                <Not Supported>
+
+
+
 C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
 --------------------------------------------
 
@@ -140,86 +182,22 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
 
 
 
-98A04E4163357790C4A79E6D713FF0AF51FE6927.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number:
-            6b:c5:7b:95:18:93:aa:97:4b:62:4a:c0:88:fc:3b:b6
-        Issuer: CN = eDellRoot
-        Validity
-            Not Before: Apr  7 10:23:27 2015 GMT
-            Not After : Dec 31 23:59:59 2039 GMT
-        Subject: CN = eDellRoot
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
-        X509v3 extensions:
-            2.5.29.1: 
-                <Not Supported>
-
-
-
-02C2D931062D7B1DC2A5C7F5F0685064081FB221.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number:
-             (Negative)5b:b3:c7:b8:07:11:8e:7f:bc:b2:4e:7f:46:58:16:9e
-        Issuer: OU = DSDTestProvider, O = DSDTestProvider, CN = DSDTestProvider
-        Validity
-            Not Before: May 27 13:36:18 2015 GMT
-            Not After : Dec 31 23:59:59 2039 GMT
-        Subject: OU = DSDTestProvider, O = DSDTestProvider, CN = DSDTestProvider
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
-        X509v3 extensions:
-            X509v3 Basic Constraints: critical
-                CA:TRUE
-            2.5.29.1: 
-                <Not Supported>
-
-
-
 
 # Intermediate CA Certificates
 
-AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
+561422647B89BE22F203EBCAEF52B5007227510A.crt
 --------------------------------------------
 
-        Version: 3 (0x2)
-        Serial Number: 1228079206 (0x49330066)
-        Issuer: C = CN, O = CNNIC, CN = CNNIC ROOT
+        Version: 1 (0x0)
+        Serial Number: 10688689213381189154 (0x9455da355e229e22)
+        Issuer: C = CN, ST = Shanghai, L = Shanghai, O = "Baidu, inc.", OU = SW, CN = SW CA
         Validity
-            Not Before: Jul  1 10:44:18 2014 GMT
-            Not After : Jul  1 10:44:18 2024 GMT
-        Subject: C = CN, O = CNNIC SSL, CN = CNNIC SSL
+            Not Before: Apr 22 09:55:27 2014 GMT
+            Not After : Apr 21 09:55:27 2016 GMT
+        Subject: C = CN, ST = Beijing, L = Beijing, O = "Baidu, Inc.", OU = SW, CN = *.wacc.baidu.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
                 Public-Key: (2048 bit)
-        X509v3 extensions:
-            X509v3 Authority Key Identifier: 
-                keyid:65:F2:31:AD:2A:F7:F7:DD:52:96:0A:C7:02:C1:0E:EF:A6:D5:3B:11
-
-            X509v3 Basic Constraints: critical
-                CA:TRUE
-            X509v3 Certificate Policies: 
-                Policy: 1.3.6.1.4.1.29836.1.6
-                  CPS: http://www.cnnic.cn/cps/
-
-            X509v3 CRL Distribution Points: 
-
-                Full Name:
-                  DirName: C = CN, O = CNNIC, OU = crl, CN = crl1
-
-                Full Name:
-                  URI:http://www.cnnic.cn/download/rootcrl/CRL1.crl
-
-            X509v3 Key Usage: 
-                Certificate Sign, CRL Sign
-            X509v3 Subject Key Identifier: 
-                45:00:BA:8A:18:90:51:C3:B1:CA:F7:BC:65:39:2E:8C:56:90:44:30
 
 
 
@@ -264,94 +242,97 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
 
 
 
-561422647B89BE22F203EBCAEF52B5007227510A.crt
+8EDCEE98F5788D38B8D8AD0E0C6137A6FBD1666D.crt
 --------------------------------------------
 
-        Version: 1 (0x0)
-        Serial Number: 10688689213381189154 (0x9455da355e229e22)
-        Issuer: C = CN, ST = Shanghai, L = Shanghai, O = "Baidu, inc.", OU = SW, CN = SW CA
+        Version: 3 (0x2)
+        Serial Number:
+            51:63:0e:bd:fe:2d:8f:fc:79:71:03:76:3d:75:52:c3
+        Issuer: C = US, O = "VeriSign, Inc.", OU = VeriSign Trust Network, OU = "(c) 2006 VeriSign, Inc. - For authorized use only", CN = VeriSign Class 3 Public Primary Certification Authority - G5
         Validity
-            Not Before: Apr 22 09:55:27 2014 GMT
-            Not After : Apr 21 09:55:27 2016 GMT
-        Subject: C = CN, ST = Beijing, L = Beijing, O = "Baidu, Inc.", OU = SW, CN = *.wacc.baidu.com
+            Not Before: Sep 24 00:00:00 2015 GMT
+            Not After : Sep 23 23:59:59 2025 GMT
+        Subject: C = US, O = "Blue Coat Systems, Inc.", OU = Symantec Trust Network, CN = Blue Coat Public Services Intermediate CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
                 Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://s.symcb.com/pca3-g5.crl
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            Authority Information Access: 
+                OCSP - URI:http://s.symcd.com
+
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.2
+                  CPS: http://www.symauth.com/cps
+                  User Notice:
+                    Explicit Text: http://www.symauth.com/rpa
+                Policy: 1.3.6.1.4.1.14501.4.2.1
+                  User Notice:
+                    Explicit Text: In the event that the BlueCoat CPS and Symantec CPS conflict, the Symantec CPS governs.
+                Policy: 1.3.6.1.4.1.14501.4.2.2
+                  User Notice:
+                    Explicit Text: In the event that the BlueCoat CPS and Symantec CPS conflict, the Symantec CPS governs.
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Subject Alternative Name: 
+                DirName:/CN=SymantecPKI-2-214
+            X509v3 Subject Key Identifier: 
+                47:95:0A:0B:A7:A1:82:A2:6D:C9:9B:9C:CD:3E:F3:90:42:E4:6F:99
+            X509v3 Authority Key Identifier: 
+                keyid:7F:D3:65:A7:C2:DD:EC:BB:F0:30:09:F3:43:39:FA:02:AF:33:31:33
+
+
+
+
+AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 1228079206 (0x49330066)
+        Issuer: C = CN, O = CNNIC, CN = CNNIC ROOT
+        Validity
+            Not Before: Jul  1 10:44:18 2014 GMT
+            Not After : Jul  1 10:44:18 2024 GMT
+        Subject: C = CN, O = CNNIC SSL, CN = CNNIC SSL
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:65:F2:31:AD:2A:F7:F7:DD:52:96:0A:C7:02:C1:0E:EF:A6:D5:3B:11
+
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.29836.1.6
+                  CPS: http://www.cnnic.cn/cps/
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  DirName: C = CN, O = CNNIC, OU = crl, CN = crl1
+
+                Full Name:
+                  URI:http://www.cnnic.cn/download/rootcrl/CRL1.crl
+
+            X509v3 Key Usage: 
+                Certificate Sign, CRL Sign
+            X509v3 Subject Key Identifier: 
+                45:00:BA:8A:18:90:51:C3:B1:CA:F7:BC:65:39:2E:8C:56:90:44:30
 
 
 
 
 # SSL Certificates
-
-27A29C3A8B3261770E8B59448557DC9E9339E68C.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number: 3 (0x3)
-        Issuer: C = US, ST = Some-State, O = github.com, OU = github.com, CN = github.com
-        Validity
-            Not Before: Jan 25 06:29:12 2013 GMT
-            Not After : Jan 25 06:29:12 2014 GMT
-        Subject: C = US, ST = Some-State, O = github.com, OU = github.com, CN = github.com
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
-        X509v3 extensions:
-            X509v3 Basic Constraints: 
-                CA:FALSE
-            Netscape Comment: 
-                OpenSSL Generated Certificate
-            X509v3 Subject Key Identifier: 
-                B8:3D:05:00:65:AC:EB:E5:76:70:9C:C4:66:10:E7:32:AF:8C:4D:AB
-            X509v3 Authority Key Identifier: 
-                keyid:28:15:37:C0:0C:DC:0A:D1:40:7F:66:A3:E5:94:40:75:B5:E7:C2:98
-
-
-
-
-F6BEADB9BC02E0A152D71C318739CDECFC1C085D.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number: 23 (0x17)
-        Issuer: C = cn, CN = google.com
-        Validity
-            Not Before: Jul 24 09:18:36 2014 GMT
-            Not After : Jul 24 09:18:36 2015 GMT
-        Subject: C = cn, CN = google.com
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
-        X509v3 extensions:
-            X509v3 Basic Constraints: critical
-                CA:FALSE
-            X509v3 Key Usage: critical
-                Key Encipherment, Data Encipherment
-            X509v3 Subject Key Identifier: 
-                8C:3A:24:B6:10:E4:63:3E:23:20:E7:AF:42:6C:AF:45:62:E6:35:7F
-            Netscape Cert Type: 
-                SSL Client, SSL Server, S/MIME
-            Netscape Comment: 
-                example comment extension
-
-
-
-316076F2866588DBB233C7F9EB68B58125150C21.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number:
-            f0:c1:fb:04:dd:2c:9e:d8:f9:4f:08:20:59:1e:72:ad
-        Issuer: CN = google.com
-        Validity
-            Not Before: Sep 18 10:48:48 2014 GMT
-            Not After : Mar 18 10:48:48 2015 GMT
-        Subject: CN = google.com
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
-
-
 
 2290C311EA0F3F57E06DF45B698E18E828E59BC3.crt
 --------------------------------------------
@@ -380,6 +361,32 @@ F6BEADB9BC02E0A152D71C318739CDECFC1C085D.crt
 
 
 
+27A29C3A8B3261770E8B59448557DC9E9339E68C.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 3 (0x3)
+        Issuer: C = US, ST = Some-State, O = github.com, OU = github.com, CN = github.com
+        Validity
+            Not Before: Jan 25 06:29:12 2013 GMT
+            Not After : Jan 25 06:29:12 2014 GMT
+        Subject: C = US, ST = Some-State, O = github.com, OU = github.com, CN = github.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                B8:3D:05:00:65:AC:EB:E5:76:70:9C:C4:66:10:E7:32:AF:8C:4D:AB
+            X509v3 Authority Key Identifier: 
+                keyid:28:15:37:C0:0C:DC:0A:D1:40:7F:66:A3:E5:94:40:75:B5:E7:C2:98
+
+
+
+
 30F3B3ADC6E570BDA606B9F96DE24190CE262C67.crt
 --------------------------------------------
 
@@ -404,6 +411,40 @@ F6BEADB9BC02E0A152D71C318739CDECFC1C085D.crt
                 SSL Client, SSL Server, S/MIME
             Netscape Comment: 
                 example comment extension
+
+
+
+316076F2866588DBB233C7F9EB68B58125150C21.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            f0:c1:fb:04:dd:2c:9e:d8:f9:4f:08:20:59:1e:72:ad
+        Issuer: CN = google.com
+        Validity
+            Not Before: Sep 18 10:48:48 2014 GMT
+            Not After : Mar 18 10:48:48 2015 GMT
+        Subject: CN = google.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+
+
+
+75F411595FE9A21A17A4967C7B666E5152791A32.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            a4:0f:d5:5e:2a:14:34:33:23:a8:d4:07:a2:25:5a:e8
+        Issuer: CN = *.hotmail.com
+        Validity
+            Not Before: Jan 15 16:00:00 2015 GMT
+            Not After : Jul 15 16:00:00 2015 GMT
+        Subject: CN = *.hotmail.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
 
 
 
@@ -451,20 +492,30 @@ F468B5F3FED807974476A22B32EA3137D924F7BA.crt
 
 
 
-75F411595FE9A21A17A4967C7B666E5152791A32.crt
+F6BEADB9BC02E0A152D71C318739CDECFC1C085D.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number:
-            a4:0f:d5:5e:2a:14:34:33:23:a8:d4:07:a2:25:5a:e8
-        Issuer: CN = *.hotmail.com
+        Serial Number: 23 (0x17)
+        Issuer: C = cn, CN = google.com
         Validity
-            Not Before: Jan 15 16:00:00 2015 GMT
-            Not After : Jul 15 16:00:00 2015 GMT
-        Subject: CN = *.hotmail.com
+            Not Before: Jul 24 09:18:36 2014 GMT
+            Not After : Jul 24 09:18:36 2015 GMT
+        Subject: C = cn, CN = google.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
                 Public-Key: (1024 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Key Encipherment, Data Encipherment
+            X509v3 Subject Key Identifier: 
+                8C:3A:24:B6:10:E4:63:3E:23:20:E7:AF:42:6C:AF:45:62:E6:35:7F
+            Netscape Cert Type: 
+                SSL Client, SSL Server, S/MIME
+            Netscape Comment: 
+                example comment extension
 
 
 

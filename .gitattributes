@@ -5,9 +5,12 @@
 Windows/* eol=crlf
 
 # Newline format in Android/Linux/Mac(LF)
+*.bats text eol=lf
+*.orig text eol=lf
 *.plist text eol=lf
 *.py text eol=lf
 *.sh text eol=lf
+*.torestore text eol=lf
 Android/* eol=lf
 Linux/* eol=lf
 Mac/* eol=lf

@@ -1,4 +1,4 @@
-﻿RevokeChinaCerts on Windows
+﻿RevokeChinaCerts in Windows
 ==============
 
 ### Type
