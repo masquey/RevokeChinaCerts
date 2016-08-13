@@ -257,6 +257,33 @@ EABDA240440ABBD694930A01D09764C6C2D77966.crt
 
 
 
+F02B70BDE4EAE02B207377B9FD4785E4C9CC55DC.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            2c:70:3e:54:e9:0f:d9:98:20:cc:c6:d9:f5:46:3f:35
+        Issuer: C = CN, O = China Financial Certification Authority, CN = CFCA Identity CA
+        Validity
+            Not Before: Jun 30 01:21:12 2015 GMT
+            Not After : Jun 30 01:21:12 2040 GMT
+        Subject: C = CN, O = China Financial Certification Authority, CN = CFCA Identity CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:C0:AC:76:A2:D3:5D:FF:F6:CD:16:00:5B:38:A7:7F:55:7D:85:59:6C
+
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Subject Key Identifier: 
+                C0:AC:76:A2:D3:5D:FF:F6:CD:16:00:5B:38:A7:7F:55:7D:85:59:6C
+
+
+
 
 # Intermediate CA Certificates
 

@@ -14,7 +14,7 @@ Revoke China Certificates.<br />
 * [Android: Certificates Blacklisting - phoeagon](https://github.com/phoeagon/RevokeChinaCerts/tree/master/Android)
 * [Linux: Automation tools - phoeagon](https://github.com/phoeagon/RevokeChinaCerts/tree/master/Linux)
 * [Mac: Security-trust-settings-tools - ntkme](https://github.com/ntkme/security-trust-settings-tools)
-* [Windows: SoftCertPolicyAppender - lhyqy5](https://github.com/lhyqy5/RevokeChinaCerts/tree/master/Windows/SoftCertPolicyAppender)
+* [Windows: SoftCertPolicyAppender - lhyqy5](https://github.com/lhyqy5/RevokeChinaCerts)
 
 ### License
 * Android: [Apache License](https://github.com/chengr28/RevokeChinaCerts/blob/master/Android/LICENSE)
