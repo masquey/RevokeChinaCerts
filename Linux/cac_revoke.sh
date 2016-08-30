@@ -15,16 +15,20 @@ uncomment() {
   ed_conf "s%^!($1)%\1%g"
 }
 
-readonly Cnnic='mozilla/CNNIC_ROOT.crt'
-readonly Cnnic_ev='mozilla/China_Internet_Network_Information_Center_EV_Certificates_Root.crt'
-readonly Wosign_cn='mozilla/WoSign_China.crt'
-readonly Wosign='mozilla/WoSign.crt'
-readonly Hk_post='mozilla/Hongkong_Post_Root_CA_1.crt'
-readonly Epki='mozilla/ePKI_Root_Certification_Authority.crt'
-readonly Tw_grca='mozilla/Taiwan_GRCA.crt'
-readonly Twca='mozilla/TWCA_Root_Certification_Authority.crt'
-readonly Twca_global='mozilla/TWCA_Global_Root_CA.crt'
-readonly CFCA='mozilla/CFCA_EV_ROOT.crt'
+readonly blacklisted_base_certs="mozilla/CNNIC_ROOT.crt
+mozilla/China_Internet_Network_Information_Center_EV_Certificates_Root.crt"
+readonly blacklisted_extended_certs="mozilla/CFCA_EV_ROOT.crt"
+readonly blacklisted_all_certs="mozilla/WoSign_China.crt
+mozilla/WoSign.crt
+mozilla/Hongkong_Post_Root_CA_1.crt
+mozilla/ePKI_Root_Certification_Authority.crt
+mozilla/Taiwan_GRCA.crt
+mozilla/TWCA_Root_Certification_Authority.crt
+mozilla/TWCA_Global_Root_CA.crt
+mozilla/CA_WoSign_ECC_Root.crt
+mozilla/Certification_Authority_of_WoSign_G2.crt
+mozilla/CFCA_EV_ROOT.crt"
+
 readonly blacklisted_certs='../'
 
 readonly blacklist_dir='/etc/ca-certificates/trust-source/blacklist' # arch
@@ -116,48 +120,33 @@ restore_arch() {
 }
 
 revoke_base() {
-  comment $Cnnic
-  comment $Cnnic_ev
-
+  for cert in $blacklisted_base_certs; do
+    comment $cert
+  done
   update_certs
   checksum_audit 'base'
 }
 
 revoke_extended() {
-  comment $CFCA
-  # Same as base.
-  revoke_base
-
+  for cert in $blacklisted_base_certs $blacklisted_extended_certs; do
+    comment $cert
+  done
+  update_certs
   checksum_audit 'extended'
 }
 
 revoke_all() {
-  revoke_extended
-
-  comment $Wosign_cn
-  comment $Wosign
-  comment $Hk_post
-  comment $Epki
-  comment $Tw_grca
-  comment $Twca
-  comment $Twca_global
-
+  for cert in $blacklisted_base_certs $blacklisted_extended_certs $blacklisted_all_certs; do
+    comment $cert
+  done
   update_certs
   checksum_audit 'all'
 }
 
 restore() {
-  uncomment $Cnnic
-  uncomment $Cnnic_ev
-  uncomment $Wosign_cn
-  uncomment $Wosign
-  uncomment $Hk_post
-  uncomment $Epki
-  uncomment $Tw_grca
-  uncomment $Twca
-  uncomment $Twca_global
-  uncomment $CFCA
-
+  for cert in $blacklisted_base_certs $blacklisted_extended_certs $blacklisted_all_certs; do
+    uncomment $cert
+  done
   update_certs
 }
 
