@@ -142,6 +142,7 @@ revoke_all() {
   comment $Twca
   comment $Twca_global
 
+  update_certs
   checksum_audit 'all'
 }
 
