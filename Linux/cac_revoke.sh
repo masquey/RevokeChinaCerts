@@ -24,6 +24,7 @@ readonly Epki='mozilla/ePKI_Root_Certification_Authority.crt'
 readonly Tw_grca='mozilla/Taiwan_GRCA.crt'
 readonly Twca='mozilla/TWCA_Root_Certification_Authority.crt'
 readonly Twca_global='mozilla/TWCA_Global_Root_CA.crt'
+readonly CFCA='mozilla/CFCA_EV_ROOT.crt'
 readonly blacklisted_certs='../'
 
 readonly blacklist_dir='/etc/ca-certificates/trust-source/blacklist' # arch
@@ -123,6 +124,7 @@ revoke_base() {
 }
 
 revoke_extended() {
+  comment $CFCA
   # Same as base.
   revoke_base
 
@@ -153,6 +155,7 @@ restore() {
   uncomment $Tw_grca
   uncomment $Twca
   uncomment $Twca_global
+  uncomment $CFCA
 
   update_certs
 }
