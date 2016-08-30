@@ -30,8 +30,11 @@ readonly blacklist_dir='/etc/ca-certificates/trust-source/blacklist' # arch
 readonly local_cert='/usr/local/share/ca-certificates'
 readonly hooks='/etc/ca-certificates/update.d'
 
+Config=/etc/ca-certificates.conf
+debug=
+
 update_certs() {
-  if [ "$debug" ]; then
+  if [ ! -z "$debug" ]; then
     echo 'echo (fake) update-ca-certificates'
   else
     # In /etc/ca-certificates.conf, each line gives a pathname of a CA
@@ -162,8 +165,8 @@ main() {
   # Debug.
   if [ "$2" ]; then
     if [ "$2" = '--debug' ]; then
-      readonly debug='fixtures/ca-certificates.conf'
-      readonly Config=${debug:-'/etc/ca-certificates.conf'}
+      debug='fixtures/ca-certificates.conf'
+      Config=${debug:-'/etc/ca-certificates.conf'}
     else
       help
       exit 1
