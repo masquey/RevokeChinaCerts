@@ -185,22 +185,6 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
 
 # Intermediate CA Certificates
 
-561422647B89BE22F203EBCAEF52B5007227510A.crt
---------------------------------------------
-
-        Version: 1 (0x0)
-        Serial Number: 10688689213381189154 (0x9455da355e229e22)
-        Issuer: C = CN, ST = Shanghai, L = Shanghai, O = "Baidu, inc.", OU = SW, CN = SW CA
-        Validity
-            Not Before: Apr 22 09:55:27 2014 GMT
-            Not After : Apr 21 09:55:27 2016 GMT
-        Subject: C = CN, ST = Beijing, L = Beijing, O = "Baidu, Inc.", OU = SW, CN = *.wacc.baidu.com
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
-
-
-
 6856BB1A6C4F76DACA362187CC2CCD484EDDC25D.crt
 --------------------------------------------
 
@@ -428,6 +412,22 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
                 Public-Key: (1024 bit)
+
+
+
+561422647B89BE22F203EBCAEF52B5007227510A.crt
+--------------------------------------------
+
+        Version: 1 (0x0)
+        Serial Number: 10688689213381189154 (0x9455da355e229e22)
+        Issuer: C = CN, ST = Shanghai, L = Shanghai, O = "Baidu, inc.", OU = SW, CN = SW CA
+        Validity
+            Not Before: Apr 22 09:55:27 2014 GMT
+            Not After : Apr 21 09:55:27 2016 GMT
+        Subject: C = CN, ST = Beijing, L = Beijing, O = "Baidu, Inc.", OU = SW, CN = *.wacc.baidu.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
 
 
 
