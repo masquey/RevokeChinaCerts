@@ -23,7 +23,7 @@ echo * Certificates in portable Firefox profile will be revoked.
 echo * Enter portable profile path, like "C:\Firefox\Data\profile" without quotes.
 echo * The profile directory must include cert8.db database file.
 echo.
-echo All revoking require Microsoft Visual C++ Redistributable 2015.
+echo All revoking require Microsoft Visual C++ Redistributable 2015(x86).
 set /P UserChoice="Choose: "
 if /I %UserChoice% EQU Y (set Portable=0)
 echo.
