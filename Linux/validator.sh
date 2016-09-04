@@ -5,14 +5,10 @@
 SOURCE_DIR=$(dirname "$0")
 
 base() {
-    # use cnnic.cn so that it matches the address in the cert
-    # served, rather than cnnic.net.cn as presented in README
     "$SOURCE_DIR/../Mac/test/test-url.sh" \
-      https://www.cnnic.cn/ \
-      https://evdemo.cnnic.cn/ \
-      https://wacc.n.shifen.com/ \
       https://mail.ztgame.com/ \
-      https://211.146.10.133/
+      https://211.146.10.133/ \
+      https://wacc.n.shifen.com/
 }
 
 extended() {
@@ -20,12 +16,22 @@ extended() {
       https://cstest.cfca.com.cn/ \
       https://cs.cfca.com.cn/ \
       https://www.sheca.com/ \
-      https://ibanks.bankofshanghai.com/
+      https://ibanks.bankofshanghai.com/ \
+      https://www.gdca.com.cn/ \
+      https://root1evtest.wosign.com/ \
+      https://root2evtest.wosign.com/ \
+      https://root4evtest.wosign.com/ \
+      https://root5evtest.wosign.com/
 }
 
 all() {
     "$SOURCE_DIR/../Mac/test/test-url.sh" \
-      https://www.wosign.com/
+      https://kyfw.12306.cn/ \
+      https://www.nic.edu.cn/ \
+      https://www.hongkongpost.hk/ \
+      https://epki.com.tw/ \
+      https://www.twca.com.tw/ \
+      https://www.startcom.org/
 }
 
 echo "---------------------"
