@@ -28,6 +28,7 @@ set /P UserChoice="Choose: "
 if /I %UserChoice% EQU Y (set Portable=0)
 echo.
 
+
 :: Check installed Firefox profile
 if %Portable% EQU 0 (
 	cd /D "%APPDATA%\Mozilla\Firefox\Profiles"
@@ -129,6 +130,7 @@ if %Portable% EQU 0 (
 ) else (
 	call :RESTORE
 )
+goto EXIT
 
 
 :: Exit

@@ -20,7 +20,6 @@ Mac/* eol=lf
 *.dll binary
 *.exe binary
 *.msi binary
-*.sst binary
 *.zip binary
 Mac/libexec/* binary
 Windows/Tools/Certutil/* binary

@@ -95,7 +95,7 @@ sha1() {
 }
 
 generate_cert_filenames() {
-  cat certsum_$1.txt | cut -f 3 -d ' '
+  cat certsum_$1_sorted.txt | cut -f 3
 }
 
 copy_blacklisted_certs() {

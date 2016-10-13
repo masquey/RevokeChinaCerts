@@ -115,6 +115,46 @@
 
 
 
+81AC5DE150D1B8DE5D3E0E266A136B737862D322.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            f7:4e:18:0c:99:e2:7b:8d:9f:79:4f:b1:b7:c0:bf:48
+        Issuer: C = TW, O = "Chunghwa Telecom Co., Ltd.", CN = ePKI Root Certification Authority - G2
+        Validity
+            Not Before: Feb  4 03:06:31 2016 GMT
+            Not After : Feb  4 03:06:31 2030 GMT
+        Subject: C = TW, O = "Chunghwa Telecom Co., Ltd.", CN = ePKI EV SSL Certification Authority - G1
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:72:5B:BA:AA:72:38:EE:25:90:24:B5:94:22:FA:09:88:CA:8B:0A:FB
+
+            X509v3 Subject Key Identifier: 
+                59:38:AA:5B:50:81:EC:D2:28:0A:37:E3:0A:A4:06:84:A9:92:99:39
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://eca.hinet.net/repository/CRL2/CA.crl
+
+            Authority Information Access: 
+                CA Issuers - URI:http://eca.hinet.net/repository/Certs/IssuedToThisCA.p7b
+                OCSP - URI:http://ocsp.eca.hinet.net/OCSP/ocspG2sha2
+
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.1
+                  CPS: https://eca.hinet.net/repository
+
+
+
+
 89C32E6B524E4D65388B9ECEDC637134ED4193A3.crt
 --------------------------------------------
 
@@ -290,6 +330,30 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
                 CA:TRUE, pathlen:3
             X509v3 Key Usage: critical
                 Digital Signature, Non Repudiation, Certificate Sign, CRL Sign
+
+
+
+D99B104298594763F0B9A927B79269CB47DD158B.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            d6:96:2e:c1:0a:15:93:12:af:8f:63:bc:d4:44:c9:5b
+        Issuer: C = TW, O = "Chunghwa Telecom Co., Ltd.", CN = ePKI Root Certification Authority - G2
+        Validity
+            Not Before: Nov 17 08:23:42 2015 GMT
+            Not After : Dec 31 15:59:59 2037 GMT
+        Subject: C = TW, O = "Chunghwa Telecom Co., Ltd.", CN = ePKI Root Certification Authority - G2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                72:5B:BA:AA:72:38:EE:25:90:24:B5:94:22:FA:09:88:CA:8B:0A:FB
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
 
 
 

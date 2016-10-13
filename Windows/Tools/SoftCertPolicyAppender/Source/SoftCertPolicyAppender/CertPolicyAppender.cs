@@ -204,5 +204,4 @@ namespace SoftCertPolicyAppender
             return rtn.TrimEnd(split.ToCharArray());
         }
     }
-
 }

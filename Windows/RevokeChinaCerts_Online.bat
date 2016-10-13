@@ -96,6 +96,7 @@ for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Medium.SSL.txt") do c
 for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.Root.CA.txt") do call :RESTORE %%i
 for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.Intermediate.CA.txt") do call :RESTORE %%i
 for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.SSL.txt") do call :RESTORE %%i
+goto EXIT
 
 
 :: Exit

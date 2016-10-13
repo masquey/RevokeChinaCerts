@@ -1,27 +1,5 @@
 # Root CA Certificates
 
-02C2D931062D7B1DC2A5C7F5F0685064081FB221.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number:
-             (Negative)5b:b3:c7:b8:07:11:8e:7f:bc:b2:4e:7f:46:58:16:9e
-        Issuer: OU = DSDTestProvider, O = DSDTestProvider, CN = DSDTestProvider
-        Validity
-            Not Before: May 27 13:36:18 2015 GMT
-            Not After : Dec 31 23:59:59 2039 GMT
-        Subject: OU = DSDTestProvider, O = DSDTestProvider, CN = DSDTestProvider
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
-        X509v3 extensions:
-            X509v3 Basic Constraints: critical
-                CA:TRUE
-            2.5.29.1: 
-                <Not Supported>
-
-
-
 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E.crt
 --------------------------------------------
 
@@ -136,31 +114,12 @@
 
 
 
-98A04E4163357790C4A79E6D713FF0AF51FE6927.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number:
-            6b:c5:7b:95:18:93:aa:97:4b:62:4a:c0:88:fc:3b:b6
-        Issuer: CN = eDellRoot
-        Validity
-            Not Before: Apr  7 10:23:27 2015 GMT
-            Not After : Dec 31 23:59:59 2039 GMT
-        Subject: CN = eDellRoot
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
-        X509v3 extensions:
-            2.5.29.1: 
-                <Not Supported>
-
-
-
 C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
 --------------------------------------------
 
         Version: 3 (0x2)
-        Serial Number: 15203047915477327079 (0xd2fc1387a944dce7)
+        Serial Number:
+            d2:fc:13:87:a9:44:dc:e7
         Issuer: O = "Superfish, Inc.", L = SF, ST = CA, C = US, CN = "Superfish, Inc."
         Validity
             Not Before: May 12 16:25:26 2014 GMT
@@ -419,7 +378,8 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
 --------------------------------------------
 
         Version: 1 (0x0)
-        Serial Number: 10688689213381189154 (0x9455da355e229e22)
+        Serial Number:
+            94:55:da:35:5e:22:9e:22
         Issuer: C = CN, ST = Shanghai, L = Shanghai, O = "Baidu, inc.", OU = SW, CN = SW CA
         Validity
             Not Before: Apr 22 09:55:27 2014 GMT
