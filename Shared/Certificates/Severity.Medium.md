@@ -88,6 +88,29 @@
 
 
 
+31F1FD68226320EEC63B3F9DEA4A3E537C7C3917.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 59 (0x3b)
+        Issuer: C = IL, O = StartCom Ltd., CN = StartCom Certification Authority G2
+        Validity
+            Not Before: Jan  1 01:00:01 2010 GMT
+            Not After : Dec 31 23:59:01 2039 GMT
+        Subject: C = IL, O = StartCom Ltd., CN = StartCom Certification Authority G2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Subject Key Identifier: 
+                4B:C5:B4:40:6B:AD:1C:B3:A5:1C:65:6E:46:36:89:87:05:0C:0E:B6
+
+
+
 33A4D8BC38608EF52EF0E28A35091E9250907FB9.crt
 --------------------------------------------
 
@@ -108,6 +131,50 @@
                 Certificate Sign, CRL Sign
             X509v3 Subject Key Identifier: 
                 E1:66:CF:0E:D1:F1:B3:4B:B7:06:20:14:FE:87:12:D5:F6:FE:FB:3E
+
+
+
+3E2BF7F2031B96F38CE6C4D8A85D3E2D58476A0F.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
+        Validity
+            Not Before: Sep 17 19:46:36 2006 GMT
+            Not After : Sep 17 19:46:36 2036 GMT
+        Subject: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:TRUE
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment, Key Agreement, Certificate Sign, CRL Sign
+            X509v3 Subject Key Identifier: 
+                4E:0B:EF:1A:A4:40:5B:A5:17:69:87:30:CA:34:68:43:D0:41:AE:F2
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://cert.startcom.org/sfsca-crl.crl
+
+                Full Name:
+                  URI:http://crl.startcom.org/sfsca-crl.crl
+
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.23223.1.1.1
+                  CPS: http://cert.startcom.org/policy.pdf
+                  CPS: http://cert.startcom.org/intermediate.pdf
+                  User Notice:
+                    Organization: Start Commercial (StartCom) Ltd.
+                    Number: 1
+                    Explicit Text: Limited Liability, read the section *Legal Limitations* of the StartCom Certification Authority Policy available at http://cert.startcom.org/policy.pdf
+
+            Netscape Cert Type: 
+                SSL CA, S/MIME CA, Object Signing CA
+            Netscape Comment: 
+                StartCom Free SSL Certification Authority
 
 
 
@@ -191,6 +258,45 @@
                 TLS Web Server Authentication, TLS Web Client Authentication, Code Signing, E-mail Protection, IPSec End System, IPSec Tunnel, IPSec User, Time Stamping, OCSP Signing
             X509v3 Subject Key Identifier: 
                 DB:1F:35:F3:6B:4C:FF:42:31:64:9B:CD:BB:5A:1E:1D:48:10:B7:EE
+
+
+
+A3F1333FE242BFCFC5D14E8F394298406810D1A0.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 45 (0x2d)
+        Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
+        Validity
+            Not Before: Sep 17 19:46:37 2006 GMT
+            Not After : Sep 17 19:46:36 2036 GMT
+        Subject: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Subject Key Identifier: 
+                4E:0B:EF:1A:A4:40:5B:A5:17:69:87:30:CA:34:68:43:D0:41:AE:F2
+            X509v3 Authority Key Identifier: 
+                keyid:4E:0B:EF:1A:A4:40:5B:A5:17:69:87:30:CA:34:68:43:D0:41:AE:F2
+
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.23223.1.1.1
+                  CPS: http://www.startssl.com/policy.pdf
+                  CPS: http://www.startssl.com/intermediate.pdf
+                  User Notice:
+                    Organization: Start Commercial (StartCom) Ltd.
+                    Number: 1
+                    Explicit Text: Limited Liability, read the section *Legal Limitations* of the StartCom Certification Authority Policy available at http://www.startssl.com/policy.pdf
+
+            Netscape Cert Type: 
+                SSL CA, S/MIME CA, Object Signing CA
+            Netscape Comment: 
+                StartCom Free SSL Certification Authority
 
 
 
@@ -969,6 +1075,48 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
 
 
 
+87DD1B740366A877FD28BF7ED709F4ACE1FA43A5.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            52:0a:3a:46:9d:14:6b:20:29:7a:fd:01:5e:64:ab:f5
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Trusted Network CA
+        Validity
+            Not Before: Nov 10 11:03:19 2016 GMT
+            Not After : Nov 10 11:03:19 2026 GMT
+        Subject: C = CN, O = WoSign CA Limited, CN = WoSign EV SSL CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                DE:97:08:59:BF:94:69:1D:25:68:DC:EC:76:D0:26:7A:4C:97:FB:1A
+            X509v3 Authority Key Identifier: 
+                keyid:08:76:CD:CB:07:FF:24:F6:C5:CD:ED:BB:90:BC:E2:84:37:46:75:F7
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/ctnca.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/ctnca.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
+
+
+
+
 B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6.crt
 --------------------------------------------
 
@@ -1259,6 +1407,48 @@ FAD4319D4E173FF3853E51C98D21919BF3DA1A1E.crt
 
                 Full Name:
                   URI:http://crl.usertrust.com/UTN-USERFirst-ClientAuthenticationandEmail.crl
+
+
+
+
+FAEE1F690EDD55373C35E491EF0514F3EE9445A5.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            ef:05:1a:74:1a:1d:94:09:fc:a5:e4:64:0f:8d:3c:9b
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Trusted Network CA
+        Validity
+            Not Before: Nov  9 08:33:44 2016 GMT
+            Not After : Nov  9 08:33:44 2026 GMT
+        Subject: C = CN, O = WoSign CA Limited, CN = WoSign OV SSL CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                A1:13:54:DC:56:73:2C:27:82:CA:C8:84:EF:EE:BF:00:FD:5F:AB:56
+            X509v3 Authority Key Identifier: 
+                keyid:08:76:CD:CB:07:FF:24:F6:C5:CD:ED:BB:90:BC:E2:84:37:46:75:F7
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/ctnca.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/ctnca.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
 
 
 

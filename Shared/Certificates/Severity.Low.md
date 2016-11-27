@@ -24,73 +24,6 @@
 
 
 
-31F1FD68226320EEC63B3F9DEA4A3E537C7C3917.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number: 59 (0x3b)
-        Issuer: C = IL, O = StartCom Ltd., CN = StartCom Certification Authority G2
-        Validity
-            Not Before: Jan  1 01:00:01 2010 GMT
-            Not After : Dec 31 23:59:01 2039 GMT
-        Subject: C = IL, O = StartCom Ltd., CN = StartCom Certification Authority G2
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
-        X509v3 extensions:
-            X509v3 Basic Constraints: critical
-                CA:TRUE
-            X509v3 Key Usage: critical
-                Certificate Sign, CRL Sign
-            X509v3 Subject Key Identifier: 
-                4B:C5:B4:40:6B:AD:1C:B3:A5:1C:65:6E:46:36:89:87:05:0C:0E:B6
-
-
-
-3E2BF7F2031B96F38CE6C4D8A85D3E2D58476A0F.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number: 1 (0x1)
-        Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
-        Validity
-            Not Before: Sep 17 19:46:36 2006 GMT
-            Not After : Sep 17 19:46:36 2036 GMT
-        Subject: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
-        X509v3 extensions:
-            X509v3 Basic Constraints: 
-                CA:TRUE
-            X509v3 Key Usage: 
-                Digital Signature, Key Encipherment, Key Agreement, Certificate Sign, CRL Sign
-            X509v3 Subject Key Identifier: 
-                4E:0B:EF:1A:A4:40:5B:A5:17:69:87:30:CA:34:68:43:D0:41:AE:F2
-            X509v3 CRL Distribution Points: 
-
-                Full Name:
-                  URI:http://cert.startcom.org/sfsca-crl.crl
-
-                Full Name:
-                  URI:http://crl.startcom.org/sfsca-crl.crl
-
-            X509v3 Certificate Policies: 
-                Policy: 1.3.6.1.4.1.23223.1.1.1
-                  CPS: http://cert.startcom.org/policy.pdf
-                  CPS: http://cert.startcom.org/intermediate.pdf
-                  User Notice:
-                    Organization: Start Commercial (StartCom) Ltd.
-                    Number: 1
-                    Explicit Text: Limited Liability, read the section *Legal Limitations* of the StartCom Certification Authority Policy available at http://cert.startcom.org/policy.pdf
-
-            Netscape Cert Type: 
-                SSL CA, S/MIME CA, Object Signing CA
-            Netscape Comment: 
-                StartCom Free SSL Certification Authority
-
-
-
 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0.crt
 --------------------------------------------
 
@@ -216,45 +149,6 @@
                 Certificate Sign, CRL Sign
             X509v3 Basic Constraints: critical
                 CA:TRUE
-
-
-
-A3F1333FE242BFCFC5D14E8F394298406810D1A0.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number: 45 (0x2d)
-        Issuer: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
-        Validity
-            Not Before: Sep 17 19:46:37 2006 GMT
-            Not After : Sep 17 19:46:36 2036 GMT
-        Subject: C = IL, O = StartCom Ltd., OU = Secure Digital Certificate Signing, CN = StartCom Certification Authority
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
-        X509v3 extensions:
-            X509v3 Basic Constraints: critical
-                CA:TRUE
-            X509v3 Key Usage: critical
-                Certificate Sign, CRL Sign
-            X509v3 Subject Key Identifier: 
-                4E:0B:EF:1A:A4:40:5B:A5:17:69:87:30:CA:34:68:43:D0:41:AE:F2
-            X509v3 Authority Key Identifier: 
-                keyid:4E:0B:EF:1A:A4:40:5B:A5:17:69:87:30:CA:34:68:43:D0:41:AE:F2
-
-            X509v3 Certificate Policies: 
-                Policy: 1.3.6.1.4.1.23223.1.1.1
-                  CPS: http://www.startssl.com/policy.pdf
-                  CPS: http://www.startssl.com/intermediate.pdf
-                  User Notice:
-                    Organization: Start Commercial (StartCom) Ltd.
-                    Number: 1
-                    Explicit Text: Limited Liability, read the section *Legal Limitations* of the StartCom Certification Authority Policy available at http://www.startssl.com/policy.pdf
-
-            Netscape Cert Type: 
-                SSL CA, S/MIME CA, Object Signing CA
-            Netscape Comment: 
-                StartCom Free SSL Certification Authority
 
 
 

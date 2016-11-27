@@ -25,13 +25,13 @@
 
 ### Usage(Online)
 * [English](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Online)
-* [简体中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Online(zh_Hans))
-* [繁體中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Online(zh_Hant))
+* [简体中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Online.zh_Hans)
+* [繁體中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_Online.zh_Hant)
 
 ### Usage(CodeSigning/Organization)
 * [English](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning_Organization)
-* [简体中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning_Organization(zh_Hans))
-* [繁體中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning_Organization(zh_Hant))
+* [简体中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning_Organization.zh_Hans)
+* [繁體中文](https://github.com/chengr28/RevokeChinaCerts/wiki/ReadMe_CodeSigning_Organization.zh_Hant)
 
 ### License
 GNU General Public License/GNU GPL v2
