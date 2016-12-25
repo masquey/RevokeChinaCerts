@@ -6,7 +6,6 @@ SOURCE_DIR=$(dirname "$0")
 
 base() {
     "$SOURCE_DIR/../Mac/test/test-url.sh" \
-      https://mail.ztgame.com/ \
       https://211.146.10.133/ \
       https://wacc.n.shifen.com/
 }

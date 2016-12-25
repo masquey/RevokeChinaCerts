@@ -61,9 +61,9 @@ mkdir "%~dp0Certificates\Other\SyncWithWU"
 mkdir "%~dp0Certificates\Other\GenerateSSTFromWU"
 certutil -syncWithWU "%~dp0Certificates\Other\SyncWithWU"
 certutil -generateSSTFromWU "%~dp0Certificates\Other\GenerateSSTFromWU\AuthRoot.sst"
-ren "%~dp0Certificates\Other\SyncWithWU\pinrules.sst" Pinrules.sst
+ren "%~dp0Certificates\Other\SyncWithWU\pinrules.sst" PinRules.sst
 %CertMgr% -add -all -c "%~dp0Certificates\Other\GenerateSSTFromWU\AuthRoot.sst" -s -r localMachine AuthRoot
-%CertMgr% -add -all -c "%~dp0Certificates\Other\GenerateSSTFromWU\Pinrules.sst" -s -r localMachine AuthRoot
+%CertMgr% -add -all -c "%~dp0Certificates\Other\GenerateSSTFromWU\PinRules.sst" -s -r localMachine AuthRoot
 rmdir /S /Q "%~dp0Certificates\Other\SyncWithWU"
 rmdir /S /Q "%~dp0Certificates\Other\GenerateSSTFromWU"
 goto EXIT
