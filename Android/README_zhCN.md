@@ -5,7 +5,7 @@ Android证书屏蔽
 
 ## 简介
 
-本工具安装的配置文件将屏蔽某些CA和EE证书。
+本工具安装的配置文件将屏蔽某些 CA 和 EE 证书。
 
 ## 推荐用法
 
@@ -41,4 +41,4 @@ Android证书屏蔽
 
 ## 授权
 
-本工具在Apache License下授权。
+本工具在 Apache License 下授权。

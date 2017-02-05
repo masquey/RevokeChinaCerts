@@ -152,6 +152,35 @@
 
 
 
+9D319381546EA6A12811E09CF90A20C840BE944D.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            3c:fb:7d:f4:7e:a4:b4:c6:72:a0:3f:c3:d2:5c:7c:c6
+        Issuer: C = MO, O = Macao Post and Telecommunications Bureau, CN = eSignTrust Root Certification Authority (G03)
+        Validity
+            Not Before: Jan  1 00:00:00 2017 GMT
+            Not After : Dec 31 23:59:59 2041 GMT
+        Subject: C = MO, O = Macao Post and Telecommunications Bureau, CN = eSignTrust Root Certification Authority (G03)
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Subject Alternative Name: 
+                DirName:/CN=MPEST-PROD-Offline-4096-1
+            X509v3 Subject Key Identifier: 
+                1C:E0:20:61:3D:06:E4:ED:2C:6D:55:B8:8E:35:AE:D9:6C:E5:47:81
+            X509v3 Authority Key Identifier: 
+                keyid:1C:E0:20:61:3D:06:E4:ED:2C:6D:55:B8:8E:35:AE:D9:6C:E5:47:81
+
+
+
+
 AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
 --------------------------------------------
 
@@ -180,6 +209,30 @@ AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
                 Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment, Key Agreement, Certificate Sign, CRL Sign
             X509v3 Subject Key Identifier: 
                 79:5E:B6:77:B7:E2:52:83:43:ED:C7:51:88:4C:63:85:2C:00:43:58
+
+
+
+B091AA913847F313D727BCEFC8179F086F3A8C0F.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            b6:4b:88:07:e2:23:ee:c8:5c:12:ad:a6:0e:06:a1:f2
+        Issuer: C = TW, O = Government Root Certification Authority
+        Validity
+            Not Before: Sep 28 08:58:51 2012 GMT
+            Not After : Dec 31 15:59:59 2037 GMT
+        Subject: C = TW, O = Government Root Certification Authority
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                D5:67:1D:E0:9C:7A:2C:9C:CB:C5:98:E7:1D:07:26:2A:86:EC:74:CD
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
 
 
 

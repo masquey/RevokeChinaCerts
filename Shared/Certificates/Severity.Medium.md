@@ -72,6 +72,30 @@
 
 
 
+28F97816197AFF182518AA44FEC1A0CE5CB64C8A.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            5d:df:b1:da:5a:a3:ed:5d:be:5a:65:20:65:03:90:ef
+        Issuer: C = CN, O = UniTrust, CN = UCA Global G2 Root
+        Validity
+            Not Before: Mar 11 00:00:00 2016 GMT
+            Not After : Dec 31 00:00:00 2040 GMT
+        Subject: C = CN, O = UniTrust, CN = UCA Global G2 Root
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                81:C4:8C:CC:F5:E4:30:FF:A5:0C:08:5F:8C:15:67:21:74:01:DF:DF
+
+
+
 3120F295417730075F8CD42D0CAE008EB5726EF8.crt
 --------------------------------------------
 
@@ -258,6 +282,30 @@
                 TLS Web Server Authentication, TLS Web Client Authentication, Code Signing, E-mail Protection, IPSec End System, IPSec Tunnel, IPSec User, Time Stamping, OCSP Signing
             X509v3 Subject Key Identifier: 
                 DB:1F:35:F3:6B:4C:FF:42:31:64:9B:CD:BB:5A:1E:1D:48:10:B7:EE
+
+
+
+A3A1B06F2461234AE336A5C237FCA6FFDDF0D73A.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            4f:d2:2b:8f:f5:64:c8:33:9e:4f:34:58:66:23:70:60
+        Issuer: C = CN, O = UniTrust, CN = UCA Extended Validation Root
+        Validity
+            Not Before: Mar 13 00:00:00 2015 GMT
+            Not After : Dec 31 00:00:00 2038 GMT
+        Subject: C = CN, O = UniTrust, CN = UCA Extended Validation Root
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                D9:74:3A:E4:30:3D:0D:F7:12:DC:7E:5A:05:9F:1E:34:9A:F7:E1:14
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
 
 
 
@@ -495,6 +543,38 @@ EABDA240440ABBD694930A01D09764C6C2D77966.crt
                 Digital Signature, Non Repudiation, Certificate Sign, CRL Sign
             X509v3 Subject Key Identifier: 
                 8C:76:50:CE:25:D3:79:2B:3C:F4:6D:9D:9A:E1:9E:05:4F:E8:3D:25
+
+
+
+EB466CD37565F93CDE1062CD8D9826ED23730F12.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 1942493230605712211 (0x1af51f4d2cdabb53)
+        Issuer: C = CN, O = "Global Digital Cybersecurity Authority Co., Ltd.", CN = GDCA TrustAUTH E5 ROOT
+        Validity
+            Not Before: Mar 23 07:40:10 2016 GMT
+            Not After : Dec 31 15:59:59 2040 GMT
+        Subject: C = CN, O = "Global Digital Cybersecurity Authority Co., Ltd.", CN = GDCA TrustAUTH E5 ROOT
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub: 
+                    04:1e:61:f7:0b:bf:f7:01:ee:a7:bd:b8:49:cf:76:
+                    f7:f2:bd:6e:f2:45:ef:6d:f4:c7:c7:84:8f:0a:b0:
+                    d9:06:9d:f2:ae:ce:be:e2:01:b9:71:08:ae:57:b7:
+                    65:f6:2f:dc:11:c7:24:1b:89:b8:14:0d:dc:59:d9:
+                    5d:67:23:03:65:a4:80:e2:d5:c9:6a:b6:b7:1b:b2:
+                    dc:e7:29:6f:e0:b7:72:49:82:db:a4:60:da:10:76:
+                    fa:35:70:82:97:92:b9
+                ASN1 OID: secp384r1
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                C8:7C:B0:D4:20:A5:DB:56:97:F2:97:30:C8:8A:61:89:9F:A5:F2:22
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
 
 
 

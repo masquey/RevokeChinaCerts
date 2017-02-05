@@ -26,6 +26,32 @@
 
 
 
+66F2DCFB3F814DDEE9B3206F11DEFE1BFBDFE132.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 1364379020 (0x5152c58c)
+        Issuer: C = TH, O = Electronic Transactions Development Agency (Public Organization), OU = Thailand National Root Certification Authority, CN = Thailand National Root Certification Authority - G1
+        Validity
+            Not Before: Mar 27 09:40:22 2013 GMT
+            Not After : Mar 27 10:10:22 2036 GMT
+        Subject: C = TH, O = Electronic Transactions Development Agency (Public Organization), OU = Thailand National Root Certification Authority, CN = Thailand National Root Certification Authority - G1
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Authority Key Identifier: 
+                keyid:7F:23:76:B7:83:2A:71:F7:2C:D1:88:0F:DD:4C:5F:32:0A:68:BB:7F
+
+            X509v3 Subject Key Identifier: 
+                7F:23:76:B7:83:2A:71:F7:2C:D1:88:0F:DD:4C:5F:32:0A:68:BB:7F
+
+
+
 7514436E903C901069980499CA70DE74FC06C83C.crt
 --------------------------------------------
 
