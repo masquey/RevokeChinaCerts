@@ -20,11 +20,18 @@ if ERRORLEVEL 1 (
 )
 
 
-:: Locate directory and architecture check
+:: Locate directory and architecture check.
 cd /D "%~dp0"
 set CertMgr="%~dp0Tools\CertMgr.exe"
 if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (set CertMgr="%~dp0Tools\CertMgr_x86.exe")
 set Certificates="%~dp0..\Shared\Certificates
+
+
+:: Command
+set Command=%~1
+if not "%Command%" == "" (
+	goto CASE_%Command%
+)
 
 
 :: Choice

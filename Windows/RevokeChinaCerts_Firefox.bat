@@ -7,29 +7,32 @@
 @echo off
 
 
-:: Locate directory and architecture check
+:: Locate directory and architecture check.
 cd /D "%~dp0"
 set Certutil="%~dp0Tools\Certutil\certutil.exe"
 set Certificates="%~dp0..\Shared\Certificates
 
 
-:: Check Firefox profiles
+:: Check Firefox profiles.
 set Portable=1
-echo RevokeChinaCerts Online(Firefox) batch
-echo.
-echo Revoke certificates in installed Firefox profile? [Y/N]
-echo When you choose N:
-echo * Certificates in portable Firefox profile will be revoked.
-echo * Enter portable profile path, like "C:\Firefox\Data\profile" without quotes.
-echo * The profile directory must include cert8.db database file.
-echo.
-echo All revoking require Microsoft Visual C++ Redistributable 2015(x86).
-set /P UserChoice="Choose: "
-if /I %UserChoice% EQU Y (set Portable=0)
-echo.
+if "%Command%" == "" (
+	echo RevokeChinaCerts Online(Firefox) batch
+	echo.
+	echo Revoke certificates in installed Firefox profile? [Y/N]
+	echo When you choose N:
+	echo * Certificates in portable Firefox profile will be revoked.
+	echo * Enter portable profile path, like "C:\Firefox\Data\profile" without quotes.
+	echo * The profile directory must include cert8.db database file.
+	echo.
+	echo All revoking require Microsoft Visual C++ Redistributable 2015(x86).
+	set /P UserChoice="Choose: "
+	if /I %UserChoice% EQU Y (set Portable=0)
+	echo.
+) else (
+	set Portable=0
+)
 
-
-:: Check installed Firefox profile
+:: Check installed Firefox profile.
 if %Portable% EQU 0 (
 	cd /D "%APPDATA%\Mozilla\Firefox\Profiles"
 	if ERRORLEVEL 1 (
@@ -44,8 +47,6 @@ if %Portable% EQU 0 (
 if not %Portable% EQU 0 (
 	set /P PortablePath="Profile path: "
 	echo.
-)
-if not %Portable% EQU 0 (
 	cd /D %PortablePath%
 	if ERRORLEVEL 1 (
 		echo.
@@ -54,6 +55,17 @@ if not %Portable% EQU 0 (
 		pause
 		exit
 	)
+)
+
+
+:: Command
+set Command=%~1
+if not "%Command%" == "" (
+	if %Portable% EQU 0 (
+		dir /A:D-S /B > "%~dp0ProfileList.txt"
+	)
+	cls
+	goto CASE_%Command%
 )
 
 

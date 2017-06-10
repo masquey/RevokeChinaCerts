@@ -4,7 +4,7 @@
 *.sln text eol=crlf
 Windows/* eol=crlf
 
-# Newline format in Android/Linux/Mac(LF)
+# Newline format in Android/Linux/macOS(LF)
 *.bats text eol=lf
 *.orig text eol=lf
 *.plist text eol=lf

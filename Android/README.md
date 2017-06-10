@@ -105,8 +105,8 @@ Installing this tool may prevent you from getting an updated blacklist,
 should a next Diginotar occurs.
 
 For more detailed description on certificate blacklisting on Android, see
-[here](http://nelenkov.blogspot.hk/2012/07/certificate-blacklisting-in-jelly-bean.html). And
-[here](http://nelenkov.blogspot.hk/2012/12/certificate-pinning-in-android-42.html) for
+[here](https://nelenkov.blogspot.com/2012/07/certificate-blacklisting-in-jelly-bean.html). And
+[here](https://nelenkov.blogspot.com/2012/12/certificate-pinning-in-android-42.html) for
 certificate pinning.
 
 ## License

@@ -7,23 +7,23 @@ Revoke China Certificates.<br />
 **不同平台用法参见以下链接/不同平臺用法參見以下連結：**
 * [Android](https://github.com/chengr28/RevokeChinaCerts/tree/master/Android)
 * [Linux (experimental)](https://github.com/chengr28/RevokeChinaCerts/tree/master/Linux)
-* [Mac](https://github.com/chengr28/RevokeChinaCerts/tree/master/Mac)
+* [macOS](https://github.com/chengr28/RevokeChinaCerts/tree/master/Mac)
 * [Windows](https://github.com/chengr28/RevokeChinaCerts/tree/master/Windows)
 
 ### Contributors
 * [Android: Certificates Blacklisting - phoeagon](https://github.com/phoeagon/RevokeChinaCerts/tree/master/Android)
 * [Linux: Automation tools - phoeagon](https://github.com/phoeagon/RevokeChinaCerts/tree/master/Linux)
-* [Mac: Security-trust-settings-tools - ntkme](https://github.com/ntkme/security-trust-settings-tools)
+* [macOS: Security-trust-settings-tools - ntkme](https://github.com/ntkme/security-trust-settings-tools)
 * [Windows: SoftCertPolicyAppender - lhyqy5](https://github.com/lhyqy5/RevokeChinaCerts)
 
 ### License
 * Android: [Apache License](https://github.com/chengr28/RevokeChinaCerts/blob/master/Android/LICENSE)
 * Linux: [Apache License](https://github.com/chengr28/RevokeChinaCerts/blob/master/Linux/LICENSE)
-* Mac: [BSD 2-clause License](https://github.com/chengr28/RevokeChinaCerts/blob/master/Mac/LICENSE)
+* macOS: [BSD 2-clause License](https://github.com/chengr28/RevokeChinaCerts/blob/master/Mac/LICENSE)
 * Windows: [GNU General Public License/GNU GPL v2](https://github.com/chengr28/RevokeChinaCerts/blob/master/Windows/LICENSE)
 
 ### Thanks
-* Mac: [Script to automatically disable - QuantumGhost](https://github.com/QuantumGhost/RevokeChinaCerts/tree/master/Mac)
+* macOS: [Script to automatically disable - QuantumGhost](https://github.com/QuantumGhost/RevokeChinaCerts/tree/master/Mac)
 * Windows: [BlockChinaSoftware - SCFWSE](https://github.com/SCFWSE/BlockChinaSoftware)
 * Windows: [Local-Policy](https://bitbucket.org/MartinEden/local-policy/overview)
 * Windows: [UTLS-Blocker - SCFWSE](https://github.com/SCFWSE/UTLS-Blocker)

@@ -20,10 +20,17 @@ if ERRORLEVEL 1 (
 )
 
 
-:: Locate directory and architecture check
+:: Locate directory and architecture check.
 cd /D "%~dp0"
 set CertMgr="%~dp0Tools\CertMgr.exe"
 if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (set CertMgr="%~dp0Tools\CertMgr_x86.exe")
+
+
+:: Command
+set Command=%~1
+if not "%Command%" == "" (
+	goto CASE_%Command%
+)
 
 
 :: Choice
@@ -45,7 +52,7 @@ cls
 goto %UserChoice%
 
 
-:: Update CRL
+:: Update CRL.
 :CASE_1
 mkdir "%~dp0Certificates\Other\SyncWithWU"
 certutil -syncWithWU "%~dp0Certificates\Other\SyncWithWU"
@@ -55,7 +62,7 @@ rmdir /S /Q "%~dp0Certificates\Other\SyncWithWU"
 goto EXIT
 
 
-:: Update CTL(SST)
+:: Update CTL(SST).
 :CASE_2
 mkdir "%~dp0Certificates\Other\SyncWithWU"
 mkdir "%~dp0Certificates\Other\GenerateSSTFromWU"
@@ -69,13 +76,13 @@ rmdir /S /Q "%~dp0Certificates\Other\GenerateSSTFromWU"
 goto EXIT
 
 
-:: Update CTL(RootSUPD)
+:: Update CTL(RootSUPD).
 :CASE_3
 "%~dp0Tools\Fixit\RootSUPD.exe"
 goto EXIT
 
 
-:: Reset CRL
+:: Reset CRL.
 :CASE_4
 %CertMgr% -del -all -s -r currentUser Disallowed
 %CertMgr% -del -all -s -r localMachine Disallowed
