@@ -1,4 +1,4 @@
-:: RevokeChinaCerts Online(Firefox) batch
+:: RevokeChinaCerts Online batch Firefox version
 :: Revoke China Certificates.
 :: 
 :: Author: Chengr28
@@ -15,8 +15,9 @@ set Certificates="%~dp0..\Shared\Certificates
 
 :: Check Firefox profiles.
 set Portable=1
+set Command=%~1
 if "%Command%" == "" (
-	echo RevokeChinaCerts Online(Firefox) batch
+	echo RevokeChinaCerts Online batch Firefox version
 	echo.
 	echo Revoke certificates in installed Firefox profile? [Y/N]
 	echo When you choose N:
@@ -24,11 +25,13 @@ if "%Command%" == "" (
 	echo * Enter portable profile path, like "C:\Firefox\Data\profile" without quotes.
 	echo * The profile directory must include cert8.db database file.
 	echo.
-	echo All revoking require Microsoft Visual C++ Redistributable 2015(x86).
+	echo All revoking require Microsoft Visual C++ Redistributable 2015 x86 version.
 	set /P UserChoice="Choose: "
-	if /I %UserChoice% EQU Y (set Portable=0)
 	echo.
 ) else (
+	set Portable=0
+)
+if /I "%UserChoice%" == "Y" (
 	set Portable=0
 )
 
@@ -59,7 +62,6 @@ if not %Portable% EQU 0 (
 
 
 :: Command
-set Command=%~1
 if not "%Command%" == "" (
 	if %Portable% EQU 0 (
 		dir /A:D-S /B > "%~dp0ProfileList.txt"
@@ -71,7 +73,7 @@ if not "%Command%" == "" (
 
 :: Choice and scan all Firefox profile directories
 cls
-echo RevokeChinaCerts Online(Firefox) batch
+echo RevokeChinaCerts Online batch Firefox version
 echo.
 echo 1: Base version
 echo 2: Extended version
@@ -151,7 +153,7 @@ if %Portable% EQU 0 (
 	del /F "%~dp0ProfileList.txt"
 )
 echo.
-echo RevokeChinaCerts Online(Firefox) batch
+echo RevokeChinaCerts Online batch Firefox version
 echo Done, please confirm the messages on screen.
 echo.
 pause

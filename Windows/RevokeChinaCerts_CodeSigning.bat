@@ -23,7 +23,9 @@ if ERRORLEVEL 1 (
 :: Locate directory and architecture check.
 cd /D "%~dp0"
 set CertMgr="%~dp0Tools\CertMgr.exe"
-if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (set CertMgr="%~dp0Tools\CertMgr_x86.exe")
+if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
+	set CertMgr="%~dp0Tools\CertMgr_x86.exe"
+)
 set Certificates="%~dp0Certificates\CodeSigning
 set /A SetForce = 0
 set SetForceAppender="%~dp0Tools\SoftCertPolicyAppender\Binary\SoftCertPolicyAppender.exe"
@@ -44,7 +46,9 @@ echo Setting force require:
 echo   Administrative Privileges
 echo   Microsoft .NET Framework 4.0+
 set /P UserChoice="Choose: "
-if /I %UserChoice% EQU Y (set /A SetForce=1)
+if /I %UserChoice% EQU Y (
+	set /A SetForce=1
+)
 echo.
 echo 1: Revoke all CodeSigning certificates
 echo 2: Restore all CodeSigning revoking
@@ -61,16 +65,6 @@ goto %UserChoice%
 :: Support functions
 :REVOKE
 %CertMgr% -add -c %Certificates%\%1.crt" -s -r localMachine Disallowed
-goto :EOF
-
-:REVOKE_CHOICE
-if /I %1 EQU Y (
-	if %SetForce% EQU 0 (
-		%CertMgr% -add -c %Certificates%\%2.crt" -s -r localMachine Disallowed
-	) else (
-		%SetForceAppender% --set-force %Certificates%\%2.crt"
-	)
-)
 goto :EOF
 
 :RESTORE
