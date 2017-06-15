@@ -288,7 +288,7 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
             X509v3 CRL Distribution Points: 
 
                 Full Name:
-                  DirName: C = CN, O = CNNIC, OU = crl, CN = crl1
+                  DirName:C = CN, O = CNNIC, OU = crl, CN = crl1
 
                 Full Name:
                   URI:http://www.cnnic.cn/download/rootcrl/CRL1.crl

@@ -475,7 +475,7 @@ D27AD2BEED94C0A13CC72521EA5D71BE8119F32B.crt
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (384 bit)
-                pub: 
+                pub:
                     04:e1:fd:8e:b8:43:24:ab:96:7b:85:c2:ba:0b:ad:
                     8d:e0:3a:e3:24:b9:d2:b1:be:88:3a:ca:bf:4a:b8:
                     f9:ef:2c:2f:af:51:50:3c:47:75:6c:f8:94:b7:9b:
@@ -484,6 +484,7 @@ D27AD2BEED94C0A13CC72521EA5D71BE8119F32B.crt
                     ce:03:b5:91:7f:aa:94:d0:d1:8a:48:cc:82:05:26:
                     a1:d5:51:12:d6:7b:36
                 ASN1 OID: secp384r1
+                NIST CURVE: P-384
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -559,7 +560,7 @@ EB466CD37565F93CDE1062CD8D9826ED23730F12.crt
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (384 bit)
-                pub: 
+                pub:
                     04:1e:61:f7:0b:bf:f7:01:ee:a7:bd:b8:49:cf:76:
                     f7:f2:bd:6e:f2:45:ef:6d:f4:c7:c7:84:8f:0a:b0:
                     d9:06:9d:f2:ae:ce:be:e2:01:b9:71:08:ae:57:b7:
@@ -568,6 +569,7 @@ EB466CD37565F93CDE1062CD8D9826ED23730F12.crt
                     dc:e7:29:6f:e0:b7:72:49:82:db:a4:60:da:10:76:
                     fa:35:70:82:97:92:b9
                 ASN1 OID: secp384r1
+                NIST CURVE: P-384
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 C8:7C:B0:D4:20:A5:DB:56:97:F2:97:30:C8:8A:61:89:9F:A5:F2:22
@@ -928,6 +930,48 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
 
             Authority Information Access: 
                 OCSP - URI:http://ocsp.trust-provider.com
+
+
+
+
+5B562E002F15E1617C416D1960218544C18F36B7.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            e2:1a:21:1a:a8:91:e2:d3:54:59:ff:d3:6d:27:c4:26
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Trusted Network CA
+        Validity
+            Not Before: May 18 07:46:14 2017 GMT
+            Not After : May 18 07:46:14 2027 GMT
+        Subject: C = CN, O = WoSign CA Limited, CN = WoSign DV SSL CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                CA:9B:8D:2E:44:50:42:8A:D9:02:65:32:1A:9E:80:F3:88:04:2A:B5
+            X509v3 Authority Key Identifier: 
+                keyid:08:76:CD:CB:07:FF:24:F6:C5:CD:ED:BB:90:BC:E2:84:37:46:75:F7
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/ctnca.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/ctnca.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
 
 
 
@@ -1309,6 +1353,127 @@ B39191CFF08EB6FD8B447C21CAAEF6FC33F1D5AE.crt
 
 
 
+BCF8FDFBD8A8501D603A90356566C93BC83372EE.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            70:0e:dd:43:10:d6:11:7c:cd:55:10:14:51:55:8d:7f
+        Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN - DATACorp SGC
+        Validity
+            Not Before: Aug 30 00:00:00 2006 GMT
+            Not After : Jun 24 19:06:30 2019 GMT
+        Subject: C = US, O = "Wotone Communications, Inc.", CN = WoTrust SGC Server Authority
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:53:32:D1:B3:CF:7F:FA:E0:F1:A0:5D:85:4E:92:D2:9E:45:1D:B4:4F
+
+            X509v3 Subject Key Identifier: 
+                CA:34:B5:12:B9:BA:8C:45:B1:F9:AC:FD:E7:B4:A4:86:B2:EC:CA:21
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, Microsoft Server Gated Crypto, Netscape Server Gated Crypto
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.6449.1.2.2.15
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.usertrust.com/UTN-DATACorpSGC.crl
+
+
+
+
+C0CDBE86C539F0A8BEAD82D82DF01B4DDA6FA349.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            0b:7f:95:90:e5:84:d0:6f:0b:71:6a:05:ed:9f:e2:fc
+        Issuer: C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert High Assurance EV Root CA
+        Validity
+            Not Before: May 23 12:04:07 2017 GMT
+            Not After : May 23 12:04:07 2027 GMT
+        Subject: C = CN, O = WoSign CA Limited, CN = WoSign EV SSL Pro CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                AE:0F:BE:C3:0D:65:14:22:5D:D2:51:28:B6:A0:0C:8C:59:F4:E3:1B
+            X509v3 Authority Key Identifier: 
+                keyid:B1:3E:C3:69:03:F8:BF:47:01:D4:98:26:1A:08:02:EF:63:64:2B:C3
+
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.com
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: https://www.digicert.com/CPS
+
+
+
+
+CAF415BAC356D194DA6FE89ECCB49DF4A216EACE.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            0f:79:fb:c4:5d:cf:3a:fd:57:30:a5:7a:b5:04:31:af
+        Issuer: C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert High Assurance EV Root CA
+        Validity
+            Not Before: May 23 12:05:07 2017 GMT
+            Not After : May 23 12:05:07 2027 GMT
+        Subject: C = CN, O = WoSign CA Limited, CN = WoSign OV SSL Pro CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                26:40:5A:05:C3:60:E7:73:14:F6:5C:E2:BE:6C:5D:8C:57:8F:DE:64
+            X509v3 Authority Key Identifier: 
+                keyid:B1:3E:C3:69:03:F8:BF:47:01:D4:98:26:1A:08:02:EF:63:64:2B:C3
+
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.com
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl
+
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.2
+                Policy: 2.23.140.1.2.3
+                Policy: 2.16.840.1.114412.1.1
+                  CPS: https://www.digicert.com/CPS
+
+
+
+
 CE335662F0EA6764B95C7F50A995A514ACE8C815.crt
 --------------------------------------------
 
@@ -1364,6 +1529,43 @@ CF37A5B5C9166BD6B57A56BF67165A584B057241.crt
 
             X509v3 Subject Key Identifier: 
                 D9:AD:AC:9C:5E:AB:97:FB:B4:C6:BB:11:34:A9:FB:FE:F2:AF:7D:E8
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.6449.1.2.2.15
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
+
+
+
+
+D1F58CDB9194A374AC91DAADD411FEB99C434CC9.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            61:24:f4:61:70:d3:6e:27:da:18:9b:31:15:c5:e1:00
+        Issuer: C = US, ST = UT, L = Salt Lake City, O = The USERTRUST Network, OU = http://www.usertrust.com, CN = UTN-USERFirst-Hardware
+        Validity
+            Not Before: Aug 30 00:00:00 2006 GMT
+            Not After : Jul  9 18:19:22 2019 GMT
+        Subject: C = US, O = "Wotone Communications, Inc.", CN = WoTrust Server Authority
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:A1:72:5F:26:1B:28:98:43:95:5D:07:37:D5:85:96:9D:4B:D2:C3:45
+
+            X509v3 Subject Key Identifier: 
+                D0:4A:B5:27:93:1B:46:EB:AB:38:46:7C:90:55:E1:16:61:1F:6F:D5
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
             X509v3 Basic Constraints: critical

@@ -44,7 +44,7 @@ echo.
 echo Do you want to set force certificates policy? [Y/N]
 echo Setting force require:
 echo   Administrative Privileges
-echo   Microsoft .NET Framework 4.0+
+echo   Microsoft .NET Framework 4.0 and later
 set /P UserChoice="Choose: "
 if /I %UserChoice% EQU Y (
 	set /A SetForce=1
@@ -54,7 +54,7 @@ echo 1: Revoke all CodeSigning certificates
 echo 2: Restore all CodeSigning revoking
 echo Notice: Choice version is no longer available. Please delete the certificate(s) in 
 echo         /Windows/Certificates/CodeSigning or /Windows/Certificates/Organization folders to 
-echo         make it/them not to be revoked in All version.
+echo         make it/them not to be revoked.
 echo.
 set /P UserChoice="Choose: "
 set UserChoice=CASE_%UserChoice%
@@ -64,19 +64,19 @@ goto %UserChoice%
 
 :: Support functions
 :REVOKE
-%CertMgr% -add -c %Certificates%\%1.crt" -s -r localMachine Disallowed
+%CertMgr% -add -c %Certificates%\%~1.crt" -s -r localMachine Disallowed
 goto :EOF
 
 :RESTORE
-%CertMgr% -del -c -sha1 %1 -s -r currentUser Disallowed
-%CertMgr% -del -c -sha1 %1 -s -r localMachine Disallowed
+%CertMgr% -del -c -sha1 %~1 -s -r currentUser Disallowed
+%CertMgr% -del -c -sha1 %~1 -s -r localMachine Disallowed
 goto :EOF
 
 
 :: Revoke version
 :CASE_1
 if %SetForce% EQU 0 (
-	for /F "usebackq tokens=*" %%i in (%Certificates%\CodeSigning.txt") do call :REVOKE %%i
+	for /F "usebackq tokens=*" %%i in (%Certificates%\CodeSigning.txt") do call :REVOKE "%%i"
 ) else (
 	%SetForceAppender% --set-force %Certificates%\03FCF1B9FCAB6F7243F3E3E011C6FD28F64F9920.crt" %Certificates%\0C4D32BB2623387CD40C252DDB0F650DE6373385.crt" %Certificates%\0C763003F5360492F9A90B5156E0387961F04993.crt" %Certificates%\0E6193159596F8150ED9ED2A402E67C28FAAC1BE.crt" %Certificates%\13623E691B0CC4BDC296EEC27DB945BF5A200840.crt" %Certificates%\1481414E8E87412A00D3341167FE3A92C681B830.crt" %Certificates%\14DE17539FF05E234FAAFAE49CD30870ABD2F5F7.crt" %Certificates%\1540C77B5D19FC5A71A04DB001488E55B45DDC7F.crt" %Certificates%\18427E6D2F947FB629D1D13F96136AE425231063.crt" %Certificates%\1B1D4D8444EB54B17CB5B999A50E1D0C0ED1BFE2.crt"
 	%SetForceAppender% --set-force %Certificates%\1C1ECDCCF764E6168177C5711F33EC9229A29F88.crt" %Certificates%\1E5BB77FCB63F26277F95AAE09B852699327A08A.crt" %Certificates%\2067B2629A568B4B478EEBD12D9257CC2AF696A8.crt" %Certificates%\2529C0C0D833806AFBFA3C31987C19A18722A2FE.crt" %Certificates%\294952E04EE73FA1935E756841F0FE11477F993B.crt" %Certificates%\297124A7E7D4F2B46BD478AC7263A1369AC1738D.crt" %Certificates%\2B70F74748E600BB0FA155C4ADABD3BF7B877261.crt" %Certificates%\2BDEC50B4446652C126709A08248E572B859CCCC.crt" %Certificates%\2E98A468D7DDBE489B2AF6317A555DBBA16598EA.crt" %Certificates%\2FDD445591CD2EEDBEF8B8A281896A59C08B3DC9.crt"
@@ -108,14 +108,17 @@ if %SetForce% EQU 1 (
 	%SetForceAppender% --set-force %Certificates%\E492DE96A46D79CE158DB7F12814405A5819DD22.crt" %Certificates%\E5777A69CAFD7F7C6F89C5297DD1159C7AE9B881.crt" %Certificates%\E87D1C1D3FE2BCA700EB7B8DC0E45B97EAF19405.crt" %Certificates%\E88DD1ACD2DB3A352072AA49C675F4944A3FEF82.crt" %Certificates%\E90DC0AC8B9EAE1DA53292626094CF800CEF2BC0.crt" %Certificates%\EA36152981E296F9763E1DC74B3262D3928563F8.crt" %Certificates%\EB71F776677A00EA1DDBF1358A649E948836452A.crt" %Certificates%\EBA2ADB1C0B7A61E5BA25B8356387F27049BA1A1.crt" %Certificates%\EC6FEFDCED80555081AF88C56F538F7575D8204F.crt" %Certificates%\EEC507F719D5BA0CB913F034E045A24A509D8A5F.crt"
 	%SetForceAppender% --set-force %Certificates%\F49A648C69C2F01A0FDEB3992C5AE0A14D5AD9FC.crt" %Certificates%\FA78FD28C1370371E8461D743114BAF1CD08A368.crt"
 )
-for /F "usebackq tokens=*" %%i in (%Certificates%\CodeSigning.txt") do call :RESTORE %%i
+for /F "usebackq tokens=*" %%i in (%Certificates%\CodeSigning.txt") do call :RESTORE "%%i"
 goto EXIT
 
 
 :: Exit
 :EXIT
+color
+cd /D "%~dp0"
 echo.
 echo RevokeChinaCerts CodeSigning batch
 echo Done, please confirm the messages on screen.
 echo.
 pause
+cls

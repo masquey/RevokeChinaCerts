@@ -44,7 +44,7 @@ echo.
 echo Do you want to set force certificates policy? [Y/N]
 echo Setting force require:
 echo   Administrative Privileges
-echo   Microsoft .NET Framework 4.0+
+echo   Microsoft .NET Framework 4.0 and later
 set /P UserChoice="Choose: "
 if /I %UserChoice% EQU Y (
 	set /A SetForce=1
@@ -54,7 +54,7 @@ echo 1: Revoke all Organization certificates
 echo 2: Restore all Organization revoking
 echo Notice: Choice version is no longer available. Please delete the certificate(s) in 
 echo         /Windows/Certificates/CodeSigning or /Windows/Certificates/Organization folders to 
-echo         make it/them not to be revoked in All version.
+echo         make it/them not to be revoked.
 echo.
 set /P UserChoice="Choose: "
 set UserChoice=CASE_%UserChoice%
@@ -64,19 +64,19 @@ goto %UserChoice%
 
 :: Support functions
 :REVOKE
-%CertMgr% -add -c %Certificates%\%1.crt" -s -r localMachine Disallowed
+%CertMgr% -add -c %Certificates%\%~1.crt" -s -r localMachine Disallowed
 goto :EOF
 
 :RESTORE
-%CertMgr% -del -c -sha1 %1 -s -r currentUser Disallowed
-%CertMgr% -del -c -sha1 %1 -s -r localMachine Disallowed
+%CertMgr% -del -c -sha1 %~1 -s -r currentUser Disallowed
+%CertMgr% -del -c -sha1 %~1 -s -r localMachine Disallowed
 goto :EOF
 
 
 :: All version
 :CASE_1
 if %SetForce% EQU 0 (
-	for /F "usebackq tokens=*" %%i in (%Certificates%\Organization.txt") do call :REVOKE %%i
+	for /F "usebackq tokens=*" %%i in (%Certificates%\Organization.txt") do call :REVOKE "%%i"
 ) else (
 	%SetForceAppender% --set-force %Certificates%\029A0990DC0B34838A6AAC9662A9A5E23DD7B554.crt" %Certificates%\10CF1AAD52AE48E1249F9718C3DCF8FB27B12BF6.crt" %Certificates%\1D4A2E58C68F3F2D2659BC3BAB05CFA81F87B1E8.crt" %Certificates%\240A61A2577970625B9F0B81283C4AA4037217B1.crt" %Certificates%\2ABC81B0D7D052F887965562BB10AA66A80F7674.crt" %Certificates%\2F6D7583B2CFD0F87698FB392C8B481058A280FB.crt" %Certificates%\3018E5D74DF29E3590F5BB8DF01AA7FC116BB4DE.crt" %Certificates%\31BD6AEF73031C5A49338E7A06040DD815EF7512.crt" %Certificates%\3FF4124C794A11A26B49A14D005FD6D2BA5878F8.crt" %Certificates%\4389F7886936C6B6D5532562CBB5DA5B4DD2296B.crt"
 	%SetForceAppender% --set-force %Certificates%\4571466B830EAC5FCDC22103B9733C1A15CE78AC.crt" %Certificates%\46F168AF009C28C18F452EB85F5E8747892B3C8B.crt" %Certificates%\48AE45DE0AED6F9866F4D71A8867166D8DF783AD.crt" %Certificates%\5070A0E2FA1DB04C2ED63461ECE36307AB3A863B.crt" %Certificates%\52A213B3CA8A5A5664D1BB9CF7A6A546C4E55973.crt" %Certificates%\53826F5DEF4E3AD9FD73DCF1D04E110D6DF7FDD6.crt" %Certificates%\56502166C0DE2488950491C90C7560E0E7AA7378.crt" %Certificates%\57C5CEBB53FBF181E0B13977AF864F1C13F11AA9.crt" %Certificates%\5809E86214B0C112FE08C1177D682EF5AAA5BF5F.crt" %Certificates%\59864294A96B3E5C37C058E9D1FBDE5FF0C2E4EE.crt"
@@ -98,14 +98,17 @@ if %SetForce% EQU 1 (
 	%SetForceAppender% -r --unset-force %Certificates%\AE73DFF81CF24E50DD52CA1496E7EF94876061CB.crt" %Certificates%\AEF46A0478785188910C331A41B64879CB808156.crt" %Certificates%\B0049D436F27237EE59C746A1EF3C96A8E1B54AC.crt" %Certificates%\B39B0B24B156D8B6123CAF7BA249DC81F27E39FA.crt" %Certificates%\B3FAACDA0FFE817C3FC25B8D35FEC05A92314BDC.crt" %Certificates%\B5DCF1C58E86DBED2EA2D217A5C28D11FD9254F0.crt" %Certificates%\BFC9D110D97715711AF20C494329BF7D1951BD11.crt" %Certificates%\C2859A597104BFC25B52EC15899A1999738AE13F.crt" %Certificates%\C2CAEB0DC296FD50596BCA0F53C5364521167039.crt" %Certificates%\C49ED789F979213F0096060DF131B04EAADAC921.crt"
 	%SetForceAppender% -r --unset-force %Certificates%\D3FBFAA8A67FC9A2EADBF86AEB5D07A9D6AF322E.crt" %Certificates%\D65F531088EF11DD9BFA2BE437C906D44F9E9659.crt" %Certificates%\DAB0CA93310A2507A7407F4879BA56D105AAD3C2.crt" %Certificates%\DBB84423C928ABE889D0E368FC3191D151DDB1AB.crt" %Certificates%\DD9DE879188E29AE9C6CEF546D6191B89A6B4F09.crt" %Certificates%\E3F9043072BABF5E9C631960B34CCCF9FFC8BA41.crt" %Certificates%\E67291FCE01AB748D5E473F5CA1C3915A7EC5C8E.crt" %Certificates%\EC98F4A5096282FB192FFB168A574236C5A7DC6C.crt" %Certificates%\F18C39F8B5A3E9BADC811BBA7690E8D0143BD851.crt"
 )
-for /F "usebackq tokens=*" %%i in (%Certificates%\Organization.txt") do call :RESTORE %%i
+for /F "usebackq tokens=*" %%i in (%Certificates%\Organization.txt") do call :RESTORE "%%i"
 goto EXIT
 
 
 :: Exit
 :EXIT
+color
+cd /D "%~dp0"
 echo.
 echo RevokeChinaCerts Organization batch
 echo Done, please confirm the messages on screen.
 echo.
 pause
+cls

@@ -46,7 +46,7 @@ echo.
 echo To reset all CTL/Certificate Trust List, do NOT choose any options.
 echo Exit batch and use Microsoft Fixit tools in Tools\Fixit folder:
 echo * Microsoft_Fixit_20135.diagcab - Windows Vista and later
-echo * Microsoft_Fixit_51014.msi - Windows XP/2003 and older
+echo * Microsoft_Fixit_51014.msi - Windows XP/2003 and before
 echo.
 set /P UserChoice="Choose: "
 set UserChoice=CASE_%UserChoice%
@@ -93,8 +93,11 @@ goto EXIT
 
 :: Exit
 :EXIT
+color
+cd /D "%~dp0"
 echo.
 echo RevokeChinaCerts Update batch
 echo Done, please confirm the messages on screen.
 echo.
 pause
+cls
