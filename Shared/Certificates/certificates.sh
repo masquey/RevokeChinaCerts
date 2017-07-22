@@ -20,4 +20,3 @@ certificates () {
 }
 
 certificates "$@"
-

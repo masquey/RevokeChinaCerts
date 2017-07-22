@@ -19,4 +19,3 @@ for severity in High Medium Low; do
     echo
   done > "$CERTIFICATES_DIR/Severity.${severity}.md"
 done
-

@@ -24,4 +24,3 @@ build-trust-settings () {
 }
 
 build-trust-settings "$@"
-

@@ -15,22 +15,21 @@ extended() {
       https://cstest.cfca.com.cn/ \
       https://cs.cfca.com.cn/ \
       https://www.sheca.com/ \
-      https://ibanks.bankofshanghai.com/ \
       https://www.gdca.com.cn/ \
+      https://www.wosign.com/ \
       https://root1evtest.wosign.com/ \
       https://root2evtest.wosign.com/ \
       https://root4evtest.wosign.com/ \
-      https://root5evtest.wosign.com/
+      https://root5evtest.wosign.com/ \
+      https://www.startcom.org/
 }
 
 all() {
     "$SOURCE_DIR/../Mac/test/test-url.sh" \
       https://kyfw.12306.cn/ \
-      https://www.nic.edu.cn/ \
       https://www.hongkongpost.hk/ \
       https://epki.com.tw/ \
-      https://www.twca.com.tw/ \
-      https://www.startcom.org/
+      https://www.twca.com.tw/
 }
 
 echo "---------------------"

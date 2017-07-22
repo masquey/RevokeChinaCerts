@@ -15,4 +15,3 @@ import-trust-settings () {
 }
 
 import-trust-settings "$@"
-
