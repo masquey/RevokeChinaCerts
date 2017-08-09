@@ -202,6 +202,29 @@
 
 
 
+689A1229D698D172E99E1BF00B9C19854119C9FC.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 4588464155308046394 (0x3fad7fd6a9bfb83a)
+        Issuer: C = ES, O = StartCom CA, CN = StartCom Certification Authority G3
+        Validity
+            Not Before: Mar 22 07:19:56 2017 GMT
+            Not After : Mar 22 07:17:58 2042 GMT
+        Subject: C = ES, O = StartCom CA, CN = StartCom Certification Authority G3
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                CB:10:AD:2C:46:DD:26:45:DF:AE:17:D6:1B:1F:BD:F2:9A:60:AA:14
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+
+
+
 6A174570A916FBE84453EED3D070A1D8DA442829.crt
 --------------------------------------------
 
@@ -282,6 +305,29 @@
                 TLS Web Server Authentication, TLS Web Client Authentication, Code Signing, E-mail Protection, IPSec End System, IPSec Tunnel, IPSec User, Time Stamping, OCSP Signing
             X509v3 Subject Key Identifier: 
                 DB:1F:35:F3:6B:4C:FF:42:31:64:9B:CD:BB:5A:1E:1D:48:10:B7:EE
+
+
+
+8E207F5DC0A69AA337658D2367433EC27D8506D0.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 3706110095097688872 (0x336ebf7ee4c97328)
+        Issuer: C = ES, O = StartCom CA, CN = StartCom Certification Authority CS
+        Validity
+            Not Before: Mar 22 07:24:18 2017 GMT
+            Not After : Mar 22 07:22:56 2042 GMT
+        Subject: C = ES, O = StartCom CA, CN = StartCom Certification Authority CS
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                8A:89:56:EE:05:B3:B6:9D:0B:C2:57:73:62:2A:08:3F:1E:16:E1:21
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
 
 
 
@@ -387,6 +433,39 @@ AB702CDF18EBE8B438C52869CD4A5DEF48B40E33.crt
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
                 Public-Key: (2048 bit)
+
+
+
+B51085D95B95DA912012D2C3B0019A2DC46D26E3.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 1628936378705555781 (0x169b25018674b145)
+        Issuer: C = ES, O = StartCom CA, CN = StartCom Certification Authority ECC
+        Validity
+            Not Before: Mar 22 07:22:33 2017 GMT
+            Not After : Mar 22 07:20:31 2042 GMT
+        Subject: C = ES, O = StartCom CA, CN = StartCom Certification Authority ECC
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:6d:53:f7:4c:3d:c7:4d:3e:20:5a:7c:29:77:d0:
+                    2f:d1:e7:43:a7:73:6f:e4:e1:78:02:62:22:49:ae:
+                    9c:37:85:3b:34:07:43:ff:f9:26:40:92:70:74:41:
+                    4d:81:70:87:9e:df:ed:b6:73:92:6e:ff:65:02:99:
+                    e6:68:55:bb:5e:90:fb:65:5f:58:3a:0a:83:74:7d:
+                    06:ea:68:c5:21:05:42:32:c4:41:5a:bd:23:c1:77:
+                    72:10:e3:f1:e2:ec:ab
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                9E:88:C0:B2:6C:33:09:CB:FF:21:7E:BF:EA:9F:08:86:BB:7D:AA:19
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
 
 
 
@@ -633,6 +712,41 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
 
 
 # Intermediate CA Certificates
+
+15C1776480382DEEFC869C2DA7F5BA8626B8A029.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            67:b9:b0:97:3e:0d:03:6b:3e:f1:d9:f0:47:34:ff:46:f2:bd:65:94
+        Issuer: C = FR, O = Certinomis, OU = 0002 433998903, CN = Certinomis - Root CA
+        Validity
+            Not Before: Apr 13 09:12:58 2017 GMT
+            Not After : Apr 13 09:12:58 2027 GMT
+        Subject: C = ES, O = StartCom CA, OU = StartCom Certification Authority, CN = StartCom EV SSL ICA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Authority Key Identifier: 
+                keyid:EF:91:4C:F5:A5:C3:30:E8:2F:08:EA:D3:71:22:A4:92:68:78:74:D9
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.igc-g3.certinomis.com/RACINE_G3/crl/AC_Racine_G3-crl-1.crl
+
+            X509v3 Subject Key Identifier: 
+                7B:94:AD:5A:3D:25:C5:7D:2E:1D:28:14:4F:F7:B5:18:A4:92:6C:32
+
+
 
 1C1ECDCCF764E6168177C5711F33EC9229A29F88.crt
 --------------------------------------------
@@ -1732,6 +1846,41 @@ FAEE1F690EDD55373C35E491EF0514F3EE9445A5.crt
                 Policy: X509v3 Any Policy
                   CPS: http://www.certum.pl/CPS
 
+
+
+
+FD17DA1458D3514592C4F9544A6EA960B373E877.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            5a:ed:25:3a:6e:64:ca:53:f9:b8:eb:ba:99:de:31:99:60:b7:02:d4
+        Issuer: C = FR, O = Certinomis, OU = 0002 433998903, CN = Certinomis - Root CA
+        Validity
+            Not Before: Apr 13 09:06:52 2017 GMT
+            Not After : Apr 13 09:06:52 2027 GMT
+        Subject: C = ES, O = StartCom CA, OU = StartCom Certification Authority, CN = StartCom BR SSL ICA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Authority Key Identifier: 
+                keyid:EF:91:4C:F5:A5:C3:30:E8:2F:08:EA:D3:71:22:A4:92:68:78:74:D9
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl.igc-g3.certinomis.com/RACINE_G3/crl/AC_Racine_G3-crl-1.crl
+
+            X509v3 Subject Key Identifier: 
+                FB:10:4B:95:B1:35:55:2F:BD:62:14:A9:52:02:12:0A:68:E8:12:42
 
 
 

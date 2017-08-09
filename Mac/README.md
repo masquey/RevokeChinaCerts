@@ -1,6 +1,6 @@
-# Revoke China Certs on OS X
+# Revoke China Certs on macOS
 
-Mark certifications from China as **not trusted** on OS X.
+Mark certifications from China as **not trusted** on macOS.
 
 
 ## Usage
