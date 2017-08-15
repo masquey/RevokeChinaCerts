@@ -7,6 +7,7 @@ runner() {
 
 readonly Cnnic='mozilla/CNNIC_ROOT.crt'
 readonly Cnnic_ev='mozilla/China_Internet_Network_Information_Center_EV_Certificates_Root.crt'
+readonly Cfca_ev='mozilla/CFCA_EV_ROOT.crt'
 readonly Wosign_cn='mozilla/WoSign_China.crt'
 readonly Wosign='mozilla/WoSign.crt'
 readonly Hk_post='mozilla/Hongkong_Post_Root_CA_1.crt'
@@ -48,12 +49,14 @@ compare_base() {
 
 compare_extended() {
   compare_base
+
+  compare $Cfca_ev $Wosign_cn $Wosign
 }
 
 compare_all() {
   compare_extended
 
-  compare $Wosign_cn $Wosign $Hk_post $Epki $Tw_grca $Twca $Twca_global
+  compare $Hk_post $Epki $Tw_grca $Twca $Twca_global
 }
 
 setup() {
