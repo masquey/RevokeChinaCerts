@@ -5,10 +5,12 @@ Revoke China Certificates.<br />
 
 ### Usage
 **不同平台用法参见以下链接/不同平臺用法參見以下連結：**
+* [All documents](https://github.com/chengr28/RevokeChinaCerts/tree/master/Shared/Documents)
 * [Android](https://github.com/chengr28/RevokeChinaCerts/tree/master/Android)
 * [Linux (experimental)](https://github.com/chengr28/RevokeChinaCerts/tree/master/Linux)
 * [macOS](https://github.com/chengr28/RevokeChinaCerts/tree/master/Mac)
 * [Windows](https://github.com/chengr28/RevokeChinaCerts/tree/master/Windows)
+
 
 ### Contributors
 * [Android: Certificates Blacklisting - phoeagon](https://github.com/phoeagon/RevokeChinaCerts/tree/master/Android)
@@ -25,6 +27,6 @@ Revoke China Certificates.<br />
 ### Thanks
 * macOS: [Script to automatically disable - QuantumGhost](https://github.com/QuantumGhost/RevokeChinaCerts/tree/master/Mac)
 * Windows: [BlockChinaSoftware - SCFWSE](https://github.com/SCFWSE/BlockChinaSoftware)
-* Windows: [Local-Policy](https://bitbucket.org/MartinEden/local-policy/overview)
+* Windows: [Local-Policy](https://bitbucket.org/MartinEden/local-policy)
 * Windows: [UTLS-Blocker - SCFWSE](https://github.com/SCFWSE/UTLS-Blocker)
 * Windows: [拉黑证书 让你的电脑再也装不上某些软件 附证书大全](http://blog.eqoe.cn/posts/ban-digital-cert.html)

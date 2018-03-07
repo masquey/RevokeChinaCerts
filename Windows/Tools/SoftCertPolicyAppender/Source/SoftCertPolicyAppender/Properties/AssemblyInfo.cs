@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("AutoAddSoftCertPolicy")]
-[assembly: AssemblyCopyright("Copyright © 2014 lhyqy5")]
+[assembly: AssemblyCopyright("Copyright © 2014-2018 lhyqy5")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

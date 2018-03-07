@@ -1,6 +1,9 @@
 # Newline format in Windows(CR-LF)
 *.bat text eol=crlf
+*.config text eol=crlf
+*.cs text eol=crlf
 *.csproj text eol=crlf
+*.manifest text eol=crlf
 *.sln text eol=crlf
 Windows/* eol=crlf
 
@@ -24,3 +27,5 @@ Mac/* eol=lf
 Mac/libexec/* binary
 Windows/Tools/Certutil/* binary
 Windows/Tools/Fixit/* binary
+Windows/Tools/SoftCertPolicyAppender/Binary/* binary
+Windows/Tools/SoftCertPolicyAppender/Source/_libs/* binary
