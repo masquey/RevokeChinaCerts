@@ -11,12 +11,11 @@ Revoke China Certificates.<br />
 * [macOS](https://github.com/chengr28/RevokeChinaCerts/tree/master/Mac)
 * [Windows](https://github.com/chengr28/RevokeChinaCerts/tree/master/Windows)
 
-
 ### Contributors
 * [Android: Certificates Blacklisting - phoeagon](https://github.com/phoeagon/RevokeChinaCerts/tree/master/Android)
 * [Linux: Automation tools - phoeagon](https://github.com/phoeagon/RevokeChinaCerts/tree/master/Linux)
 * [macOS: Security-trust-settings-tools - ntkme](https://github.com/ntkme/security-trust-settings-tools)
-* [Windows: SoftCertPolicyAppender - lhyqy5](https://github.com/lhyqy5/RevokeChinaCerts)
+* [Windows: SoftCertPolicyAppender - lhyqy5](https://github.com/lhyqy5)
 
 ### License
 * Android: [Apache License](https://github.com/chengr28/RevokeChinaCerts/blob/master/Android/LICENSE)

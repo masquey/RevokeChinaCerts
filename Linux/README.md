@@ -1,7 +1,7 @@
 Revoke-China-Certs on Linux
 ==========================================
 
-## Intro
+## Introduction
 
 This tool revokes certain CA certificates for OpenSSL and NSS-based applications
 on Linux (most notably, Firefox & Chrome).
@@ -11,6 +11,8 @@ certificate store. The `/etc/ca-certificates.conf` configures the trusted
 Root CAs for OpenSSL (which `wget` uses by default). Another widely used
 library is NSS by Mozilla, which supports blacklisting a specific intermediate
 CA without fiddling with the Root CA.
+
+Please make sure all scripts must have execute permission.
 
 **This tool is experimental. DO MAKE BACKUPS before you do anything!**
 

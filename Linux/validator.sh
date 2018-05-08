@@ -14,7 +14,6 @@ extended() {
     "$SOURCE_DIR/../Mac/test/test-url.sh" \
       https://cstest.cfca.com.cn/ \
       https://cs.cfca.com.cn/ \
-      https://www.sheca.com/ \
       https://www.gdca.com.cn/ \
       https://www.wosign.com/ \
       https://root1evtest.wosign.com/ \
