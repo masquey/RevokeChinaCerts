@@ -9,8 +9,7 @@ namespace SoftCertPolicyAppender
 {
     public class SoftwareRestrictionPolicyController
     {
-
-        /// <remarks>引用组件来自:https://bitbucket.org/MartinEden/local-policy/overview </remarks>
+        /// <remarks>引用组件来自: https://bitbucket.org/MartinEden/local-policy/overview </remarks>
         private static void DeletePolicyKey(string path)
         {
             var gpo = new ComputerGroupPolicyObject();
@@ -21,7 +20,8 @@ namespace SoftCertPolicyAppender
             gpo.Save();
         }
 
-        /// <remarks>引用组件来自:https://bitbucket.org/MartinEden/local-policy/overview </remarks>
+
+        /// <remarks>引用组件来自: https://bitbucket.org/MartinEden/local-policy/overview </remarks>
         private static void SetPolicyKey(string path, string name, object value, RegistryValueKind kind)
         {
             var gpo = new ComputerGroupPolicyObject();
@@ -35,6 +35,7 @@ namespace SoftCertPolicyAppender
             gpo.Save();
         }
 
+
         private static void SetPolicyRegistryKey(string path, string name, object value, RegistryValueKind kind)
         {
             const string keyPath = @"Software\Microsoft\Windows\CurrentVersion\Group Policy Objects";
@@ -45,7 +46,7 @@ namespace SoftCertPolicyAppender
                 {
                     if (srk == null)
                     {
-                        throw new ApplicationException("无法打开注册表项:" + keyPath);
+                        throw new ApplicationException("Unable to open registry key:" + keyPath);
                     }
                     certKeys = srk.GetSubKeyNames().Where(x => x.EndsWith("Machine")).Select(x => string.Format("{0}\\{1}\\{2}", keyPath, x, path))
                         //.Where(x => rk.OpenSubKey(x) == null)
@@ -63,6 +64,7 @@ namespace SoftCertPolicyAppender
 
         }
 
+
         private static void DeletePolicyRegistryKey(string path)
         {
             const string keyPath = @"Software\Microsoft\Windows\CurrentVersion\Group Policy Objects";
@@ -73,7 +75,7 @@ namespace SoftCertPolicyAppender
                 {
                     if (srk == null)
                     {
-                        throw new ApplicationException("无法打开注册表项:" + keyPath);
+                        throw new ApplicationException("Unable to open registry key:" + keyPath);
                     }
                     certKeys = srk.GetSubKeyNames().Where(x => x.EndsWith("Machine")).Select(x => string.Format("{0}\\{1}\\{2}", keyPath, x, path))
                         //.Where(x => rk.OpenSubKey(x) == null)
@@ -100,10 +102,10 @@ namespace SoftCertPolicyAppender
             var rtn = new List<byte>();
 
             //添加数据头,格式是根据注册表的数据推算的,未注释部分为未知
-            rtn.AddRange(BitConverter.GetBytes(3)); //可能为版本号
-            rtn.AddRange(BitConverter.GetBytes(1)); //可能为次版本号
-            rtn.AddRange(BitConverter.GetBytes(thumbprintData.Length)); //证书宅指纹长度
-            rtn.AddRange(thumbprintData);           //证书指纹数据
+            rtn.AddRange(BitConverter.GetBytes(3));                         //可能为版本号
+            rtn.AddRange(BitConverter.GetBytes(1));                         //可能为次版本号
+            rtn.AddRange(BitConverter.GetBytes(thumbprintData.Length));     //证书指纹长度
+            rtn.AddRange(thumbprintData);                                   //证书指纹数据
             rtn.AddRange(BitConverter.GetBytes(0x0d));
             rtn.AddRange(BitConverter.GetBytes(1));
             rtn.AddRange(BitConverter.GetBytes((short)2));
@@ -114,7 +116,7 @@ namespace SoftCertPolicyAppender
             rtn.AddRange(BitConverter.GetBytes(DateTime.Now.ToFileTime())); //时间戳
             rtn.AddRange(BitConverter.GetBytes(0x20));
             rtn.AddRange(BitConverter.GetBytes(1));
-            rtn.AddRange(BitConverter.GetBytes(cert.RawData.Length)); //证书长度
+            rtn.AddRange(BitConverter.GetBytes(cert.RawData.Length));       //证书长度
             //添加证书数据
             rtn.AddRange(cert.RawData);
 
@@ -187,7 +189,7 @@ namespace SoftCertPolicyAppender
         }
 
         /// <summary>
-        ///     转换为16进制字符串
+        /// 转换为16进制字符串
         /// </summary>
         /// <param name="bs"></param>
         /// <param name="isLowcase"></param>

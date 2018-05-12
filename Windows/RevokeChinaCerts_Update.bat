@@ -86,8 +86,8 @@ goto EXIT
 
 :: Reset CRL.
 :CASE_4
-%CertMgr% -del -all -s -r currentUser Disallowed
 %CertMgr% -del -all -s -r localMachine Disallowed
+%CertMgr% -del -all -s -r currentUser Disallowed
 goto EXIT
 
 

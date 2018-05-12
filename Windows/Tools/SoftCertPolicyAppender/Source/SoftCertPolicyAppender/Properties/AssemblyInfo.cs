@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("AutoAddSoftCertPolicy")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("SoftCertPolicyAppender")]
+[assembly: AssemblyDescription("SoftCertPolicyAppender, a tool can add software certificate to system policy.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AutoAddSoftCertPolicy")]
+[assembly: AssemblyProduct("SoftCertPolicyAppender")]
 [assembly: AssemblyCopyright("Copyright © 2014-2018 lhyqy5")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // 方法是按如下所示使用“*”: 
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.1")]

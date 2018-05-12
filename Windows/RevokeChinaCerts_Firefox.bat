@@ -24,7 +24,7 @@ if "%Command%" == "" (
 	echo When you choose N:
 	echo * Certificates in portable Firefox profile will be revoked.
 	echo * Enter portable profile path, like "C:\Firefox\Data\profile\.." without quotes.
-	echo * The profile directory must include cert8.db database file.
+	echo * The profile directory must include cert*.db database file.
 	echo.
 	echo All revoking requires Microsoft Visual C++ Redistributable 2015 x86 version.
 	set /P UserChoice="Choose: "
@@ -44,7 +44,7 @@ if %Portable% EQU 0 (
 		echo.
 		echo Cannot load any installed Firefox profiles!
 		echo * Enter portable profile path, like "C:\Firefox\Data\profile\.." without quotes.
-		echo * The profile directory must include cert8.db database file.
+		echo * The profile directory must include cert*.db database file.
 		echo.
 		set Portable=1
 	)
@@ -118,9 +118,9 @@ goto :EOF
 
 :RESTORE
 if %Portable% EQU 0 (
-	del /F "%APPDATA%\Mozilla\Firefox\Profiles\%~1\cert8.db"
+	del /F "%APPDATA%\Mozilla\Firefox\Profiles\%~1\cert*.db"
 ) else (
-	del /F "%PortablePath%\cert8.db"
+	del /F "%PortablePath%\cert*.db"
 )
 goto :EOF
 
