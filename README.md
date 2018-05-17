@@ -28,4 +28,4 @@ Revoke China Certificates.<br />
 * Windows: [BlockChinaSoftware - SCFWSE](https://github.com/SCFWSE/BlockChinaSoftware)
 * Windows: [Local-Policy](https://bitbucket.org/MartinEden/local-policy)
 * Windows: [UTLS-Blocker - SCFWSE](https://github.com/SCFWSE/UTLS-Blocker)
-* Windows: [拉黑证书 让你的电脑再也装不上某些软件 附证书大全](http://blog.eqoe.cn/posts/ban-digital-cert.html)
+* Windows: [拉黑证书 让你的电脑再也装不上某些软件 附证书大全](https://typcn.com/legacy/blog/posts/ban-digital-cert.html)

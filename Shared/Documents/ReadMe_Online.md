@@ -1,16 +1,19 @@
-﻿### Usage
+﻿RevokeChinaCerts
+==============
+
+### Usage
 * Download the ZIP of whole project.
-* Run batch **with Administrator permission** and follow the messages on screen(Windows):
-    * `RevokeChinaCerts_Online.bat` - Windows built-in certificate list
-    * `RevokeChinaCerts_Firefox.bat` - Firefox built-in certificate list
-    * Run all batches to revoke certificates in all supported lists.
+* Run batch as **Administrator permission** and follow README to do(Windows):
+  * Different batches to revoke different certificates.
 * Visit other system folders to revoke certificate(s) in other platforms.
 * **Clear all browser(s) data/DNS cache of system** and restart network interface(s).
 
 ### Version
 * **Base** is base version of RevokeChinaCerts, revoke some root/intermediate/fake certificates.
-* **Extended** is extended version of RevokeChinaCerts, revoke all root/intermediate/fake certificates. **This is the suggestion.**
-* **All** is all version of RevokeChinaCerts, revoke all certificates from greater China. **This is the test version.**
+* **Extended** is extended version of RevokeChinaCerts, revoke all root/intermediate/fake certificates.
+  * **This is the suggestion.**
+* **All** is all version of RevokeChinaCerts, revoke all certificates from greater China.
+  * **This is the experiment version.**
 * **Restore** is restore batch, restore all revoked certificates.
 
 ### Special
@@ -19,34 +22,38 @@
 ### Attention(Windows)
 * Delete certificates cannot revoke them. You must add the certificates to CRL to prohibit all their uses.
 * Most of programs, Chrome and Opera are using system built-in certificate list.
+* **Firefox** will revoke certificates if block all usages, no need to delete the certificates.
+* `Error: Can not find a certificate matching the hash value`: Don't worry about it, please make sure there are `CertMgr Succeeded` in console window and pass the website test.
+* `Failed to save to the destination store`: Please make sure run as administrators.
+* `Error: Failed to add or delete certificates`: May be cause by the certificate list or CertMgr.
 
 ### Update(Windows)
-* Update **CRL**/Certificate Revocation List
-* Update **CTL**/Certificate Trust List(**Windows Update**)
-* Update **CTL**/Certificate Trust List(RootSUPD, Windows XP/2003 and older)
-* Reset **CRL**/Certificate Revocation List
-* To reset all CTL/Certificate Trust List, do not choose any options. Exit batch and use Microsoft Fixit tools:
-    * **Microsoft_Fixit_20135.diagcab** - Windows Vista and later
-    * **Microsoft_Fixit_51014.msi** - Windows XP/2003 and older
+* **1**: Update **CRL**/Certificate Revocation List
+* **2**: Update **CTL**/Certificate Trust List(**Windows Update**)
+* **3**: Update **CTL**/Certificate Trust List(RootSUPD, Windows XP/2003 and older)
+* **4**: Reset **CRL**/Certificate Revocation List
+* To reset all CTL/Certificate Trust List, do not select any options. Exit batch and use Microsoft Fixit tools:
+  * **Microsoft_Fixit_20135.diagcab** - Windows Vista and later
+  * **Microsoft_Fixit_51014.msi** - Windows XP/2003 and older
 
 ### Usage(without Automation tools)
 * **Linux**(Debian, other Linux distributions should need to see its official description)
-    * Run `sudo dpkg-reconfigure ca-certificates` in terminal.
-    * Using the space bar to revoke the certificates.
-    * Using tab and enter key to save changes.
-    * Clear all browser(s) data and DNS cache of system, and restart network interface(s).
+  * Run `sudo dpkg-reconfigure ca-certificates` in terminal.
+  * Using the space bar to revoke the certificates.
+  * Using tab and enter key to save changes.
+  * Clear all browser(s) data and DNS cache of system, and restart network interface(s).
 * **macOS**
-    * Open `Utilities` - `Keychain Access` - `Keychains` - `System Roots`
-    * Open the certificate and select all `Not trusted`.
-    * Clear all browser(s) data and DNS cache of system, and restart network interface(s).
+  * Open `Utilities` - `Keychain Access` - `Keychains` - `System Roots`
+  * Open the certificate and select all `Not trusted`.
+  * Clear all browser(s) data and DNS cache of system, and restart network interface(s).
 * **Firefox**
-    * Open `Tools` - `Options` - `Advanced` - `Certificates` - `View Certificates`
-    * Open the certificate and select to disable.
-    * Clear all browser(s) data and DNS cache of system, and restart network interface(s).
+  * Open `Tools` - `Options` - `Advanced` - `Certificates` - `View Certificates`
+  * Open the certificate and select to disable.
+  * Clear all browser(s) data and DNS cache of system, and restart network interface(s).
 * **Android**
-    * `Setting` - `Security` - `Trusted credentials`
-    * Open the certificate and select `Disable`.
-    * Clear all browser(s) data and DNS cache of system, and restart network interface(s).
+  * `Setting` - `Security` - `Trusted credentials`
+  * Open the certificate and select `Disable`.
+  * Clear all browser(s) data and DNS cache of system, and restart network interface(s).
 * **iOS**: There are not any documented or public ways to revoke certificates in iOS.
 
 ### About Certificates

@@ -20,7 +20,7 @@ if ERRORLEVEL 1 (
 )
 
 
-:: Locate directory and architecture check.
+:: Locate folder and architecture check.
 cd /D "%~dp0"
 set CertMgr="%~dp0Tools\CertMgr.exe"
 if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
@@ -43,10 +43,10 @@ echo 2: Update CTL/Certificate Trust List(Windows Update)
 echo 3: Update CTL/Certificate Trust List(RootSUPD, Windows XP/2003 and older)
 echo 4: Reset all CRL/Certificate Revocation List
 echo.
-echo To reset all CTL/Certificate Trust List, do NOT choose any options.
+echo To reset all CTL/Certificate Trust List, do NOT select any options.
 echo Exit batch and use Microsoft Fixit tools in Tools\Fixit folder:
-echo * Microsoft_Fixit_20135.diagcab - Windows Vista and later
-echo * Microsoft_Fixit_51014.msi - Windows XP/2003 and before
+echo * MicrosoftFixit_20135.diagcab - Windows Vista and later
+echo * MicrosoftFixit_51014.msi - Windows XP/2003 and before
 echo.
 set /P UserChoice="Choose: "
 set UserChoice=CASE_%UserChoice%

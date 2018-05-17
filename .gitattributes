@@ -28,4 +28,3 @@ Mac/libexec/* binary
 Windows/Tools/Certutil/* binary
 Windows/Tools/Fixit/* binary
 Windows/Tools/SoftCertPolicyAppender/Binary/* binary
-Windows/Tools/SoftCertPolicyAppender/Source/_libs/* binary

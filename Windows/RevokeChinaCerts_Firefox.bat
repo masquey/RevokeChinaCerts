@@ -8,32 +8,39 @@
 @echo off
 
 
-:: Locate directory and architecture check.
+:: Locate folder and architecture check.
+setlocal EnableDelayedExpansion
 cd /D "%~dp0"
 set Certutil="%~dp0Tools\Certutil\certutil.exe"
 set Certificates="%~dp0..\Shared\Certificates
 
 
-:: Check Firefox profiles.
+:: Check Firefox profile folder.
 set Portable=1
-set Command=%~1
-if "%Command%" == "" (
+set CommandType=%~1
+set CommandPath=%~2
+if "%CommandType%" == "" (
 	echo RevokeChinaCerts Online batch Firefox version
 	echo.
 	echo Revoke certificates in installed Firefox profile? [Y/N]
-	echo When you choose N:
+	echo When you select N:
 	echo * Certificates in portable Firefox profile will be revoked.
-	echo * Enter portable profile path, like "C:\Firefox\Data\profile\.." without quotes.
-	echo * The profile directory must include cert*.db database file.
+	echo * Enter portable profile path, like "x:\Firefox\Data\profile\.." without quotes.
+	echo * The profile folder must include cert*.db database file.
 	echo.
 	echo All revoking requires Microsoft Visual C++ Redistributable 2015 x86 version.
 	set /P UserChoice="Choose: "
 	echo.
+	if /I !UserChoice! EQU Y (
+		set Portable=0
+	)
 ) else (
-	set Portable=0
-)
-if /I %UserChoice% EQU Y (
-	set Portable=0
+	if "%CommandPath%" == "" (
+		set Portable=0
+	)
+	else (
+		set PortablePath=%CommandPath%
+	)
 )
 
 
@@ -44,17 +51,17 @@ if %Portable% EQU 0 (
 		echo.
 		echo Cannot load any installed Firefox profiles!
 		echo * Enter portable profile path, like "C:\Firefox\Data\profile\.." without quotes.
-		echo * The profile directory must include cert*.db database file.
+		echo * The profile folder must include cert*.db database file.
 		echo.
 		set Portable=1
 	)
 )
 if not %Portable% EQU 0 (
-	set /P PortablePath="Profile path: "
-	echo.
-)
-if not %Portable% EQU 0 (
-	cd /D "%PortablePath%"
+	if "%PortablePath%" == "" (
+		set /P PortablePath="Profile path: "
+		echo.
+	)
+	cd /D "!PortablePath!"
 	if ERRORLEVEL 1 (
 		echo.
 		echo Cannot load Firefox profile path, please check your configuration.
@@ -74,8 +81,8 @@ if %Portable% EQU 0 (
 
 
 :: Command
-if not "%Command%" == "" (
-	goto CASE_%Command%
+if not "%CommandType%" == "" (
+	goto CASE_%CommandType%
 )
 
 

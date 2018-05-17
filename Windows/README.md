@@ -1,37 +1,35 @@
-﻿RevokeChinaCerts in Windows
+﻿RevokeChinaCerts on Windows
 ==============
 
-### Type
-* Online certificates/在线证书/在線證書
-    * These certificates are used in TLS connection for confirming servers(System store).
-    * 服务器认证部分：用于屏蔽 TLS 加密连接时所使用的证书(系统内置列表)
-    * 伺服器認證部分：用於遮罩 TLS 加密連接時所使用的證書(系統內置清單)
-* Firefox online certificates/火狐浏览器在线证书/火狐瀏覽器在線證書
-    * These certificates are used in TLS connection for confirming servers(Firefox).
-    * 服务器认证部分：用于屏蔽 TLS 加密连接时所使用的证书(火狐瀏覽器)
-    * 伺服器認證部分：用於遮罩 TLS 加密連接時所使用的證書(火狐瀏覽器)
-* CodeSigning certificates/代码证书/代碼證書
-    * These certificates are used in code signing for confirming software publishers.
-    * 代码签名部分：用于屏蔽某软件发行商发行软件的运行
-    * 代碼簽名部分：用於遮罩某軟體發行商發行軟體的運行
-* Organization certificates/组织证书/組織證書
-    * These certificates are used in software installing for confirming their organizations.
-    * 组织认证部分：用于屏蔽部分组织和企业的证书
-    * 組織認證部分：用於遮罩部分組織和企業的證書
-* Update certificate lists/更新证书列表/更新證書清單
-    * Update CRL/Certificate Revocation List and CTL/Certificate Trust List in system store.
-    * 用于更新系统内置证书信任列表和证书吊销列表
-    * 用於更新系統內置憑證信任清單和憑證撤銷清單
+### Introduction
+There are 2 types of batches:
+* Online: Verifys Internet connection certificates.
+  * Online - Revoke or restore online certificates in system store.
+  * Firefox - Revoke or restore online certificates in Firefox NSS.
+  * Update - Update or reset online certificates in system store.
+* CodeSigning and Organization: Verifys software publisher and organization certificates.
+  * CodeSigning - Revoke or restore code signing certificates in system store.
+  * Organization - Revoke or restore organization certificates in system store.
 
-### Usage(Online)
-* [English](https://github.com/chengr28/RevokeChinaCerts/tree/master/Shared/Documents/ReadMe_Online.md)
-* [简体中文](https://github.com/chengr28/RevokeChinaCerts/tree/master/Shared/Documents/ReadMe_Online.zh-Hans.md)
-* [繁體中文](https://github.com/chengr28/RevokeChinaCerts/tree/master/Shared/Documents/ReadMe_Online.zh-Hant.md)
+### Usage
+* [Online](https://github.com/chengr28/RevokeChinaCerts/tree/master/Shared/Documents/ReadMe_Online.md)
+* [CodeSigning/Organization](https://github.com/chengr28/RevokeChinaCerts/tree/master/Shared/Documents/ReadMe_CodeSigning_Organization.md)
+* [简体中文介绍](README.zh-Hans.md)
+* [繁體中文介紹](README.zh-Hant.md)
 
-### Usage(CodeSigning/Organization)
-* [English](https://github.com/chengr28/RevokeChinaCerts/tree/master/Shared/Documents/ReadMe_CodeSigning_Organization.md)
-* [简体中文](https://github.com/chengr28/RevokeChinaCerts/tree/master/Shared/Documents/ReadMe_CodeSigning_Organization.zh-Hans.md)
-* [繁體中文](https://github.com/chengr28/RevokeChinaCerts/tree/master/Shared/Documents/ReadMe_CodeSigning_Organization.zh-Hant.md)
+### Parameter
+Batches can revoke or restore with below parameters:
+* Online
+  * Run `xx.bat 1` to revoke Base version.
+  * Run `xx.bat 2` to revoke Extended version.
+  * Run `xx.bat 3` to revoke All version.
+  * Run `xx.bat 4` to restore all Online revoking.
+  * Firefox NSS parameter
+    * Run `xx.bat * ProfilePath` to locate the path of Firefox profile folder.
+* CodeSigning and Organization
+  * Run `xx.bat 1` to revoke.
+  * Run `xx.bat 2` to restore.
+  * Run `xx.bat * -f` to enable software force policy.
 
 ### License
 GNU General Public License/GNU GPL v2

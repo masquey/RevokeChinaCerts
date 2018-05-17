@@ -14,15 +14,16 @@ namespace SoftCertPolicyAppender
         //Print description.
             if (args.Length == 0 || args.Contains("-h") || args.Contains("--help"))
             {
-                const string usage = @"Usage: SoftwareRestrictionPolicyController.exe [Option]... [CertFile]...
+                const string usage = @"Usage: SoftwareRestrictionPolicyController.exe [Parameter]... [CertFile]...
 Config software restriction policy by cli.
 
 Options:
+    --help            Print help message.
     --set-force       Set force certificate policy.
     --unset-force     Unset force certificate policy.
     --remove          Remove certificate rule by CERTFILEs not add.
-    --interval Time   Interval time if get exception.
-                      Time is in milliseconds.
+    --interval Time   Interval time if get exception. Time is in milliseconds.
+    --quiet           Quiet mode, no any asking.
 
 CertFiles:
     Certificate file path that will add certificate rule.
@@ -31,10 +32,15 @@ CertFiles:
                 return;
             }
 
-        //Remove certificate flag
+        //Remove certificate flag.
             bool isRemove = false;
             if (args.Contains("-r") || args.Contains("--remove"))
                 isRemove = true;
+        
+        //Set quiet mode.
+            bool isQuiet = false;
+            if (args.Contains("-q") || args.Contains("--quiet"))
+                isQuiet = true;
 
         //Read interval time.
             var interval = 0;
@@ -146,27 +152,30 @@ CertFiles:
                                 Console.ResetColor();
 
                             //Selection
-                                Console.Write(ex.Message + "Please select: Retry, Ignore or Abort (R|I|A)");
-                                var innerSelect = (Console.ReadLine() ?? "").ToLower();
-                                switch (innerSelect)
+                                if (!isQuiet)
                                 {
-                                    case "i":
+                                    Console.Write(ex.Message + "Please select: Retry, Ignore or Abort (R|I|A)");
+                                    var innerSelect = (Console.ReadLine() ?? "").ToLower();
+                                    switch (innerSelect)
                                     {
-                                        break;
-                                    }
-                                    case "a":
-                                    {
-                                        return;
-                                    }
-                                    default:
-                                    {
-                                    //Interval time
-                                        if (interval > 0)
-                                            Thread.Sleep(interval);
+                                        case "i":
+                                        {
+                                            break;
+                                        }
+                                        case "a":
+                                        {
+                                            return;
+                                        }
+                                        default:
+                                        {
+                                        //Interval time
+                                            if (interval > 0)
+                                                Thread.Sleep(interval);
 
-                                    //Set retry flag.
-                                        innerRetry = true;
-                                        break;
+                                        //Set retry flag.
+                                            innerRetry = true;
+                                            break;
+                                        }
                                     }
                                 }
                             }
@@ -180,27 +189,30 @@ CertFiles:
                         Console.ResetColor();
 
                     //Selection
-                        Console.Write(e.Message + "Please select: Retry, Ignore or Abort (R|I|A)");
-                        var select = (Console.ReadLine() ?? "").ToLower();
-                        switch (select)
+                        if (!isQuiet)
                         {
-                            case "i":
+                            Console.Write(e.Message + "Please select: Retry, Ignore or Abort (R|I|A)");
+                            var select = (Console.ReadLine() ?? "").ToLower();
+                            switch (select)
                             {
-                                break;
-                            }
-                            case "a":
-                            {
-                                return;
-                            }
-                            default:
-                            {
-                            //Interval time
-                                if (interval > 0)
-                                    Thread.Sleep(interval);
+                                case "i":
+                                {
+                                    break;
+                                }
+                                case "a":
+                                {
+                                    return;
+                                }
+                                default:
+                                {
+                                //Interval time
+                                    if (interval > 0)
+                                        Thread.Sleep(interval);
 
-                            //Set retry flag.
-                                retry = true;
-                                break;
+                                //Set retry flag.
+                                    retry = true;
+                                    break;
+                                }
                             }
                         }
                     }

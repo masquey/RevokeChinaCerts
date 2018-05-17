@@ -2,7 +2,6 @@ Revoke-China-Certs on Linux
 ==========================================
 
 ## Introduction
-
 This tool revokes certain CA certificates for OpenSSL and NSS-based applications
 on Linux (most notably, Firefox & Chrome).
 
@@ -17,9 +16,7 @@ Please make sure all scripts must have execute permission.
 **This tool is experimental. DO MAKE BACKUPS before you do anything!**
 
 ## Revoke CA certificates for NSS.
-
 ### Usage
-
 First you need to have packages installed to provide `certutil`. On Ubuntu it would be:
 
 ``` sh
@@ -46,7 +43,6 @@ done
 ```
 
 ### Certificate Pinning Test
-
 Certificate pinning test is implemented in `certificate_pinning_test.py`.
 Use it as:
 
@@ -64,7 +60,6 @@ The pinning test uses signatures extracted from Android.
 with the certificate you get.)
 
 ### Applications use `~/.pki/nssdb`
-
 Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
 
 - Curl
@@ -75,12 +70,10 @@ Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
 - Wine
 
 #### Exceptions
-
 - Firefox/Iceweasel `~/.mozilla/firefox/*.default/`
 - Thunderbird/Icedove `~/.thunderbird/*.default` 
 
 ### Notes
-
 - Deselecting a CA by `dpkg-reconfigure ca-certificates` does NOT affect any NSS-based applications.
 - There is a global database at `/etc/pki/nssdb`. On Debian/Ubuntu, this
   global database is installed by `libnss3-nssdb`. And it actually links to
@@ -93,9 +86,7 @@ Most NSS-based applications use `~/.pki/nssdb`, including but not limited to:
 
 
 ## Revoke CA certificates for OpenSSL.
-
 ### Usage
-
 ``` sh
 sudo ./cac_revoke.sh extended
 ```
@@ -105,7 +96,6 @@ Change `extended` to `all` or `base` to revoke other sets of certs.
 Change `extended` to `restore` to restore the revocation.
 
 ### Test
-
 Make sure `wget` is available on your `$PATH`.
 
 ``` sh
@@ -113,10 +103,8 @@ Make sure `wget` is available on your `$PATH`.
 ```
 
 ## References
-
 [A note about SSL/TLS trusted certificate stores, and platforms (OpenSSL and GnuTLS)](https://www.happyassassin.net/2015/01/12/a-note-about-ssltls-trusted-certificate-stores-and-platforms)
 
 
 ## License
-
 This Linux utility is distributed under the Apache License.

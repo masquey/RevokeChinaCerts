@@ -1,18 +1,21 @@
-﻿### Usage
+﻿RevokeChinaCerts
+==============
+
+### Usage
 * Run `RevokeChinaCerts_CodeSigning.bat` or `RevokeChinaCerts_Organization.bat` and follow the messages on screen.
-* Setting force requires administrative privileges and Microsoft .NET Framework 4.0+.
+* Setting force requires administrative privileges and Microsoft .NET Framework 4.0 or later version.
 
 ### Version
 * **1** is **All** version, revoke all listed CodeSigning/Organization certificates.
 * **2** is **Restore** version, restore all listed revoking CodeSigning/Organization certificates.
-* **Choice** version is no longer available. Please visit About Certificates and delete the certificate(s) in /Windows/Certificates/CodeSigning or /Windows/Certificates/Organization folders to make it/them not to be revoked in All version.
+* Choice version is no longer available. Please remove the certificate fingerprint(s) in /Windows/Certificates/CodeSigning/CodeSigning.txt or /Windows/Certificates/Organization/Organization.txt to make it/them not to be revoked.
 
 ### About Certificates
 * Latest **CodeSigning** list
 
 Name | Expire Time | Fingerprint
 :---:|:---:|---
-[Alibaba (Hangzhou) Cultural Innovation Co.Ltd.](http://www.xiami.com) | 2017-11-17 | ?2E98A468D7DDBE489B2AF6317A555DBBA16598EA
+[Alibaba (Hangzhou) Cultural Innovation Co.Ltd.](http://www.xiami.com) | 2017-11-17 | 2E98A468D7DDBE489B2AF6317A555DBBA16598EA
 [BeiJing Baidu Netcom Science Technology Co., Ltd](https://www.baidu.com) | 2018-02-07 | ACAED4BE8C729A6AE5F4F82F5F183A9C4EBE7AE3
 [Beijing Baofeng Technology Co., Ltd.](http://www.baofeng.com) | 2018-05-06 | BBC26FF3B96FF570D96A75ED09FF8F11481E7EF5
 [BeiJing Eastern Micropoint Info-Tech CO., LTD](http://www.micropoint.com.cn) | 2018-08-07 | 4893C5890F8DA1AFE9DF91EE3AE678B2AC782F41
@@ -20,7 +23,7 @@ Name | Expire Time | Fingerprint
 [Beijing Hai Yu Dong Xiang Technology Co., Ltd.](http://www.haimawan.com) | 2017-08-17 | C7ACB2AF1A4DA1A20FAB7385CE044A14A8D4C9BD
 [Beijing Jiangmin New Sci.&Tec. Co. Ltd.](http://www.jiangmin.com) | 2017-11-03 | C555780B84AEFA9BAAE26FDA390138713157B6AF
 [Beijing Kingsoft Security software Co.,Ltd](http://www.kingsoft.com) | 2019-03-20 | 6B4AC106BB9C99DCF85269C7FD86019D354EDF5F
-[Beijing Kingsoft Security software Co.,Ltd(SHA-256)](http://www.kingsoft.com) | 2019-03-20 | 13623E691B0CC4BDC296EEC27DB945BF5A200840
+[Beijing Kingsoft Security software Co.,Ltd(SHA-256)](http://www.kingsoft.com) | 2020-03-15 | 13623E691B0CC4BDC296EEC27DB945BF5A200840
 [BEIJING KUWO TECHNOLOGY CO.,LTD.](http://www.kuwo.cn) | 2020-02-15 | E492DE96A46D79CE158DB7F12814405A5819DD22
 [BEIJING QIYI CENTURY SCIENCE&TECHNOLOGY CO.,LTD.](http://www.iqiyi.com) | 2020-02-02 | 8638C32145474071F6F66220E575779D066B1CF0
 [BEIJING QIYI CENTURY SCIENCE&TECHNOLOGY CO.,LTD.(SHA-256)](http://www.iqiyi.com) | 2020-02-02 | 18427E6D2F947FB629D1D13F96136AE425231063

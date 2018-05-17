@@ -20,7 +20,7 @@ if ERRORLEVEL 1 (
 )
 
 
-:: Locate directory and architecture check.
+:: Locate folder and architecture check.
 cd /D "%~dp0"
 set CertMgr="%~dp0Tools\CertMgr.exe"
 if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (

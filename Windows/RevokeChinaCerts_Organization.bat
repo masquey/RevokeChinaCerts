@@ -20,40 +20,45 @@ if ERRORLEVEL 1 (
 )
 
 
-:: Locate directory and architecture check.
+:: Locate folder and architecture check.
 cd /D "%~dp0"
 set CertMgr="%~dp0Tools\CertMgr.exe"
 if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
 	set CertMgr="%~dp0Tools\CertMgr_x86.exe"
 )
 set Certificates="%~dp0Certificates\Organization
-set /A SetForce = 0
+set /A ForcePolicy = 0
 set SetForceAppender="%~dp0Tools\SoftCertPolicyAppender\Binary\SoftCertPolicyAppender.exe"
 
 
 :: Command
-set Command=%~1
-if not "%Command%" == "" (
-	goto CASE_%Command%
+set CommandType=%~1
+set CommandPolicy=%~2
+if "%CommandPolicy%" == "-f" (
+	set /A ForcePolicy=1
+)
+if not "%CommandType%" == "" (
+	goto CASE_%CommandType%
 )
 
 
 :: Choice
 echo RevokeChinaCerts Organization batch
 echo.
-echo Do you want to set force certificates policy? [Y/N]
+echo Do you want to set force certificate policy? [Y/N]
 echo Setting force require:
 echo   Administrative Privileges
-echo   Microsoft .NET Framework 4.0 and later
+echo   Microsoft .NET Framework 4.0 or later version
 set /P UserChoice="Choose: "
 if /I %UserChoice% EQU Y (
-	set /A SetForce=1
+	set /A ForcePolicy=1
 )
 echo.
 echo 1: Revoke all Organization certificates
 echo 2: Restore all Organization revoking
-echo Notice: Choice version is no longer available. Please delete the certificate(s) in 
-echo         /Windows/Certificates/CodeSigning or /Windows/Certificates/Organization folders to 
+echo Notice: Choice version is no longer available. Please remove the certificate fingerprint(s) in 
+echo         /Windows/Certificates/CodeSigning/CodeSigning.txt or 
+echo         /Windows/Certificates/Organization/Organization.txt to 
 echo         make it/them not to be revoked.
 echo.
 set /P UserChoice="Choose: "
@@ -69,7 +74,11 @@ goto %UserChoice%
 goto :EOF
 
 :REVOKE_POLICY
-%SetForceAppender% --set-force --interval 1000 %Certificates%\%~1.crt"
+if "%CommandType%" == "" (
+	%SetForceAppender% --set-force --interval 1000 %Certificates%\%~1.crt"
+) else (
+	%SetForceAppender% --set-force --quiet --interval 1000 %Certificates%\%~1.crt"
+)
 goto :EOF
 
 :RESTORE_SYSTEM
@@ -78,13 +87,17 @@ goto :EOF
 goto :EOF
 
 :RESTORE_POLICY
-%SetForceAppender% --remove --unset-force --interval 1000 %Certificates%\%~1.crt"
+if "%CommandType%" == "" (
+	%SetForceAppender% --remove --unset-force --interval 1000 %Certificates%\%~1.crt"
+) else (
+	%SetForceAppender% --remove --unset-force --quiet --interval 1000 %Certificates%\%~1.crt"
+)
 goto :EOF
 
 
 :: All version
 :CASE_1
-if %SetForce% EQU 0 (
+if %ForcePolicy% EQU 0 (
 	for /F "usebackq tokens=*" %%i in (%Certificates%\Organization.txt") do call :REVOKE_SYSTEM "%%i"
 ) else (
 	for /F "usebackq tokens=*" %%i in (%Certificates%\Organization.txt") do call :REVOKE_POLICY "%%i"
@@ -94,7 +107,7 @@ goto EXIT
 
 :: Restore version
 :CASE_2
-if %SetForce% EQU 1 (
+if %ForcePolicy% EQU 1 (
 	for /F "usebackq tokens=*" %%i in (%Certificates%\Organization.txt") do call :RESTORE_POLICY "%%i"
 )
 for /F "usebackq tokens=*" %%i in (%Certificates%\Organization.txt") do call :RESTORE_SYSTEM "%%i"

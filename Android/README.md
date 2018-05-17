@@ -1,20 +1,16 @@
 Android Certificates Blacklisting
 =====================================================
 
-This tool generates flashable zip to use with custom recovery on an 
-Android 4.1+ device.
-
-A Chinese version at [README_zhCN.md](README_zhCN.md).
+This tool generates flashable zip to use with custom recovery on an Android 4.1+ device.
+* [简体中文介绍](README.zh-Hans.md)
+* [繁體中文介紹](README.zh-Hant.md)
 
 ## Introduction
-
 This utility blacklists CA and EE certificates.
 Please make sure all scripts must have execute permission.
 
 ## Usage -- Use prebuilt configurations (Recommended)
-
 ### With root access
-
 Assuming you have root access on your phone, `cd` into the folder whose
 name corresponds to the config you want (RESTORE, ALL, EXTENDED or BASE).
 
@@ -42,7 +38,6 @@ If you are on windows and do not have BASH, use:
         # Now flash the zip file using your custom recovery
 
 ## Usage -- Building from source
-
 First, use `git` to clone the whole repo. `cd` to this dir. Use `generate.sh`
 to generate the configuration files you need.
 
@@ -54,7 +49,6 @@ By substituting `extended` with `restore`, `base` or `all` you can get
 corresponding configuration files.
 
 ### If you have root
-
 If you have a rooted Android device and appropriate ADB drivers installed,
 use `rooted.sh` to transfer the configuration files to your device.
 
@@ -65,12 +59,10 @@ Then, reboot the device so that the new configuration applies.
 If the above method fails, please use the recovery-based approach described below.
 
 ### Recovery-based approach
-
 After you run `generate.sh` you get a `flashable.zip` in the current folder,
 which can be flashed on to Android via a custom recovery.
 
 ## Notes
-
 The utility changes configurations under `/data` partition of your Android device,
 which is wiped every time you do a factory reset or flash a factory image.
 
@@ -111,5 +103,4 @@ For more detailed description on certificate blacklisting on Android, see
 certificate pinning.
 
 ## License
-
 This tool is distributed under the Apache License.
