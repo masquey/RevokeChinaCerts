@@ -1,4 +1,6 @@
-# Revoke China Certs on macOS
+Revoke China Certs on macOS
+==========================================
+
 Mark certifications from China as **not trusted** on macOS.
 * [简体中文介绍](README.zh-Hans.md)
 * [繁体中文介绍](README.zh-Hant.md)

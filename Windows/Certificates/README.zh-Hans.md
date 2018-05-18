@@ -1,6 +1,9 @@
 ﻿RevokeChinaCerts on Windows
 ==============
 
+### 介绍
+本文档介绍了如何更新 CodeSigning 和 Organization 证书列表。
+
 ### 如何将证书添加到列表中
 * 确保证书文件是 Base64 编码。
 * 选择 CodeSigning 或者 Organization 类型。
