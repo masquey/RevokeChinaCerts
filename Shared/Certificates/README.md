@@ -23,6 +23,6 @@ Certificates categorized in three severity level. Each certificate is named with
 
 ## How do I add a certificate?
 1. Put PEM encoded version of the certificate with `.crt` extension in this folder.
-2. Run `./rehash.sh` to rename the newly added `.crt` to its SHA1 fingerprint.
-3. Define its severity by put its SHA1 fingerprint into one of the severity list.
+2. Run `./rehash.sh` to rename the newly added `.crt` to its SHA-1 fingerprint.
+3. Define its severity by put its SHA-1 fingerprint into one of the severity list.
 4. Run `./update.sh` to run all update hooks.

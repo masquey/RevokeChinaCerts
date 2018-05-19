@@ -1,4 +1,4 @@
-﻿# Root CA Certificates
+# Root CA Certificates
 
 06143151E02B45DDBADD5D8E56530DAAE328CF90.crt
 --------------------------------------------

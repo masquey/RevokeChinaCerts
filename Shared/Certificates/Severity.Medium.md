@@ -1,4 +1,27 @@
-﻿# Root CA Certificates
+# Root CA Certificates
+
+0A8F0029EA3CD051A30133BD7AA6ECCFF8FFEDC6.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 3290838210755346660 (0x2dab67eac55ac0e4)
+        Issuer: C = CN, O = "Global Digital Cybersecurity Authority Co., Ltd.", CN = GDCA ROOT CA1
+        Validity
+            Not Before: Jun 11 02:38:07 2017 GMT
+            Not After : Dec 31 15:59:59 2040 GMT
+        Subject: C = CN, O = "Global Digital Cybersecurity Authority Co., Ltd.", CN = GDCA ROOT CA1
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                BC:59:BA:C0:AC:D1:5B:A5:BA:AF:2F:20:95:7E:61:B0:5E:00:C4:2C
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+
+
 
 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF.crt
 --------------------------------------------
@@ -69,6 +92,29 @@
                 CA:TRUE
             X509v3 Subject Key Identifier: 
                 E0:4D:BF:DC:9B:41:5D:13:E8:64:F0:A7:E9:15:A4:E1:81:C1:BA:31
+
+
+
+23EB1BA46471A1E7E9F2DB5701FEF8F2F80CAAE9.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 3375826713496366343 (0x2ed958829139ad07)
+        Issuer: C = CN, O = "Global Digital Cybersecurity Authority Co., Ltd.", CN = 数安时代 R5 根 CA
+        Validity
+            Not Before: Mar 31 02:29:54 2016 GMT
+            Not After : Dec 31 15:59:59 2040 GMT
+        Subject: C = CN, O = "Global Digital Cybersecurity Authority Co., Ltd.", CN = 数安时代 R5 根 CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                82:7A:42:A2:BE:5C:08:BB:AD:F1:4C:A6:EB:71:B5:8B:12:01:F3:29
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
 
 
 
@@ -788,6 +834,46 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
 
 
 
+1E3159DAE31F0ED21050075C64E110807E9DA277.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            9e:9c:b6:94:26:c4:5c:c4:30:6d:3e:1c:c2:a7:9e:fc
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Global Services CA SHA2
+        Validity
+            Not Before: Jan 26 09:21:29 2018 GMT
+            Not After : May 20 09:21:29 2027 GMT
+        Subject: C = CN, O = "Global Digital Cybersecurity Authority Co., Ltd.", CN = GDCA TrustAUTH R4 DV SSL CA G2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                22:4B:93:E5:3B:46:AF:A9:01:EB:03:DB:CA:9A:83:B8:5C:AF:0D:F1
+            X509v3 Authority Key Identifier: 
+                keyid:54:99:DD:9B:FF:E8:A7:0E:A3:19:9D:5B:BE:42:57:DF:30:FC:8F:32
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/gscasha2.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/gscasha2.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
+
+
+
+
 27D5BBE04301E1604839708D172CF09296ED9033.crt
 --------------------------------------------
 
@@ -1355,6 +1441,46 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
 
 
 
+87DFE0056D01EB9635395D44A856218484F492F0.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            d5:f8:3e:8d:da:f6:7c:88:29:e8:90:16:b7:87:7d:13
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Global Services CA SHA2
+        Validity
+            Not Before: Jan 26 09:21:58 2018 GMT
+            Not After : May 20 09:21:58 2027 GMT
+        Subject: C = CN, O = "Global Digital Cybersecurity Authority Co., Ltd.", CN = GDCA TrustAUTH R4 EV SSL CA G2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                B3:63:11:8C:BA:25:37:AC:38:A0:DC:37:44:EB:6D:0E:3D:3C:C8:8B
+            X509v3 Authority Key Identifier: 
+                keyid:54:99:DD:9B:FF:E8:A7:0E:A3:19:9D:5B:BE:42:57:DF:30:FC:8F:32
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/gscasha2.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/gscasha2.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
+
+
+
+
 B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6.crt
 --------------------------------------------
 
@@ -1386,6 +1512,46 @@ B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6.crt
 
                 Full Name:
                   URI:http://crl.startssl.com/sfsca.crl
+
+
+
+
+B1B3162F7CC867F6D47536DF3232E706E031357C.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            b0:ef:d0:2a:81:bf:1c:e8:9f:7a:18:c2:94:e4:c3:3c
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Global Services CA SHA2
+        Validity
+            Not Before: Jan 26 09:20:14 2018 GMT
+            Not After : May 20 09:20:14 2027 GMT
+        Subject: C = CN, O = "Global Digital Cybersecurity Authority Co., Ltd.", CN = GDCA TrustAUTH R4 OV SSL CA G2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                87:FE:70:A9:2C:45:35:FF:E1:0A:36:1D:D2:65:CA:4D:F5:9D:E7:85
+            X509v3 Authority Key Identifier: 
+                keyid:54:99:DD:9B:FF:E8:A7:0E:A3:19:9D:5B:BE:42:57:DF:30:FC:8F:32
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/gscasha2.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/gscasha2.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
 
 
 

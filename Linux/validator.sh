@@ -12,9 +12,9 @@ base() {
 
 extended() {
     "$SOURCE_DIR/../Mac/test/test-url.sh" \
+      https://www.gdca.com.cn/ \
       https://cstest.cfca.com.cn/ \
       https://cs.cfca.com.cn/ \
-      https://www.gdca.com.cn/ \
       https://www.wosign.com/ \
       https://root1evtest.wosign.com/ \
       https://root2evtest.wosign.com/
