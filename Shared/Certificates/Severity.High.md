@@ -112,6 +112,29 @@
 
 
 
+8A5C8CEEA503E60556BAD81BD4F6C9B0EDE52FE0.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 138134509972618 (0x7da1f265ec8a)
+        Issuer: C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş., CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6
+        Validity
+            Not Before: Dec 18 09:04:10 2013 GMT
+            Not After : Dec 16 09:04:10 2023 GMT
+        Subject: C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş., CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                DD:55:17:13:F6:AC:E8:48:21:CA:EF:B5:AF:D1:00:32:ED:9E:8C:B5
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+
+
+
 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F.crt
 --------------------------------------------
 
@@ -140,6 +163,52 @@
 
 
 
+B435D4E1119D1C6690A749EBB394BD637BA782B7.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Issuer: CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı, C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş. (c) Kasım 2005
+        Validity
+            Not Before: Nov  7 10:07:57 2005 GMT
+            Not After : Sep 16 10:07:57 2015 GMT
+        Subject: CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı, C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş. (c) Kasım 2005
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                D9:37:B3:4E:05:FD:D9:CF:9F:12:16:AE:B6:89:2F:EB:25:3A:88:1C
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+
+
+
+C418F64D46D1DF003D2730137243A91211C675FB.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 156233699172481 (0x8e17fe242081)
+        Issuer: C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş., CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5
+        Validity
+            Not Before: Apr 30 08:07:01 2013 GMT
+            Not After : Apr 28 08:07:01 2023 GMT
+        Subject: C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş., CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                56:99:07:1E:D3:AC:0C:69:64:B4:0C:50:47:DE:43:2C:BE:20:C0:FB
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+
+
+
 C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
 --------------------------------------------
 
@@ -164,6 +233,29 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
                 DirName:/O=Superfish, Inc./L=SF/ST=CA/C=US/CN=Superfish, Inc.
                 serial:D2:FC:13:87:A9:44:DC:E7
 
+
+
+
+F17F6FB631DC99E3A3C87FFE1CF1811088D96033.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Issuer: CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı, C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş. (c) Aralık 2007
+        Validity
+            Not Before: Dec 25 18:37:19 2007 GMT
+            Not After : Dec 22 18:37:19 2017 GMT
+        Subject: CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı, C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş. (c) Aralık 2007
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                29:C5:90:AB:25:AF:11:E4:61:BF:A3:FF:88:61:91:E6:0E:FE:9C:81
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Basic Constraints: critical
+                CA:TRUE
 
 
 

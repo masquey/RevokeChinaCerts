@@ -79,6 +79,10 @@ GiantRootCA | [Giant Interactive Group Inc.](http://www.ztgame.com) | 7514436E90
 [JGZXCA](https://211.146.10.133) | [State Administration of Press, Publication, Radio, Film and Television of The People's Republic of China](http://www.sapprft.gov.cn) | 7A4AA61E2A88704115E47748D8647DAEE6837559
 Superfish, Inc. | Superfish, Inc. | C864484869D41D2B0D32319C5A62F9315AAF2CBD
 Thailand National Root Certification Authority - G1 | [Thailand National Root Certification Authority](http://www.nrca.go.th) | 66F2DCFB3F814DDEE9B3206F11DEFE1BFBDFE132
+TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı | https://www.turktrust.com.tr | B435D4E1119D1C6690A749EBB394BD637BA782B7
+TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı | https://www.turktrust.com.tr | F17F6FB631DC99E3A3C87FFE1CF1811088D96033
+TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5 | https://www.turktrust.com.tr | C418F64D46D1DF003D2730137243A91211C675FB
+TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6 | https://www.turktrust.com.tr | 8A5C8CEEA503E60556BAD81BD4F6C9B0EDE52FE0
 
 * **Extended** list
 
@@ -153,7 +157,7 @@ WoTrust SGC Server Authority | [UTN – DATACorp SGC](https://www.comodo.com) | 
 Name | Authority | Fingerprint
 :---:|:---:|---
 CERNET CA | [The China Education and Research Network](http://www.cernet.edu.cn) | 8EF134D4BAD5498E348A7C6D9B66F67A09D56D9B
-[ePKI Root Certification Authority]](https://epki.com.tw) | [Chunghwa Telecom ecommerce Public Key Infrastructure](https://epki.com.tw) | 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0
+[ePKI Root Certification Authority](https://epki.com.tw) | [Chunghwa Telecom ecommerce Public Key Infrastructure](https://epki.com.tw) | 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0
 ePKI Root Certification Authority - G2 | [Chunghwa Telecom ecommerce Public Key Infrastructure](https://epki.com.tw) | 81AC5DE150D1B8DE5D3E0E266A136B737862D322
 ePKI Root Certification Authority - G2 | [Chunghwa Telecom ecommerce Public Key Infrastructure](https://epki.com.tw) | D99B104298594763F0B9A927B79269CB47DD158B
 Government Root Certification Authority | [Government Root Certification Authority](http://grca.nat.gov.tw/GRCAeng/htdocs/index.html) | B091AA913847F313D727BCEFC8179F086F3A8C0F
