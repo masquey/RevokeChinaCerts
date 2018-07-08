@@ -48,7 +48,6 @@ Name | Expire Time | Fingerprint
 [Shanghai 2345 Network Technology Co.,Ltd(SHA-256)](https://www.2345.com) | 2019-05-07 | E974E39CB8F94426DECE0C767E8181B372DF907A
 [Shenzhen DriveTheLife Software Technology Co.Ltd](http://www.160.com) | 2019-03-27 | 849C6E4C6B64A0389D6AC0379F89FF3347210D21
 [Shenzhen DriveTheLife Software Technology Co.Ltd(SHA-256)](http://www.160.com) | 2019-03-27 | 5C751D510638D349554435AA82A455B35984A103
-[Shenzhen Thinksky Technology Co.,Ltd](http://www.itools.cn) | 2018-06-09 | 4C681FDEBC70813C8495F134E6A0A8578C7E37B1
 [Shenzhen Thinksky Technology Co.,Ltd](http://www.itools.cn) | 2019-07-13 | CD624E9C10BBF83A5D36D647A07794AFE924D44D
 [ShenZhen Thunder Networking Technologies Ltd.](http://www.xunlei.com) | 2018-07-26 | 722C5A445662B35D5233BFDCF8EFF612C88A0332
 [ShenZhen Thunder Networking Technologies Ltd.](http://www.xunlei.com) | 2018-07-27 | D0AE98E21429702CE68CFB1475D29E59CAC36F54
@@ -64,16 +63,16 @@ Name | Expire Time | Fingerprint
 [WoTrust Code Signing Authority](https://www.wosign.com) | 2019-07-10 | B28CCC46D234A7D7CF7F21CCB9406F48A5273CC6
 [YY Inc.](https://www.yy.com) | 2018-10-16 | 0C4D32BB2623387CD40C252DDB0F650DE6373385
 [YY Inc.(SHA-256)](https://www.yy.com) | 2018-10-16 | 2B70F74748E600BB0FA155C4ADABD3BF7B877261
-[Zhuhai Kingsoft Office Software Co.,Ltd](http://www.wps.cn) | 2018-05-29 | 8BED7372744EF5EA8E99E174260327193E8BEA9D
-[Zhuhai Kingsoft Office Software Co.,Ltd(SHA-256)](http://www.wps.cn) | 2018-05-29 | 97BBE4A840A419A00A771FEA8CA5248DA794CD34
 [Zhuhai Kingsoft Office Software Co., Ltd.](http://www.wps.cn) | 2020-02-05 | 12049E9EA3C44421480A380F224341112B1969A0
 [Zhuhai Kingsoft Office Software Co., Ltd.(SHA-256)](http://www.wps.cn) | 2020-02-04 | FECB40749830740C8864F66516711A7C8A04FE28
 [暴风集团股份有限公司](http://www.baofeng.com) | 2019-09-18 | 23F6E179C3B18C7EC114E24B4473BE132975A4F7
 [北京飓风互动科技有限公司](http://www.iiapple.com) | 2019-04-02 | F155A74AFF624A8D5C24F52D3FB4F35742B3469B
-[福建智度科技有限公司](http://zs.91.com) | 2018-05-25 | AE7AF8DCDB87EE2A178AE9B3EEAC0995D1D933CC
+[福建智度科技有限公司](http://zs.91.com) | 2019-07-04 | BAD52E00A86FA49F70BD8F01606E81FBD21420AC
 [福建智度科技有限公司(SHA-256)](http://zs.91.com) | 2020-05-44 | 8FB74D6CF258DA5A67CE9FE7290C3A64FD14E62C
+[上海剑圣网络科技有限公司](http://www.2144.cn) | 2020-05-07 | 6ED48DDB935F41F62A396EFDF77A1CA5836D39A2
 [上海聚力传媒技术有限公司](http://www.pptv.com) | 2018-12-28 | 823E15E53DF1EAFED77A3D0423CB7418D5649AC7
 [上海聚力传媒技术有限公司(SHA-256)](http://www.pptv.com) | 2019-01-02 | 90B1CE5497A6DFC68F87B6CAB7A956A0409A915B
+[上海米提财富网络科技有限公司](http://browser.2144.com) | 2020-07-07 | 81667CEE1A77A7E11AEFCC9933AD430BE8377E28
 [深圳市任网游科技发展有限公司](http://www.topfreeweb.net) | 2018-07-23 | 61EFA27B38B12BEF9B26F891C0ED7032AB85EB57
 [深圳市为爱普信息技术有限公司](https://www.i4.cn) | 2019-07-21 | D3A0E1A69355E75069C9E4E448D63D7AEF84FB13
 [中移互联网有限公司](https://www.10086.cn) | 2019-02-04 | 0F18C0EC4A65079550966AC3F4AB49314DBB89FB
@@ -133,6 +132,7 @@ Name | Expire Time | Fingerprint
 [Shenzhen DriveTheLife Software Technology Co.Ltd(SHA-256)](http://www.160.com) | 2018-02-08 | 52618B2F6389127082A2E208ECD70234019DF6E8
 [Shenzhen Smartspace Software technology Co.,Limited](http://www.160.com) | 2017-04-20 | 78A149F9A04653B01DF09743571DF938F9873FA5
 [Shenzhen Thinksky Technology Co.,Ltd](http://www.itools.cn) | 2014-05-19 | B443DD956C623D53863C2443B6D10C04A4FB3A4A
+[Shenzhen Thinksky Technology Co.,Ltd](http://www.itools.cn) | 2018-06-09 | 4C681FDEBC70813C8495F134E6A0A8578C7E37B1
 [ShenZhen Thunder Networking Technologies Ltd.](http://www.xunlei.com) | 2015-06-24 | 49A132170EFAE08EDDD9EE8A241B30BC947ACBD7
 [ShenZhen Xunlei Networking Technologies Ltd.](http://www.xunlei.com) | 2016-09-16 | 4099665730474153EADF671B8B475C03C08A46D0
 [Sogou.Com](https://www.sogou.com) | 2012-07-15 | 34E11CCF5897AD9BD37A32FFB2B8F4AA21560847
@@ -148,13 +148,19 @@ Name | Expire Time | Fingerprint
 [Xiamen Yitianxia Network Technology Co., Ltd](http://www.haozhuodao.com) | 2015-01-02 | F49A648C69C2F01A0FDEB3992C5AE0A14D5AD9FC
 [YY Inc.](https://www.yy.com) | 2015-09-21 | B3B89CD7940DC67E4291A3EE767AC17A3BC9E620
 [Zhuhai Kingsoft Office Software Co.,Ltd](http://www.wps.cn) | 2017-04-20 | FA78FD28C1370371E8461D743114BAF1CD08A368
+[Zhuhai Kingsoft Office Software Co.,Ltd](http://www.wps.cn) | 2018-05-29 | 8BED7372744EF5EA8E99E174260327193E8BEA9D
 [Zhuhai Kingsoft Office Software Co.,Ltd(SHA-256)](http://www.wps.cn) | 2017-04-20 | 95B1E59D73275C1582D1C7B88B5539E9DA9E2C6F
+[Zhuhai Kingsoft Office Software Co.,Ltd(SHA-256)](http://www.wps.cn) | 2018-05-29 | 97BBE4A840A419A00A771FEA8CA5248DA794CD34
 [福建博瑞网络科技有限公司](http://www.91.com) | 2017-06-11 | E87D1C1D3FE2BCA700EB7B8DC0E45B97EAF19405
 [福建智度科技有限公司](http://zs.91.com) | 2018-05-18 | 3E2508B896541F186A7B4AC6925F0ADDCC3677F2
+[福建智度科技有限公司](http://zs.91.com) | 2018-05-25 | AE7AF8DCDB87EE2A178AE9B3EEAC0995D1D933CC
 [杭州缪斯客网络科技有限公司](http://www.xiami.com) | 2014-08-22 | EEC507F719D5BA0CB913F034E045A24A509D8A5F
 [合一网络技术（北京）有限公司](https://www.youku.com) | 2017-12-18 | B138DEFA2A4CF7C967515934344AC8649F5234A4
 [合一网络技术（北京）有限公司](https://www.youku.com) | 2018-01-06 | 7CA5748E69272CB1164C4F6E37E7848A5DE46D96
 [合一网络技术（北京）有限公司(SHA-256)](https://www.youku.com) | 2018-01-06 | 2067B2629A568B4B478EEBD12D9257CC2AF696A8
+[上海剑圣网络科技有限公司](http://www.2144.cn) | 2015-03-29 | F7364B15B2DE2F85F5A882FFA4E2C3A3238FA0EC
+[上海剑圣网络科技有限公司](http://www.2144.cn) | 2017-05-05 | E409EA5DE50F9DE7C2F8072BAAE2D0AF95874530
+[上海米提财富网络科技有限公司](http://browser.2144.com) | 2017-07-01 | 95BAC100E409014072B500E28B7AC0073414E9F7
 [上海瑞创网络科技股份有限公司](https://www.2345.com) | 2014-06-21 | 645E7A1C195EA2C8ED9E34AE1BF3CB9B06FD712E
 [上海旭岑投资合伙企业（有限合伙）](http://021g20.com) | 2017-09-20 | 7145CF5777CE8FD9C5A001BB18F87F60F071C9E6
 [广东雨林木风计算机科技有限公司](http://www.ylmf.com) | 2016-06-10 | 93A77CA50F165A5873DD3995874867B616AB3644
