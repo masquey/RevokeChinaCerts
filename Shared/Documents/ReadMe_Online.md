@@ -137,12 +137,17 @@ UCA Root | [Shanghai Electronic Certificate Authority Center Co., Ltd.](https://
 WoSign Client Authority | [UTN-USERFirst-Client Authentication and Email](https://www.comodo.com) | FAD4319D4E173FF3853E51C98D21919BF3DA1A1E
 WoSign DV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 5B562E002F15E1617C416D1960218544C18F36B7
 WoSign EV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 87DD1B740366A877FD28BF7ED709F4ACE1FA43A5
-[WoSign EV SSL Pro CA](https://www.startcomca.com) | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | C0CDBE86C539F0A8BEAD82D82DF01B4DDA6FA349
+WoSign EV SSL Pro CA | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | C0CDBE86C539F0A8BEAD82D82DF01B4DDA6FA349
 WoSign OV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | FAEE1F690EDD55373C35E491EF0514F3EE9445A5
 WoSign OV SSL Pro CA | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | CAF415BAC356D194DA6FE89ECCB49DF4A216EACE
 WoSign Premium Server Authority | [AddTrust External CA Root/UTN-USERFirst-Hardware](https://www.comodo.com) | E3D569137E603E7BACB6BCC66AE943850C8ADF38
 WoSign Server Authority | [AddTrust External CA Root/UTN-USERFirst-Hardware](https://www.comodo.com) | 3E14B8BD6C568657D852D95D387249AE857B4A39
 WoSign SGC Server Authority | [UTN – DATACorp SGC](https://www.comodo.com) | 6D5A18050D56BFDE525CBE89E8C45DD1B53D12E9
+WoTrus DV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 4245FAB05FAE296958760C3D10EF55E4F25C8681
+WoTrus EV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | C5447EDC0FAD9C60CA43D4C40F2464F2DA9BED3D
+[WoTrus EV SSL Pro CA](https://www.wosign.com) | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | 0750D9E76816800CC02FD1F4E1C058B5E51AE32A
+WoTrus OV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 3423C2D0496D3CFBBB1A39159DD218559DC1CD48
+WoTrus OV SSL Pro CA | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | F519492BD08F146837D187160222BEA26D8F8AEF
 WoTrust Client Authority | [UTN-USERFirst-Client Authentication and Email](https://www.comodo.com) | 38CFE78D9F1F0B0637AFCAAA3D5549D87C0AA1D0
 WoTrust Premium Server Authority | [AddTrust External CA Root/UTN-USERFirst-Hardware](https://www.comodo.com) | 381CBC5048AFD9A02D3E5882D5F22D962B1A5F72
 WoTrust Premium Server Authority | [AddTrust External CA Root/UTN-USERFirst-Hardware](https://www.comodo.com) | CF37A5B5C9166BD6B57A56BF67165A584B057241

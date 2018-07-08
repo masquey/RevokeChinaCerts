@@ -759,6 +759,52 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
 
 # Intermediate CA Certificates
 
+0750D9E76816800CC02FD1F4E1C058B5E51AE32A.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            06:bc:ad:b9:e8:50:07:2b:2b:28:32:10:54:5f:1f:1b
+        Issuer: C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert High Assurance EV Root CA
+        Validity
+            Not Before: Feb  9 12:32:23 2018 GMT
+            Not After : Feb  9 12:32:23 2028 GMT
+        Subject: C = CN, O = WoTrus CA Limited, CN = WoTrus EV SSL Pro CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                D6:91:D0:27:C7:F7:18:56:68:A2:52:FD:72:74:A4:9B:3B:67:94:C9
+            X509v3 Authority Key Identifier: 
+                keyid:B1:3E:C3:69:03:F8:BF:47:01:D4:98:26:1A:08:02:EF:63:64:2B:C3
+
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.com
+                CA Issuers - URI:http://cacerts.digicert.com/DigiCertHighAssuranceEVRootCA.crt
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl3.digicert.com/DigiCertHighAssuranceEVRootCA.crl
+
+                Full Name:
+                  URI:http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl
+
+            X509v3 Certificate Policies: 
+                Policy: 2.16.840.1.114412.2.1
+                  CPS: https://www.digicert.com/CPS
+                Policy: 2.23.140.1.1
+
+
+
+
 15C1776480382DEEFC869C2DA7F5BA8626B8A029.crt
 --------------------------------------------
 
@@ -946,6 +992,48 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
 
 
 
+3423C2D0496D3CFBBB1A39159DD218559DC1CD48.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            05:ed:88:d8:08:8d:11:eb:dd:d6:23:96:3c:ba:ed:42
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Trusted Network CA
+        Validity
+            Not Before: Apr 17 08:15:03 2018 GMT
+            Not After : May 18 08:15:03 2027 GMT
+        Subject: C = CN, O = WoTrus CA Limited, CN = WoTrus OV SSL CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                6A:C0:49:19:52:9F:EA:01:5E:45:0C:B1:F0:0F:7E:A0:5F:6D:8F:E5
+            X509v3 Authority Key Identifier: 
+                keyid:08:76:CD:CB:07:FF:24:F6:C5:CD:ED:BB:90:BC:E2:84:37:46:75:F7
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/ctnca.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/ctnca.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
+
+
+
+
 381CBC5048AFD9A02D3E5882D5F22D962B1A5F72.crt
 --------------------------------------------
 
@@ -1053,6 +1141,48 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
 
                 Full Name:
                   URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
+
+
+
+
+4245FAB05FAE296958760C3D10EF55E4F25C8681.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            34:9b:b1:44:ae:56:11:e9:9b:f4:34:5c:7f:c9:ae:fc
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Trusted Network CA
+        Validity
+            Not Before: Apr 17 08:18:56 2018 GMT
+            Not After : May 18 08:18:56 2027 GMT
+        Subject: C = CN, O = WoTrus CA Limited, CN = WoTrus DV SSL CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                73:A8:F8:8E:A4:54:4D:81:02:72:1C:4E:C9:B2:A8:C5:34:93:13:6E
+            X509v3 Authority Key Identifier: 
+                keyid:08:76:CD:CB:07:FF:24:F6:C5:CD:ED:BB:90:BC:E2:84:37:46:75:F7
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/ctnca.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/ctnca.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
 
 
 
@@ -1711,6 +1841,48 @@ C0CDBE86C539F0A8BEAD82D82DF01B4DDA6FA349.crt
 
 
 
+C5447EDC0FAD9C60CA43D4C40F2464F2DA9BED3D.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            07:dd:ed:67:4e:2a:2c:08:c9:de:66:66:c9:71:54:1f
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Trusted Network CA
+        Validity
+            Not Before: Apr 17 08:17:48 2018 GMT
+            Not After : May 18 08:17:48 2027 GMT
+        Subject: C = CN, O = WoTrus CA Limited, CN = WoTrus EV SSL CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                37:ED:1F:DF:5B:1A:4F:87:25:E0:49:C6:6D:73:02:38:12:48:14:63
+            X509v3 Authority Key Identifier: 
+                keyid:08:76:CD:CB:07:FF:24:F6:C5:CD:ED:BB:90:BC:E2:84:37:46:75:F7
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/ctnca.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/ctnca.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
+
+
+
+
 CAF415BAC356D194DA6FE89ECCB49DF4A216EACE.crt
 --------------------------------------------
 
@@ -1932,6 +2104,53 @@ E3D569137E603E7BACB6BCC66AE943850C8ADF38.crt
 
                 Full Name:
                   URI:http://crl.usertrust.com/UTN-USERFirst-Hardware.crl
+
+
+
+
+F519492BD08F146837D187160222BEA26D8F8AEF.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            05:1f:e7:78:d7:e1:cc:b9:b9:6d:2b:2b:68:14:01:64
+        Issuer: C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert High Assurance EV Root CA
+        Validity
+            Not Before: Feb  9 12:32:34 2018 GMT
+            Not After : Feb  9 12:32:34 2028 GMT
+        Subject: C = CN, O = WoTrus CA Limited, CN = WoTrus OV SSL Pro CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                4C:07:5B:DE:7A:2F:67:8A:F9:82:8D:4D:00:0F:FA:FB:C6:97:19:44
+            X509v3 Authority Key Identifier: 
+                keyid:B1:3E:C3:69:03:F8:BF:47:01:D4:98:26:1A:08:02:EF:63:64:2B:C3
+
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.digicert.com
+                CA Issuers - URI:http://cacerts.digicert.com/DigiCertHighAssuranceEVRootCA.crt
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl3.digicert.com/DigiCertHighAssuranceEVRootCA.crl
+
+                Full Name:
+                  URI:http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl
+
+            X509v3 Certificate Policies: 
+                Policy: 2.16.840.1.114412.1.1
+                  CPS: https://www.digicert.com/CPS
+                Policy: 2.23.140.1.2.2
+                Policy: 2.23.140.1.2.3
 
 
 
