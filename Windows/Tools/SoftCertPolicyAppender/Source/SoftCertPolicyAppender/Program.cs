@@ -82,7 +82,7 @@ CertFiles:
                     return;
                 }
             }
-        //Set certificate policy.
+        //Unset certificate policy.
             else if (args.Contains("--unset-force"))
             {
                 try
@@ -128,15 +128,15 @@ CertFiles:
                             innerRetry = false;
                             try
                             {
-                            //Remove flag check
+                            //Remove flag
                                 if (isRemove)
                                 {
-                                    SoftwareRestrictionPolicyController.AddCertRule(cert);
-                                    Console.Write("Add certificate policy for ");
-                                }
-                                else {
                                     SoftwareRestrictionPolicyController.RemoveCertRule(cert);
                                     Console.Write("Remove certificate policy for ");
+                                }
+                                else {
+                                    SoftwareRestrictionPolicyController.AddCertRule(cert);
+                                    Console.Write("Add certificate policy for ");
                                 }
 
                             //Print operation type.
