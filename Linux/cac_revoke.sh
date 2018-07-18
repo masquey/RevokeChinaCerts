@@ -19,6 +19,7 @@ readonly blacklisted_base_certs="mozilla/CNNIC_ROOT.crt
 mozilla/China_Internet_Network_Information_Center_EV_Certificates_Root.crt"
 readonly blacklisted_extended_certs="mozilla/CFCA_EV_ROOT.crt
 mozilla/WoSign_China.crt
+mozilla/GDCA_TrustAUTH_R5_ROOT.crt
 mozilla/WoSign.crt
 mozilla/CA_WoSign_ECC_Root.crt"
 readonly blacklisted_all_certs="mozilla/Hongkong_Post_Root_CA_1.crt
