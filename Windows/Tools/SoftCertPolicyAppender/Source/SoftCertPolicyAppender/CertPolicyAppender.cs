@@ -133,9 +133,9 @@ namespace SoftCertPolicyAppender
             var keyPath = string.Format("Software\\Policies\\Microsoft\\SystemCertificates\\Disallowed\\Certificates\\{0}", cert.Thumbprint);
             const string keyName = "Blob";
             const RegistryValueKind kind = RegistryValueKind.Binary;
-            var value = CalcRegCertData(cert);          
-            SetPolicyKey(keyPath, keyName,value,kind);
-            SetPolicyRegistryKey(keyPath,keyName,value,kind);
+            var value = CalcRegCertData(cert);
+            SetPolicyKey(keyPath, keyName, value, kind);
+            SetPolicyRegistryKey(keyPath, keyName, value, kind);
         }
 
 
