@@ -2,7 +2,7 @@
 ==============
 
 ### Usage
-* Download the ZIP of whole project.
+* Download all project files.
 * Run batch as **Administrator permission** and follow README to do(Windows):
   * Different batches to revoke different certificates.
 * Visit other system folders to revoke certificate(s) in other platforms.

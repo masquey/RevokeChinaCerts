@@ -17,14 +17,3 @@ Windows/* eol=crlf
 Android/* eol=lf
 Linux/* eol=lf
 Mac/* eol=lf
-
-# Binary files
-*.diagcab binary
-*.dll binary
-*.exe binary
-*.msi binary
-*.zip binary
-Mac/libexec/* binary
-Windows/Tools/Certutil/* binary
-Windows/Tools/Fixit/* binary
-Windows/Tools/SoftCertPolicyAppender/Binary/* binary
