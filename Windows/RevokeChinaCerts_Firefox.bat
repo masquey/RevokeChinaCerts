@@ -1,175 +1,177 @@
 :: RevokeChinaCerts Online batch Firefox version
 :: Revoke China Certificates.
 :: 
-:: Author: Chengr28
+:: Contributions: Chengr28
 :: 
 
 
-@echo off
+@CHCP 65001
+@ECHO off
+CLS
 
 
 :: Locate folder and architecture check.
-setlocal EnableDelayedExpansion
-cd /D "%~dp0"
-set Certutil="%~dp0Tools\Certutil\certutil.exe"
-set Certificates="%~dp0..\Shared\Certificates
+SETLOCAL EnableDelayedExpansion
+CD /D "%~dp0"
+SET Certutil="%~dp0Tools\Certutil\certutil.exe"
+SET Certificates="%~dp0..\Shared\Certificates
 
 
 :: Check Firefox profile folder.
-set Portable=1
-set CommandType=%~1
-set CommandPath=%~2
-if "%CommandType%" == "" (
-	echo RevokeChinaCerts Online batch Firefox version
-	echo.
-	echo Revoke certificates in installed Firefox profile? [Y/N]
-	echo When you select N:
-	echo * Certificates in portable Firefox profile will be revoked.
-	echo * Enter portable profile path, like "x:\Firefox\Data\profile\.." without quotes.
-	echo * The profile folder must include cert*.db database file.
-	echo.
-	echo All revoking requires Microsoft Visual C++ Redistributable 2015 x86 version.
-	set /P UserChoice="Choose: "
-	echo.
-	if /I !UserChoice! EQU Y (
-		set Portable=0
+SET Portable=1
+SET CommandType=%~1
+SET CommandPath=%~2
+IF "%CommandType%" == "" (
+	ECHO RevokeChinaCerts Online batch Firefox version
+	ECHO.
+	ECHO Revoke certificates in installed Firefox profile? [Y/N]
+	ECHO When you select N:
+	ECHO * Certificates in portable Firefox profile will be revoked.
+	ECHO * Enter portable profile path, like "x:\Firefox\Data\profile\.." without quotes.
+	ECHO * The profile folder must include cert*.db database file.
+	ECHO.
+	ECHO All revoking requires Microsoft Visual C++ Redistributable 2015 x86 version.
+	SET /P UserChoice="Choose: "
+	ECHO.
+	IF /I !UserChoice! EQU Y (
+		SET Portable=0
 	)
-) else (
-	if "%CommandPath%" == "" (
-		set Portable=0
+) ELSE (
+	IF "%CommandPath%" == "" (
+		SET Portable=0
 	)
-	else (
-		set PortablePath=%CommandPath%
+	ELSE (
+		SET PortablePath=%CommandPath%
 	)
 )
 
 
 :: Check installed Firefox profile.
-if %Portable% EQU 0 (
-	cd /D "%APPDATA%\Mozilla\Firefox\Profiles"
-	if ERRORLEVEL 1 (
-		echo.
-		echo Cannot load any installed Firefox profiles!
-		echo * Enter portable profile path, like "C:\Firefox\Data\profile\.." without quotes.
-		echo * The profile folder must include cert*.db database file.
-		echo.
-		set Portable=1
+IF %Portable% EQU 0 (
+	CD /D "%APPDATA%\Mozilla\Firefox\Profiles"
+	IF ERRORLEVEL 1 (
+		ECHO.
+		ECHO Cannot load any installed Firefox profiles!
+		ECHO * Enter portable profile path, like "C:\Firefox\Data\profile\.." without quotes.
+		ECHO * The profile folder must include cert*.db database file.
+		ECHO.
+		SET Portable=1
 	)
 )
-if not %Portable% EQU 0 (
-	if "%PortablePath%" == "" (
-		set /P PortablePath="Profile path: "
-		echo.
+IF NOT %Portable% EQU 0 (
+	IF "%PortablePath%" == "" (
+		SET /P PortablePath="Profile path: "
+		ECHO.
 	)
-	cd /D "!PortablePath!"
-	if ERRORLEVEL 1 (
-		echo.
-		echo Cannot load Firefox profile path, please check your configuration.
-		echo.
-		pause
-		exit
+	CD /D "!PortablePath!"
+	IF ERRORLEVEL 1 (
+		ECHO.
+		ECHO Cannot load Firefox profile path, please check your configuration.
+		ECHO.
+		PAUSE
+		EXIT
 	)
 )
 
 
 :: List all certificates.
-if %Portable% EQU 0 (
-	del /F "%~dp0ProfileList.txt"
-	dir /A:D-S /B > "%~dp0ProfileList.txt"
-	cls
+IF %Portable% EQU 0 (
+	DEL /F "%~dp0ProfileList.txt"
+	DIR /A:D-S /B > "%~dp0ProfileList.txt"
+	CLS
 )
 
 
 :: Command
-if not "%CommandType%" == "" (
-	goto CASE_%CommandType%
+IF NOT "%CommandType%" == "" (
+	GOTO CASE_%CommandType%
 )
 
 
 :: Choice and scan all Firefox profile directories
-cls
-echo RevokeChinaCerts Online batch Firefox version
-echo.
-echo 1: Base version
-echo 2: Extended version
-echo 3: All version
-echo 4: Restore all Online revoking
-echo.
-echo * Make sure that Firefox is not running when batch is running.
-echo * Please start and stop Firefox after restoring if you want to restore and then revokes again.
-echo.
-set /P UserChoice="Choose: "
-set UserChoice=CASE_%UserChoice%
-cls
-goto %UserChoice%
+CLS
+ECHO RevokeChinaCerts Online batch Firefox version
+ECHO.
+ECHO 1: Base version
+ECHO 2: Extended version
+ECHO 3: All version
+ECHO 4: Restore all Online revoking
+ECHO.
+ECHO * Make sure that Firefox is not running when batch is running.
+ECHO * Please start and stop Firefox after restoring IF you want to restore and then revokes again.
+ECHO.
+SET /P UserChoice="Choose: "
+SET UserChoice=CASE_%UserChoice%
+CLS
+GOTO %UserChoice%
 
 
 :: Support functions
 :REVOKE_SCAN
-if %Portable% EQU 0 (
-	for /F "usebackq tokens=*" %%i in ("%~dp0ProfileList.txt") do call :REVOKE "%%i" "%%~1"
-) else (
-	call :REVOKE %~1
+IF %Portable% EQU 0 (
+	FOR /F "usebackq tokens=*" %%i IN ("%~dp0ProfileList.txt") DO CALL :REVOKE "%%i" "%%~1"
+) ELSE (
+	CALL :REVOKE %~1
 )
-goto :EOF
+GOTO :EOF
 
 :REVOKE
-if %Portable% EQU 0 (
-	cd /D "%APPDATA%\Mozilla\Firefox\Profiles\%~1"
+IF %Portable% EQU 0 (
+	CD /D "%APPDATA%\Mozilla\Firefox\Profiles\%~1"
 	%Certutil% -d . -A -i %Certificates%\%~2.crt" -n %~2 -t "p,p,p"
-) else (
-	cd /D "%PortablePath%"
+) ELSE (
+	CD /D "%PortablePath%"
 	%Certutil% -d . -A -i %Certificates%\%~1.crt" -n %~1 -t "p,p,p"
 )
-goto :EOF
+GOTO :EOF
 
 :RESTORE
-if %Portable% EQU 0 (
-	del /F "%APPDATA%\Mozilla\Firefox\Profiles\%~1\cert*.db"
-) else (
-	del /F "%PortablePath%\cert*.db"
+IF %Portable% EQU 0 (
+	DEL /F "%APPDATA%\Mozilla\Firefox\Profiles\%~1\cert*.db"
+) ELSE (
+	DEL /F "%PortablePath%\cert*.db"
 )
-goto :EOF
+GOTO :EOF
 
 
 :: All version
 :CASE_3
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.Root.CA.txt") do call :REVOKE_SCAN "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.Intermediate.CA.txt") do call :REVOKE_SCAN "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.SSL.txt") do call :REVOKE_SCAN "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Low.Root.CA.txt") DO CALL :REVOKE_SCAN "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Low.Intermediate.CA.txt") DO CALL :REVOKE_SCAN "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Low.SSL.txt") DO CALL :REVOKE_SCAN "%%i"
 
 :: Extended version
 :CASE_2
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Medium.Root.CA.txt") do call :REVOKE_SCAN "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Medium.Intermediate.CA.txt") do call :REVOKE_SCAN "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Medium.SSL.txt") do call :REVOKE_SCAN "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Medium.Root.CA.txt") DO CALL :REVOKE_SCAN "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Medium.Intermediate.CA.txt") DO CALL :REVOKE_SCAN "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Medium.SSL.txt") DO CALL :REVOKE_SCAN "%%i"
 
 :: Base version
 :CASE_1
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.Root.CA.txt") do call :REVOKE_SCAN "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.Intermediate.CA.txt") do call :REVOKE_SCAN "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.SSL.txt") do call :REVOKE_SCAN "%%i"
-goto EXIT
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.High.Root.CA.txt") DO CALL :REVOKE_SCAN "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.High.Intermediate.CA.txt") DO CALL :REVOKE_SCAN "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.High.SSL.txt") DO CALL :REVOKE_SCAN "%%i"
+GOTO END
 
 :: Restore version
 :CASE_4
-if %Portable% EQU 0 (
-	for /F "usebackq tokens=*" %%i in ("%~dp0ProfileList.txt") do call :RESTORE "%%i"
-) else (
-	call :RESTORE
+IF %Portable% EQU 0 (
+	FOR /F "usebackq tokens=*" %%i IN ("%~dp0ProfileList.txt") DO CALL :RESTORE "%%i"
+) ELSE (
+	CALL :RESTORE
 )
-goto EXIT
+GOTO END
 
 
-:: Exit
-:EXIT
-cd /D "%~dp0"
-if %Portable% EQU 0 (
-	del /F "%~dp0ProfileList.txt"
+:: End
+:END
+CD /D "%~dp0"
+IF %Portable% EQU 0 (
+	DEL /F "%~dp0ProfileList.txt"
 )
-echo.
-echo RevokeChinaCerts Online batch Firefox version
-echo Done, please confirm the messages on screen.
-echo.
-pause
-cls
+ECHO.
+ECHO RevokeChinaCerts Online batch Firefox version
+ECHO Done, please confirm the messages on screen.
+ECHO.
+PAUSE
+CLS

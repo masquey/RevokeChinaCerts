@@ -1,126 +1,128 @@
 :: RevokeChinaCerts CodeSigning batch
 :: Revoke China Certificates.
 :: 
-:: Author: Hugo Chan, ntkme, Chengr28
+:: Contributions: Hugo Chan, ntkme, Chengr28
 :: 
 
 
-@echo off
+@CHCP 65001
+@ECHO off
+CLS
 
 
 :: Check administrative permission.
-net session >NUL 2>NUL
-if ERRORLEVEL 1 (
-	color 4F
-	echo Please run as Administrator.
-	echo.
-	pause & break
-	echo.
-	cls
+net session >nul 2>nul
+IF ERRORLEVEL 1 (
+	COLOR 4F
+	ECHO Please run as Administrator.
+	ECHO.
+	PAUSE & BREAK
+	ECHO.
+	CLS
 )
 
 
 :: Locate folder and architecture check.
-cd /D "%~dp0"
-set CertMgr="%~dp0Tools\CertMgr.exe"
-if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
-	set CertMgr="%~dp0Tools\CertMgr_x86.exe"
+CD /D "%~dp0"
+SET CertMgr="%~dp0Tools\CertMgr.exe"
+IF %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
+	SET CertMgr="%~dp0Tools\CertMgr_x86.exe"
 )
-set Certificates="%~dp0Certificates\CodeSigning
-set /A ForcePolicy = 0
-set SetForceAppender="%~dp0Tools\SoftCertPolicyAppender\Binary\SoftCertPolicyAppender.exe"
+SET Certificates="%~dp0Certificates\CodeSigning
+SET /A ForcePolicy = 0
+SET SetForceAppender="%~dp0Tools\SoftCertPolicyAppender\Binary\SoftCertPolicyAppender.exe"
 
 
 :: Command
-set CommandType=%~1
-set CommandPolicy=%~2
-if "%CommandPolicy%" == "-f" (
-	set /A ForcePolicy=1
+SET CommandType=%~1
+SET CommandPolicy=%~2
+IF "%CommandPolicy%" == "-f" (
+	SET /A ForcePolicy=1
 )
-if not "%CommandType%" == "" (
-	goto CASE_%CommandType%
+IF NOT "%CommandType%" == "" (
+	GOTO CASE_%CommandType%
 )
 
 
 :: Choice
-echo RevokeChinaCerts CodeSigning batch
-echo.
-echo Do you want to set force certificate policy? [Y/N]
-echo Setting force require:
-echo   Administrative Privileges
-echo   Microsoft .NET Framework 4.0 or later version
-set /P UserChoice="Choose: "
-if /I %UserChoice% EQU Y (
-	set /A ForcePolicy=1
+ECHO RevokeChinaCerts CodeSigning batch
+ECHO.
+ECHO Do you want to SET force certificate policy? [Y/N]
+ECHO Setting force require:
+ECHO   Administrative Privileges
+ECHO   Microsoft .NET Framework 4.0 or later version
+SET /P UserChoice="Choose: "
+IF /I %UserChoice% EQU Y (
+	SET /A ForcePolicy=1
 )
-echo.
-echo 1: Revoke all CodeSigning certificates
-echo 2: Restore all CodeSigning revoking
-echo Notice: Choice version is no longer available. Please remove the certificate fingerprint(s) in 
-echo         /Windows/Certificates/CodeSigning/CodeSigning.txt or 
-echo         /Windows/Certificates/Organization/Organization.txt to 
-echo         make it/them not to be revoked.
-echo.
-set /P UserChoice="Choose: "
-set UserChoice=CASE_%UserChoice%
-cls
-goto %UserChoice%
+ECHO.
+ECHO 1: Revoke all CodeSigning certificates
+ECHO 2: Restore all CodeSigning revoking
+ECHO Notice: Choice version is no longer available. Please remove the certificate fingerprint(s) in 
+ECHO         /Windows/Certificates/CodeSigning/CodeSigning.txt or 
+ECHO         /Windows/Certificates/Organization/Organization.txt to 
+ECHO         make it/them not to be revoked.
+ECHO.
+SET /P UserChoice="Choose: "
+SET UserChoice=CASE_%UserChoice%
+CLS
+GOTO %UserChoice%
 
 
 :: Support functions
 :REVOKE_SYSTEM
 %CertMgr% -add -c %Certificates%\%~1.crt" -s -r localMachine Disallowed
 %CertMgr% -add -c %Certificates%\%~1.crt" -s -r currentUser Disallowed
-goto :EOF
+GOTO :EOF
 
 :REVOKE_POLICY
-if "%CommandType%" == "" (
+IF "%CommandType%" == "" (
 	%SetForceAppender% --set-force --interval 1000 %Certificates%\%~1.crt"
-) else (
+) ELSE (
 	%SetForceAppender% --set-force --quiet --interval 1000 %Certificates%\%~1.crt"
 )
-goto :EOF
+GOTO :EOF
 
 :RESTORE_SYSTEM
 %CertMgr% -del -c -sha1 %~1 -s -r localMachine Disallowed
 %CertMgr% -del -c -sha1 %~1 -s -r currentUser Disallowed
-goto :EOF
+GOTO :EOF
 
 :RESTORE_POLICY
-if "%CommandType%" == "" (
+IF "%CommandType%" == "" (
 	%SetForceAppender% --remove --unset-force --interval 1000 %Certificates%\%~1.crt"
-) else (
+) ELSE (
 	%SetForceAppender% --remove --unset-force --quiet --interval 1000 %Certificates%\%~1.crt"
 )
-goto :EOF
+GOTO :EOF
 
 
 :: Revoke version
 :CASE_1
-if %ForcePolicy% EQU 0 (
-	for /F "usebackq tokens=*" %%i in (%Certificates%\CodeSigning.txt") do call :REVOKE_SYSTEM "%%i"
-) else (
-	for /F "usebackq tokens=*" %%i in (%Certificates%\CodeSigning.txt") do call :REVOKE_POLICY "%%i"
+IF %ForcePolicy% EQU 0 (
+	FOR /F "usebackq tokens=*" %%i IN (%Certificates%\CodeSigning.txt") DO CALL :REVOKE_SYSTEM "%%i"
+) ELSE (
+	FOR /F "usebackq tokens=*" %%i IN (%Certificates%\CodeSigning.txt") DO CALL :REVOKE_POLICY "%%i"
 )
-goto EXIT
+GOTO END
 
 
 :: Restore version
 :CASE_2
-if %ForcePolicy% EQU 1 (
-	for /F "usebackq tokens=*" %%i in (%Certificates%\CodeSigning.txt") do call :RESTORE_POLICY "%%i"
+IF %ForcePolicy% EQU 1 (
+	FOR /F "usebackq tokens=*" %%i IN (%Certificates%\CodeSigning.txt") DO CALL :RESTORE_POLICY "%%i"
 )
-for /F "usebackq tokens=*" %%i in (%Certificates%\CodeSigning.txt") do call :RESTORE_SYSTEM "%%i"
-goto EXIT
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\CodeSigning.txt") DO CALL :RESTORE_SYSTEM "%%i"
+GOTO END
 
 
-:: Exit
-:EXIT
-color
-cd /D "%~dp0"
-echo.
-echo RevokeChinaCerts CodeSigning batch
-echo Done, please confirm the messages on screen.
-echo.
-pause
-cls
+:: End
+:END
+COLOR
+CD /D "%~dp0"
+ECHO.
+ECHO RevokeChinaCerts CodeSigning batch
+ECHO Done, please confirm the messages on screen.
+ECHO.
+PAUSE
+CLS

@@ -44,7 +44,7 @@ update_certs() {
   else
     # In /etc/ca-certificates.conf, each line gives a pathname of a CA
     # certificate under /usr/share/ca-certificates  that should be trusted.
-    # Lines that begin with "!" are deselected, causing the  deactivation
+    # Lines that begin with "!" are deselected, causing the deactivation
     # of the CA certificate. If a CA certificate under /usr/share/ca-certificates
     # does not have a corresponding line in /etc/ca-certificates.conf,
     # then the CA certificate will be linked into /etc/ssl/certs/name.pem,

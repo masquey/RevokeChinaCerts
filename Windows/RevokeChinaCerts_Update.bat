@@ -1,103 +1,105 @@
 :: RevokeChinaCerts Update batch
 :: Revoke China Certificates.
 :: 
-:: Author: Chengr28
+:: Contributions: Chengr28
 :: 
 
 
-@echo off
+@CHCP 65001
+@ECHO off
+CLS
 
 
 :: Check administrative permission.
-net session >NUL 2>NUL
-if ERRORLEVEL 1 (
-	color 4F
-	echo Please run as Administrator.
-	echo.
-	pause & break
-	echo.
-	cls
+net session >nul 2>nul
+IF ERRORLEVEL 1 (
+	COLOR 4F
+	ECHO Please run as Administrator.
+	ECHO.
+	PAUSE & BREAK
+	ECHO.
+	CLS
 )
 
 
 :: Locate folder and architecture check.
-cd /D "%~dp0"
-set CertMgr="%~dp0Tools\CertMgr.exe"
-if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
-	set CertMgr="%~dp0Tools\CertMgr_x86.exe"
+CD /D "%~dp0"
+SET CertMgr="%~dp0Tools\CertMgr.exe"
+IF %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
+	SET CertMgr="%~dp0Tools\CertMgr_x86.exe"
 )
 
 
 :: Command
-set Command=%~1
-if not "%Command%" == "" (
-	goto CASE_%Command%
+SET Command=%~1
+IF NOT "%Command%" == "" (
+	GOTO CASE_%Command%
 )
 
 
 :: Choice
-echo RevokeChinaCerts Update batch
-echo.
-echo 1: Update CRL/Certificate Revocation List
-echo 2: Update CTL/Certificate Trust List(Windows Update)
-echo 3: Update CTL/Certificate Trust List(RootSUPD, Windows XP/2003 and older)
-echo 4: Reset all CRL/Certificate Revocation List
-echo.
-echo To reset all CTL/Certificate Trust List, do NOT select any options.
-echo Exit batch and use Microsoft Fixit tools in Tools\Fixit folder:
-echo * MicrosoftFixit_20135.diagcab - Windows Vista and later
-echo * MicrosoftFixit_51014.msi - Windows XP/2003 and before
-echo.
-set /P UserChoice="Choose: "
-set UserChoice=CASE_%UserChoice%
-cls
-goto %UserChoice%
+ECHO RevokeChinaCerts Update batch
+ECHO.
+ECHO 1: Update CRL/Certificate Revocation List
+ECHO 2: Update CTL/Certificate Trust List(Windows Update)
+ECHO 3: Update CTL/Certificate Trust List(RootSUPD, Windows XP/2003 and older)
+ECHO 4: ReSET all CRL/Certificate Revocation List
+ECHO.
+ECHO To reSET all CTL/Certificate Trust List, DO NOT select any options.
+ECHO Exit batch and use Microsoft Fixit tools in Tools\Fixit folder:
+ECHO * MicrosoftFixit_20135.diagcab - Windows Vista and later
+ECHO * MicrosoftFixit_51014.msi - Windows XP/2003 and before
+ECHO.
+SET /P UserChoice="Choose: "
+SET UserChoice=CASE_%UserChoice%
+CLS
+GOTO %UserChoice%
 
 
 :: Update CRL.
 :CASE_1
-mkdir "%~dp0Certificates\Other\SyncWithWU"
+MKDIR "%~dp0Certificates\Other\SyncWithWU"
 certutil -syncWithWU "%~dp0Certificates\Other\SyncWithWU"
-ren "%~dp0Certificates\Other\SyncWithWU\disallowedcert.sst" Disallowed.sst
+REN "%~dp0Certificates\Other\SyncWithWU\disallowedcert.sst" Disallowed.sst
 %CertMgr% -add -all -c "%~dp0Certificates\Other\SyncWithWU\Disallowed.sst" -s -r localMachine Disallowed
-rmdir /S /Q "%~dp0Certificates\Other\SyncWithWU"
-goto EXIT
+RMDIR /S /Q "%~dp0Certificates\Other\SyncWithWU"
+GOTO END
 
 
 :: Update CTL(SST).
 :CASE_2
-mkdir "%~dp0Certificates\Other\SyncWithWU"
-mkdir "%~dp0Certificates\Other\GenerateSSTFromWU"
+MKDIR "%~dp0Certificates\Other\SyncWithWU"
+MKDIR "%~dp0Certificates\Other\GenerateSSTFromWU"
 certutil -syncWithWU "%~dp0Certificates\Other\SyncWithWU"
 certutil -generateSSTFromWU "%~dp0Certificates\Other\GenerateSSTFromWU\AuthRoot.sst"
-ren "%~dp0Certificates\Other\SyncWithWU\pinrules.sst" PinRules.sst
+REN "%~dp0Certificates\Other\SyncWithWU\pinrules.sst" PinRules.sst
 %CertMgr% -add -all -c "%~dp0Certificates\Other\GenerateSSTFromWU\AuthRoot.sst" -s -r localMachine AuthRoot
 %CertMgr% -add -all -c "%~dp0Certificates\Other\GenerateSSTFromWU\PinRules.sst" -s -r localMachine AuthRoot
-rmdir /S /Q "%~dp0Certificates\Other\SyncWithWU"
-rmdir /S /Q "%~dp0Certificates\Other\GenerateSSTFromWU"
-goto EXIT
+RMDIR /S /Q "%~dp0Certificates\Other\SyncWithWU"
+RMDIR /S /Q "%~dp0Certificates\Other\GenerateSSTFromWU"
+GOTO END
 
 
 :: Update CTL(RootSUPD).
 :CASE_3
 "%~dp0Tools\Fixit\RootSUPD.exe"
-goto EXIT
+GOTO END
 
 
-:: Reset CRL.
+:: ReSET CRL.
 :CASE_4
 %CertMgr% -del -all -s -r localMachine Disallowed
 %CertMgr% -del -all -s -r currentUser Disallowed
-goto EXIT
+GOTO END
 
 
-:: Exit
-:EXIT
-color
-cd /D "%~dp0"
-echo.
-echo RevokeChinaCerts Update batch
-echo Done, please confirm the messages on screen.
-echo.
-pause
-cls
+:: End
+:END
+COLOR
+CD /D "%~dp0"
+ECHO.
+ECHO RevokeChinaCerts Update batch
+ECHO Done, please confirm the messages on screen.
+ECHO.
+PAUSE
+CLS

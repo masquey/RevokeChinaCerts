@@ -5,7 +5,7 @@ Revoke China Certificates.<br />
 
 ### Releases
 [![GitHub release](https://img.shields.io/github/release/chengr28/RevokeChinaCerts.svg)](https://github.com/chengr28/RevokeChinaCerts/releases/latest)<br />
-Please visit above link to download releases instead of using deprecated Download ZIP.<br />
+Please visit the link above to download releases instead of using deprecated Download ZIP.<br />
 请使用上面的链接下载，不要使用以前 Download ZIP 的方法/請使用上面的連結下載，不要使用以前 Download ZIP 的方法。
 
 ### Usage

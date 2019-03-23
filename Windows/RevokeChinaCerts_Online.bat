@@ -1,53 +1,55 @@
 :: RevokeChinaCerts Online batch
 :: Revoke China Certificates.
 :: 
-:: Author: JayXon, Hugo Chan, ntkme, Chengr28
+:: Contributions: JayXon, Hugo Chan, ntkme, Chengr28
 :: 
 
 
-@echo off
+@CHCP 65001
+@ECHO off
+CLS
 
 
 :: Check administrative permission.
-net session >NUL 2>NUL
-if ERRORLEVEL 1 (
-	color 4F
-	echo Please run as Administrator.
-	echo.
-	pause & break
-	echo.
-	cls
+net session >nul 2>nul
+IF ERRORLEVEL 1 (
+	COLOR 4F
+	ECHO Please run as Administrator.
+	ECHO.
+	PAUSE & BREAK
+	ECHO.
+	CLS
 )
 
 
 :: Locate folder and architecture check.
-cd /D "%~dp0"
-set CertMgr="%~dp0Tools\CertMgr.exe"
-if %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
-	set CertMgr="%~dp0Tools\CertMgr_x86.exe"
+CD /D "%~dp0"
+SET CertMgr="%~dp0Tools\CertMgr.exe"
+IF %PROCESSOR_ARCHITECTURE%%PROCESSOR_ARCHITEW6432% EQU x86 (
+	SET CertMgr="%~dp0Tools\CertMgr_x86.exe"
 )
-set Certificates="%~dp0..\Shared\Certificates
+SET Certificates="%~dp0..\Shared\Certificates
 
 
 :: Command
-set Command=%~1
-if not "%Command%" == "" (
-	goto CASE_%Command%
+SET Command=%~1
+IF NOT "%Command%" == "" (
+	GOTO CASE_%Command%
 )
 
 
 :: Choice
-echo RevokeChinaCerts Online batch
-echo.
-echo 1: Base version
-echo 2: Extended version
-echo 3: All version
-echo 4: Restore all Online revoking
-echo.
-set /P UserChoice="Choose: "
-set UserChoice=CASE_%UserChoice%
-cls
-goto %UserChoice%
+ECHO RevokeChinaCerts Online batch
+ECHO.
+ECHO 1: Base version
+ECHO 2: Extended version
+ECHO 3: All version
+ECHO 4: Restore all Online revoking
+ECHO.
+SET /P UserChoice="Choose: "
+SET UserChoice=CASE_%UserChoice%
+CLS
+GOTO %UserChoice%
 
 
 :: Support functions
@@ -58,65 +60,65 @@ goto %UserChoice%
 %CertMgr% -del -c -sha1 %~1 -s -r currentUser AuthRoot
 %CertMgr% -add -c %Certificates%\%~1.crt" -s -r localMachine Disallowed
 %CertMgr% -add -c %Certificates%\%~1.crt" -s -r currentUser Disallowed
-goto :EOF
+GOTO :EOF
 
 :REVOKE_INTERMEDIATE_CA
 %CertMgr% -del -c -sha1 %~1 -s -r localMachine CA
 %CertMgr% -del -c -sha1 %~1 -s -r currentUser CA
 %CertMgr% -add -c %Certificates%\%~1.crt" -s -r localMachine Disallowed
 %CertMgr% -add -c %Certificates%\%~1.crt" -s -r currentUser Disallowed
-goto :EOF
+GOTO :EOF
 
 :REVOKE_SSL
-call :REVOKE_ROOT_CA %~1
-goto :EOF
+CALL :REVOKE_ROOT_CA %~1
+GOTO :EOF
 
 :RESTORE
 %CertMgr% -del -c -sha1 %~1 -s -r localMachine Disallowed
 %CertMgr% -del -c -sha1 %~1 -s -r currentUser Disallowed
-goto :EOF
+GOTO :EOF
 
 
 :: All version
 :CASE_3
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.Root.CA.txt") do call :REVOKE_ROOT_CA "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.Intermediate.CA.txt") do call :REVOKE_INTERMEDIATE_CA "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.SSL.txt") do call :REVOKE_SSL "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Low.Root.CA.txt") DO CALL :REVOKE_ROOT_CA "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Low.Intermediate.CA.txt") DO CALL :REVOKE_INTERMEDIATE_CA "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Low.SSL.txt") DO CALL :REVOKE_SSL "%%i"
 
 :: Extended version
 :CASE_2
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Medium.Root.CA.txt") do call :REVOKE_ROOT_CA "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Medium.Intermediate.CA.txt") do call :REVOKE_INTERMEDIATE_CA "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Medium.SSL.txt") do call :REVOKE_SSL "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Medium.Root.CA.txt") DO CALL :REVOKE_ROOT_CA "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Medium.Intermediate.CA.txt") DO CALL :REVOKE_INTERMEDIATE_CA "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Medium.SSL.txt") DO CALL :REVOKE_SSL "%%i"
 
 :: Base version
 :CASE_1
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.Root.CA.txt") do call :REVOKE_ROOT_CA "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.Intermediate.CA.txt") do call :REVOKE_INTERMEDIATE_CA "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.SSL.txt") do call :REVOKE_SSL "%%i"
-goto EXIT
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.High.Root.CA.txt") DO CALL :REVOKE_ROOT_CA "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.High.Intermediate.CA.txt") DO CALL :REVOKE_INTERMEDIATE_CA "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.High.SSL.txt") DO CALL :REVOKE_SSL "%%i"
+GOTO END
 
 :: Restore version
 :CASE_4
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.Root.CA.txt") do call :RESTORE "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.Intermediate.CA.txt") do call :RESTORE "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.High.SSL.txt") do call :RESTORE "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Medium.Root.CA.txt") do call :RESTORE "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Medium.Intermediate.CA.txt") do call :RESTORE "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Medium.SSL.txt") do call :RESTORE "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.Root.CA.txt") do call :RESTORE "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.Intermediate.CA.txt") do call :RESTORE "%%i"
-for /F "usebackq tokens=*" %%i in (%Certificates%\Severity.Low.SSL.txt") do call :RESTORE "%%i"
-goto EXIT
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.High.Root.CA.txt") DO CALL :RESTORE "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.High.Intermediate.CA.txt") DO CALL :RESTORE "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.High.SSL.txt") DO CALL :RESTORE "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Medium.Root.CA.txt") DO CALL :RESTORE "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Medium.Intermediate.CA.txt") DO CALL :RESTORE "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Medium.SSL.txt") DO CALL :RESTORE "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Low.Root.CA.txt") DO CALL :RESTORE "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Low.Intermediate.CA.txt") DO CALL :RESTORE "%%i"
+FOR /F "usebackq tokens=*" %%i IN (%Certificates%\Severity.Low.SSL.txt") DO CALL :RESTORE "%%i"
+GOTO END
 
 
-:: Exit
-:EXIT
-color
-cd /D "%~dp0"
-echo.
-echo RevokeChinaCerts Online batch
-echo Done, please confirm the messages on screen.
-echo.
-pause
-cls
+:: End
+:END
+COLOR
+CD /D "%~dp0"
+ECHO.
+ECHO RevokeChinaCerts Online batch
+ECHO Done, please confirm the messages on screen.
+ECHO.
+PAUSE
+CLS

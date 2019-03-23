@@ -3,7 +3,7 @@
 
 ### Usage
 * Download all project files.
-* Run batch as **Administrator permission** and follow README to do(Windows):
+* Run batch as **Administrator permission** and follow README(Windows):
   * Different batches to revoke different certificates.
 * Visit other system folders to revoke certificate(s) in other platforms.
 * **Clear all browser(s) data/DNS cache of system** and restart network interface(s).
