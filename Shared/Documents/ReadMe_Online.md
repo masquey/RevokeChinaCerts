@@ -76,9 +76,11 @@ China Internet Network Information Center EV Certificates Root | [China Internet
 CNNIC SSL | [Entrust.net Secure Server Certification Authority](https://www.entrust.net) | 6856BB1A6C4F76DACA362187CC2CCD484EDDC25D
 CNNIC ROOT | [China Internet Network Information Center](https://www.cnnic.net.cn) | 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F
 GiantRootCA | [Giant Interactive Group Inc.](http://www.ztgame.com) | 7514436E903C901069980499CA70DE74FC06C83C
+GoAgent CA | [GoAgent project](https://github.com/GoAgent/GoAgent) | AB702CDF18EBE8B438C52869CD4A5DEF48B40E33
 [JGZXCA](https://211.146.10.133) | [State Administration of Press, Publication, Radio, Film and Television of The People's Republic of China](http://www.sapprft.gov.cn) | 7A4AA61E2A88704115E47748D8647DAEE6837559
 Superfish, Inc. | Superfish, Inc. | C864484869D41D2B0D32319C5A62F9315AAF2CBD
 Thailand National Root Certification Authority - G1 | [Thailand National Root Certification Authority](http://www.nrca.go.th) | 66F2DCFB3F814DDEE9B3206F11DEFE1BFBDFE132
+TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı | https://www.turktrust.com.tr | 7998A308E14D6585E6C21E153A719FBA5AD34AD9
 TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı | https://www.turktrust.com.tr | B435D4E1119D1C6690A749EBB394BD637BA782B7
 TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı | https://www.turktrust.com.tr | F17F6FB631DC99E3A3C87FFE1CF1811088D96033
 TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5 | https://www.turktrust.com.tr | C418F64D46D1DF003D2730137243A91211C675FB
@@ -100,13 +102,14 @@ GDCA TrustAUTH R4 DV SSL CA G2 | [Certum CA](https://www.certum.eu) | 1E3159DAE3
 [GDCA TrustAUTH R4 EV SSL CA G2](https://www.gdca.com.cn) | [Certum CA](https://www.certum.eu) | 87DFE0056D01EB9635395D44A856218484F492F0
 GDCA TrustAUTH R4 OV SSL CA G2 | [Certum CA](https://www.certum.eu) | B1B3162F7CC867F6D47536DF3232E706E031357C
 GDCA TrustAUTH R5 ROOT | [GUANG DONG CERTIFICATE AUTHORITY](https://www.gdca.com.cn) | 0F36385B811A25C39B314E83CAE9346670CC74B4
-Certification Authority of WoSign | [UTN-USERFirst-Object](https://www.comodo.com) | 1C1ECDCCF764E6168177C5711F33EC9229A29F88
+CERNET CA | [The China Education and Research Network](http://www.cernet.edu.cn) | 8EF134D4BAD5498E348A7C6D9B66F67A09D56D9B
+Certification Authority of WoSign | [Sectigo (UTN Object)](https://sectigo.com) | 1C1ECDCCF764E6168177C5711F33EC9229A29F88
 Certification Authority of WoSign | [StartCom Certification Authority](https://www.startcomca.com) | 27D5BBE04301E1604839708D172CF09296ED9033
 Certification Authority of WoSign | [WoSign CA Limited](https://www.wosign.com) | 33A4D8BC38608EF52EF0E28A35091E9250907FB9
 Certification Authority of WoSign | [UTN – DATACorp SGC](https://www.comodo.com) | 56FAADDC596DCF78D585D83A35BC04B690D12736
 Certification Authority of WoSign | [StartCom Certification Authority](https://www.startcomca.com) | 692790DA5189529CC5CE1E16E984277A03023E99
 Certification Authority of WoSign | [StartCom Certification Authority](https://www.startcomca.com) | 804E5FB7DE84F5F5B28347233EAF07846B6070D3
-Certification Authority of WoSign | [UTN-USERFirst-Object](https://www.comodo.com) | 7C1913D189C46577D7513F980A2CFD7EDCBA0EC9
+Certification Authority of WoSign | [Sectigo (UTN Object)](https://sectigo.com) | 7C1913D189C46577D7513F980A2CFD7EDCBA0EC9
 Certification Authority of WoSign | [StartCom Certification Authority](https://www.startcomca.com) | 868241C8B85AF79E2DAC79EDADB723E82A36AFC3
 Certification Authority of WoSign | [StartCom Certification Authority](https://www.startcomca.com) | B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6
 [Certification Authority of WoSign](https://root1evtest.wosign.com) | [WoSign CA Limited](https://www.wosign.com) | B94294BF91EA8FB64BE61097C7FB001359B676CB
@@ -118,7 +121,7 @@ CFCA GT CA | [China Financial Certification Authority](https://www.cfca.com.cn) 
 CFCA GT CA | [China Financial Certification Authority](https://www.cfca.com.cn) | EABDA240440ABBD694930A01D09764C6C2D77966
 CFCA Identity CA | [China Financial Certification Authority](https://www.cfca.com.cn) | F02B70BDE4EAE02B207377B9FD4785E4C9CC55DC
 Class 1 Primary CA | [WoSign CA Limited](https://www.wosign.com) | 6A174570A916FBE84453EED3D070A1D8DA442829
-GoAgent CA | [GoAgent project](https://github.com/GoAgent/GoAgent) | AB702CDF18EBE8B438C52869CD4A5DEF48B40E33
+SRCA | [Sinorail Certification Authority](https://www.12306.cn) | AE3F2E66D48FC6BD1DF131E89D768D505DF14302
 StartCom BR SSL ICA | [Certinomis - Root CA](https://www.certinomis.fr) | FD17DA1458D3514592C4F9544A6EA960B373E877
 StartCom Certification Authority | [StartCom Certification Authority](https://www.startcomca.com) | 3E2BF7F2031B96F38CE6C4D8A85D3E2D58476A0F
 StartCom Certification Authority | [StartCom Certification Authority](https://www.startcomca.com) | A3F1333FE242BFCFC5D14E8F394298406810D1A0
@@ -134,25 +137,26 @@ UCA Global G2 Root | [Shanghai Electronic Certificate Authority Center Co., Ltd.
 UCA Global Root | [Shanghai Electronic Certificate Authority Center Co., Ltd.](https://www.sheca.com) | 0B972C9EA6E7CC58D93B20BF71EC412E7209FABF
 UCA ROOT | [Shanghai Electronic Certificate Authority Center Co., Ltd.](https://www.sheca.com) | 3120F295417730075F8CD42D0CAE008EB5726EF8
 UCA Root | [Shanghai Electronic Certificate Authority Center Co., Ltd.](https://www.sheca.com) | 8250BED5A214433A66377CBC10EF83F669DA3A67
-WoSign Client Authority | [UTN-USERFirst-Client Authentication and Email](https://www.comodo.com) | FAD4319D4E173FF3853E51C98D21919BF3DA1A1E
+WoSign Client Authority | [Sectigo (UTN Client)](https://sectigo.com) | FAD4319D4E173FF3853E51C98D21919BF3DA1A1E
+WoTrus DV Server CA | [Sectigo (formerly Comodo CA)](https://sectigo.com) | 4334C8323E735ADFCB028B17F72913680C43DD15
 WoSign DV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 5B562E002F15E1617C416D1960218544C18F36B7
 WoSign EV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 87DD1B740366A877FD28BF7ED709F4ACE1FA43A5
 WoSign EV SSL Pro CA | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | C0CDBE86C539F0A8BEAD82D82DF01B4DDA6FA349
 WoSign OV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | FAEE1F690EDD55373C35E491EF0514F3EE9445A5
 WoSign OV SSL Pro CA | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | CAF415BAC356D194DA6FE89ECCB49DF4A216EACE
-WoSign Premium Server Authority | [AddTrust External CA Root/UTN-USERFirst-Hardware](https://www.comodo.com) | E3D569137E603E7BACB6BCC66AE943850C8ADF38
-WoSign Server Authority | [AddTrust External CA Root/UTN-USERFirst-Hardware](https://www.comodo.com) | 3E14B8BD6C568657D852D95D387249AE857B4A39
+WoSign Premium Server Authority | [Sectigo (UTN Hardware)](https://sectigo.com) | E3D569137E603E7BACB6BCC66AE943850C8ADF38
+WoSign Server Authority | [Sectigo (UTN Hardware)](https://sectigo.com) | 3E14B8BD6C568657D852D95D387249AE857B4A39
 WoSign SGC Server Authority | [UTN – DATACorp SGC](https://www.comodo.com) | 6D5A18050D56BFDE525CBE89E8C45DD1B53D12E9
 WoTrus DV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 4245FAB05FAE296958760C3D10EF55E4F25C8681
 WoTrus EV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | C5447EDC0FAD9C60CA43D4C40F2464F2DA9BED3D
 [WoTrus EV SSL Pro CA](https://www.wosign.com) | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | 0750D9E76816800CC02FD1F4E1C058B5E51AE32A
 WoTrus OV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 3423C2D0496D3CFBBB1A39159DD218559DC1CD48
 WoTrus OV SSL Pro CA | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | F519492BD08F146837D187160222BEA26D8F8AEF
-WoTrust Client Authority | [UTN-USERFirst-Client Authentication and Email](https://www.comodo.com) | 38CFE78D9F1F0B0637AFCAAA3D5549D87C0AA1D0
-WoTrust Premium Server Authority | [AddTrust External CA Root/UTN-USERFirst-Hardware](https://www.comodo.com) | 381CBC5048AFD9A02D3E5882D5F22D962B1A5F72
-WoTrust Premium Server Authority | [AddTrust External CA Root/UTN-USERFirst-Hardware](https://www.comodo.com) | CF37A5B5C9166BD6B57A56BF67165A584B057241
-WoTrust Server Authority | [AddTrust External CA Root/UTN-USERFirst-Hardware](https://www.comodo.com) | 337DF96418F08A9355870513AFCEBDC68BCED767
-WoTrust Server Authority | [AddTrust External CA Root/UTN-USERFirst-Hardware](https://www.comodo.com) | D1F58CDB9194A374AC91DAADD411FEB99C434CC9
+WoTrust Client Authority | [Sectigo (UTN Client)](https://sectigo.com) | 38CFE78D9F1F0B0637AFCAAA3D5549D87C0AA1D0
+WoTrust Premium Server Authority | [Sectigo (UTN Hardware)](https://sectigo.com) | 381CBC5048AFD9A02D3E5882D5F22D962B1A5F72
+WoTrust Premium Server Authority | [Sectigo (UTN Hardware)](https://sectigo.com) | CF37A5B5C9166BD6B57A56BF67165A584B057241
+WoTrust Server Authority | [Sectigo (UTN Hardware)](https://sectigo.com) | 337DF96418F08A9355870513AFCEBDC68BCED767
+WoTrust Server Authority | [Sectigo (UTN Hardware)](https://sectigo.com) | D1F58CDB9194A374AC91DAADD411FEB99C434CC9
 WoTrust SGC Server Authority | [UTN – DATACorp SGC](https://www.comodo.com) | 46A762F3C3CF3732DE22A8BA1EBBA3BC048F9B8C
 WoTrust SGC Server Authority | [UTN – DATACorp SGC](https://www.comodo.com) | BCF8FDFBD8A8501D603A90356566C93BC83372EE
 数安时代 R5 根 CA | [GUANG DONG CERTIFICATE AUTHORITY](https://www.gdca.com.cn) | 23EB1BA46471A1E7E9F2DB5701FEF8F2F80CAAE9
@@ -161,21 +165,22 @@ WoTrust SGC Server Authority | [UTN – DATACorp SGC](https://www.comodo.com) | 
 
 Name | Authority | Fingerprint
 :---:|:---:|---
-CERNET CA | [The China Education and Research Network](http://www.cernet.edu.cn) | 8EF134D4BAD5498E348A7C6D9B66F67A09D56D9B
-[ePKI Root Certification Authority](https://epki.com.tw) | [Chunghwa Telecom ecommerce Public Key Infrastructure](https://epki.com.tw) | 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0
+ePKI Root Certification Authority | [Chunghwa Telecom ecommerce Public Key Infrastructure](https://epki.com.tw) | 67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0
 ePKI Root Certification Authority - G2 | [Chunghwa Telecom ecommerce Public Key Infrastructure](https://epki.com.tw) | 81AC5DE150D1B8DE5D3E0E266A136B737862D322
-ePKI Root Certification Authority - G2 | [Chunghwa Telecom ecommerce Public Key Infrastructure](https://epki.com.tw) | D99B104298594763F0B9A927B79269CB47DD158B
-Government Root Certification Authority | [Government Root Certification Authority](http://grca.nat.gov.tw/GRCAeng/htdocs/index.html) | B091AA913847F313D727BCEFC8179F086F3A8C0F
-Government Root Certification Authority | [Government Root Certification Authority](http://grca.nat.gov.tw/GRCAeng/htdocs/index.html) | F48B11BFDEABBE94542071E641DE6BBE882B40B9
+[ePKI Root Certification Authority - G2](https://epki.com.tw) | [Chunghwa Telecom ecommerce Public Key Infrastructure](https://epki.com.tw) | D99B104298594763F0B9A927B79269CB47DD158B
+ePKI Root Certification Authority - G3 | [Chunghwa Telecom ecommerce Public Key Infrastructure](https://epki.com.tw) | B172B1A56D95F91FE50287E14D37EA6A4463768A
+Government Root Certification Authority | [Government Root Certification Authority](https://grca.nat.gov.tw) | F48B11BFDEABBE94542071E641DE6BBE882B40B9
+[Government Root Certification Authority 2](https://grca.nat.gov.tw) | [Government Root Certification Authority](https://grca.nat.gov.tw) | B091AA913847F313D727BCEFC8179F086F3A8C0F
 Hongkong Post Root CA | [Hongkong Post](https://www.hongkongpost.hk) | E0925E18C7765E22DABD9427529DA6AF4E066428
 [Hongkong Post Root CA 1](https://www.hongkongpost.hk) | [Hongkong Post](https://www.hongkongpost.hk) | D6DAA8208D09D2154D24B52FCB346EB258B28A58
+Hongkong Post Root CA 2 | [Hongkong Post](https://www.hongkongpost.hk) | DE010808E41EC41930D44095F8FE596B582C8CA2
+Hongkong Post Root CA 3 | [Hongkong Post](https://www.hongkongpost.hk) | 58A2D0EC2052815BC1F3F86402244EC28E024B02
 Macao Post eSignTrust Root Certification Authority | [Macao Post eSignTrust Certification Services](https://www.esigntrust.com) | 89C32E6B524E4D65388B9ECEDC637134ED4193A3
 Macao Post eSignTrust Root Certification Authority (G02) | [Macao Post eSignTrust Certification Services](https://www.esigntrust.com) | 06143151E02B45DDBADD5D8E56530DAAE328CF90
 Macao Post eSignTrust Root Certification Authority (G03) | [Macao Post eSignTrust Certification Services](https://www.esigntrust.com) | 9D319381546EA6A12811E09CF90A20C840BE944D
-SRCA | [Sinorail Certification Authority](http://www.12306.cn) | AE3F2E66D48FC6BD1DF131E89D768D505DF14302
 TaiCA Secure CA | [GTE CyberTrust Global Root](http://www.verizonenterprise.com) | 5B404B6DB43E1F71557F75552E7668289B1B6309
 TWCA Global Root CA | [TWCA](https://www.twca.com.tw) | 9CBB4853F6A4F6D352A4E83252556013F5ADAF65
-[TWCA Root Certification Authority](https://www.twca.com.tw) | [TWCA](https://www.twca.com.tw) | CF9E876DD3EBFC422697A3B5A37AA076A9062348
-TWCA Root Certification Authority | [TWCA](https://www.twca.com.tw) | DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F
+[TWCA Root Certification Authority 1](https://www.twca.com.tw) | [TWCA](https://www.twca.com.tw) | CF9E876DD3EBFC422697A3B5A37AA076A9062348
+TWCA Root Certification Authority 2 | [TWCA](https://www.twca.com.tw) | DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F
 TWCA Secure CA | [Baltimore CyberTrust Root](http://www.verizonenterprise.com) | 3F3E6C4B33802A2FEA46C5CACA14770A40018899
-TWCA Secure Certification Authority | [AddTrust External CA Root](https://www.comodo.com) | 339D811FEC673E7F731307A34C7C7523ABBE7DFE
+TWCA Secure Certification Authority | [Sectigo (AddTrust)](https://sectigo.com) | 339D811FEC673E7F731307A34C7C7523ABBE7DFE

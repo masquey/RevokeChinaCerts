@@ -13,7 +13,7 @@
         Subject: C = MO, O = Macao Post, CN = Macao Post eSignTrust Root Certification Authority (G02)
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
+                RSA Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE
@@ -21,6 +21,33 @@
                 Certificate Sign, CRL Sign
             X509v3 Subject Key Identifier: 
                 02:81:B7:B6:66:F8:92:45:6D:C2:71:D2:9F:EC:2F:D3:BA:1F:B9:FF
+
+
+
+58A2D0EC2052815BC1F3F86402244EC28E024B02.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            08:16:5f:8a:4c:a5:ec:00:c9:93:40:df:c4:c6:ae:23:b8:1c:5a:a4
+        Issuer: C = HK, ST = Hong Kong, L = Hong Kong, O = Hongkong Post, CN = Hongkong Post Root CA 3
+        Validity
+            Not Before: Jun  3 02:29:46 2017 GMT
+            Not After : Jun  3 02:29:46 2042 GMT
+        Subject: C = HK, ST = Hong Kong, L = Hong Kong, O = Hongkong Post, CN = Hongkong Post Root CA 3
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Authority Key Identifier: 
+                keyid:17:9D:CD:1E:8B:D6:39:2B:70:D3:5C:D4:A0:B8:1F:B0:00:FC:C5:61
+
+            X509v3 Subject Key Identifier: 
+                17:9D:CD:1E:8B:D6:39:2B:70:D3:5C:D4:A0:B8:1F:B0:00:FC:C5:61
 
 
 
@@ -37,7 +64,7 @@
         Subject: C = TW, O = "Chunghwa Telecom Co., Ltd.", OU = ePKI Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
+                RSA Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 1E:0C:F7:B6:67:F2:E1:92:26:09:45:C0:55:39:2E:77:3F:42:4A:A2
@@ -61,7 +88,7 @@
         Subject: C = TW, O = "Chunghwa Telecom Co., Ltd.", CN = ePKI EV SSL Certification Authority - G1
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:72:5B:BA:AA:72:38:EE:25:90:24:B5:94:22:FA:09:88:CA:8B:0A:FB
@@ -101,33 +128,12 @@
         Subject: C = MO, O = Macao Post, CN = Macao Post eSignTrust Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: 
                 CA:TRUE
             X509v3 Key Usage: 
                 Certificate Sign, CRL Sign
-
-
-
-8EF134D4BAD5498E348A7C6D9B66F67A09D56D9B.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number: 0 (0x0)
-        Issuer: C = CN, L = Beijing, O = CERNIC, OU = Registration Services, CN = CERNIC CA
-        Validity
-            Not Before: Jun 11 13:30:08 2003 GMT
-            Not After : Jun 11 13:30:08 2013 GMT
-        Subject: C = CN, L = Beijing, O = CERNIC, OU = Registration Services, CN = CERNIC CA
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
-        X509v3 extensions:
-            X509v3 Basic Constraints: critical
-                CA:TRUE
-            X509v3 Subject Key Identifier: 
-                BB:2B:E0:8D:90:0A:7A:3D:20:6F:D1:17:4C:1B:A2:C5:0B:4B:5B:D1
 
 
 
@@ -143,7 +149,7 @@
         Subject: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Global Root CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
+                RSA Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -165,7 +171,7 @@
         Subject: C = MO, O = Macao Post and Telecommunications Bureau, CN = eSignTrust Root Certification Authority (G03)
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
+                RSA Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE
@@ -178,37 +184,6 @@
             X509v3 Authority Key Identifier: 
                 keyid:1C:E0:20:61:3D:06:E4:ED:2C:6D:55:B8:8E:35:AE:D9:6C:E5:47:81
 
-
-
-
-AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number: 8009207631380619172 (0x6f266be7f8ca1fa4)
-        Issuer: C = CN, O = Sinorail Certification Authority, CN = SRCA
-        Validity
-            Not Before: May 25 06:56:00 2009 GMT
-            Not After : May 20 06:56:00 2029 GMT
-        Subject: C = CN, O = Sinorail Certification Authority, CN = SRCA
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
-        X509v3 extensions:
-            X509v3 Authority Key Identifier: 
-                keyid:79:5E:B6:77:B7:E2:52:83:43:ED:C7:51:88:4C:63:85:2C:00:43:58
-
-            X509v3 Basic Constraints: 
-                CA:TRUE
-            X509v3 CRL Distribution Points: 
-
-                Full Name:
-                  URI:http://192.168.9.149/crl1.crl
-
-            X509v3 Key Usage: 
-                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment, Key Agreement, Certificate Sign, CRL Sign
-            X509v3 Subject Key Identifier: 
-                79:5E:B6:77:B7:E2:52:83:43:ED:C7:51:88:4C:63:85:2C:00:43:58
 
 
 
@@ -225,7 +200,7 @@ B091AA913847F313D727BCEFC8179F086F3A8C0F.crt
         Subject: C = TW, O = Government Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
+                RSA Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE
@@ -233,6 +208,30 @@ B091AA913847F313D727BCEFC8179F086F3A8C0F.crt
                 D5:67:1D:E0:9C:7A:2C:9C:CB:C5:98:E7:1D:07:26:2A:86:EC:74:CD
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
+
+
+
+CF5F4317B8E5553F658E1802FF8063447AC17615.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            62:37:e0:1b:9a:ae:4e:4d:f8:62:29:bb:44:49:7b:01
+        Issuer: C = TW, O = "Chunghwa Telecom Co., Ltd.", CN = ePKI Root Certification Authority - G3
+        Validity
+            Not Before: Apr 30 09:42:34 2019 GMT
+            Not After : Dec 31 15:59:59 2037 GMT
+        Subject: C = TW, O = "Chunghwa Telecom Co., Ltd.", CN = ePKI Root Certification Authority - G3
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                51:CE:2E:18:AC:A1:A4:00:35:49:BA:92:3B:FF:09:5B:BF:38:84:AC
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
 
 
 
@@ -248,7 +247,7 @@ CF9E876DD3EBFC422697A3B5A37AA076A9062348.crt
         Subject: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -271,7 +270,7 @@ D6DAA8208D09D2154D24B52FCB346EB258B28A58.crt
         Subject: C = HK, O = Hongkong Post, CN = Hongkong Post Root CA 1
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:3
@@ -293,7 +292,7 @@ D99B104298594763F0B9A927B79269CB47DD158B.crt
         Subject: C = TW, O = "Chunghwa Telecom Co., Ltd.", CN = ePKI Root Certification Authority - G2
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
+                RSA Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE
@@ -301,6 +300,33 @@ D99B104298594763F0B9A927B79269CB47DD158B.crt
                 72:5B:BA:AA:72:38:EE:25:90:24:B5:94:22:FA:09:88:CA:8B:0A:FB
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
+
+
+
+DE010808E41EC41930D44095F8FE596B582C8CA2.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            68:a5:fd:a6:d0:1c:5e:3f:cf:e4:f9:99:df:7a:6c:6f:39:a9:7f:fc
+        Issuer: C = HK, ST = Hong Kong, L = Hong Kong, O = Hongkong Post, CN = Hongkong Post Root CA 2
+        Validity
+            Not Before: Sep  5 02:34:36 2015 GMT
+            Not After : Sep  5 02:34:36 2040 GMT
+        Subject: C = HK, ST = Hong Kong, L = Hong Kong, O = Hongkong Post, CN = Hongkong Post Root CA 2
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Certificate Sign, CRL Sign
+            X509v3 Authority Key Identifier: 
+                keyid:61:B5:E0:42:DE:B6:AF:A7:20:EA:F6:24:C8:A7:9D:85:A0:58:53:D8
+
+            X509v3 Subject Key Identifier: 
+                61:B5:E0:42:DE:B6:AF:A7:20:EA:F6:24:C8:A7:9D:85:A0:58:53:D8
 
 
 
@@ -316,7 +342,7 @@ DF646DCB7B0FD3A96AEE88C64E2D676711FF9D5F.crt
         Subject: C = TW, O = TAIWAN-CA, OU = Root CA, CN = TWCA Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
+                RSA Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -339,7 +365,7 @@ E0925E18C7765E22DABD9427529DA6AF4E066428.crt
         Subject: C = HK, O = Hongkong Post, CN = Hongkong Post Root CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:3
@@ -361,7 +387,7 @@ F48B11BFDEABBE94542071E641DE6BBE882B40B9.crt
         Subject: C = TW, O = Government Root Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
+                RSA Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 CC:CC:EF:CC:29:60:A4:3B:B1:92:B6:3C:FA:32:62:8F:AC:25:15:3B
@@ -388,7 +414,7 @@ F48B11BFDEABBE94542071E641DE6BBE882B40B9.crt
         Subject: C = TW, O = TAIWAN-CA INC., OU = SSL Security Services, CN = TWCA Secure Certification Authority
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:AD:BD:98:7A:34:B4:26:F7:FA:C4:26:54:EF:03:BD:E0:24:CB:54:1A
@@ -429,7 +455,7 @@ F48B11BFDEABBE94542071E641DE6BBE882B40B9.crt
         Subject: C = TW, O = TAIWAN-CA INC., OU = SSL Certification Service Provider, CN = TWCA Secure CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:0
@@ -464,7 +490,7 @@ F48B11BFDEABBE94542071E641DE6BBE882B40B9.crt
         Subject: C = TW, O = TAIWAN-CA.COM Inc., OU = SSL Certification Service Provider, CN = TaiCA Secure CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:0

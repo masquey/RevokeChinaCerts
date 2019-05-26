@@ -21,13 +21,13 @@ readonly blacklisted_extended_certs="mozilla/CFCA_EV_ROOT.crt
 mozilla/WoSign_China.crt
 mozilla/GDCA_TrustAUTH_R5_ROOT.crt
 mozilla/WoSign.crt
-mozilla/CA_WoSign_ECC_Root.crt"
+mozilla/CA_WoSign_ECC_Root.crt
+mozilla/Certification_Authority_of_WoSign_G2.crt"
 readonly blacklisted_all_certs="mozilla/Hongkong_Post_Root_CA_1.crt
 mozilla/ePKI_Root_Certification_Authority.crt
 mozilla/Taiwan_GRCA.crt
 mozilla/TWCA_Root_Certification_Authority.crt
-mozilla/TWCA_Global_Root_CA.crt
-mozilla/Certification_Authority_of_WoSign_G2.crt"
+mozilla/TWCA_Global_Root_CA.crt"
 
 readonly blacklisted_certs='../'
 

@@ -12,7 +12,7 @@
         Subject: C = CN, O = China Internet Network Information Center, CN = China Internet Network Information Center EV Certificates Root
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:7C:72:4B:39:C7:C0:DB:62:A5:4F:9B:AA:18:34:92:A2:CA:83:82:59
@@ -38,7 +38,7 @@
         Subject: C = TH, O = Electronic Transactions Development Agency (Public Organization), OU = Thailand National Root Certification Authority, CN = Thailand National Root Certification Authority - G1
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (4096 bit)
+                RSA Public-Key: (4096 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE
@@ -65,7 +65,7 @@
         Subject: DC = com, DC = ztgame, CN = GiantRootCA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             1.3.6.1.4.1.311.20.2: 
                 <Not Supported>
@@ -86,6 +86,25 @@
 
 
 
+7998A308E14D6585E6C21E153A719FBA5AD34AD9.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Issuer: CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı, C = TR, L = ANKARA, O = (c) 2005 TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş.
+        Validity
+            Not Before: May 13 10:27:17 2005 GMT
+            Not After : Mar 22 10:27:17 2015 GMT
+        Subject: CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı, C = TR, L = ANKARA, O = (c) 2005 TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş.
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:TRUE
+
+
+
 7A4AA61E2A88704115E47748D8647DAEE6837559.crt
 --------------------------------------------
 
@@ -98,7 +117,7 @@
         Subject: C = CN, O = SARFT, OU = JGZX, CN = JGZXCA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:31:C2:53:F4:81:CE:2C:11:46:9D:72:C8:C3:A8:EC:A9:86:C1:5D:AD
@@ -124,7 +143,7 @@
         Subject: C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş., CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 DD:55:17:13:F6:AC:E8:48:21:CA:EF:B5:AF:D1:00:32:ED:9E:8C:B5
@@ -147,7 +166,7 @@
         Subject: C = CN, O = CNNIC, CN = CNNIC ROOT
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             Netscape Cert Type: 
                 SSL CA, S/MIME CA, Object Signing CA
@@ -163,6 +182,22 @@
 
 
 
+AB702CDF18EBE8B438C52869CD4A5DEF48B40E33.crt
+--------------------------------------------
+
+        Version: 1 (0x0)
+        Serial Number: 0 (0x0)
+        Issuer: OU = GoAgent Root, O = GoAgent, CN = GoAgent CA, ST = Internet, C = CN, L = Cernet
+        Validity
+            Not Before: Apr 20 17:37:35 2011 GMT
+            Not After : Apr 20 17:37:35 2031 GMT
+        Subject: OU = GoAgent Root, O = GoAgent, CN = GoAgent CA, ST = Internet, C = CN, L = Cernet
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+
+
+
 B435D4E1119D1C6690A749EBB394BD637BA782B7.crt
 --------------------------------------------
 
@@ -175,7 +210,7 @@ B435D4E1119D1C6690A749EBB394BD637BA782B7.crt
         Subject: CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı, C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş. (c) Kasım 2005
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 D9:37:B3:4E:05:FD:D9:CF:9F:12:16:AE:B6:89:2F:EB:25:3A:88:1C
@@ -198,7 +233,7 @@ C418F64D46D1DF003D2730137243A91211C675FB.crt
         Subject: C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş., CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 56:99:07:1E:D3:AC:0C:69:64:B4:0C:50:47:DE:43:2C:BE:20:C0:FB
@@ -222,7 +257,7 @@ C864484869D41D2B0D32319C5A62F9315AAF2CBD.crt
         Subject: O = "Superfish, Inc.", L = SF, ST = CA, C = US, CN = "Superfish, Inc."
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: 
                 CA:TRUE
@@ -248,7 +283,7 @@ F17F6FB631DC99E3A3C87FFE1CF1811088D96033.crt
         Subject: CN = TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı, C = TR, L = Ankara, O = TÜRKTRUST Bilgi İletişim ve Bilişim Güvenliği Hizmetleri A.Ş. (c) Aralık 2007
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Subject Key Identifier: 
                 29:C5:90:AB:25:AF:11:E4:61:BF:A3:FF:88:61:91:E6:0E:FE:9C:81
@@ -274,7 +309,7 @@ F17F6FB631DC99E3A3C87FFE1CF1811088D96033.crt
         Subject: C = CN, O = CNNIC SSL, CN = CNNIC SSL
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Certificate Sign, CRL Sign
@@ -316,7 +351,7 @@ F17F6FB631DC99E3A3C87FFE1CF1811088D96033.crt
         Subject: C = US, O = "Blue Coat Systems, Inc.", OU = Symantec Trust Network, CN = Blue Coat Public Services Intermediate CA
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:TRUE, pathlen:0
@@ -366,7 +401,7 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
         Subject: C = CN, O = CNNIC SSL, CN = CNNIC SSL
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
         X509v3 extensions:
             X509v3 Authority Key Identifier: 
                 keyid:65:F2:31:AD:2A:F7:F7:DD:52:96:0A:C7:02:C1:0E:EF:A6:D5:3B:11
@@ -407,7 +442,7 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
         Subject: C = cn, O = yahoo.com, CN = yahoo.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:FALSE
@@ -434,7 +469,7 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
         Subject: C = US, ST = Some-State, O = github.com, OU = github.com, CN = github.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: 
                 CA:FALSE
@@ -460,7 +495,7 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
         Subject: C = cn, O = hotmail.com, CN = hotmai.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:FALSE
@@ -488,7 +523,7 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
         Subject: CN = google.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
 
 
 
@@ -505,7 +540,7 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
         Subject: C = CN, ST = Beijing, L = Beijing, O = "Baidu, Inc.", OU = SW, CN = *.wacc.baidu.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (2048 bit)
+                RSA Public-Key: (2048 bit)
 
 
 
@@ -522,7 +557,7 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
         Subject: CN = *.hotmail.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
 
 
 
@@ -539,7 +574,7 @@ DC6EE6EDC4C078E1B2C12F6D1985000E27CFD318.crt
         Subject: CN = www.facebook.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
 
 
 
@@ -555,7 +590,7 @@ F468B5F3FED807974476A22B32EA3137D924F7BA.crt
         Subject: C = cn, O = www.icloud.com, CN = www.icloud.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:FALSE
@@ -582,7 +617,7 @@ F6BEADB9BC02E0A152D71C318739CDECFC1C085D.crt
         Subject: C = cn, CN = google.com
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
-                Public-Key: (1024 bit)
+                RSA Public-Key: (1024 bit)
         X509v3 extensions:
             X509v3 Basic Constraints: critical
                 CA:FALSE
