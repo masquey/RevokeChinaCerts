@@ -14,9 +14,7 @@ extended() {
     "$SOURCE_DIR/../Mac/test/test-url.sh" \
       https://www.gdca.com.cn/ \
       https://cs.cfca.com.cn/ \
-      https://www.wosign.com/ \
-      https://root1evtest.wosign.com/ \
-      https://root2evtest.wosign.com/
+      https://www.wosign.com/
 }
 
 all() {
