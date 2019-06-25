@@ -91,7 +91,7 @@ TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6 | [TÜRKTRUST](https:/
 Name | Authority | Fingerprint
 :---:|:---:|---
 CA WoSign ECC Root | [WoSign CA Limited](https://www.wosign.com) | D27AD2BEED94C0A13CC72521EA5D71BE8119F32B
-[CA 沃通根证书](https://root2evtest.wosign.com) | [WoSign CA Limited](https://www.wosign.com) | 1632478D89F9213A92008563F5A4A7D312408AD6
+CA 沃通根证书 | [WoSign CA Limited](https://www.wosign.com) | 1632478D89F9213A92008563F5A4A7D312408AD6
 CA 沃通根证书 | [StartCom Certification Authority](https://www.startcomca.com) | B2FBDA222493A93C38F77C90D4BE6DA17F15F0B0
 CA 沃通根证书 | [StartCom Certification Authority](https://www.startcomca.com) | CE335662F0EA6764B95C7F50A995A514ACE8C815
 CA 沃通根证书 | [StartCom Certification Authority](https://www.startcomca.com) | D8EFF6C28BB508E4702565F42748454A872BD412
