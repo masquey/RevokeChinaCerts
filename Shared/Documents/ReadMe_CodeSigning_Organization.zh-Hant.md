@@ -1,5 +1,6 @@
 ﻿RevokeChinaCerts
 ==============
+Revoke Chinese certificates.
 
 ### 使用方法
 * 直接運行 `RevokeChinaCerts_CodeSigning.bat` 或 `RevokeChinaCerts_Organization.bat` 並根據提示操作即可。

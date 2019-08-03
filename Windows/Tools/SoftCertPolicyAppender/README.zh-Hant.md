@@ -1,5 +1,6 @@
 ﻿RevokeChinaCerts on Windows
 ==============
+Revoke Chinese certificates.
 
 ## 介紹
 本文檔介紹了如何使用 SoftCertPolicyAppender 工具，此工具可以將證書添加到系統強制策略清單中。

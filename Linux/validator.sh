@@ -6,8 +6,9 @@ SOURCE_DIR=$(dirname "$0")
 
 base() {
     "$SOURCE_DIR/../Mac/test/test-url.sh" \
+      https://wacc.n.shifen.com/ \
       https://211.146.10.133/ \
-      https://wacc.n.shifen.com/
+      https://qca.kz/
 }
 
 extended() {
@@ -19,10 +20,10 @@ extended() {
 
 all() {
     "$SOURCE_DIR/../Mac/test/test-url.sh" \
-      https://www.hongkongpost.hk/ \
       https://epki.com.tw/ \
-      https://www.twca.com.tw/ \
-      https://grca.nat.gov.tw/
+      https://grca.nat.gov.tw/ \
+      https://www.hongkongpost.hk/ \
+      https://www.twca.com.tw/
 }
 
 echo "---------------------"

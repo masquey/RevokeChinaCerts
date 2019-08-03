@@ -1,5 +1,6 @@
 ﻿RevokeChinaCerts on Windows
 ==============
+Revoke Chinese certificates.
 
 ### Introduction
 There are 2 types of batches:

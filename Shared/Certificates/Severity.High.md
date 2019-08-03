@@ -1,5 +1,85 @@
 # Root CA Certificates
 
+074842F253314F0E50A5B6693B29BE00FCE29792.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            53:9f:fe:2e:43:23:57:c5:58:90:ba:a3:3c:16:98:0f
+        Issuer: C = AE, O = DarkMatter L.L.C., CN = DarkMatter Root CA G4
+        Validity
+            Not Before: Mar 27 11:45:59 2019 GMT
+            Not After : Mar 27 11:45:59 2039 GMT
+        Subject: C = AE, O = DarkMatter L.L.C., CN = DarkMatter Root CA G4
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                89:01:3B:CC:49:BA:96:2C:6D:C7:84:84:99:13:4F:32:F1:B1:25:F4
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+
+
+
+14FCC63077A7C085F5E1C374208125CA7A215DD7.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 7703069413505335275 (0x6ae6ccd1a8297feb)
+        Issuer: C = AE, O = DarkMatter LLC, CN = DarkMatter Root CA G3
+        Validity
+            Not Before: May 18 13:25:34 2017 GMT
+            Not After : May 13 13:25:34 2037 GMT
+        Subject: C = AE, O = DarkMatter LLC, CN = DarkMatter Root CA G3
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:22:a2:53:54:81:79:53:8c:11:fa:b4:56:f1:26:
+                    36:b5:54:0a:8d:99:38:fc:c7:6d:b8:7f:b7:94:3b:
+                    68:04:6c:d6:9e:b5:46:6e:7f:4f:f3:2b:cf:47:9a:
+                    50:b8:c4:dd:97:b3:60:0d:69:9e:f2:5e:b7:e1:9f:
+                    ad:7a:f8:f1:21:be:28:06:ad:c0:9b:19:6d:d6:09:
+                    27:d2:27:52:47:74:ad:f3:42:13:ff:26:0b:28:b9:
+                    ba:ed:80:06:0a:37:be
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                EE:7D:9E:FB:00:70:B0:FA:5C:0C:76:DA:A4:12:D1:1B:D0:D1:1C:A0
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+
+
+
+21A4A27922B201E7CD456D12A808534B16E06E46.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 2199526952165000767 (0x1e864a1c01b1463f)
+        Issuer: C = AE, O = UAE Government, CN = UAE Global Root CA G4
+        Validity
+            Not Before: May 17 10:54:59 2017 GMT
+            Not After : May 12 10:54:59 2037 GMT
+        Subject: C = AE, O = UAE Government, CN = UAE Global Root CA G4
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                D5:2F:9A:E9:E8:17:00:D9:57:52:D0:3F:07:2B:4F:66:08:EB:F5:54
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+
+
+
 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E.crt
 --------------------------------------------
 
@@ -23,6 +103,67 @@
                 Certificate Sign, CRL Sign
             X509v3 Subject Key Identifier: 
                 7C:72:4B:39:C7:C0:DB:62:A5:4F:9B:AA:18:34:92:A2:CA:83:82:59
+
+
+
+5811835EEFAA2028835AB955DA6829BF043A756D.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            3d:95:7f:ca:1f:8c:0f:c8:69:2c:01:99:4e:b5:52:31:03:5b:9d:f1
+        Issuer: C = KZ, CN = Qaznet Trust Network
+        Validity
+            Not Before: Feb  2 05:41:00 2016 GMT
+            Not After : Feb  2 05:41:00 2046 GMT
+        Subject: C = KZ, CN = Qaznet Trust Network
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                F4:94:BF:DE:50:B6:DB:6B:24:3D:9E:F7:BE:3A:AE:36:D7:FB:0E:05
+            X509v3 Authority Key Identifier: 
+                keyid:F4:94:BF:DE:50:B6:DB:6B:24:3D:9E:F7:BE:3A:AE:36:D7:FB:0E:05
+
+            X509v3 Key Usage: critical
+                Non Repudiation, Certificate Sign, CRL Sign
+
+
+
+5B4F0CDF83199AEEEF5FD93B721EF5A9761E32D5.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            50:4b:bf:4d:72:c8:ba:9c:ba:14:ca:64:cd:82:f3:e2
+        Issuer: C = AE, O = UAE Government, CN = UAE Global Root CA G3
+        Validity
+            Not Before: Mar 27 07:28:20 2019 GMT
+            Not After : Mar 27 07:28:20 2039 GMT
+        Subject: C = AE, O = UAE Government, CN = UAE Global Root CA G3
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:1c:cf:85:54:cf:e4:96:c2:15:bd:12:4a:80:46:
+                    f0:c3:45:9f:0a:db:5b:5f:59:74:84:ab:ec:63:57:
+                    62:d4:d8:31:25:f1:58:74:21:87:3b:6b:1d:75:d0:
+                    ce:00:00:64:67:f1:42:d0:e2:cd:b7:5a:2f:3a:71:
+                    85:85:50:51:05:d4:13:1f:e3:a3:99:dd:2d:f1:96:
+                    c5:49:6a:46:d3:d0:58:b6:c7:f7:98:a2:21:2a:e1:
+                    63:5f:9e:af:15:a2:a5
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                F8:77:BE:28:15:AD:E8:52:17:98:06:A7:B6:20:52:95:82:81:0E:65
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
 
 
 
@@ -83,6 +224,29 @@
 
             1.3.6.1.4.1.311.21.1: 
                 <Not Supported>
+
+
+
+77A92DF7BCAA141F74C74C2BB765CBC317F5490F.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 6996146270132526980 (0x61174df72bec5f84)
+        Issuer: C = AE, O = DarkMatter LLC, CN = DarkMatter Root CA G4
+        Validity
+            Not Before: May 18 13:57:45 2017 GMT
+            Not After : May 13 13:57:45 2037 GMT
+        Subject: C = AE, O = DarkMatter LLC, CN = DarkMatter Root CA G4
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                89:01:3B:CC:49:BA:96:2C:6D:C7:84:84:99:13:4F:32:F1:B1:25:F4
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
 
 
 
@@ -182,6 +346,62 @@
 
 
 
+9100AF1E083F8241DCC829B818E42B84032EFFFB.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 4562608597869043210 (0x3f51a45895209e0a)
+        Issuer: C = AE, O = DarkMatter LLC, CN = DarkMatter Private Root CA G4
+        Validity
+            Not Before: Jun  5 10:35:56 2017 GMT
+            Not After : May 31 10:35:56 2037 GMT
+        Subject: C = AE, O = DarkMatter LLC, CN = DarkMatter Private Root CA G4
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                D3:D9:5D:D0:C7:A9:C2:92:4D:75:FD:F4:5D:E1:66:44:A1:EA:77:A6
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+
+
+
+A11592A2137B0965C4AE2BC36ED59F9561D9E363.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 5120310249860072256 (0x470eff0b2eb38340)
+        Issuer: C = AE, O = UAE Government, CN = UAE Global Root CA G3
+        Validity
+            Not Before: May 17 10:40:31 2017 GMT
+            Not After : May 12 10:40:31 2037 GMT
+        Subject: C = AE, O = UAE Government, CN = UAE Global Root CA G3
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:1c:cf:85:54:cf:e4:96:c2:15:bd:12:4a:80:46:
+                    f0:c3:45:9f:0a:db:5b:5f:59:74:84:ab:ec:63:57:
+                    62:d4:d8:31:25:f1:58:74:21:87:3b:6b:1d:75:d0:
+                    ce:00:00:64:67:f1:42:d0:e2:cd:b7:5a:2f:3a:71:
+                    85:85:50:51:05:d4:13:1f:e3:a3:99:dd:2d:f1:96:
+                    c5:49:6a:46:d3:d0:58:b6:c7:f7:98:a2:21:2a:e1:
+                    63:5f:9e:af:15:a2:a5
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                F8:77:BE:28:15:AD:E8:52:17:98:06:A7:B6:20:52:95:82:81:0E:65
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+
+
+
 AB702CDF18EBE8B438C52869CD4A5DEF48B40E33.crt
 --------------------------------------------
 
@@ -195,6 +415,37 @@ AB702CDF18EBE8B438C52869CD4A5DEF48B40E33.crt
         Subject Public Key Info:
             Public Key Algorithm: rsaEncryption
                 RSA Public-Key: (2048 bit)
+
+
+
+AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number: 8009207631380619172 (0x6f266be7f8ca1fa4)
+        Issuer: C = CN, O = Sinorail Certification Authority, CN = SRCA
+        Validity
+            Not Before: May 25 06:56:00 2009 GMT
+            Not After : May 20 06:56:00 2029 GMT
+        Subject: C = CN, O = Sinorail Certification Authority, CN = SRCA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (1024 bit)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:79:5E:B6:77:B7:E2:52:83:43:ED:C7:51:88:4C:63:85:2C:00:43:58
+
+            X509v3 Basic Constraints: 
+                CA:TRUE
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://192.168.9.149/crl1.crl
+
+            X509v3 Key Usage: 
+                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment, Key Agreement, Certificate Sign, CRL Sign
+            X509v3 Subject Key Identifier: 
+                79:5E:B6:77:B7:E2:52:83:43:ED:C7:51:88:4C:63:85:2C:00:43:58
 
 
 
@@ -241,6 +492,30 @@ C418F64D46D1DF003D2730137243A91211C675FB.crt
                 Certificate Sign, CRL Sign
             X509v3 Basic Constraints: critical
                 CA:TRUE
+
+
+
+C76C68D5956C34F7755E5FEE782FCF160C205DAD.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            0f:d8:d9:d2:c5:71:f3:7c:e9:f3:08:ae:ef:40:73:ea
+        Issuer: C = AE, O = UAE Government, CN = UAE Global Root CA G4
+        Validity
+            Not Before: Mar 27 07:39:46 2019 GMT
+            Not After : Mar 27 07:39:46 2039 GMT
+        Subject: C = AE, O = UAE Government, CN = UAE Global Root CA G4
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                D5:2F:9A:E9:E8:17:00:D9:57:52:D0:3F:07:2B:4F:66:08:EB:F5:54
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
 
 
 
@@ -294,8 +569,89 @@ F17F6FB631DC99E3A3C87FFE1CF1811088D96033.crt
 
 
 
+F876BBBD52045F2472DAD087475A48E4049DE3D8.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            60:f8:ea:78:ea:88:f6:f3:7b:60:7e:9b:46:fc:e3:1f
+        Issuer: C = AE, O = DarkMatter L.L.C., CN = DarkMatter Root CA G3
+        Validity
+            Not Before: Mar 27 11:35:39 2019 GMT
+            Not After : Mar 27 11:35:39 2039 GMT
+        Subject: C = AE, O = DarkMatter L.L.C., CN = DarkMatter Root CA G3
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:22:a2:53:54:81:79:53:8c:11:fa:b4:56:f1:26:
+                    36:b5:54:0a:8d:99:38:fc:c7:6d:b8:7f:b7:94:3b:
+                    68:04:6c:d6:9e:b5:46:6e:7f:4f:f3:2b:cf:47:9a:
+                    50:b8:c4:dd:97:b3:60:0d:69:9e:f2:5e:b7:e1:9f:
+                    ad:7a:f8:f1:21:be:28:06:ad:c0:9b:19:6d:d6:09:
+                    27:d2:27:52:47:74:ad:f3:42:13:ff:26:0b:28:b9:
+                    ba:ed:80:06:0a:37:be
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                EE:7D:9E:FB:00:70:B0:FA:5C:0C:76:DA:A4:12:D1:1B:D0:D1:1C:A0
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+
+
+
 
 # Intermediate CA Certificates
+
+3AD010247A8F1E991F8DDE5D47989CB5202E5614.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            62:7a:61:b1:0e:7f:5f:27:be:3b:eb:5e:94:cf:7f:f4:48:de:e1:c5
+        Issuer: C = BM, O = QuoVadis Limited, CN = QuoVadis Root CA 2 G3
+        Validity
+            Not Before: Apr 19 18:27:31 2017 GMT
+            Not After : Apr 19 18:27:31 2025 GMT
+        Subject: C = AE, O = DarkMatter LLC, CN = DarkMatter Secure CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Certificate Policies: 
+                Policy: 2.16.784.1.1.7.35.2.2.1.2
+                  CPS: https://ca.darkmatter.ae/iCPS
+                Policy: 2.23.140.1.2.2
+                Policy: 2.23.140.1.2.3
+
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.quovadisglobal.com
+                CA Issuers - URI:http://cacerts.darkmatter.ae/qvrca2g3.crt
+
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication, OCSP Signing
+            X509v3 Authority Key Identifier: 
+                keyid:ED:E7:6F:76:5A:BF:60:EC:49:5B:C6:A5:77:BB:72:16:71:9B:C4:3D
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl1.darkmatter.ae/qvrca2g3.crl
+
+                Full Name:
+                  URI:http://crl2.darkmatter.ae/qvrca2g3.crl
+
+            X509v3 Subject Key Identifier: 
+                A2:50:A4:70:CB:3B:B5:CA:61:94:27:13:96:3A:74:76:AA:9D:EC:34
+
+
 
 6856BB1A6C4F76DACA362187CC2CCD484EDDC25D.crt
 --------------------------------------------
@@ -335,6 +691,158 @@ F17F6FB631DC99E3A3C87FFE1CF1811088D96033.crt
                 4B:D5:E1:51:16:A2:A7:ED:A3:A5:C7:E0:FF:B1:87:18:0E:C0:E3:D5
             1.2.840.113533.7.65.0: 
                 <Not Supported>
+
+
+
+6A2C691767C2F1999B8C020CBAB44756A99A0C41.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            62:3f:50:d8:3a:11:19:2f:11:16:cc:4b:12:78:5e:12:b0:39:6b:24
+        Issuer: C = BM, O = QuoVadis Limited, CN = QuoVadis Root CA 2 G3
+        Validity
+            Not Before: Apr 29 22:45:18 2016 GMT
+            Not After : Apr 29 22:45:18 2024 GMT
+        Subject: C = AE, O = DarkMatter LLC, CN = DarkMatter Secure CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Certificate Policies: 
+                Policy: 2.16.784.1.1.7.35.2.2.1.2
+                  CPS: https://ca.darkmatter.ae/iCPS
+                Policy: 2.23.140.1.2.2
+                Policy: 2.23.140.1.2.3
+
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.quovadisglobal.com
+                CA Issuers - URI:http://cacerts.darkmatter.ae/qvrca2g3.crt
+
+            X509v3 Name Constraints: 
+                Permitted:
+                  DNS:.ae
+
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication, OCSP Signing
+            X509v3 Authority Key Identifier: 
+                keyid:ED:E7:6F:76:5A:BF:60:EC:49:5B:C6:A5:77:BB:72:16:71:9B:C4:3D
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl1.darkmatter.ae/qvrca2g3.crl
+
+                Full Name:
+                  URI:http://crl2.darkmatter.ae/qvrca2g3.crl
+
+            X509v3 Subject Key Identifier: 
+                A2:50:A4:70:CB:3B:B5:CA:61:94:27:13:96:3A:74:76:AA:9D:EC:34
+
+
+
+6B6FA65B1BDC2A0F3A7E66B590F93297B8EB56B9.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            05:a6:22:7d:59:9c:95:fe:b5:5a:33:3a:9b:6b:54:13:45:12:db:63
+        Issuer: C = BM, O = QuoVadis Limited, CN = QuoVadis Root CA 3 G3
+        Validity
+            Not Before: Apr 29 22:53:00 2016 GMT
+            Not After : Apr 29 22:53:00 2024 GMT
+        Subject: C = AE, O = DarkMatter LLC, CN = DarkMatter Assured CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Certificate Policies: 
+                Policy: 2.16.784.1.1.7.35.2.2.2
+                  CPS: https://ca.darkmatter.ae/iCPS
+                Policy: 1.3.6.1.4.1.8024.1.300
+
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.quovadisglobal.com
+                CA Issuers - URI:http://cacerts.darkmatter.ae/qvrca3g3.crt
+
+            X509v3 Name Constraints: 
+                Permitted:
+                  email:.ae
+
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, OCSP Signing, E-mail Protection, 1.3.6.1.4.1.311.10.3.12
+            X509v3 Authority Key Identifier: 
+                keyid:C6:17:D0:BC:A8:EA:02:43:F2:1B:06:99:5D:2B:90:20:B9:D7:9C:E4
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl1.darkmatter.ae/qvrca3g3.crl
+
+                Full Name:
+                  URI:http://crl2.darkmatter.ae/qvrca3g3.crl
+
+            X509v3 Subject Key Identifier: 
+                05:61:41:C6:3D:0D:28:BE:62:9F:98:F3:AF:A3:33:EA:C0:FD:F0:E9
+
+
+
+8835437D387BBB1B58FF5A0FF8D003D8FE04AED4.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            62:06:5c:48:9e:a2:37:c7:c4:0b:b7:a3:38:9b:1d:0e:b9:b9:a3:58
+        Issuer: C = BM, O = QuoVadis Limited, CN = QuoVadis Root CA 2 G3
+        Validity
+            Not Before: Apr 29 22:38:11 2016 GMT
+            Not After : Apr 29 22:38:11 2024 GMT
+        Subject: C = AE, O = DarkMatter LLC, CN = DarkMatter High Assurance CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.8024.0.2.100.1.2
+                  CPS: https://ca.darkmatter.ae/iCPS
+                Policy: 2.23.140.1.1
+                Policy: 2.16.784.1.1.7.35.2.2.1.1
+
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.quovadisglobal.com
+                CA Issuers - URI:http://cacerts.darkmatter.ae/qvrca2g3.crt
+
+            X509v3 Name Constraints: 
+                Permitted:
+                  DNS:.ae
+
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication, OCSP Signing
+            X509v3 Authority Key Identifier: 
+                keyid:ED:E7:6F:76:5A:BF:60:EC:49:5B:C6:A5:77:BB:72:16:71:9B:C4:3D
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl1.darkmatter.ae/qvrca2g3.crl
+
+                Full Name:
+                  URI:http://crl2.darkmatter.ae/qvrca2g3.crl
+
+            X509v3 Subject Key Identifier: 
+                5D:F1:FB:6A:67:81:E6:84:5B:57:37:5C:0F:99:B5:DC:9D:44:3B:55
 
 
 
@@ -389,6 +897,52 @@ F17F6FB631DC99E3A3C87FFE1CF1811088D96033.crt
 
 
 
+9FEB091E053D1C453C789E8E9C446D31CB177ED9.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            19:ff:34:56:9d:36:6b:a1:f6:6e:8d:95:32:ee:05:d0:55:b9:dd:1d
+        Issuer: C = BM, O = QuoVadis Limited, CN = QuoVadis Root CA 3 G3
+        Validity
+            Not Before: Apr 19 18:38:50 2017 GMT
+            Not After : Apr 19 18:38:50 2025 GMT
+        Subject: C = AE, O = DarkMatter LLC, CN = DarkMatter Assured CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Certificate Policies: 
+                Policy: 2.16.784.1.1.7.35.2.2.2
+                  CPS: https://ca.darkmatter.ae/iCPS
+                Policy: 1.3.6.1.4.1.8024.1.300
+
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.quovadisglobal.com
+                CA Issuers - URI:http://cacerts.darkmatter.ae/qvrca3g3.crt
+
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, OCSP Signing, E-mail Protection, 1.3.6.1.4.1.311.10.3.12
+            X509v3 Authority Key Identifier: 
+                keyid:C6:17:D0:BC:A8:EA:02:43:F2:1B:06:99:5D:2B:90:20:B9:D7:9C:E4
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl1.darkmatter.ae/qvrca3g3.crl
+
+                Full Name:
+                  URI:http://crl2.darkmatter.ae/qvrca3g3.crl
+
+            X509v3 Subject Key Identifier: 
+                05:61:41:C6:3D:0D:28:BE:62:9F:98:F3:AF:A3:33:EA:C0:FD:F0:E9
+
+
+
 AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
 --------------------------------------------
 
@@ -424,6 +978,53 @@ AF8484379E2A512CE9074AEBD6B900ED11A70DF7.crt
                 Certificate Sign, CRL Sign
             X509v3 Subject Key Identifier: 
                 45:00:BA:8A:18:90:51:C3:B1:CA:F7:BC:65:39:2E:8C:56:90:44:30
+
+
+
+D3FD325D0F2259F693DD789430E3A9430BB59B98.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            14:ed:7e:90:75:b6:ae:86:8e:1a:3b:02:4f:8a:94:af:c8:f5:db:ba
+        Issuer: C = BM, O = QuoVadis Limited, CN = QuoVadis Root CA 2 G3
+        Validity
+            Not Before: Apr 19 18:20:31 2017 GMT
+            Not After : Apr 19 18:20:31 2025 GMT
+        Subject: C = AE, O = DarkMatter LLC, CN = DarkMatter High Assurance CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (4096 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.8024.0.2.100.1.2
+                  CPS: https://ca.darkmatter.ae/iCPS
+                Policy: 2.23.140.1.1
+                Policy: 2.16.784.1.1.7.35.2.2.1.1
+
+            Authority Information Access: 
+                OCSP - URI:http://ocsp.quovadisglobal.com
+                CA Issuers - URI:http://cacerts.darkmatter.ae/qvrca2g3.crt
+
+            X509v3 Key Usage: critical
+                Digital Signature, Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication, OCSP Signing
+            X509v3 Authority Key Identifier: 
+                keyid:ED:E7:6F:76:5A:BF:60:EC:49:5B:C6:A5:77:BB:72:16:71:9B:C4:3D
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://crl1.darkmatter.ae/qvrca2g3.crl
+
+                Full Name:
+                  URI:http://crl2.darkmatter.ae/qvrca2g3.crl
+
+            X509v3 Subject Key Identifier: 
+                5D:F1:FB:6A:67:81:E6:84:5B:57:37:5C:0F:99:B5:DC:9D:44:3B:55
 
 
 

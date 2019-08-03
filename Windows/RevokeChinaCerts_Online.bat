@@ -1,5 +1,5 @@
 :: RevokeChinaCerts Online batch
-:: Revoke China Certificates.
+:: Revoke Chinese certificates.
 :: 
 :: Contributions: JayXon, Hugo Chan, ntkme, Chengr28
 :: 

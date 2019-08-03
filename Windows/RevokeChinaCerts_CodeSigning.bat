@@ -1,5 +1,5 @@
 :: RevokeChinaCerts CodeSigning batch
-:: Revoke China Certificates.
+:: Revoke Chinese certificates.
 :: 
 :: Contributions: Hugo Chan, ntkme, Chengr28
 :: 

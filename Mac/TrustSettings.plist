@@ -4,13 +4,31 @@
 <dict>
 	<key>trustList</key>
 	<dict>
+		<key>074842F253314F0E50A5B6693B29BE00FCE29792</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
 		<key>0750D9E76816800CC02FD1F4E1C058B5E51AE32A</key>
 		<dict>
 			<key>issuerName</key>
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -28,7 +46,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -46,7 +64,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -64,7 +82,25 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>14FCC63077A7C085F5E1C374208125CA7A215DD7</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -82,7 +118,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -100,7 +136,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -118,7 +154,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -136,7 +172,25 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>21A4A27922B201E7CD456D12A808534B16E06E46</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -154,7 +208,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -172,7 +226,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -190,7 +244,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -208,7 +262,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -226,7 +280,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -244,7 +298,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -262,7 +316,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -280,7 +334,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -298,7 +352,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -316,7 +370,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -334,7 +388,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -352,7 +406,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -370,7 +424,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -388,7 +442,25 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>3AD010247A8F1E991F8DDE5D47989CB5202E5614</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -406,7 +478,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -424,7 +496,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -442,7 +514,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -460,7 +532,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -478,7 +550,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -496,7 +568,25 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>52E37305B7A6CF6420CFCB4AD7960469D202497E</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -514,7 +604,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -532,7 +622,43 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>5811835EEFAA2028835AB955DA6829BF043A756D</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>5B4F0CDF83199AEEEF5FD93B721EF5A9761E32D5</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -550,7 +676,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -568,7 +694,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -586,7 +712,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -604,7 +730,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -622,7 +748,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -640,7 +766,43 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>6A2C691767C2F1999B8C020CBAB44756A99A0C41</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>6B6FA65B1BDC2A0F3A7E66B590F93297B8EB56B9</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -658,7 +820,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -676,7 +838,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -694,7 +856,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -712,7 +874,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -730,7 +892,25 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>77A92DF7BCAA141F74C74C2BB765CBC317F5490F</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -748,7 +928,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -766,7 +946,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -784,7 +964,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -802,7 +982,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -820,7 +1000,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -838,7 +1018,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -856,7 +1036,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -874,7 +1054,25 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>8835437D387BBB1B58FF5A0FF8D003D8FE04AED4</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -892,7 +1090,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -910,7 +1108,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -928,7 +1126,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -946,7 +1144,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -964,7 +1162,61 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>9100AF1E083F8241DCC829B818E42B84032EFFFB</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>9FEB091E053D1C453C789E8E9C446D31CB177ED9</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>A11592A2137B0965C4AE2BC36ED59F9561D9E363</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -982,7 +1234,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1000,7 +1252,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1018,7 +1270,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1036,7 +1288,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1054,7 +1306,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1072,7 +1324,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1090,7 +1342,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1108,7 +1360,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1126,7 +1378,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1144,7 +1396,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1162,7 +1414,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1180,7 +1432,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1198,7 +1450,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1216,7 +1468,25 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>BC39FFEB08EDF6D15CCD543289FC45866EA2251C</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1234,7 +1504,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1252,7 +1522,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1270,7 +1540,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1288,7 +1558,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1306,7 +1576,25 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>C76C68D5956C34F7755E5FEE782FCF160C205DAD</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1324,7 +1612,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1342,7 +1630,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1360,7 +1648,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1378,7 +1666,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1396,7 +1684,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1414,7 +1702,25 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>D3FD325D0F2259F693DD789430E3A9430BB59B98</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1432,7 +1738,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1450,7 +1756,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1468,7 +1774,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1486,7 +1792,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1504,7 +1810,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1522,7 +1828,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1540,7 +1846,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1558,7 +1864,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1576,7 +1882,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1594,7 +1900,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1612,7 +1918,43 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>F876BBBD52045F2472DAD087475A48E4049DE3D8</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
+			<key>serialNumber</key>
+			<data>
+			</data>
+			<key>trustSettings</key>
+			<array>
+				<dict>
+					<key>kSecTrustSettingsResult</key>
+					<integer>3</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>F8FE1C3EF6B6EDD3930967AD7C677254F93CB2E8</key>
+		<dict>
+			<key>issuerName</key>
+			<data>
+			</data>
+			<key>modDate</key>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1630,7 +1972,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1648,7 +1990,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1666,7 +2008,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>
@@ -1684,7 +2026,7 @@
 			<data>
 			</data>
 			<key>modDate</key>
-			<date>2019-05-26T14:07:02Z</date>
+			<date>2019-08-03T15:12:44Z</date>
 			<key>serialNumber</key>
 			<data>
 			</data>

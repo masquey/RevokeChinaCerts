@@ -1,5 +1,5 @@
 :: RevokeChinaCerts Online batch Firefox version
-:: Revoke China Certificates.
+:: Revoke Chinese certificates.
 :: 
 :: Contributions: Chengr28
 :: 

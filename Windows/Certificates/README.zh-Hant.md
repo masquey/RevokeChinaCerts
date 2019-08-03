@@ -1,5 +1,6 @@
 ﻿RevokeChinaCerts on Windows
 ==============
+Revoke Chinese certificates.
 
 ### 介紹
 本文檔介紹了如何更新 CodeSigning 和 Organization 證書清單。

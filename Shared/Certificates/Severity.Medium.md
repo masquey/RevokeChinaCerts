@@ -487,37 +487,6 @@ A8F2DFE36AE0CC2DB9DD38347D30AED9551DD25A.crt
 
 
 
-AE3F2E66D48FC6BD1DF131E89D768D505DF14302.crt
---------------------------------------------
-
-        Version: 3 (0x2)
-        Serial Number: 8009207631380619172 (0x6f266be7f8ca1fa4)
-        Issuer: C = CN, O = Sinorail Certification Authority, CN = SRCA
-        Validity
-            Not Before: May 25 06:56:00 2009 GMT
-            Not After : May 20 06:56:00 2029 GMT
-        Subject: C = CN, O = Sinorail Certification Authority, CN = SRCA
-        Subject Public Key Info:
-            Public Key Algorithm: rsaEncryption
-                RSA Public-Key: (1024 bit)
-        X509v3 extensions:
-            X509v3 Authority Key Identifier: 
-                keyid:79:5E:B6:77:B7:E2:52:83:43:ED:C7:51:88:4C:63:85:2C:00:43:58
-
-            X509v3 Basic Constraints: 
-                CA:TRUE
-            X509v3 CRL Distribution Points: 
-
-                Full Name:
-                  URI:http://192.168.9.149/crl1.crl
-
-            X509v3 Key Usage: 
-                Digital Signature, Non Repudiation, Key Encipherment, Data Encipherment, Key Agreement, Certificate Sign, CRL Sign
-            X509v3 Subject Key Identifier: 
-                79:5E:B6:77:B7:E2:52:83:43:ED:C7:51:88:4C:63:85:2C:00:43:58
-
-
-
 B51085D95B95DA912012D2C3B0019A2DC46D26E3.crt
 --------------------------------------------
 
@@ -1302,6 +1271,48 @@ FBEDDC9065B7272037BC550C9C56DEBBF27894E1.crt
 
 
 
+52E37305B7A6CF6420CFCB4AD7960469D202497E.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            20:36:94:3c:be:a0:8b:69:2a:29:6d:66:24:40:64:a2
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Global Services CA SHA2
+        Validity
+            Not Before: Jul 16 09:52:30 2019 GMT
+            Not After : May 21 09:52:30 2027 GMT
+        Subject: C = CN, O = "Shenzhen Digital Certificate Authority Center Co., Ltd", CN = SZCA OV SSL CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                2C:C6:10:A7:F4:14:EC:84:19:3F:B2:53:EC:98:CB:3C:C9:F7:57:64
+            X509v3 Authority Key Identifier: 
+                keyid:54:99:DD:9B:FF:E8:A7:0E:A3:19:9D:5B:BE:42:57:DF:30:FC:8F:32
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/gscasha2.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/gscasha2.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
+
+
+
+
 56FAADDC596DCF78D585D83A35BC04B690D12736.crt
 --------------------------------------------
 
@@ -1841,6 +1852,48 @@ B39191CFF08EB6FD8B447C21CAAEF6FC33F1D5AE.crt
 
 
 
+BC39FFEB08EDF6D15CCD543289FC45866EA2251C.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            4e:0d:59:e1:3a:1a:08:eb:0d:ae:89:e9:1b:67:50:da
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Global Services CA SHA2
+        Validity
+            Not Before: Jul 16 09:53:14 2019 GMT
+            Not After : May 21 09:53:14 2027 GMT
+        Subject: C = CN, O = "Shenzhen Digital Certificate Authority Center Co., Ltd", CN = SZCA EV SSL CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                B3:FE:DB:E4:49:95:D0:A1:00:FB:85:69:DD:9E:D2:0C:94:37:B0:CA
+            X509v3 Authority Key Identifier: 
+                keyid:54:99:DD:9B:FF:E8:A7:0E:A3:19:9D:5B:BE:42:57:DF:30:FC:8F:32
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/gscasha2.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/gscasha2.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
+
+
+
+
 BCF8FDFBD8A8501D603A90356566C93BC83372EE.crt
 --------------------------------------------
 
@@ -2229,6 +2282,48 @@ F519492BD08F146837D187160222BEA26D8F8AEF.crt
                   CPS: https://www.digicert.com/CPS
                 Policy: 2.23.140.1.2.2
                 Policy: 2.23.140.1.2.3
+
+
+
+
+F8FE1C3EF6B6EDD3930967AD7C677254F93CB2E8.crt
+--------------------------------------------
+
+        Version: 3 (0x2)
+        Serial Number:
+            db:3a:e9:9f:cf:64:07:d8:da:ee:f9:8c:c7:7f:8c:13
+        Issuer: C = PL, O = Unizeto Technologies S.A., OU = Certum Certification Authority, CN = Certum Global Services CA SHA2
+        Validity
+            Not Before: Jul 16 09:50:52 2019 GMT
+            Not After : May 21 09:50:52 2027 GMT
+        Subject: C = CN, O = "Shenzhen Digital Certificate Authority Center Co., Ltd", CN = SZCA DV SSL CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Subject Key Identifier: 
+                76:B3:B0:CB:F5:4E:91:21:B6:95:57:7B:83:0F:FC:15:B2:0A:1C:30
+            X509v3 Authority Key Identifier: 
+                keyid:54:99:DD:9B:FF:E8:A7:0E:A3:19:9D:5B:BE:42:57:DF:30:FC:8F:32
+
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://subca.crl.certum.pl/gscasha2.crl
+
+            Authority Information Access: 
+                OCSP - URI:http://subca.ocsp-certum.com
+                CA Issuers - URI:http://repository.certum.pl/gscasha2.cer
+
+            X509v3 Certificate Policies: 
+                Policy: X509v3 Any Policy
+                  CPS: http://www.certum.pl/CPS
 
 
 

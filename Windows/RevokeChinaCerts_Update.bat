@@ -1,5 +1,5 @@
 :: RevokeChinaCerts Update batch
-:: Revoke China Certificates.
+:: Revoke Chinese certificates.
 :: 
 :: Contributions: Chengr28
 :: 

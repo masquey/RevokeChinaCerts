@@ -1,5 +1,6 @@
 ﻿RevokeChinaCerts on Windows
 ==============
+Revoke Chinese certificates.
 
 ### Introduction
 证书分为两大类型，请务必根据需要的情况选用：

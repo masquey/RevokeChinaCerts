@@ -1,5 +1,6 @@
 ﻿RevokeChinaCerts
 ==============
+Revoke Chinese certificates.
 
 ### Usage
 * Download all project files.
@@ -75,9 +76,22 @@ Blue Coat Public Services Intermediate CA | [VeriSign Class 3 Public Primary Cer
 China Internet Network Information Center EV Certificates Root | [China Internet Network Information Center](https://www.cnnic.net.cn) | 4F99AA93FB2BD13726A1994ACE7FF005F2935D1E
 CNNIC SSL | [Entrust.net Secure Server Certification Authority](https://www.entrust.net) | 6856BB1A6C4F76DACA362187CC2CCD484EDDC25D
 CNNIC ROOT | [China Internet Network Information Center](https://www.cnnic.net.cn) | 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F
+DarkMatter Assured CA | [QuoVadis Root CA 3 G3](https://www.quovadisglobal.com) | 6B6FA65B1BDC2A0F3A7E66B590F93297B8EB56B9
+DarkMatter Assured CA | [QuoVadis Root CA 3 G3](https://www.quovadisglobal.com) | 9FEB091E053D1C453C789E8E9C446D31CB177ED9
+DarkMatter High Assurance CA | [QuoVadis Root CA 2 G3](https://www.quovadisglobal.com) | 8835437D387BBB1B58FF5A0FF8D003D8FE04AED4
+DarkMatter High Assurance CA | [QuoVadis Root CA 2 G3](https://www.quovadisglobal.com) | D3FD325D0F2259F693DD789430E3A9430BB59B98
+DarkMatter Private Root CA G4 | [DarkMatter](https://www.darkmatter.ae) | 9100AF1E083F8241DCC829B818E42B84032EFFFB
+DarkMatter Root CA G3 | [DarkMatter](https://www.darkmatter.ae) | 14FCC63077A7C085F5E1C374208125CA7A215DD7
+DarkMatter Root CA G3 | [DarkMatter](https://www.darkmatter.ae) | F876BBBD52045F2472DAD087475A48E4049DE3D8
+DarkMatter Root CA G4 | [DarkMatter](https://www.darkmatter.ae) | 77A92DF7BCAA141F74C74C2BB765CBC317F5490F
+DarkMatter Root CA G4 | [DarkMatter](https://www.darkmatter.ae) | 074842F253314F0E50A5B6693B29BE00FCE29792
+DarkMatter Secure CA | [QuoVadis Root CA 2 G3](https://www.quovadisglobal.com) | 6A2C691767C2F1999B8C020CBAB44756A99A0C41
+DarkMatter Secure CA | [QuoVadis Root CA 2 G3](https://www.quovadisglobal.com) | 3AD010247A8F1E991F8DDE5D47989CB5202E5614
 GiantRootCA | [Giant Interactive Group Inc.](https://www.ztgame.com) | 7514436E903C901069980499CA70DE74FC06C83C
 GoAgent CA | [GoAgent project](https://github.com/GoAgent/GoAgent) | AB702CDF18EBE8B438C52869CD4A5DEF48B40E33
 [JGZXCA](https://211.146.10.133) | [National Radio and Television Administration](http://www.nrta.gov.cn) | 7A4AA61E2A88704115E47748D8647DAEE6837559
+[Qaznet Trust Network](https://qca.kz) | [Qaznet](http://qca.kz) | 5811835EEFAA2028835AB955DA6829BF043A756D
+SRCA | [Sinorail Certification Authority](https://www.12306.cn) | AE3F2E66D48FC6BD1DF131E89D768D505DF14302
 Superfish, Inc. | Superfish, Inc. | C864484869D41D2B0D32319C5A62F9315AAF2CBD
 Thailand National Root Certification Authority - G1 | [Thailand National Root Certification Authority](https://www.nrca.go.th) | 66F2DCFB3F814DDEE9B3206F11DEFE1BFBDFE132
 TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı | [TÜRKTRUST](https://www.turktrust.com.tr) | 7998A308E14D6585E6C21E153A719FBA5AD34AD9
@@ -85,6 +99,10 @@ TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı | [TÜRKTRUST](https://ww
 TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı | [TÜRKTRUST](https://www.turktrust.com.tr) | F17F6FB631DC99E3A3C87FFE1CF1811088D96033
 TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5 | [TÜRKTRUST](https://www.turktrust.com.tr) | C418F64D46D1DF003D2730137243A91211C675FB
 TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6 | [TÜRKTRUST](https://www.turktrust.com.tr) | 8A5C8CEEA503E60556BAD81BD4F6C9B0EDE52FE0
+UAE Global Root CA G3 | [UAE Government](https://www.government.ae) | A11592A2137B0965C4AE2BC36ED59F9561D9E363
+UAE Global Root CA G3 | [UAE Government](https://www.government.ae) | 5B4F0CDF83199AEEEF5FD93B721EF5A9761E32D5
+UAE Global Root CA G4 | [UAE Government](https://www.government.ae) | 21A4A27922B201E7CD456D12A808534B16E06E46
+UAE Global Root CA G4 | [UAE Government](https://www.government.ae) | C76C68D5956C34F7755E5FEE782FCF160C205DAD
 
 * **Extended** list
 
@@ -98,9 +116,9 @@ CA 沃通根证书 | [StartCom Certification Authority](https://www.startcomca.c
 GDCA ROOT CA1 | [GUANG DONG CERTIFICATE AUTHORITY](https://www.gdca.com.cn) | 0A8F0029EA3CD051A30133BD7AA6ECCFF8FFEDC6
 GDCA TrustAUTH E5 ROOT | [GUANG DONG CERTIFICATE AUTHORITY](https://www.gdca.com.cn) | EB466CD37565F93CDE1062CD8D9826ED23730F12
 GDCA TrustAUTH R2 ROOT | [GUANG DONG CERTIFICATE AUTHORITY](https://www.gdca.com.cn) | 742CA08594ABA62CE76E94386EA75A98712F02EA
-GDCA TrustAUTH R4 DV SSL CA G2 | [Certum CA](https://www.certum.eu) | 1E3159DAE31F0ED21050075C64E110807E9DA277
-[GDCA TrustAUTH R4 EV SSL CA G2](https://www.gdca.com.cn) | [Certum CA](https://www.certum.eu) | 87DFE0056D01EB9635395D44A856218484F492F0
-GDCA TrustAUTH R4 OV SSL CA G2 | [Certum CA](https://www.certum.eu) | B1B3162F7CC867F6D47536DF3232E706E031357C
+GDCA TrustAUTH R4 DV SSL CA G2 | [Certum Global Services CA SHA2](https://www.certum.eu) | 1E3159DAE31F0ED21050075C64E110807E9DA277
+[GDCA TrustAUTH R4 EV SSL CA G2](https://www.gdca.com.cn) | [Certum Global Services CA SHA2](https://www.certum.eu) | 87DFE0056D01EB9635395D44A856218484F492F0
+GDCA TrustAUTH R4 OV SSL CA G2 | [Certum Global Services CA SHA2](https://www.certum.eu) | B1B3162F7CC867F6D47536DF3232E706E031357C
 GDCA TrustAUTH R5 ROOT | [GUANG DONG CERTIFICATE AUTHORITY](https://www.gdca.com.cn) | 0F36385B811A25C39B314E83CAE9346670CC74B4
 CERNET CA | [The China Education and Research Network](https://www.cernet.edu.cn) | 8EF134D4BAD5498E348A7C6D9B66F67A09D56D9B
 Certification Authority of WoSign | [Sectigo (UTN Object)](https://sectigo.com) | 1C1ECDCCF764E6168177C5711F33EC9229A29F88
@@ -112,7 +130,7 @@ Certification Authority of WoSign | [StartCom Certification Authority](https://w
 Certification Authority of WoSign | [Sectigo (UTN Object)](https://sectigo.com) | 7C1913D189C46577D7513F980A2CFD7EDCBA0EC9
 Certification Authority of WoSign | [StartCom Certification Authority](https://www.startcomca.com) | 868241C8B85AF79E2DAC79EDADB723E82A36AFC3
 Certification Authority of WoSign | [StartCom Certification Authority](https://www.startcomca.com) | B0B68AE97CFE2AFACD0DC2010B9D70ACE593E8A6
-[Certification Authority of WoSign](https://root1evtest.wosign.com) | [WoSign CA Limited](https://www.wosign.com) | B94294BF91EA8FB64BE61097C7FB001359B676CB
+Certification Authority of WoSign | [WoSign CA Limited](https://www.wosign.com) | B94294BF91EA8FB64BE61097C7FB001359B676CB
 Certification Authority of WoSign G2 | [Certum CA](https://www.certum.eu) | 73FFCA3F815B7A77717FE91912A4DC7B6BFB79CA
 Certification Authority of WoSign G2 | [Certum CA](https://www.certum.eu) | B39191CFF08EB6FD8B447C21CAAEF6FC33F1D5AE
 Certification Authority of WoSign G2 | [WoSign CA Limited](https://www.wosign.com) | FBEDDC9065B7272037BC550C9C56DEBBF27894E1
@@ -121,7 +139,6 @@ CFCA GT CA | [China Financial Certification Authority](https://www.cfca.com.cn) 
 CFCA GT CA | [China Financial Certification Authority](https://www.cfca.com.cn) | EABDA240440ABBD694930A01D09764C6C2D77966
 CFCA Identity CA | [China Financial Certification Authority](https://www.cfca.com.cn) | F02B70BDE4EAE02B207377B9FD4785E4C9CC55DC
 Class 1 Primary CA | [WoSign CA Limited](https://www.wosign.com) | 6A174570A916FBE84453EED3D070A1D8DA442829
-SRCA | [Sinorail Certification Authority](https://www.12306.cn) | AE3F2E66D48FC6BD1DF131E89D768D505DF14302
 StartCom BR SSL ICA | [Certinomis - Root CA](https://www.certinomis.fr) | FD17DA1458D3514592C4F9544A6EA960B373E877
 StartCom Certification Authority | [StartCom Certification Authority](https://www.startcomca.com) | 3E2BF7F2031B96F38CE6C4D8A85D3E2D58476A0F
 StartCom Certification Authority | [StartCom Certification Authority](https://www.startcomca.com) | A3F1333FE242BFCFC5D14E8F394298406810D1A0
@@ -130,6 +147,9 @@ StartCom Certification Authority ECC | [StartCom Certification Authority](https:
 StartCom Certification Authority G2 | [StartCom Certification Authority](https://www.startcomca.com) | 31F1FD68226320EEC63B3F9DEA4A3E537C7C3917
 StartCom Certification Authority G3 | [StartCom Certification Authority](https://www.startcomca.com) | 689A1229D698D172E99E1BF00B9C19854119C9FC
 StartCom EV SSL ICA | [Certinomis - Root CA](https://www.certinomis.fr) | 15C1776480382DEEFC869C2DA7F5BA8626B8A029
+SZCA DV SSL CA | [Certum Global Services CA SHA2](https://www.certum.eu) | F8FE1C3EF6B6EDD3930967AD7C677254F93CB2E8
+SZCA EV SSL CA | [Certum Global Services CA SHA2](https://www.certum.eu) | BC39FFEB08EDF6D15CCD543289FC45866EA2251C
+SZCA OV SSL CA | [Certum Global Services CA SHA2](https://www.certum.eu) | 52E37305B7A6CF6420CFCB4AD7960469D202497E
 UCA Extended Validation Root | [Shanghai Electronic Certificate Authority Center Co., Ltd.](https://www.sheca.com) | A3A1B06F2461234AE336A5C237FCA6FFDDF0D73A
 UCA Extended Validation Root | [Shanghai Electronic Certificate Authority Center Co., Ltd.](https://www.sheca.com) | B9C9F58B3BBEF575E2B58328770E7B0076C40B5E
 UCA Extended Validation Root | [Shanghai Electronic Certificate Authority Center Co., Ltd.](https://www.sheca.com) | C59DD79CC42245AC7216FDC18524F7D1E4CF1E92
@@ -138,7 +158,6 @@ UCA Global Root | [Shanghai Electronic Certificate Authority Center Co., Ltd.](h
 UCA ROOT | [Shanghai Electronic Certificate Authority Center Co., Ltd.](https://www.sheca.com) | 3120F295417730075F8CD42D0CAE008EB5726EF8
 UCA Root | [Shanghai Electronic Certificate Authority Center Co., Ltd.](https://www.sheca.com) | 8250BED5A214433A66377CBC10EF83F669DA3A67
 WoSign Client Authority | [Sectigo (UTN Client)](https://sectigo.com) | FAD4319D4E173FF3853E51C98D21919BF3DA1A1E
-WoTrus DV Server CA | [Sectigo (formerly Comodo CA)](https://sectigo.com) | 4334C8323E735ADFCB028B17F72913680C43DD15
 WoSign DV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 5B562E002F15E1617C416D1960218544C18F36B7
 WoSign EV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 87DD1B740366A877FD28BF7ED709F4ACE1FA43A5
 WoSign EV SSL Pro CA | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | C0CDBE86C539F0A8BEAD82D82DF01B4DDA6FA349
@@ -147,6 +166,7 @@ WoSign OV SSL Pro CA | [DigiCert High Assurance EV Root CA](https://www.digicert
 WoSign Premium Server Authority | [Sectigo (UTN Hardware)](https://sectigo.com) | E3D569137E603E7BACB6BCC66AE943850C8ADF38
 WoSign Server Authority | [Sectigo (UTN Hardware)](https://sectigo.com) | 3E14B8BD6C568657D852D95D387249AE857B4A39
 WoSign SGC Server Authority | [UTN – DATACorp SGC](https://sectigo.com) | 6D5A18050D56BFDE525CBE89E8C45DD1B53D12E9
+WoTrus DV Server CA | [Sectigo (formerly Comodo CA)](https://sectigo.com) | 4334C8323E735ADFCB028B17F72913680C43DD15
 WoTrus DV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | 4245FAB05FAE296958760C3D10EF55E4F25C8681
 WoTrus EV SSL CA | [Certum Trusted Network CA](https://www.certum.eu) | C5447EDC0FAD9C60CA43D4C40F2464F2DA9BED3D
 [WoTrus EV SSL Pro CA](https://www.wosign.com) | [DigiCert High Assurance EV Root CA](https://www.digicert.com) | 0750D9E76816800CC02FD1F4E1C058B5E51AE32A

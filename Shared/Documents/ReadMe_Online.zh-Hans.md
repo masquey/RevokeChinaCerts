@@ -1,5 +1,6 @@
 ﻿RevokeChinaCerts
 ==============
+Revoke Chinese certificates.
 
 ### 使用方法
 * 将项目文件全部下载到本地
